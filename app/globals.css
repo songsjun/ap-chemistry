@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+/* Enable class-based dark mode for Tailwind 4:
+   dark: variant activates when .dark is present on html or any ancestor. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* CSS variables are updated directly by JS (applyStoredTheme) via
+   inline style on <html>, which has highest specificity. The FOUC
+   prevention script in layout.tsx also sets them synchronously before
+   first paint. No :root.dark rule needed — Turbopack strips it anyway. */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
