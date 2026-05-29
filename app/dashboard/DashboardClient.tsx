@@ -268,7 +268,7 @@ export function DashboardClient() {
       <div className="flex items-center justify-between">
         <div>
           <h1 className="text-xl font-semibold text-stone-900 dark:text-stone-100">学习进度</h1>
-          <p className="text-sm text-stone-400 dark:text-stone-500 mt-0.5">AP Physics 1  ·  8 周 56 天</p>
+          <p className="text-sm text-stone-400 dark:text-stone-500 mt-0.5">AP Chemistry  ·  {WEEKS} 周 {WEEKS * DAYS_PER_WEEK} 天</p>
         </div>
         <div className="flex items-center gap-4 text-sm">
           <Link href="/" className="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 transition-colors">← 返回</Link>

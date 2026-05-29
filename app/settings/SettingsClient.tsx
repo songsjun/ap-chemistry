@@ -41,7 +41,7 @@ export function SettingsClient() {
     const userId = StorageService.userId.get()
     if (!userId) return
     const data = await exportProgress(userId)
-    downloadJson(data, `ap-physics-progress-${new Date().toISOString().slice(0, 10)}.json`)
+    downloadJson(data, `ap-chem-progress-${new Date().toISOString().slice(0, 10)}.json`)
   }
 
   async function handleImport(e: React.ChangeEvent<HTMLInputElement>) {

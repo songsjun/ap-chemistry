@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <main className="min-h-screen flex flex-col items-center justify-center p-8 gap-6">
       <div className="text-center">
-        <h1 className="text-3xl font-bold text-gray-900 dark:text-stone-100">AP Physics 1</h1>
+        <h1 className="text-3xl font-bold text-gray-900 dark:text-stone-100">AP Chemistry</h1>
         <p className="text-gray-500 dark:text-stone-400 mt-2">自适应学习平台</p>
       </div>
       <div className="flex flex-col gap-3 w-full max-w-xs">

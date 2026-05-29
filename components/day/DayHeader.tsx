@@ -3,7 +3,7 @@ export function DayHeader({ week, day }: { week: number; day: number }) {
     <div className="max-w-2xl mx-auto px-4 mb-6 pt-2">
       <div className="flex items-start justify-between">
         <div>
-          <p className="text-xs text-stone-400 dark:text-stone-500 font-medium tracking-widest uppercase mb-1">AP Physics 1</p>
+          <p className="text-xs text-stone-400 dark:text-stone-500 font-medium tracking-widest uppercase mb-1">AP Chemistry</p>
           <h1 className="text-2xl font-semibold text-stone-900 dark:text-stone-100 leading-tight">
             Week {week} <span className="text-stone-300 dark:text-stone-600">·</span> Day {day}
           </h1>

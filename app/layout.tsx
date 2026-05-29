@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'AP Physics 1',
-  description: 'Adaptive AP Physics 1 learning platform',
+  title: 'AP Chemistry',
+  description: 'Adaptive AP Chemistry learning platform',
 }
 
 export default function RootLayout({
@@ -30,7 +30,7 @@ export default function RootLayout({
       <head>
         <script dangerouslySetInnerHTML={{ __html:
           `(function(){try{` +
-          `var t=localStorage.getItem('ap_physics_theme');` +
+          `var t=localStorage.getItem('ap_chem_theme');` +
           `var d=t==='dark'||(t!=='light'&&window.matchMedia('(prefers-color-scheme:dark)').matches);` +
           `var r=document.documentElement;` +
           `if(d){r.classList.add('dark');` +

@@ -53,7 +53,7 @@ function getCompletionCriteria(r: Resource): string {
   if (r.platform === 'khan' && r.type === 'exercise') return '4 题，目标 ≥ 3 题正确（75%）'
   if (r.platform === 'khan' && r.type === 'video') return '完整观看，记录关键概念和公式'
   if (r.platform === 'khan' && r.type === 'reading') return '阅读互动文章，完成嵌入练习'
-  if (r.type === 'interactive') return '完成实验步骤，记录观察结论，建立物理直觉'
+  if (r.type === 'interactive') return '完成实验步骤，记录观察结论，建立化学直觉'
   if (r.platform === 'openstax' && r.type === 'reading') return '阅读并理解核心定义，能口述要点'
   if (r.platform === 'openstax' && r.type === 'exercise') return '完成练习题，用答案键核对过程'
   if (r.type === 'frq') return '完成 FRQ 作答，对照评分标准逐点自评'
@@ -65,7 +65,7 @@ function getLearningObjective(r: Resource, kps: KnowledgePoint[]): string {
   const topicsZh = kps.map(k => k.name_zh).join('、')
   if (!topicsZh) return ''
   const prefix: Record<string, string> = {
-    video: `理解 ${topicsZh} 的物理意义和数学表达`,
+    video: `理解 ${topicsZh} 的化学原理和数学表达`,
     exercise: `运用 ${topicsZh} 解决典型 AP 题目`,
     interactive: `通过实验直观感受 ${topicsZh} 的规律`,
     reading: `深入理解 ${topicsZh} 的定义与推导过程`,
@@ -193,13 +193,15 @@ function ResourceRow({ resource, completion, kpMap, scoringId, onCheckDirect, on
         {/* Checkbox */}
         <button
           onClick={() => {
-            if (done) return
+            if (done || !resource.url) return
             if (graded) onCheckGraded(resource)
             else onCheckDirect(resource)
           }}
-          aria-label={done ? `${resource.title} 已完成` : `标记 ${resource.title} 为完成`}
+          disabled={!resource.url}
+          aria-label={done ? `${resource.title} 已完成` : !resource.url ? `${resource.title} 内容准备中` : `标记 ${resource.title} 为完成`}
           aria-pressed={done}
           className={`mt-0.5 w-5 h-5 rounded-[5px] border-2 flex items-center justify-center shrink-0 transition-all ${
+            !resource.url ? 'border-stone-200 bg-stone-50 dark:border-stone-700 dark:bg-stone-800 cursor-not-allowed' :
             done   ? 'bg-emerald-500 border-emerald-500 shadow-sm' :
             failed ? 'bg-red-50 border-red-300 hover:bg-red-100 dark:bg-red-950/30' :
                      'border-stone-300 hover:border-blue-400 hover:bg-blue-50 dark:border-stone-600 dark:hover:bg-blue-900/20'
@@ -230,8 +232,9 @@ function ResourceRow({ resource, completion, kpMap, scoringId, onCheckDirect, on
                 {resource.title}
               </a>
             ) : (
-              <span className={`text-sm font-medium leading-snug flex-1 ${done ? 'text-stone-400 line-through dark:text-stone-500' : 'text-stone-800 dark:text-stone-200'}`}>
+              <span className="text-sm font-medium leading-snug flex-1 text-stone-400 dark:text-stone-500 italic">
                 {resource.title}
+                <span className="ml-2 text-[10px] px-1.5 py-0.5 rounded bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400 font-medium not-italic">内容准备中</span>
               </span>
             )}
 
@@ -366,7 +369,7 @@ function ResourceRow({ resource, completion, kpMap, scoringId, onCheckDirect, on
           {resource.type === 'interactive' && (
             <div className="flex gap-2">
               <span className="text-stone-300 dark:text-stone-600 shrink-0 w-14 text-right">达成含义</span>
-              <span className="text-stone-600 dark:text-stone-400">实验建立的直觉将帮助你在 FRQ 中正确设定符号和方向</span>
+              <span className="text-stone-600 dark:text-stone-400">实验建立的直觉将帮助你在 FRQ 中理解现象机理和解释规律</span>
             </div>
           )}
           {resource.type === 'frq' && (

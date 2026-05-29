@@ -50,7 +50,7 @@ export function AppInitializer() {
 
     // Sync theme across browser tabs.
     const handleStorage = (e: StorageEvent) => {
-      if (e.key === 'ap_physics_theme') applyStoredTheme()
+      if (e.key === 'ap_chem_theme') applyStoredTheme()
     }
     window.addEventListener('storage', handleStorage)
 

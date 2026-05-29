@@ -1,7 +1,9 @@
 [
   {
     "id": "chem-mole-concept-001",
-    "concept_ids": ["atomic-moles-molar-mass"],
+    "concept_ids": [
+      "atomic-moles-molar-mass"
+    ],
     "week": 1,
     "difficulty": 1,
     "type": "mcq",
@@ -18,7 +20,9 @@
   },
   {
     "id": "chem-mole-concept-002",
-    "concept_ids": ["atomic-moles-molar-mass"],
+    "concept_ids": [
+      "atomic-moles-molar-mass"
+    ],
     "week": 1,
     "difficulty": 1,
     "type": "mcq",
@@ -35,7 +39,9 @@
   },
   {
     "id": "chem-mole-concept-003",
-    "concept_ids": ["atomic-moles-molar-mass"],
+    "concept_ids": [
+      "atomic-moles-molar-mass"
+    ],
     "week": 1,
     "difficulty": 2,
     "type": "mcq",
@@ -52,7 +58,9 @@
   },
   {
     "id": "chem-mole-fill-001",
-    "concept_ids": ["atomic-moles-molar-mass"],
+    "concept_ids": [
+      "atomic-moles-molar-mass"
+    ],
     "week": 1,
     "difficulty": 1,
     "type": "fill",
@@ -63,7 +71,9 @@
   },
   {
     "id": "chem-mass-spec-001",
-    "concept_ids": ["atomic-mass-spectroscopy"],
+    "concept_ids": [
+      "atomic-mass-spectroscopy"
+    ],
     "week": 1,
     "difficulty": 1,
     "type": "mcq",
@@ -80,7 +90,9 @@
   },
   {
     "id": "chem-mass-spec-002",
-    "concept_ids": ["atomic-mass-spectroscopy"],
+    "concept_ids": [
+      "atomic-mass-spectroscopy"
+    ],
     "week": 1,
     "difficulty": 2,
     "type": "mcq",
@@ -97,7 +109,9 @@
   },
   {
     "id": "chem-mass-spec-fill-001",
-    "concept_ids": ["atomic-mass-spectroscopy"],
+    "concept_ids": [
+      "atomic-mass-spectroscopy"
+    ],
     "week": 1,
     "difficulty": 2,
     "type": "fill",
@@ -108,7 +122,9 @@
   },
   {
     "id": "chem-elemental-comp-001",
-    "concept_ids": ["atomic-elemental-composition"],
+    "concept_ids": [
+      "atomic-elemental-composition"
+    ],
     "week": 1,
     "difficulty": 1,
     "type": "mcq",
@@ -125,7 +141,9 @@
   },
   {
     "id": "chem-elemental-comp-002",
-    "concept_ids": ["atomic-elemental-composition"],
+    "concept_ids": [
+      "atomic-elemental-composition"
+    ],
     "week": 1,
     "difficulty": 2,
     "type": "mcq",
@@ -142,7 +160,9 @@
   },
   {
     "id": "chem-mixture-comp-001",
-    "concept_ids": ["atomic-mixture-composition"],
+    "concept_ids": [
+      "atomic-mixture-composition"
+    ],
     "week": 1,
     "difficulty": 1,
     "type": "mcq",
@@ -159,7 +179,9 @@
   },
   {
     "id": "chem-mixture-comp-fill-001",
-    "concept_ids": ["atomic-mixture-composition"],
+    "concept_ids": [
+      "atomic-mixture-composition"
+    ],
     "week": 1,
     "difficulty": 1,
     "type": "fill",
@@ -170,7 +192,9 @@
   },
   {
     "id": "chem-electron-config-001",
-    "concept_ids": ["atomic-structure-electron-config"],
+    "concept_ids": [
+      "atomic-structure-electron-config"
+    ],
     "week": 1,
     "difficulty": 1,
     "type": "mcq",
@@ -187,11 +211,13 @@
   },
   {
     "id": "chem-electron-config-002",
-    "concept_ids": ["atomic-structure-electron-config"],
+    "concept_ids": [
+      "atomic-structure-electron-config"
+    ],
     "week": 1,
     "difficulty": 2,
     "type": "mcq",
-    "question": "以下关于电子亚层（subshell）顺序，哪个正确描述了能量从低到高的顺序？",
+    "question": "以下哪个正确描述了电子填入轨道的 Aufbau 顺序（能量最低原则，从低填到高）？",
     "options": [
       "A. 1s < 2s < 2p < 3s < 3p < 4s < 3d",
       "B. 1s < 2s < 3s < 2p < 3p < 4s < 3d",
@@ -199,12 +225,14 @@
       "D. 1s < 2s < 2p < 3s < 3d < 3p < 4s"
     ],
     "answer": "A. 1s < 2s < 2p < 3s < 3p < 4s < 3d",
-    "grading_rubric": "按能量排列：注意4s在3d之前填充（n+l规则）",
-    "explanation": "A正确。根据n+l规则（奥弗豪泽规则），4s（n+l=4+0=4）在3d（n+l=3+2=5）之前填充。因此正确顺序为：1s, 2s, 2p, 3s, 3p, 4s, 3d, 4p..."
+    "grading_rubric": "根据 Aufbau 原理（n+l 规则），电子优先填入 n+l 值最小的亚层；n+l 相同时，n 小者先填",
+    "explanation": "A正确。根据 Aufbau 原理，4s（n+l=4+0=4）的 n+l 值小于3d（n+l=3+2=5），所以4s在3d之前填充，正确顺序为 1s, 2s, 2p, 3s, 3p, 4s, 3d。注意：这是填充顺序而非轨道本征能量高低——实验表明已填满的3d能量低于4s，这是过渡金属离子先失去4s电子的原因（如 Fe → Fe²⁺ 失去的是4s而非3d电子）。"
   },
   {
     "id": "chem-electron-config-fill-001",
-    "concept_ids": ["atomic-structure-electron-config"],
+    "concept_ids": [
+      "atomic-structure-electron-config"
+    ],
     "week": 1,
     "difficulty": 1,
     "type": "fill",
@@ -215,7 +243,9 @@
   },
   {
     "id": "chem-pes-001",
-    "concept_ids": ["atomic-pes"],
+    "concept_ids": [
+      "atomic-pes"
+    ],
     "week": 1,
     "difficulty": 2,
     "type": "mcq",
@@ -232,7 +262,9 @@
   },
   {
     "id": "chem-pes-002",
-    "concept_ids": ["atomic-pes"],
+    "concept_ids": [
+      "atomic-pes"
+    ],
     "week": 1,
     "difficulty": 2,
     "type": "mcq",
@@ -249,7 +281,9 @@
   },
   {
     "id": "chem-pes-feynman-001",
-    "concept_ids": ["atomic-pes"],
+    "concept_ids": [
+      "atomic-pes"
+    ],
     "week": 1,
     "difficulty": 3,
     "type": "feynman",
@@ -260,7 +294,9 @@
   },
   {
     "id": "chem-periodic-trends-001",
-    "concept_ids": ["atomic-periodic-trends"],
+    "concept_ids": [
+      "atomic-periodic-trends"
+    ],
     "week": 1,
     "difficulty": 1,
     "type": "mcq",
@@ -277,7 +313,9 @@
   },
   {
     "id": "chem-periodic-trends-002",
-    "concept_ids": ["atomic-periodic-trends"],
+    "concept_ids": [
+      "atomic-periodic-trends"
+    ],
     "week": 1,
     "difficulty": 1,
     "type": "mcq",
@@ -294,7 +332,9 @@
   },
   {
     "id": "chem-periodic-trends-fill-001",
-    "concept_ids": ["atomic-periodic-trends"],
+    "concept_ids": [
+      "atomic-periodic-trends"
+    ],
     "week": 1,
     "difficulty": 1,
     "type": "fill",
@@ -305,7 +345,9 @@
   },
   {
     "id": "chem-periodic-trends-003",
-    "concept_ids": ["atomic-periodic-trends"],
+    "concept_ids": [
+      "atomic-periodic-trends"
+    ],
     "week": 1,
     "difficulty": 2,
     "type": "mcq",
@@ -322,7 +364,9 @@
   },
   {
     "id": "chem-valence-ionic-001",
-    "concept_ids": ["atomic-valence-electrons-ionic"],
+    "concept_ids": [
+      "atomic-valence-electrons-ionic"
+    ],
     "week": 1,
     "difficulty": 1,
     "type": "mcq",
@@ -339,7 +383,9 @@
   },
   {
     "id": "chem-valence-ionic-002",
-    "concept_ids": ["atomic-valence-electrons-ionic"],
+    "concept_ids": [
+      "atomic-valence-electrons-ionic"
+    ],
     "week": 1,
     "difficulty": 2,
     "type": "mcq",
@@ -356,7 +402,9 @@
   },
   {
     "id": "chem-valence-ionic-feynman-001",
-    "concept_ids": ["atomic-valence-electrons-ionic"],
+    "concept_ids": [
+      "atomic-valence-electrons-ionic"
+    ],
     "week": 1,
     "difficulty": 3,
     "type": "feynman",
@@ -367,7 +415,9 @@
   },
   {
     "id": "chem-mole-feynman-001",
-    "concept_ids": ["atomic-moles-molar-mass"],
+    "concept_ids": [
+      "atomic-moles-molar-mass"
+    ],
     "week": 1,
     "difficulty": 3,
     "type": "feynman",

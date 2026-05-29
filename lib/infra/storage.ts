@@ -1,6 +1,6 @@
-const USER_ID_KEY = 'ap_physics_user_id'
-const API_KEY_KEY = 'ap_physics_api_key'
-const THEME_KEY = 'ap_physics_theme'
+const USER_ID_KEY = 'ap_chem_user_id'
+const API_KEY_KEY = 'ap_chem_api_key'
+const THEME_KEY = 'ap_chem_theme'
 const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i
 
 export type ThemePreference = 'light' | 'dark' | 'system'
