@@ -1,5 +1,5 @@
 export const PASS_THRESHOLD = 0.75
-export const LIBRARY_VERSION = '1.1.0'
+export const LIBRARY_VERSION = '1.2.0'
 export const WEEKS = 9
 export const DAYS_PER_WEEK = 7
 export const DAILY_CHALLENGE_QUESTION_COUNT = 4
