@@ -3012,7 +3012,7 @@
       "url": "https://phet.colorado.edu/en/simulations/balancing-chemical-equations",
       "type": "interactive",
       "platform": "phet",
-      "tier": "A",
+      "tier": "B",
       "estimated_minutes": 20,
       "concepts": [
         "unit4-net-ionic-equations"
@@ -4507,20 +4507,6 @@
       "day": 1
     },
     {
-      "id": "chem-w7-khan-equilibrium-intro-ex",
-      "title": "Comparing Q vs K example",
-      "url": "https://www.khanacademy.org/science/ap-chemistry/chemical-equilibrium-ap/factors-that-affect-chemical-equilibrium-ap/v/comparing-q-vs-k-example",
-      "type": "video",
-      "platform": "khan",
-      "tier": "A",
-      "estimated_minutes": 15,
-      "concepts": [
-        "unit7-intro-equilibrium"
-      ],
-      "week": 7,
-      "day": 1
-    },
-    {
       "id": "chem-w7-openstax-equilibrium-intro",
       "title": "OpenStax Chemistry 2e: 13.1 Chemical Equilibria",
       "url": "https://openstax.org/books/chemistry-2e/pages/13-1-chemical-equilibria",
@@ -4556,20 +4542,6 @@
       "platform": "khan",
       "tier": "A",
       "estimated_minutes": 12,
-      "concepts": [
-        "unit7-reaction-quotient-keq"
-      ],
-      "week": 7,
-      "day": 2
-    },
-    {
-      "id": "chem-w7-khan-keq-2",
-      "title": "The equilibrium constant K",
-      "url": "https://www.khanacademy.org/science/ap-chemistry/chemical-equilibrium-ap/equilibrium-constant-ap/a/the-equilibrium-constant-k",
-      "type": "article",
-      "platform": "khan",
-      "tier": "A",
-      "estimated_minutes": 11,
       "concepts": [
         "unit7-reaction-quotient-keq"
       ],
@@ -4649,8 +4621,8 @@
     },
     {
       "id": "chem-w7-khan-ice-table-1",
-      "title": "Comparing Q vs K example",
-      "url": "https://www.khanacademy.org/science/ap-chemistry/chemical-equilibrium-ap/factors-that-affect-chemical-equilibrium-ap/v/comparing-q-vs-k-example",
+      "title": "Using an ICE table to solve for equilibrium concentrations",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:equilibrium/x2eef969c74e0d802:calculating-equilibrium-concentrations/v/calculating-equilibrium-concentrations",
       "type": "video",
       "platform": "khan",
       "tier": "A",
@@ -4659,7 +4631,8 @@
         "unit7-magnitude-properties-keq"
       ],
       "week": 7,
-      "day": 3
+      "day": 3,
+      "description": "Worked example: set up an ICE (Initial–Change–Equilibrium) table and solve for unknown concentrations given K."
     },
     {
       "id": "chem-w7-khan-keq-magnitude",
@@ -4747,8 +4720,8 @@
     },
     {
       "id": "chem-w7-openstax-repr",
-      "title": "OpenStax Chemistry 2e: 13.2 Equilibrium Constants (writing expressions)",
-      "url": "https://openstax.org/books/chemistry-2e/pages/13-2-equilibrium-constants",
+      "title": "OpenStax Chemistry 2e: 13.3 Shifting Equilibria — Le Chatelier's Principle",
+      "url": "https://openstax.org/books/chemistry-2e/pages/13-3-shifting-equilibria-le-chatelier-s-principle",
       "type": "reading",
       "platform": "openstax",
       "tier": "A",
@@ -4757,7 +4730,8 @@
         "unit7-representations-equilibrium"
       ],
       "week": 7,
-      "day": 4
+      "day": 4,
+      "description": "How concentration, pressure, and temperature changes shift equilibrium according to Le Chatelier's principle."
     },
     {
       "id": "chem-w7-openstax-repr-ex",
@@ -4769,6 +4743,21 @@
       "estimated_minutes": 25,
       "concepts": [
         "unit7-representations-equilibrium"
+      ],
+      "week": 7,
+      "day": 4
+    },
+    {
+      "id": "chem-w7-khan-lechatelier-intro",
+      "title": "Introduction to Le Chatelier's principle",
+      "url": "https://www.khanacademy.org/science/ap-chemistry/chemical-equilibrium-ap/factors-that-affect-chemical-equilibrium-ap/v/le-chateliers-principle",
+      "description": "Le Chatelier's principle: when a system at equilibrium is disturbed, it shifts to partially counteract the change and re-establish equilibrium.",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 10,
+      "concepts": [
+        "unit7-le-chatelier"
       ],
       "week": 7,
       "day": 4
@@ -4929,8 +4918,8 @@
     },
     {
       "id": "chem-w7-khan-ph-solubility-ex",
-      "title": "Solubility and the pH of the solution",
-      "url": "https://www.khanacademy.org/science/ap-chemistry/buffers-titrations-solubility-equilibria-ap/solubility-equilibria-tutorial-ap/v/solubility-and-the-ph-of-the-solution",
+      "title": "Complex ion formation and solubility",
+      "url": "https://www.khanacademy.org/science/ap-chemistry/buffers-titrations-solubility-equilibria-ap/solubility-equilibria-tutorial-ap/v/complex-ion-formation-and-solubility",
       "type": "video",
       "platform": "khan",
       "tier": "A",
@@ -4939,7 +4928,8 @@
         "unit7-ph-solubility"
       ],
       "week": 7,
-      "day": 7
+      "day": 7,
+      "description": "How formation of complex ions (e.g., Ag(NH₃)₂⁺) dramatically increases the solubility of sparingly soluble salts."
     },
     {
       "id": "chem-w7-openstax-ph-solubility",
@@ -4975,7 +4965,7 @@
       "url": "https://phet.colorado.edu/en/simulations/acid-base-solutions",
       "type": "interactive",
       "platform": "phet",
-      "tier": "A",
+      "tier": "B",
       "estimated_minutes": 20,
       "description": "探索强酸、弱酸、强碱、弱碱溶液中的离子组成，观察粒子图变化并记录 pH 与浓度的关系。",
       "concepts": [
@@ -5380,8 +5370,8 @@
     },
     {
       "id": "chem-w8-khan-oxyacids",
-      "title": "Acid strength, anion size, and bond energy",
-      "url": "https://www.khanacademy.org/science/ap-chemistry/acids-and-bases-ap/acids-bases-and-ph-ap/v/acid-strength-anion-size-and-bond-energy",
+      "title": "Oxyacid strength and molecular structure",
+      "url": "https://www.khanacademy.org/science/ap-chemistry/acids-and-bases-ap/acids-bases-and-ph-ap/v/oxyacid-strength",
       "type": "video",
       "platform": "khan",
       "tier": "A",
@@ -5390,12 +5380,13 @@
         "unit8-molecular-structure-acids"
       ],
       "week": 8,
-      "day": 6
+      "day": 6,
+      "description": "Comparing oxyacid strengths: more electronegative central atoms and more O atoms → stronger acid."
     },
     {
       "id": "chem-w8-khan-molecular-structure-ex",
-      "title": "Acid strength, anion size, and bond energy",
-      "url": "https://www.khanacademy.org/science/ap-chemistry/acids-and-bases-ap/acids-bases-and-ph-ap/v/acid-strength-anion-size-and-bond-energy",
+      "title": "Polyprotic acids",
+      "url": "https://www.khanacademy.org/science/ap-chemistry/acids-and-bases-ap/acid-base-equilibria-tutorial-ap/v/polyprotic-acids",
       "type": "video",
       "platform": "khan",
       "tier": "A",
@@ -5404,7 +5395,8 @@
         "unit8-molecular-structure-acids"
       ],
       "week": 8,
-      "day": 6
+      "day": 6,
+      "description": "Polyprotic acids (H₂SO₄, H₃PO₄, H₂CO₃): successive Ka values and why Ka₁ >> Ka₂."
     },
     {
       "id": "chem-w8-openstax-molecular-structure",
@@ -5464,8 +5456,8 @@
     },
     {
       "id": "chem-w8-khan-ph-pka-ex",
-      "title": "Weak acid equilibrium",
-      "url": "https://www.khanacademy.org/science/ap-chemistry/acids-and-bases-ap/acid-base-equilibria-tutorial-ap/v/weak-acid-equilibrium",
+      "title": "Weak base equilibrium calculations",
+      "url": "https://www.khanacademy.org/science/ap-chemistry/acids-and-bases-ap/acid-base-equilibria-tutorial-ap/v/weak-base-equilibrium",
       "type": "video",
       "platform": "khan",
       "tier": "A",
@@ -5474,7 +5466,8 @@
         "unit8-ph-pka"
       ],
       "week": 8,
-      "day": 7
+      "day": 7,
+      "description": "Worked example: find pH of a weak base solution using Kb and an ICE table."
     },
     {
       "id": "chem-w8-openstax-ph-pka",
@@ -6042,8 +6035,53 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry/gases-and-kinetic-molecular-theory-ap/ideal-gas-laws-ap/v/worked-example-using-the-ideal-gas-law-to-calculate-a-change-in-volume",
       "type": "video",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "estimated_minutes": 8,
+      "concepts": [
+        "gas-ideal-gas-law"
+      ],
+      "week": 3,
+      "day": 4
+    },
+    {
+      "id": "gas-khan-boyles-law",
+      "title": "Boyle's Law",
+      "url": "https://www.khanacademy.org/science/ap-chemistry/gases-and-kinetic-molecular-theory-ap/ideal-gas-laws-ap/v/boyles-law-and-the-ideal-gas-law",
+      "description": "Boyle's Law: P₁V₁ = P₂V₂ — inverse relationship between pressure and volume at constant temperature and amount.",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 10,
+      "concepts": [
+        "gas-ideal-gas-law"
+      ],
+      "week": 3,
+      "day": 4
+    },
+    {
+      "id": "gas-khan-charles-law",
+      "title": "Charles' Law",
+      "url": "https://www.khanacademy.org/science/ap-chemistry/gases-and-kinetic-molecular-theory-ap/ideal-gas-laws-ap/v/charles-law",
+      "description": "Charles' Law: V/T = constant — direct proportionality between volume and absolute temperature at constant pressure.",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 10,
+      "concepts": [
+        "gas-ideal-gas-law"
+      ],
+      "week": 3,
+      "day": 4
+    },
+    {
+      "id": "gas-khan-combined-gas-law",
+      "title": "Gay-Lussac's Law and the Combined Gas Law",
+      "url": "https://www.khanacademy.org/science/ap-chemistry/gases-and-kinetic-molecular-theory-ap/ideal-gas-laws-ap/v/gay-lussac-s-law-and-the-combined-gas-law",
+      "description": "Gay-Lussac's Law (P/T = constant) and the Combined Gas Law (P₁V₁/T₁ = P₂V₂/T₂) with worked problems.",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 10,
       "concepts": [
         "gas-ideal-gas-law"
       ],
@@ -6098,8 +6136,23 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry/gases-and-kinetic-molecular-theory-ap/ideal-gas-laws-ap/a/non-ideal-behavior-of-gases",
       "type": "article",
       "platform": "khan",
-      "tier": "A",
+      "tier": "B",
       "estimated_minutes": 15,
+      "concepts": [
+        "gas-partial-pressure-kmt"
+      ],
+      "week": 3,
+      "day": 5
+    },
+    {
+      "id": "gas-khan-grahams-law",
+      "title": "Graham's Law of effusion and diffusion",
+      "url": "https://www.khanacademy.org/science/ap-chemistry/gases-and-kinetic-molecular-theory-ap/ideal-gas-laws-ap/v/graham-s-law-of-effusion",
+      "description": "Graham's Law: lighter gases effuse faster; rate is inversely proportional to the square root of molar mass.",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 10,
       "concepts": [
         "gas-partial-pressure-kmt"
       ],
