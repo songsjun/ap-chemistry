@@ -935,7 +935,9 @@
         "15.1",
         "15.2"
       ],
-      "alberta_tags": []
+      "alberta_tags": [
+        "chem30"
+      ]
     },
     {
       "id": "unit7-ph-solubility",
@@ -952,7 +954,9 @@
       "openstax_sections": [
         "15.3"
       ],
-      "alberta_tags": []
+      "alberta_tags": [
+        "chem30"
+      ]
     },
     {
       "id": "unit8-intro-acids-bases-ph",
@@ -1221,6 +1225,46 @@
       "alberta_tags": [
         "chem30"
       ]
+    },
+    {
+      "id": "gas-ideal-gas-law",
+      "name_zh": "理想气体定律",
+      "name_en": "Ideal Gas Law",
+      "unit": 3,
+      "ced_topic": "3.4a",
+      "ced_topic_name": "Ideal Gas Law (PV = nRT)",
+      "week": 3,
+      "day": 4,
+      "prerequisites": [
+        "atomic-moles-molar-mass"
+      ],
+      "openstax_sections": [
+        "9.2",
+        "9.3"
+      ],
+      "alberta_tags": [
+        "chem20"
+      ]
+    },
+    {
+      "id": "gas-partial-pressure-kmt",
+      "name_zh": "分压与气体动理论",
+      "name_en": "Partial Pressure and Kinetic Molecular Theory",
+      "unit": 3,
+      "ced_topic": "3.4b",
+      "ced_topic_name": "Partial Pressure; Kinetic Molecular Theory",
+      "week": 3,
+      "day": 5,
+      "prerequisites": [
+        "gas-ideal-gas-law"
+      ],
+      "openstax_sections": [
+        "9.4",
+        "9.5"
+      ],
+      "alberta_tags": [
+        "chem20"
+      ]
     }
   ],
   "resources": [
@@ -1258,7 +1302,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:atomic-structure-and-properties/x2eef969c74e0d802:moles-and-molar-mass/e/moles-and-molar-mass",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "estimated_minutes": 15,
       "concepts": [
         "atomic-moles-molar-mass"
@@ -1272,7 +1316,7 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/3-1-formula-mass-and-the-mole-concept",
       "type": "reading",
       "platform": "openstax",
-      "tier": "B",
+      "tier": "A",
       "estimated_minutes": 20,
       "concepts": [
         "atomic-moles-molar-mass"
@@ -1300,7 +1344,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:atomic-structure-and-properties/x2eef969c74e0d802:mass-spectroscopy-of-elements/v/mass-spectrometry",
       "type": "video",
       "platform": "khan",
-      "tier": "A",
+      "tier": "B",
       "estimated_minutes": 11,
       "concepts": [
         "atomic-mass-spectroscopy"
@@ -1314,7 +1358,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:atomic-structure-and-properties/x2eef969c74e0d802:mass-spectroscopy-of-elements/v/isotopes-and-mass-spectrometry",
       "type": "video",
       "platform": "khan",
-      "tier": "A",
+      "tier": "B",
       "estimated_minutes": 10,
       "concepts": [
         "atomic-mass-spectroscopy"
@@ -1328,7 +1372,7 @@
       "url": "https://phet.colorado.edu/en/simulations/isotopes-and-atomic-mass",
       "type": "interactive",
       "platform": "phet",
-      "tier": "A",
+      "tier": "B",
       "estimated_minutes": 20,
       "concepts": [
         "atomic-mass-spectroscopy"
@@ -1342,7 +1386,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:atomic-structure-and-properties/x2eef969c74e0d802:mass-spectroscopy-of-elements/e/mass-spectrometry",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "estimated_minutes": 15,
       "concepts": [
         "atomic-mass-spectroscopy"
@@ -1412,7 +1456,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:atomic-structure-and-properties/x2eef969c74e0d802:elemental-composition-of-pure-substances/e/elemental-composition-of-pure-substances",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "estimated_minutes": 15,
       "concepts": [
         "atomic-elemental-composition"
@@ -1440,7 +1484,7 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/3-2-determining-empirical-and-molecular-formulas",
       "type": "reading",
       "platform": "openstax",
-      "tier": "B",
+      "tier": "A",
       "estimated_minutes": 20,
       "concepts": [
         "atomic-elemental-composition",
@@ -1512,7 +1556,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:atomic-structure-and-properties/x2eef969c74e0d802:atomic-structure-and-electron-configuration/e/atomic-structure-and-electron-configuration",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "estimated_minutes": 15,
       "concepts": [
         "atomic-structure-electron-config"
@@ -1526,7 +1570,7 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/6-4-electronic-structure-of-atoms-electron-configurations",
       "type": "reading",
       "platform": "openstax",
-      "tier": "B",
+      "tier": "A",
       "estimated_minutes": 25,
       "concepts": [
         "atomic-structure-electron-config"
@@ -1554,7 +1598,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:atomic-structure-and-properties/x2eef969c74e0d802:photoelectron-spectroscopy/v/photoelectron-spectroscopy",
       "type": "video",
       "platform": "khan",
-      "tier": "A",
+      "tier": "B",
       "estimated_minutes": 13,
       "concepts": [
         "atomic-pes"
@@ -1568,7 +1612,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:atomic-structure-and-properties/x2eef969c74e0d802:photoelectron-spectroscopy/v/reading-pes-spectra",
       "type": "video",
       "platform": "khan",
-      "tier": "A",
+      "tier": "B",
       "estimated_minutes": 11,
       "concepts": [
         "atomic-pes"
@@ -1582,7 +1626,7 @@
       "url": "https://phet.colorado.edu/en/simulations/hydrogen-atom",
       "type": "interactive",
       "platform": "phet",
-      "tier": "A",
+      "tier": "B",
       "estimated_minutes": 15,
       "concepts": [
         "atomic-pes"
@@ -1596,7 +1640,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:atomic-structure-and-properties/x2eef969c74e0d802:photoelectron-spectroscopy/e/photoelectron-spectroscopy",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "estimated_minutes": 15,
       "concepts": [
         "atomic-pes"
@@ -1680,7 +1724,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:atomic-structure-and-properties/x2eef969c74e0d802:periodic-trends/e/periodic-trends",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "estimated_minutes": 15,
       "concepts": [
         "atomic-periodic-trends"
@@ -1694,7 +1738,7 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/6-5-periodic-variations-in-element-properties",
       "type": "reading",
       "platform": "openstax",
-      "tier": "B",
+      "tier": "A",
       "estimated_minutes": 20,
       "concepts": [
         "atomic-periodic-trends"
@@ -1764,7 +1808,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:atomic-structure-and-properties/x2eef969c74e0d802:valence-electrons-and-ionic-compounds/e/valence-electrons-and-ionic-compounds",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "estimated_minutes": 15,
       "concepts": [
         "atomic-valence-electrons-ionic"
@@ -1778,7 +1822,7 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/7-1-ionic-bonding",
       "type": "reading",
       "platform": "openstax",
-      "tier": "B",
+      "tier": "A",
       "estimated_minutes": 20,
       "concepts": [
         "atomic-valence-electrons-ionic"
@@ -1838,7 +1882,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:molecular-and-ionic-compound-structure-and-properties/x2eef969c74e0d802:introduction-to-bonding/e/types-of-chemical-bonds",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "phase": "PRACTICE",
       "estimated_minutes": 15,
       "slot_order": 3,
@@ -1854,7 +1898,7 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/7-1-ionic-bonding",
       "type": "reading",
       "platform": "openstax",
-      "tier": "B",
+      "tier": "A",
       "phase": "LEARN",
       "estimated_minutes": 20,
       "slot_order": 1,
@@ -1934,7 +1978,7 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/7-1-ionic-bonding",
       "type": "reading",
       "platform": "openstax",
-      "tier": "B",
+      "tier": "A",
       "phase": "LEARN",
       "estimated_minutes": 20,
       "slot_order": 1,
@@ -1998,7 +2042,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:molecular-and-ionic-compound-structure-and-properties/x2eef969c74e0d802:lewis-diagrams/e/lewis-diagrams",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "phase": "PRACTICE",
       "estimated_minutes": 15,
       "slot_order": 3,
@@ -2014,7 +2058,7 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/7-3-lewis-symbols-and-structures",
       "type": "reading",
       "platform": "openstax",
-      "tier": "B",
+      "tier": "A",
       "phase": "LEARN",
       "estimated_minutes": 20,
       "slot_order": 1,
@@ -2078,7 +2122,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:molecular-and-ionic-compound-structure-and-properties/x2eef969c74e0d802:resonance-and-formal-charge/e/resonance-and-formal-charge",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "phase": "PRACTICE",
       "estimated_minutes": 15,
       "slot_order": 3,
@@ -2094,7 +2138,7 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/7-4-formal-charges-and-resonance",
       "type": "reading",
       "platform": "openstax",
-      "tier": "B",
+      "tier": "A",
       "phase": "LEARN",
       "estimated_minutes": 20,
       "slot_order": 1,
@@ -2174,7 +2218,7 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/7-6-molecular-structure-and-polarity",
       "type": "reading",
       "platform": "openstax",
-      "tier": "B",
+      "tier": "A",
       "phase": "LEARN",
       "estimated_minutes": 20,
       "slot_order": 1,
@@ -2238,7 +2282,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:molecular-and-ionic-compound-structure-and-properties/x2eef969c74e0d802:vsepr/e/vsepr",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "phase": "PRACTICE",
       "estimated_minutes": 15,
       "slot_order": 3,
@@ -2254,7 +2298,7 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/7-6-molecular-structure-and-polarity",
       "type": "reading",
       "platform": "openstax",
-      "tier": "B",
+      "tier": "A",
       "phase": "LEARN",
       "estimated_minutes": 20,
       "slot_order": 1,
@@ -2318,7 +2362,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:molecular-and-ionic-compound-structure-and-properties/x2eef969c74e0d802:hybridization/e/hybridization",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "phase": "PRACTICE",
       "estimated_minutes": 15,
       "slot_order": 3,
@@ -2334,7 +2378,7 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/8-2-hybrid-atomic-orbitals",
       "type": "reading",
       "platform": "openstax",
-      "tier": "B",
+      "tier": "A",
       "phase": "LEARN",
       "estimated_minutes": 20,
       "slot_order": 1,
@@ -2398,7 +2442,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:intermolecular-forces-and-properties/x2eef969c74e0d802:intermolecular-forces/e/intermolecular-forces",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "phase": "PRACTICE",
       "estimated_minutes": 15,
       "slot_order": 3,
@@ -2414,7 +2458,7 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/10-1-intermolecular-forces",
       "type": "reading",
       "platform": "openstax",
-      "tier": "B",
+      "tier": "A",
       "phase": "LEARN",
       "estimated_minutes": 20,
       "slot_order": 1,
@@ -2494,7 +2538,7 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/10-5-the-solid-state-of-matter",
       "type": "reading",
       "platform": "openstax",
-      "tier": "B",
+      "tier": "A",
       "phase": "LEARN",
       "estimated_minutes": 20,
       "slot_order": 1,
@@ -2558,7 +2602,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:intermolecular-forces-and-properties/x2eef969c74e0d802:solubility/e/solubility",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "phase": "PRACTICE",
       "estimated_minutes": 15,
       "slot_order": 3,
@@ -2574,7 +2618,7 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/11-1-the-dissolution-process",
       "type": "reading",
       "platform": "openstax",
-      "tier": "B",
+      "tier": "A",
       "phase": "LEARN",
       "estimated_minutes": 20,
       "slot_order": 1,
@@ -2606,7 +2650,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:intermolecular-forces-and-properties/x2eef969c74e0d802:spectroscopy/v/the-electromagnetic-spectrum",
       "type": "video",
       "platform": "khan",
-      "tier": "A",
+      "tier": "B",
       "phase": "LEARN",
       "estimated_minutes": 11,
       "slot_order": 1,
@@ -2622,7 +2666,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:intermolecular-forces-and-properties/x2eef969c74e0d802:spectroscopy/v/photoelectric-effect",
       "type": "video",
       "platform": "khan",
-      "tier": "A",
+      "tier": "B",
       "phase": "LEARN",
       "estimated_minutes": 12,
       "slot_order": 2,
@@ -2638,7 +2682,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:intermolecular-forces-and-properties/x2eef969c74e0d802:spectroscopy/e/spectroscopy",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "phase": "PRACTICE",
       "estimated_minutes": 15,
       "slot_order": 3,
@@ -2686,7 +2730,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:intermolecular-forces-and-properties/x2eef969c74e0d802:spectroscopy/v/beer-lambert-law",
       "type": "video",
       "platform": "khan",
-      "tier": "A",
+      "tier": "B",
       "phase": "LEARN",
       "estimated_minutes": 12,
       "slot_order": 1,
@@ -2702,7 +2746,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:intermolecular-forces-and-properties/x2eef969c74e0d802:spectroscopy/v/beer-lambert-law-calculations",
       "type": "video",
       "platform": "khan",
-      "tier": "A",
+      "tier": "B",
       "phase": "LEARN",
       "estimated_minutes": 11,
       "slot_order": 2,
@@ -2718,7 +2762,7 @@
       "url": "https://phet.colorado.edu/en/simulations/beers-law-lab",
       "type": "interactive",
       "platform": "phet",
-      "tier": "A",
+      "tier": "B",
       "phase": "PRACTICE",
       "estimated_minutes": 20,
       "slot_order": 3,
@@ -2798,7 +2842,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:intermolecular-forces-and-properties/x2eef969c74e0d802:solutions-and-mixtures/e/solutions-and-mixtures",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "phase": "PRACTICE",
       "estimated_minutes": 15,
       "slot_order": 3,
@@ -2814,7 +2858,7 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/11-2-electrolytes",
       "type": "reading",
       "platform": "openstax",
-      "tier": "B",
+      "tier": "A",
       "phase": "LEARN",
       "estimated_minutes": 20,
       "slot_order": 1,
@@ -2878,7 +2922,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:intermolecular-forces-and-properties/test/x2eef969c74e0d802:intermolecular-forces-and-properties-unit-test",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "phase": "PRACTICE",
       "estimated_minutes": 15,
       "slot_order": 3,
@@ -2894,7 +2938,7 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/10-1-intermolecular-forces",
       "type": "reading",
       "platform": "openstax",
-      "tier": "B",
+      "tier": "A",
       "phase": "LEARN",
       "estimated_minutes": 20,
       "slot_order": 1,
@@ -2982,7 +3026,7 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/4-1-writing-and-balancing-chemical-equations",
       "type": "reading",
       "platform": "openstax",
-      "tier": "B",
+      "tier": "A",
       "estimated_minutes": 20,
       "concepts": [
         "unit4-net-ionic-equations"
@@ -3038,7 +3082,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:chemical-reactions/x2eef969c74e0d802:stoichiometry/e/stoichiometry-1",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "estimated_minutes": 15,
       "concepts": [
         "unit4-stoichiometry"
@@ -3052,7 +3096,7 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/4-3-reaction-stoichiometry",
       "type": "reading",
       "platform": "openstax",
-      "tier": "B",
+      "tier": "A",
       "estimated_minutes": 20,
       "concepts": [
         "unit4-stoichiometry"
@@ -3108,7 +3152,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:chemical-reactions/x2eef969c74e0d802:stoichiometry/e/limiting-reagent-stoichiometry",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "estimated_minutes": 15,
       "concepts": [
         "unit4-limiting-reagent-titration"
@@ -3122,7 +3166,7 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/4-4-reaction-yields",
       "type": "reading",
       "platform": "openstax",
-      "tier": "B",
+      "tier": "A",
       "estimated_minutes": 20,
       "concepts": [
         "unit4-limiting-reagent-titration"
@@ -3178,7 +3222,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:chemical-reactions/x2eef969c74e0d802:types-of-chemical-reactions/e/types-of-chemical-reactions",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "estimated_minutes": 15,
       "concepts": [
         "unit4-reaction-types"
@@ -3192,7 +3236,7 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/4-2-classifying-chemical-reactions",
       "type": "reading",
       "platform": "openstax",
-      "tier": "B",
+      "tier": "A",
       "estimated_minutes": 20,
       "concepts": [
         "unit4-reaction-types"
@@ -3262,7 +3306,7 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/14-1-bronsted-lowry-acids-and-bases",
       "type": "reading",
       "platform": "openstax",
-      "tier": "B",
+      "tier": "A",
       "estimated_minutes": 20,
       "concepts": [
         "unit4-acid-base-intro"
@@ -3318,7 +3362,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:chemical-reactions/x2eef969c74e0d802:oxidation-reduction-reactions/e/oxidation-and-reduction",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "estimated_minutes": 15,
       "concepts": [
         "unit4-redox-reactions"
@@ -3332,7 +3376,7 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/4-4-oxidation-reduction-reactions",
       "type": "reading",
       "platform": "openstax",
-      "tier": "B",
+      "tier": "A",
       "estimated_minutes": 20,
       "concepts": [
         "unit4-redox-reactions"
@@ -3402,7 +3446,7 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/4-4-oxidation-reduction-reactions",
       "type": "reading",
       "platform": "openstax",
-      "tier": "B",
+      "tier": "A",
       "estimated_minutes": 20,
       "concepts": [
         "unit4-oxidation-states"
@@ -3430,7 +3474,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:kinetics/x2eef969c74e0d802:reaction-rates/v/reaction-rates",
       "type": "video",
       "platform": "khan",
-      "tier": "A",
+      "tier": "B",
       "estimated_minutes": 12,
       "concepts": [
         "unit5-reaction-rates-rate-law"
@@ -3444,7 +3488,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:kinetics/x2eef969c74e0d802:rate-law/v/introduction-to-rate-law",
       "type": "video",
       "platform": "khan",
-      "tier": "A",
+      "tier": "B",
       "estimated_minutes": 13,
       "concepts": [
         "unit5-reaction-rates-rate-law"
@@ -3458,7 +3502,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry/kinetics-ap/reaction-rates-and-rate-laws-ap/v/rate-law-and-reaction-order",
       "type": "video",
       "platform": "khan",
-      "tier": "A",
+      "tier": "B",
       "estimated_minutes": 15,
       "concepts": [
         "unit5-reaction-rates-rate-law"
@@ -3500,7 +3544,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry/kinetics-ap/relationship-between-concentrations-and-time-ap/v/half-life-of-a-first-order-reaction",
       "type": "video",
       "platform": "khan",
-      "tier": "A",
+      "tier": "B",
       "estimated_minutes": 14,
       "concepts": [
         "unit5-integrated-rate-laws"
@@ -3514,7 +3558,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:kinetics/x2eef969c74e0d802:reaction-rates/v/second-order-reactions",
       "type": "video",
       "platform": "khan",
-      "tier": "A",
+      "tier": "B",
       "estimated_minutes": 12,
       "concepts": [
         "unit5-integrated-rate-laws"
@@ -3528,7 +3572,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry/kinetics-ap/relationship-between-concentrations-and-time-ap/v/first-order-reaction-example",
       "type": "video",
       "platform": "khan",
-      "tier": "A",
+      "tier": "B",
       "estimated_minutes": 15,
       "concepts": [
         "unit5-integrated-rate-laws"
@@ -3570,7 +3614,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:kinetics/x2eef969c74e0d802:reaction-mechanisms/v/elementary-reactions",
       "type": "video",
       "platform": "khan",
-      "tier": "A",
+      "tier": "B",
       "estimated_minutes": 11,
       "concepts": [
         "unit5-elementary-reactions-collision"
@@ -3584,7 +3628,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:kinetics/x2eef969c74e0d802:reaction-rates/v/collision-theory",
       "type": "video",
       "platform": "khan",
-      "tier": "A",
+      "tier": "B",
       "estimated_minutes": 12,
       "concepts": [
         "unit5-elementary-reactions-collision"
@@ -3598,7 +3642,7 @@
       "url": "https://phet.colorado.edu/en/simulations/reactions-and-rates",
       "type": "interactive",
       "platform": "phet",
-      "tier": "A",
+      "tier": "B",
       "estimated_minutes": 20,
       "concepts": [
         "unit5-elementary-reactions-collision"
@@ -3640,7 +3684,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:kinetics/x2eef969c74e0d802:reaction-rates/v/activation-energy",
       "type": "video",
       "platform": "khan",
-      "tier": "A",
+      "tier": "B",
       "estimated_minutes": 13,
       "concepts": [
         "unit5-energy-profile"
@@ -3654,7 +3698,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:kinetics/x2eef969c74e0d802:reaction-rates/v/transition-state-and-activation-energy",
       "type": "video",
       "platform": "khan",
-      "tier": "A",
+      "tier": "B",
       "estimated_minutes": 12,
       "concepts": [
         "unit5-energy-profile"
@@ -3668,7 +3712,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:kinetics/x2eef969c74e0d802:reaction-rates/e/activation-energy",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "estimated_minutes": 15,
       "concepts": [
         "unit5-energy-profile"
@@ -3710,7 +3754,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:kinetics/x2eef969c74e0d802:reaction-mechanisms/v/reaction-mechanisms",
       "type": "video",
       "platform": "khan",
-      "tier": "A",
+      "tier": "B",
       "estimated_minutes": 13,
       "concepts": [
         "unit5-reaction-mechanisms"
@@ -3724,7 +3768,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:kinetics/x2eef969c74e0d802:reaction-mechanisms/v/rate-determining-step",
       "type": "video",
       "platform": "khan",
-      "tier": "A",
+      "tier": "B",
       "estimated_minutes": 14,
       "concepts": [
         "unit5-reaction-mechanisms"
@@ -3738,7 +3782,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:kinetics/x2eef969c74e0d802:reaction-mechanisms/e/reaction-mechanisms",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "estimated_minutes": 15,
       "concepts": [
         "unit5-reaction-mechanisms"
@@ -3780,7 +3824,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:kinetics/x2eef969c74e0d802:reaction-mechanisms/v/pre-equilibrium-approximation",
       "type": "video",
       "platform": "khan",
-      "tier": "A",
+      "tier": "B",
       "estimated_minutes": 13,
       "concepts": [
         "unit5-steady-state-multistep"
@@ -3794,7 +3838,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:kinetics/x2eef969c74e0d802:reaction-mechanisms/v/multistep-reaction-energy-profile",
       "type": "video",
       "platform": "khan",
-      "tier": "A",
+      "tier": "B",
       "estimated_minutes": 11,
       "concepts": [
         "unit5-steady-state-multistep"
@@ -3808,7 +3852,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:kinetics/x2eef969c74e0d802:reaction-mechanisms/e/reaction-mechanisms-and-rate-laws",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "estimated_minutes": 15,
       "concepts": [
         "unit5-steady-state-multistep"
@@ -3850,7 +3894,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:kinetics/x2eef969c74e0d802:catalysis/v/catalysts",
       "type": "video",
       "platform": "khan",
-      "tier": "A",
+      "tier": "B",
       "estimated_minutes": 12,
       "concepts": [
         "unit5-catalysis"
@@ -3864,7 +3908,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:kinetics/x2eef969c74e0d802:catalysis/v/enzyme-catalysis",
       "type": "video",
       "platform": "khan",
-      "tier": "A",
+      "tier": "B",
       "estimated_minutes": 11,
       "concepts": [
         "unit5-catalysis"
@@ -3878,7 +3922,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry/kinetics-ap/arrhenius-equation-mechanisms-ap/v/catalysts",
       "type": "video",
       "platform": "khan",
-      "tier": "A",
+      "tier": "B",
       "estimated_minutes": 15,
       "concepts": [
         "unit5-catalysis"
@@ -3963,7 +4007,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:thermodynamics/x2eef969c74e0d802:endothermic-and-exothermic-processes/e/endothermic-and-exothermic-processes",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "estimated_minutes": 15,
       "concepts": [
         "unit6-endo-exo-energy-diagrams"
@@ -3977,7 +4021,7 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/5-1-energy-basics",
       "type": "reading",
       "platform": "openstax",
-      "tier": "B",
+      "tier": "A",
       "estimated_minutes": 20,
       "concepts": [
         "unit6-endo-exo-energy-diagrams"
@@ -4033,7 +4077,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:thermodynamics/x2eef969c74e0d802:heat-capacity-and-calorimetry/e/heat-capacity-and-calorimetry",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "estimated_minutes": 15,
       "concepts": [
         "unit6-heat-transfer-calorimetry"
@@ -4047,7 +4091,7 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/5-2-calorimetry",
       "type": "reading",
       "platform": "openstax",
-      "tier": "B",
+      "tier": "A",
       "estimated_minutes": 20,
       "concepts": [
         "unit6-heat-transfer-calorimetry"
@@ -4103,7 +4147,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:thermodynamics/x2eef969c74e0d802:hess-s-law/e/hess-s-law",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "estimated_minutes": 15,
       "concepts": [
         "unit6-hess-law"
@@ -4117,7 +4161,7 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/5-3-enthalpy",
       "type": "reading",
       "platform": "openstax",
-      "tier": "B",
+      "tier": "A",
       "estimated_minutes": 20,
       "concepts": [
         "unit6-hess-law"
@@ -4173,7 +4217,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:thermodynamics/x2eef969c74e0d802:bond-enthalpies/e/bond-enthalpies",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "estimated_minutes": 15,
       "concepts": [
         "unit6-bond-enthalpies"
@@ -4187,7 +4231,7 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/5-3-enthalpy",
       "type": "reading",
       "platform": "openstax",
-      "tier": "B",
+      "tier": "A",
       "estimated_minutes": 15,
       "concepts": [
         "unit6-bond-enthalpies"
@@ -4243,7 +4287,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:thermodynamics/x2eef969c74e0d802:enthalpy-of-formation/e/enthalpy-of-formation",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "estimated_minutes": 15,
       "concepts": [
         "unit6-enthalpy-formation"
@@ -4257,7 +4301,7 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/5-3-enthalpy",
       "type": "reading",
       "platform": "openstax",
-      "tier": "B",
+      "tier": "A",
       "estimated_minutes": 20,
       "concepts": [
         "unit6-enthalpy-formation"
@@ -4285,7 +4329,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:thermodynamics/x2eef969c74e0d802:entropy/v/introduction-to-entropy",
       "type": "video",
       "platform": "khan",
-      "tier": "A",
+      "tier": "B",
       "estimated_minutes": 12,
       "concepts": [
         "unit6-entropy"
@@ -4299,7 +4343,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:thermodynamics/x2eef969c74e0d802:entropy/v/entropy-and-second-law-of-thermodynamics",
       "type": "video",
       "platform": "khan",
-      "tier": "A",
+      "tier": "B",
       "estimated_minutes": 11,
       "concepts": [
         "unit6-entropy"
@@ -4313,7 +4357,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:thermodynamics/x2eef969c74e0d802:entropy/e/entropy",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "estimated_minutes": 15,
       "concepts": [
         "unit6-entropy"
@@ -4355,7 +4399,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:thermodynamics/x2eef969c74e0d802:gibbs-free-energy-and-thermodynamic-favorability/v/gibbs-free-energy-and-spontaneity",
       "type": "video",
       "platform": "khan",
-      "tier": "A",
+      "tier": "B",
       "estimated_minutes": 13,
       "concepts": [
         "unit6-gibbs-free-energy"
@@ -4369,7 +4413,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:thermodynamics/x2eef969c74e0d802:thermodynamic-and-kinetic-control/v/thermodynamic-and-kinetic-control",
       "type": "video",
       "platform": "khan",
-      "tier": "A",
+      "tier": "B",
       "estimated_minutes": 11,
       "concepts": [
         "unit6-gibbs-free-energy"
@@ -4383,7 +4427,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:thermodynamics/x2eef969c74e0d802:gibbs-free-energy-and-thermodynamic-favorability/e/gibbs-free-energy",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "estimated_minutes": 15,
       "concepts": [
         "unit6-gibbs-free-energy"
@@ -4482,7 +4526,7 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/13-1-chemical-equilibria",
       "type": "reading",
       "platform": "openstax",
-      "tier": "B",
+      "tier": "A",
       "estimated_minutes": 20,
       "concepts": [
         "unit7-intro-equilibrium"
@@ -4552,7 +4596,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:equilibrium/x2eef969c74e0d802:reaction-quotient-and-equilibrium-constant/e/equilibrium-constant",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "estimated_minutes": 15,
       "concepts": [
         "unit7-reaction-quotient-keq"
@@ -4566,7 +4610,7 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/13-2-equilibrium-constants",
       "type": "reading",
       "platform": "openstax",
-      "tier": "B",
+      "tier": "A",
       "estimated_minutes": 20,
       "concepts": [
         "unit7-reaction-quotient-keq"
@@ -4637,7 +4681,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:equilibrium/x2eef969c74e0d802:calculating-equilibrium-concentrations/e/calculating-equilibrium-concentrations",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "estimated_minutes": 20,
       "concepts": [
         "unit7-magnitude-properties-keq"
@@ -4651,7 +4695,7 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/13-4-equilibrium-calculations",
       "type": "reading",
       "platform": "openstax",
-      "tier": "B",
+      "tier": "A",
       "estimated_minutes": 25,
       "concepts": [
         "unit7-magnitude-properties-keq"
@@ -4693,7 +4737,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:equilibrium/x2eef969c74e0d802:representations-of-equilibrium/e/representations-of-equilibrium",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "estimated_minutes": 15,
       "concepts": [
         "unit7-representations-equilibrium"
@@ -4707,7 +4751,7 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/13-2-equilibrium-constants",
       "type": "reading",
       "platform": "openstax",
-      "tier": "B",
+      "tier": "A",
       "estimated_minutes": 20,
       "concepts": [
         "unit7-representations-equilibrium"
@@ -4763,7 +4807,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:equilibrium/x2eef969c74e0d802:le-chatelier-s-principle/e/le-chatelier-s-principle",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "estimated_minutes": 15,
       "concepts": [
         "unit7-le-chatelier"
@@ -4777,7 +4821,7 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/13-5-shifting-equilibria-le-chateliers-principle",
       "type": "reading",
       "platform": "openstax",
-      "tier": "B",
+      "tier": "A",
       "estimated_minutes": 20,
       "concepts": [
         "unit7-le-chatelier"
@@ -4847,7 +4891,7 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/15-1-precipitation-and-dissolution",
       "type": "reading",
       "platform": "openstax",
-      "tier": "B",
+      "tier": "A",
       "estimated_minutes": 20,
       "concepts": [
         "unit7-solubility-equilibria"
@@ -4903,7 +4947,7 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/15-3-coupled-equilibria",
       "type": "reading",
       "platform": "openstax",
-      "tier": "B",
+      "tier": "A",
       "estimated_minutes": 20,
       "concepts": [
         "unit7-ph-solubility"
@@ -4989,7 +5033,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:acids-and-bases/x2eef969c74e0d802:introduction-to-acids-and-bases/e/introduction-to-acids-and-bases",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "estimated_minutes": 15,
       "concepts": [
         "unit8-intro-acids-bases-ph"
@@ -5003,7 +5047,7 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/14-1-bronsted-lowry-acids-and-bases",
       "type": "reading",
       "platform": "openstax",
-      "tier": "B",
+      "tier": "A",
       "estimated_minutes": 20,
       "concepts": [
         "unit8-intro-acids-bases-ph"
@@ -5059,7 +5103,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:acids-and-bases/x2eef969c74e0d802:acid-base-reactions-and-buffers/e/acid-base-reactions",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "estimated_minutes": 15,
       "concepts": [
         "unit8-acid-base-reactions"
@@ -5073,7 +5117,7 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/14-3-relative-strengths-of-acids-and-bases",
       "type": "reading",
       "platform": "openstax",
-      "tier": "B",
+      "tier": "A",
       "estimated_minutes": 20,
       "concepts": [
         "unit8-acid-base-reactions"
@@ -5144,7 +5188,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:acids-and-bases/x2eef969c74e0d802:acid-base-buffers/e/buffer-solutions",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "estimated_minutes": 15,
       "concepts": [
         "unit8-buffers-henderson"
@@ -5158,7 +5202,7 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/14-6-buffers",
       "type": "reading",
       "platform": "openstax",
-      "tier": "B",
+      "tier": "A",
       "estimated_minutes": 20,
       "concepts": [
         "unit8-buffers-henderson"
@@ -5214,7 +5258,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:acids-and-bases/x2eef969c74e0d802:buffer-capacity/e/buffer-capacity",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "estimated_minutes": 15,
       "concepts": [
         "unit8-buffers-advanced"
@@ -5228,7 +5272,7 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/14-6-buffers",
       "type": "reading",
       "platform": "openstax",
-      "tier": "B",
+      "tier": "A",
       "estimated_minutes": 20,
       "concepts": [
         "unit8-buffers-advanced"
@@ -5284,7 +5328,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:acids-and-bases/x2eef969c74e0d802:acid-base-titrations/e/acid-base-titrations",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "estimated_minutes": 20,
       "concepts": [
         "unit8-titrations"
@@ -5298,7 +5342,7 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/14-7-acid-base-titrations",
       "type": "reading",
       "platform": "openstax",
-      "tier": "B",
+      "tier": "A",
       "estimated_minutes": 25,
       "concepts": [
         "unit8-titrations"
@@ -5368,7 +5412,7 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/14-4-hydrolysis-of-salts",
       "type": "reading",
       "platform": "openstax",
-      "tier": "B",
+      "tier": "A",
       "estimated_minutes": 20,
       "concepts": [
         "unit8-molecular-structure-acids"
@@ -5438,7 +5482,7 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/14-2-ph-and-poh",
       "type": "reading",
       "platform": "openstax",
-      "tier": "B",
+      "tier": "A",
       "estimated_minutes": 20,
       "concepts": [
         "unit8-ph-pka"
@@ -5466,7 +5510,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:applications-of-thermodynamics/x2eef969c74e0d802:introduction-to-entropy/v/introduction-to-entropy",
       "type": "video",
       "platform": "khan",
-      "tier": "A",
+      "tier": "B",
       "estimated_minutes": 11,
       "concepts": [
         "unit9-entropy-absolute"
@@ -5480,7 +5524,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:applications-of-thermodynamics/x2eef969c74e0d802:absolute-entropy-and-entropy-change/v/absolute-entropy-and-entropy-change",
       "type": "video",
       "platform": "khan",
-      "tier": "A",
+      "tier": "B",
       "estimated_minutes": 12,
       "concepts": [
         "unit9-entropy-absolute"
@@ -5494,7 +5538,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:applications-of-thermodynamics/x2eef969c74e0d802:introduction-to-entropy/e/entropy",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "estimated_minutes": 15,
       "concepts": [
         "unit9-entropy-absolute"
@@ -5536,7 +5580,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:applications-of-thermodynamics/x2eef969c74e0d802:gibbs-free-energy-and-thermodynamic-favorability/v/gibbs-free-energy-and-thermodynamic-favorability",
       "type": "video",
       "platform": "khan",
-      "tier": "A",
+      "tier": "B",
       "estimated_minutes": 13,
       "concepts": [
         "unit9-gibbs-thermodynamic-kinetic"
@@ -5550,7 +5594,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry/thermodynamics-ap/gibbs-free-energy-tutorial-ap/v/gibbs-free-energy-and-spontaneity",
       "type": "video",
       "platform": "khan",
-      "tier": "A",
+      "tier": "B",
       "estimated_minutes": 11,
       "concepts": [
         "unit9-gibbs-thermodynamic-kinetic"
@@ -5564,7 +5608,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:applications-of-thermodynamics/x2eef969c74e0d802:gibbs-free-energy-and-thermodynamic-favorability/e/gibbs-free-energy",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "estimated_minutes": 15,
       "concepts": [
         "unit9-gibbs-thermodynamic-kinetic"
@@ -5606,7 +5650,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:applications-of-thermodynamics/x2eef969c74e0d802:free-energy-and-equilibrium/v/free-energy-and-equilibrium",
       "type": "video",
       "platform": "khan",
-      "tier": "A",
+      "tier": "B",
       "estimated_minutes": 12,
       "concepts": [
         "unit9-free-energy-equilibrium"
@@ -5620,7 +5664,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry/thermodynamics-ap/gibbs-free-energy-tutorial-ap/v/standard-change-in-free-energy-and-the-equilibrium-constant",
       "type": "video",
       "platform": "khan",
-      "tier": "A",
+      "tier": "B",
       "estimated_minutes": 11,
       "concepts": [
         "unit9-free-energy-equilibrium"
@@ -5634,7 +5678,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:applications-of-thermodynamics/x2eef969c74e0d802:free-energy-and-equilibrium/e/free-energy-and-equilibrium",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "estimated_minutes": 15,
       "concepts": [
         "unit9-free-energy-equilibrium"
@@ -5676,7 +5720,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:applications-of-thermodynamics/x2eef969c74e0d802:coupled-reactions/v/coupled-reactions",
       "type": "video",
       "platform": "khan",
-      "tier": "A",
+      "tier": "B",
       "estimated_minutes": 11,
       "concepts": [
         "unit9-coupled-reactions"
@@ -5690,7 +5734,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry/thermodynamics-ap/gibbs-free-energy-tutorial-ap/v/changes-in-free-energy-and-the-reaction-quotient",
       "type": "video",
       "platform": "khan",
-      "tier": "A",
+      "tier": "B",
       "estimated_minutes": 10,
       "concepts": [
         "unit9-coupled-reactions"
@@ -5704,7 +5748,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:applications-of-thermodynamics/x2eef969c74e0d802:coupled-reactions/e/coupled-reactions",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "estimated_minutes": 15,
       "concepts": [
         "unit9-coupled-reactions"
@@ -5774,7 +5818,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:applications-of-thermodynamics/x2eef969c74e0d802:galvanic-voltaic-cells/e/galvanic-cells",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "estimated_minutes": 15,
       "concepts": [
         "unit9-galvanic-cells"
@@ -5788,7 +5832,7 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/17-2-galvanic-cells",
       "type": "reading",
       "platform": "openstax",
-      "tier": "B",
+      "tier": "A",
       "estimated_minutes": 20,
       "concepts": [
         "unit9-galvanic-cells"
@@ -5844,7 +5888,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:applications-of-thermodynamics/x2eef969c74e0d802:galvanic-voltaic-cells/e/cell-potential",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "estimated_minutes": 15,
       "concepts": [
         "unit9-cell-potential"
@@ -5858,7 +5902,7 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/17-3-electrode-and-cell-potentials",
       "type": "reading",
       "platform": "openstax",
-      "tier": "B",
+      "tier": "A",
       "estimated_minutes": 25,
       "concepts": [
         "unit9-cell-potential"
@@ -5914,7 +5958,7 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:applications-of-thermodynamics/x2eef969c74e0d802:electrolysis-and-faraday-s-law/e/electrolysis-and-faraday-s-law",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "estimated_minutes": 15,
       "concepts": [
         "unit9-electrolysis-faraday"
@@ -5928,7 +5972,7 @@
       "url": "https://openstax.org/books/chemistry-2e/pages/17-7-electrolysis",
       "type": "reading",
       "platform": "openstax",
-      "tier": "B",
+      "tier": "A",
       "estimated_minutes": 20,
       "concepts": [
         "unit9-electrolysis-faraday"
@@ -5956,13 +6000,111 @@
       "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:chemical-reactions/x2eef969c74e0d802:net-ionic-equations/e/net-ionic-equations",
       "type": "exercise",
       "platform": "khan",
-      "tier": "A",
+      "tier": "C",
       "estimated_minutes": 15,
       "concepts": [
         "unit4-net-ionic-equations"
       ],
       "week": 4,
       "day": 1
+    },
+    {
+      "id": "gas-khan-ideal-gas-eq",
+      "title": "Ideal gas equation: PV = nRT",
+      "url": "https://www.khanacademy.org/science/ap-chemistry/gases-and-kinetic-molecular-theory-ap/ideal-gas-laws-ap/v/ideal-gas-equation-pv-nrt",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 14,
+      "concepts": [
+        "gas-ideal-gas-law"
+      ],
+      "week": 3,
+      "day": 4
+    },
+    {
+      "id": "gas-khan-ideal-gas-moles",
+      "title": "Using the ideal gas law: calculating moles",
+      "url": "https://www.khanacademy.org/science/ap-chemistry/gases-and-kinetic-molecular-theory-ap/ideal-gas-laws-ap/v/worked-example-using-the-ideal-gas-law-to-calculate-number-of-moles",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 8,
+      "concepts": [
+        "gas-ideal-gas-law"
+      ],
+      "week": 3,
+      "day": 4
+    },
+    {
+      "id": "gas-khan-ideal-gas-volume",
+      "title": "Using the ideal gas law: calculating volume change",
+      "url": "https://www.khanacademy.org/science/ap-chemistry/gases-and-kinetic-molecular-theory-ap/ideal-gas-laws-ap/v/worked-example-using-the-ideal-gas-law-to-calculate-a-change-in-volume",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 8,
+      "concepts": [
+        "gas-ideal-gas-law"
+      ],
+      "week": 3,
+      "day": 4
+    },
+    {
+      "id": "gas-khan-partial-pressure",
+      "title": "Introduction to partial pressure",
+      "url": "https://www.khanacademy.org/science/ap-chemistry/gases-and-kinetic-molecular-theory-ap/ideal-gas-laws-ap/v/introduction-to-partial-pressure",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 10,
+      "concepts": [
+        "gas-partial-pressure-kmt"
+      ],
+      "week": 3,
+      "day": 5
+    },
+    {
+      "id": "gas-khan-partial-pressure-ex",
+      "title": "Partial pressure calculations",
+      "url": "https://www.khanacademy.org/science/ap-chemistry/gases-and-kinetic-molecular-theory-ap/ideal-gas-laws-ap/v/partial-pressure",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 10,
+      "concepts": [
+        "gas-partial-pressure-kmt"
+      ],
+      "week": 3,
+      "day": 5
+    },
+    {
+      "id": "gas-khan-maxwell-boltzmann",
+      "title": "Maxwell-Boltzmann distribution",
+      "url": "https://www.khanacademy.org/science/ap-chemistry/gases-and-kinetic-molecular-theory-ap/ideal-gas-laws-ap/v/maxwell-boltzmann-distribution",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 10,
+      "concepts": [
+        "gas-partial-pressure-kmt"
+      ],
+      "week": 3,
+      "day": 5
+    },
+    {
+      "id": "gas-khan-non-ideal",
+      "title": "Non-ideal behavior of gases (van der Waals)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry/gases-and-kinetic-molecular-theory-ap/ideal-gas-laws-ap/a/non-ideal-behavior-of-gases",
+      "type": "article",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 15,
+      "concepts": [
+        "gas-partial-pressure-kmt"
+      ],
+      "week": 3,
+      "day": 5
     }
   ]
 }
