@@ -376,14 +376,15 @@
       "name_zh": "反应简介、净离子方程与反应表示",
       "name_en": "Intro to Reactions, Net Ionic Equations, and Representations",
       "unit": 4,
-      "ced_topic": "4.2",
-      "ced_topic_name": "Net Ionic Equations",
+      "ced_topic": "4.1",
+      "ced_topic_name": "Introduction to Reactions, Net Ionic Equations, and Representations (4.1–4.3)",
       "week": 4,
       "day": 1,
       "prerequisites": [],
       "openstax_sections": [
         "4.1",
-        "4.2"
+        "4.2",
+        "4.3"
       ]
     },
     {
@@ -517,7 +518,7 @@
         "unit5-reaction-rates-rate-law"
       ],
       "openstax_sections": [
-        "12.3"
+        "12.4"
       ]
     },
     {
@@ -1060,7 +1061,7 @@
         "unit9-cell-potential"
       ],
       "openstax_sections": [
-        "17.5"
+        "17.7"
       ]
     }
   ],
@@ -2571,8 +2572,8 @@
     },
     {
       "id": "chem-w3-openstax-beers-law-b",
-      "title": "OpenStax Chemistry 2e: 11.3 Solubility (Concentration and Absorbance)",
-      "url": "https://openstax.org/books/chemistry-2e/pages/11-3-solubility",
+      "title": "OpenStax Chemistry 2e: 3.3 Molarity (浓度基础 — Beer-Lambert 背景)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/3-3-molarity",
       "type": "reading",
       "platform": "openstax",
       "tier": "B",
@@ -2715,8 +2716,8 @@
     },
     {
       "id": "chem-w3-khan-imf-review-exercise",
-      "title": "IMF applications — Unit 3 review (practice)",
-      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:intermolecular-forces-and-properties/x2eef969c74e0d802:intermolecular-forces/e/intermolecular-forces",
+      "title": "IMF & Properties — Unit 3 Unit Test (Khan Academy)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:intermolecular-forces-and-properties/test/x2eef969c74e0d802:intermolecular-forces-and-properties-unit-test",
       "type": "exercise",
       "platform": "khan",
       "tier": "A",
@@ -5415,8 +5416,8 @@
     },
     {
       "id": "chem-w9-openstax-gibbs",
-      "title": "OpenStax Chemistry 2e: 16.3 The Second and Third Laws and 16.4 Free Energy",
-      "url": "https://openstax.org/books/chemistry-2e/pages/16-3-the-second-and-third-laws-of-thermodynamics",
+      "title": "OpenStax Chemistry 2e: 16.4 Free Energy (Gibbs 自由能)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/16-4-free-energy",
       "type": "reading",
       "platform": "openstax",
       "tier": "B",
@@ -5790,6 +5791,20 @@
       ],
       "week": 9,
       "day": 7
+    },
+    {
+      "id": "chem-w4-khan-net-ionic-exercise",
+      "title": "Net Ionic Equations (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:chemical-reactions/x2eef969c74e0d802:net-ionic-equations/e/net-ionic-equations",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 15,
+      "concepts": [
+        "unit4-net-ionic-equations"
+      ],
+      "week": 4,
+      "day": 1
     }
   ]
 }
