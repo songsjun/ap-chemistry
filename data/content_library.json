@@ -2,7 +2,7 @@
   "metadata": {
     "version": "1.0.0",
     "subject": "AP Chemistry",
-    "description": "AP Chemistry content library — Week 1 complete, Weeks 2-9 skeleton"
+    "description": "AP Chemistry content library — All 9 units complete"
   },
   "concepts": [
     {
@@ -380,9 +380,7 @@
       "ced_topic_name": "Net Ionic Equations",
       "week": 4,
       "day": 1,
-      "prerequisites": [
-        "chem-w3-placeholder"
-      ],
+      "prerequisites": [],
       "openstax_sections": [
         "4.1",
         "4.2"

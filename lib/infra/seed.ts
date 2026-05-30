@@ -5,6 +5,7 @@ import type { Resource, KnowledgePoint } from '@/lib/types'
 type RawResource = Omit<Resource, 'adapter_type' | 'phase' | 'slot_order'> & {
   url?: string | null
   answer_url?: string
+  phase?: Resource['phase']
 }
 
 function deriveAdapterType(r: RawResource): Resource['adapter_type'] {
@@ -61,7 +62,7 @@ export async function seedContentLibrary(): Promise<void> {
     return {
       ...r,
       adapter_type,
-      phase: derivePhase(r.type),
+      phase: r.phase ?? derivePhase(r.type),
       slot_order: slotOrders.get(r.id) ?? 0,
       url: r.url ?? null,
       answer_url: r.answer_url,
