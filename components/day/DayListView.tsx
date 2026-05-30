@@ -314,6 +314,17 @@ export function DayListView({ week, day }: { week: number; day: number }) {
         </div>
       )}
 
+      {/* Alberta course legend */}
+      <div className="flex items-center gap-2 flex-wrap text-[11px] text-stone-400 dark:text-stone-500 px-1">
+        <span>Alberta 对应课程：</span>
+        <span className="inline-flex items-center gap-1">
+          <span className="bg-indigo-100 dark:bg-indigo-900/40 text-indigo-600 dark:text-indigo-400 px-1.5 py-px rounded font-medium">AB 化学 20-1</span>
+          <span className="bg-teal-100 dark:bg-teal-900/40 text-teal-600 dark:text-teal-400 px-1.5 py-px rounded font-medium">AB 化学 30-1</span>
+          <span className="bg-stone-100 dark:bg-stone-700 text-stone-400 dark:text-stone-500 px-1.5 py-px rounded font-medium">AP 专属</span>
+        </span>
+        <span>· 点击各资源「详情」查看</span>
+      </div>
+
       {/* A 必做 */}
       {aTier.length > 0 ? (
         <TierSection

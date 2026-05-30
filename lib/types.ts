@@ -71,6 +71,7 @@ export interface KnowledgePoint {
   openstax_sections: string[]
   week: number
   day: number
+  alberta_tags: ('chem20' | 'chem30')[]
 }
 
 // ── Completion: persisted user record ──

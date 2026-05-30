@@ -283,11 +283,20 @@ function ResourceRow({ resource, completion, kpMap, scoringId, onCheckDirect, on
             {cedCodes && (
               <span className="text-[11px] text-stone-400 font-mono">CED {cedCodes}</span>
             )}
-            {kps.slice(0, 2).map(kp => (
-              <span key={kp.id} className="text-[11px] bg-stone-100 dark:bg-stone-700 text-stone-500 dark:text-stone-400 px-1.5 py-0.5 rounded-md">
-                {kp.name_zh}
-              </span>
-            ))}
+            {kps.slice(0, 2).map(kp => {
+              const tags = kp.alberta_tags ?? []
+              return (
+                <span key={kp.id} className="inline-flex items-center gap-1 text-[11px] bg-stone-100 dark:bg-stone-700 text-stone-500 dark:text-stone-400 px-1.5 py-0.5 rounded-md">
+                  {kp.name_zh}
+                  {tags.includes('chem20') && (
+                    <span className="text-[9px] bg-indigo-100 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400 px-1 rounded leading-none font-medium">20</span>
+                  )}
+                  {tags.includes('chem30') && (
+                    <span className="text-[9px] bg-teal-100 dark:bg-teal-900/50 text-teal-600 dark:text-teal-400 px-1 rounded leading-none font-medium">30</span>
+                  )}
+                </span>
+              )
+            })}
             <button
               onClick={() => setExpanded(e => !e)}
               className="text-[11px] text-blue-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors ml-0.5"
@@ -348,10 +357,26 @@ function ResourceRow({ resource, completion, kpMap, scoringId, onCheckDirect, on
           )}
           {kps.length > 0 && (
             <div className="flex gap-2">
-              <span className="text-stone-300 dark:text-stone-600 shrink-0 w-14 text-right">知识点</span>
-              <span className="text-stone-600 dark:text-stone-400">
-                {kps.map(k => `CED ${k.ced_topic} ${k.name_en}`).join('  ·  ')}
-              </span>
+              <span className="text-stone-300 dark:text-stone-600 shrink-0 w-14 text-right pt-0.5">知识点</span>
+              <div className="flex flex-col gap-1.5">
+                {kps.map(k => {
+                  const tags = k.alberta_tags ?? []
+                  return (
+                    <div key={k.id} className="flex items-center gap-1.5 flex-wrap">
+                      <span className="text-stone-600 dark:text-stone-400">CED {k.ced_topic} {k.name_en}</span>
+                      {tags.includes('chem20') && (
+                        <span className="text-[10px] bg-indigo-100 dark:bg-indigo-900/40 text-indigo-600 dark:text-indigo-400 px-1.5 py-px rounded font-medium whitespace-nowrap">AB 化学 20-1</span>
+                      )}
+                      {tags.includes('chem30') && (
+                        <span className="text-[10px] bg-teal-100 dark:bg-teal-900/40 text-teal-600 dark:text-teal-400 px-1.5 py-px rounded font-medium whitespace-nowrap">AB 化学 30-1</span>
+                      )}
+                      {tags.length === 0 && (
+                        <span className="text-[10px] bg-stone-100 dark:bg-stone-700 text-stone-400 dark:text-stone-500 px-1.5 py-px rounded font-medium">AP 专属</span>
+                      )}
+                    </div>
+                  )
+                })}
+              </div>
             </div>
           )}
           {openstaxSections.length > 0 && (

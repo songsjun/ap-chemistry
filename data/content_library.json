@@ -17,6 +17,9 @@
       "prerequisites": [],
       "openstax_sections": [
         "3.1"
+      ],
+      "alberta_tags": [
+        "chem20"
       ]
     },
     {
@@ -33,7 +36,8 @@
       ],
       "openstax_sections": [
         "2.3"
-      ]
+      ],
+      "alberta_tags": []
     },
     {
       "id": "atomic-elemental-composition",
@@ -50,6 +54,9 @@
       "openstax_sections": [
         "3.1",
         "3.2"
+      ],
+      "alberta_tags": [
+        "chem20"
       ]
     },
     {
@@ -66,6 +73,9 @@
       ],
       "openstax_sections": [
         "3.2"
+      ],
+      "alberta_tags": [
+        "chem20"
       ]
     },
     {
@@ -81,6 +91,9 @@
       "openstax_sections": [
         "2.2",
         "6.4"
+      ],
+      "alberta_tags": [
+        "chem20"
       ]
     },
     {
@@ -97,7 +110,8 @@
       ],
       "openstax_sections": [
         "6.4"
-      ]
+      ],
+      "alberta_tags": []
     },
     {
       "id": "atomic-periodic-trends",
@@ -114,6 +128,9 @@
       "openstax_sections": [
         "6.5",
         "7.3"
+      ],
+      "alberta_tags": [
+        "chem20"
       ]
     },
     {
@@ -131,6 +148,9 @@
       "openstax_sections": [
         "7.2",
         "7.5"
+      ],
+      "alberta_tags": [
+        "chem20"
       ]
     },
     {
@@ -148,6 +168,9 @@
       "openstax_sections": [
         "7.1",
         "7.2"
+      ],
+      "alberta_tags": [
+        "chem20"
       ]
     },
     {
@@ -166,6 +189,9 @@
         "7.1",
         "10.5",
         "10.6"
+      ],
+      "alberta_tags": [
+        "chem20"
       ]
     },
     {
@@ -183,6 +209,9 @@
       "openstax_sections": [
         "7.3",
         "7.4"
+      ],
+      "alberta_tags": [
+        "chem20"
       ]
     },
     {
@@ -199,6 +228,9 @@
       ],
       "openstax_sections": [
         "7.4"
+      ],
+      "alberta_tags": [
+        "chem20"
       ]
     },
     {
@@ -215,6 +247,9 @@
       ],
       "openstax_sections": [
         "7.6"
+      ],
+      "alberta_tags": [
+        "chem20"
       ]
     },
     {
@@ -232,6 +267,9 @@
       "openstax_sections": [
         "7.6",
         "7.7"
+      ],
+      "alberta_tags": [
+        "chem20"
       ]
     },
     {
@@ -249,6 +287,9 @@
       "openstax_sections": [
         "8.2",
         "8.3"
+      ],
+      "alberta_tags": [
+        "chem20"
       ]
     },
     {
@@ -266,6 +307,9 @@
       "openstax_sections": [
         "10.1",
         "10.2"
+      ],
+      "alberta_tags": [
+        "chem20"
       ]
     },
     {
@@ -283,6 +327,9 @@
       "openstax_sections": [
         "10.5",
         "10.6"
+      ],
+      "alberta_tags": [
+        "chem20"
       ]
     },
     {
@@ -300,6 +347,9 @@
       "openstax_sections": [
         "11.1",
         "11.2"
+      ],
+      "alberta_tags": [
+        "chem20"
       ]
     },
     {
@@ -317,7 +367,8 @@
       "openstax_sections": [
         "6.1",
         "6.2"
-      ]
+      ],
+      "alberta_tags": []
     },
     {
       "id": "unit3-beer-lambert",
@@ -333,7 +384,8 @@
       ],
       "openstax_sections": [
         "11.3"
-      ]
+      ],
+      "alberta_tags": []
     },
     {
       "id": "unit3-solutions-mixtures",
@@ -351,6 +403,9 @@
         "11.1",
         "11.2",
         "11.3"
+      ],
+      "alberta_tags": [
+        "chem20"
       ]
     },
     {
@@ -369,6 +424,9 @@
         "10.1",
         "10.2",
         "11.1"
+      ],
+      "alberta_tags": [
+        "chem20"
       ]
     },
     {
@@ -385,6 +443,9 @@
         "4.1",
         "4.2",
         "4.3"
+      ],
+      "alberta_tags": [
+        "chem20"
       ]
     },
     {
@@ -403,6 +464,9 @@
         "4.1",
         "4.2",
         "4.3"
+      ],
+      "alberta_tags": [
+        "chem20"
       ]
     },
     {
@@ -420,6 +484,9 @@
       "openstax_sections": [
         "4.2",
         "4.4"
+      ],
+      "alberta_tags": [
+        "chem20"
       ]
     },
     {
@@ -437,6 +504,9 @@
       "openstax_sections": [
         "4.2",
         "4.3"
+      ],
+      "alberta_tags": [
+        "chem20"
       ]
     },
     {
@@ -454,6 +524,10 @@
       "openstax_sections": [
         "14.1",
         "14.2"
+      ],
+      "alberta_tags": [
+        "chem20",
+        "chem30"
       ]
     },
     {
@@ -470,6 +544,9 @@
       ],
       "openstax_sections": [
         "4.4"
+      ],
+      "alberta_tags": [
+        "chem30"
       ]
     },
     {
@@ -486,6 +563,9 @@
       ],
       "openstax_sections": [
         "4.4"
+      ],
+      "alberta_tags": [
+        "chem30"
       ]
     },
     {
@@ -503,7 +583,8 @@
       "openstax_sections": [
         "12.1",
         "12.2"
-      ]
+      ],
+      "alberta_tags": []
     },
     {
       "id": "unit5-integrated-rate-laws",
@@ -519,7 +600,8 @@
       ],
       "openstax_sections": [
         "12.4"
-      ]
+      ],
+      "alberta_tags": []
     },
     {
       "id": "unit5-elementary-reactions-collision",
@@ -536,7 +618,8 @@
       "openstax_sections": [
         "12.4",
         "12.5"
-      ]
+      ],
+      "alberta_tags": []
     },
     {
       "id": "unit5-energy-profile",
@@ -552,7 +635,8 @@
       ],
       "openstax_sections": [
         "12.5"
-      ]
+      ],
+      "alberta_tags": []
     },
     {
       "id": "unit5-reaction-mechanisms",
@@ -568,7 +652,8 @@
       ],
       "openstax_sections": [
         "12.6"
-      ]
+      ],
+      "alberta_tags": []
     },
     {
       "id": "unit5-steady-state-multistep",
@@ -584,7 +669,8 @@
       ],
       "openstax_sections": [
         "12.6"
-      ]
+      ],
+      "alberta_tags": []
     },
     {
       "id": "unit5-catalysis",
@@ -600,7 +686,8 @@
       ],
       "openstax_sections": [
         "12.7"
-      ]
+      ],
+      "alberta_tags": []
     },
     {
       "id": "unit6-endo-exo-energy-diagrams",
@@ -617,6 +704,9 @@
       "openstax_sections": [
         "5.1",
         "5.2"
+      ],
+      "alberta_tags": [
+        "chem30"
       ]
     },
     {
@@ -634,6 +724,9 @@
       "openstax_sections": [
         "5.2",
         "5.3"
+      ],
+      "alberta_tags": [
+        "chem30"
       ]
     },
     {
@@ -650,6 +743,9 @@
       ],
       "openstax_sections": [
         "5.3"
+      ],
+      "alberta_tags": [
+        "chem30"
       ]
     },
     {
@@ -666,6 +762,9 @@
       ],
       "openstax_sections": [
         "5.3"
+      ],
+      "alberta_tags": [
+        "chem30"
       ]
     },
     {
@@ -682,6 +781,9 @@
       ],
       "openstax_sections": [
         "5.3"
+      ],
+      "alberta_tags": [
+        "chem30"
       ]
     },
     {
@@ -698,7 +800,8 @@
       ],
       "openstax_sections": [
         "16.2"
-      ]
+      ],
+      "alberta_tags": []
     },
     {
       "id": "unit6-gibbs-free-energy",
@@ -715,7 +818,8 @@
       "openstax_sections": [
         "16.3",
         "16.4"
-      ]
+      ],
+      "alberta_tags": []
     },
     {
       "id": "unit7-intro-equilibrium",
@@ -732,6 +836,9 @@
       "openstax_sections": [
         "13.1",
         "13.2"
+      ],
+      "alberta_tags": [
+        "chem30"
       ]
     },
     {
@@ -749,6 +856,9 @@
       "openstax_sections": [
         "13.2",
         "13.3"
+      ],
+      "alberta_tags": [
+        "chem30"
       ]
     },
     {
@@ -766,6 +876,9 @@
       "openstax_sections": [
         "13.3",
         "13.4"
+      ],
+      "alberta_tags": [
+        "chem30"
       ]
     },
     {
@@ -782,6 +895,9 @@
       ],
       "openstax_sections": [
         "13.2"
+      ],
+      "alberta_tags": [
+        "chem30"
       ]
     },
     {
@@ -798,6 +914,9 @@
       ],
       "openstax_sections": [
         "13.5"
+      ],
+      "alberta_tags": [
+        "chem30"
       ]
     },
     {
@@ -815,7 +934,8 @@
       "openstax_sections": [
         "15.1",
         "15.2"
-      ]
+      ],
+      "alberta_tags": []
     },
     {
       "id": "unit7-ph-solubility",
@@ -831,7 +951,8 @@
       ],
       "openstax_sections": [
         "15.3"
-      ]
+      ],
+      "alberta_tags": []
     },
     {
       "id": "unit8-intro-acids-bases-ph",
@@ -848,6 +969,10 @@
       "openstax_sections": [
         "14.1",
         "14.2"
+      ],
+      "alberta_tags": [
+        "chem20",
+        "chem30"
       ]
     },
     {
@@ -864,6 +989,10 @@
       ],
       "openstax_sections": [
         "14.3"
+      ],
+      "alberta_tags": [
+        "chem20",
+        "chem30"
       ]
     },
     {
@@ -880,6 +1009,9 @@
       ],
       "openstax_sections": [
         "14.6"
+      ],
+      "alberta_tags": [
+        "chem30"
       ]
     },
     {
@@ -896,6 +1028,9 @@
       ],
       "openstax_sections": [
         "14.6"
+      ],
+      "alberta_tags": [
+        "chem30"
       ]
     },
     {
@@ -912,6 +1047,10 @@
       ],
       "openstax_sections": [
         "14.7"
+      ],
+      "alberta_tags": [
+        "chem20",
+        "chem30"
       ]
     },
     {
@@ -929,6 +1068,9 @@
       "openstax_sections": [
         "14.4",
         "14.5"
+      ],
+      "alberta_tags": [
+        "chem30"
       ]
     },
     {
@@ -946,6 +1088,9 @@
       "openstax_sections": [
         "14.2",
         "14.3"
+      ],
+      "alberta_tags": [
+        "chem30"
       ]
     },
     {
@@ -963,7 +1108,8 @@
       "openstax_sections": [
         "16.1",
         "16.2"
-      ]
+      ],
+      "alberta_tags": []
     },
     {
       "id": "unit9-gibbs-thermodynamic-kinetic",
@@ -980,7 +1126,8 @@
       "openstax_sections": [
         "16.3",
         "16.4"
-      ]
+      ],
+      "alberta_tags": []
     },
     {
       "id": "unit9-free-energy-equilibrium",
@@ -996,7 +1143,8 @@
       ],
       "openstax_sections": [
         "16.4"
-      ]
+      ],
+      "alberta_tags": []
     },
     {
       "id": "unit9-coupled-reactions",
@@ -1012,7 +1160,8 @@
       ],
       "openstax_sections": [
         "16.4"
-      ]
+      ],
+      "alberta_tags": []
     },
     {
       "id": "unit9-galvanic-cells",
@@ -1029,6 +1178,9 @@
       "openstax_sections": [
         "17.2",
         "17.3"
+      ],
+      "alberta_tags": [
+        "chem30"
       ]
     },
     {
@@ -1046,6 +1198,9 @@
       "openstax_sections": [
         "17.3",
         "17.4"
+      ],
+      "alberta_tags": [
+        "chem30"
       ]
     },
     {
@@ -1062,6 +1217,9 @@
       ],
       "openstax_sections": [
         "17.7"
+      ],
+      "alberta_tags": [
+        "chem30"
       ]
     }
   ],
