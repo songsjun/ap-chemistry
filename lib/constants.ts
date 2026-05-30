@@ -1,11 +1,11 @@
 export const PASS_THRESHOLD = 0.75
-export const LIBRARY_VERSION = '1.5.2'
+export const LIBRARY_VERSION = '1.0.0'
 export const WEEKS = 9
 export const DAYS_PER_WEEK = 7
 export const DAILY_CHALLENGE_QUESTION_COUNT = 4
 /** Estimated minutes for the daily challenge quiz (4 questions × ~4 min each). */
 export const QUIZ_ESTIMATED_MINUTES = 15
-export const QUIZ_BANK_VERSION = '1.0.2'
+export const QUIZ_BANK_VERSION = '1.0.0'
 
 // Dashboard day-cell badge score thresholds (calibrated against the new scoring system).
 // With aTotal-denominator and x^1.5 quiz curve:

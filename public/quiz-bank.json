@@ -425,5 +425,2780 @@
     "answer": "化学家处理的是原子和分子，它们极其微小（一个水分子质量约3×10⁻²³克）。如果直接用「个」来计数，做一杯水就要处理约10²⁵个分子，这完全不实用。摩尔相当于化学家的「一打」，就像买鸡蛋我们说「一打=12个」一样，化学里「一摩尔=6.02×10²³个」。关键在于：一摩尔的原子量（g/mol）在数值上等于该元素的相对原子质量，所以只需要用天平称量，就能知道有多少个原子参与反应。这把不可见的粒子世界与可操作的实验室质量连接起来了。",
     "grading_rubric": "需包含：①原子/分子极小，无法单个计数；②摩尔是宏观计量单位（类比一打）；③摩尔质量（g/mol）数值等于相对原子质量；④连接微观粒子数与宏观可测质量",
     "explanation": "摩尔的价值在于：它创造了一个使微观粒子数（6.022×10²³）与宏观可测量（克）之间建立简洁对应关系的桥梁。相对原子质量（无单位）在数值上等于摩尔质量（g/mol），使实验室操作直接可行。"
+  },
+  {
+    "id": "chem-w1-pes-003",
+    "concept_ids": [
+      "atomic-pes"
+    ],
+    "week": 1,
+    "difficulty": 3,
+    "type": "mcq",
+    "question": "某元素的 PES 谱图显示三个峰，结合能从高到低分别对应三个亚层，且峰强度之比约为 2:2:6。该元素最可能是？",
+    "options": [
+      "A. 氖（Ne, Z=10）",
+      "B. 钠（Na, Z=11）",
+      "C. 镁（Mg, Z=12）",
+      "D. 碳（C, Z=6）"
+    ],
+    "answer": "A. 氖（Ne, Z=10）",
+    "grading_rubric": "Ne 电子构型 1s²2s²2p⁶，三个亚层峰强度比 2:2:6",
+    "explanation": "A正确。峰强度比 2:2:6 代表三个亚层分别有 2、2、6 个电子，总计 10 个电子，对应 1s²2s²2p⁶，即 Ne（Z=10）。Na 有 11 个电子，会产生第四个峰（3s¹）；Mg 有 12 个电子；C 只有 6 个电子，比例不符。"
+  },
+  {
+    "id": "chem-w1-periodic-003",
+    "concept_ids": [
+      "atomic-periodic-trends"
+    ],
+    "week": 1,
+    "difficulty": 3,
+    "type": "mcq",
+    "question": "氮（N）的第一电离能异常高于氧（O），最合理的解释是？",
+    "options": [
+      "A. N 的原子半径比 O 小，核对电子束缚更强",
+      "B. N 的 2p 亚层半充满（2p³），具有额外稳定性，比 O 的 2p⁴ 更难失去电子",
+      "C. N 的有效核电荷比 O 大",
+      "D. N 的电负性比 O 高"
+    ],
+    "answer": "B. N 的 2p 亚层半充满（2p³），具有额外稳定性，比 O 的 2p⁴ 更难失去电子",
+    "grading_rubric": "半充满亚层的交换能稳定效应使 N 的第一电离能高于同周期趋势预测值",
+    "explanation": "B正确。同周期从左到右电离能通常递增，但 N（2p³）是例外。N 的三个 2p 电子各占一个轨道（洪特规则，自旋平行），半满亚层具有额外的交换能稳定性。O（2p⁴）有一个轨道容纳两个配对电子，电子间排斥使其比 N 更容易失去电子，导致 O 的第一电离能低于 N。"
+  },
+  {
+    "id": "chem-w1-mass-spec-003",
+    "concept_ids": [
+      "atomic-mass-spectroscopy"
+    ],
+    "week": 1,
+    "difficulty": 3,
+    "type": "mcq",
+    "question": "铜（Cu）有两种天然同位素：⁶³Cu（丰度 69.17%，质量 62.93 u）和 ⁶⁵Cu（丰度 30.83%，质量 64.93 u）。Cu 的平均原子质量最接近？",
+    "options": [
+      "A. 63.50 u",
+      "B. 63.55 u",
+      "C. 64.00 u",
+      "D. 63.00 u"
+    ],
+    "answer": "B. 63.55 u",
+    "grading_rubric": "平均原子质量 = 62.93×0.6917 + 64.93×0.3083 ≈ 63.55 u",
+    "explanation": "B正确。平均原子质量 = (62.93 × 0.6917) + (64.93 × 0.3083) = 43.52 + 20.02 = 63.54 ≈ 63.55 u。答案为B。由于⁶³Cu 丰度远高于⁶⁵Cu，平均值偏向质量数 63 一侧，但不是整数 63，排除 D。"
+  },
+  {
+    "id": "chem-w1-elemental-comp-003",
+    "concept_ids": [
+      "atomic-elemental-composition"
+    ],
+    "week": 1,
+    "difficulty": 3,
+    "type": "feynman",
+    "question": "解释如何从一个化合物的质量百分组成数据推导出其实验式（最简式）。请用一个具体例子说明步骤。",
+    "answer": "步骤：①假设样品总质量为100g，则各元素质量（克）在数值上等于其质量百分数。②将各元素质量除以其摩尔质量，得到摩尔数。③将各摩尔数除以最小值，得到摩尔比。④若摩尔比不是整数，乘以适当整数使其变为最简整数比，即为实验式的下标。\n例：某化合物含 C 40.0%、H 6.67%、O 53.3%。假设 100g：C=40.0g→40.0/12=3.33 mol；H=6.67g→6.67/1=6.67 mol；O=53.3g→53.3/16=3.33 mol。比值 C:H:O = 3.33:6.67:3.33 = 1:2:1。实验式为 CH₂O。",
+    "grading_rubric": "需包含：①假设100g样品；②质量÷摩尔质量求摩尔数；③除以最小值求比；④乘整数得整数比；⑤给出正确实验式",
+    "explanation": "将质量百分比转化为实验式是标准分析化学程序：100g假设简化计算→摩尔数=质量/摩尔质量→比值化简→最简整数比即为实验式下标。CH₂O 是正确实验式（对应葡萄糖、乳酸等多种化合物）。"
+  },
+  {
+    "id": "chem-w1-electron-config-003",
+    "concept_ids": [
+      "atomic-structure-electron-config"
+    ],
+    "week": 1,
+    "difficulty": 3,
+    "type": "mcq",
+    "question": "Fe²⁺ 离子的电子构型是？",
+    "options": [
+      "A. [Ar] 3d⁶ 4s²",
+      "B. [Ar] 3d⁶",
+      "C. [Ar] 3d⁴",
+      "D. [Ar] 3d⁵ 4s¹"
+    ],
+    "answer": "B. [Ar] 3d⁶",
+    "grading_rubric": "Fe 中性原子为 [Ar]3d⁶4s²，形成 Fe²⁺ 时先失去 4s² 电子",
+    "explanation": "B正确。中性 Fe 的电子构型为 [Ar]3d⁶4s²。形成离子时，过渡金属先失去 4s 电子（能量高于已充满的 3d），失去 2 个 4s 电子后 Fe²⁺ 为 [Ar]3d⁶。选B。A错（保留了 4s²）；C错（3d 只剩 4 个）；D 是某些过渡金属的特殊构型，但不是 Fe²⁺。"
+  },
+  {
+    "id": "chem-w5-kinetics-001",
+    "concept_ids": [
+      "unit5-reaction-rates-rate-law"
+    ],
+    "week": 5,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "某反应速率定律为 rate = k[A][B]²，若 [A] 翻倍而 [B] 不变，速率如何变化？",
+    "options": [
+      "A. 速率翻倍",
+      "B. 速率变为4倍",
+      "C. 速率变为8倍",
+      "D. 速率不变"
+    ],
+    "answer": "A. 速率翻倍",
+    "grading_rubric": "rate ∝ [A]¹，[A]×2 → rate×2",
+    "explanation": "A正确。速率定律 rate = k[A][B]²，对 [A] 是一级，所以 [A] 翻倍速率翻倍。[B] 不变，[B]² 项不变。"
+  },
+  {
+    "id": "chem-w5-kinetics-002",
+    "concept_ids": [
+      "unit5-reaction-rates-rate-law"
+    ],
+    "week": 5,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "实验数据：[A] 从 0.10 M 增至 0.20 M，速率从 2.0×10⁻³ M/s 增至 8.0×10⁻³ M/s（其他条件不变）。该反应对 A 的级数是？",
+    "options": [
+      "A. 零级",
+      "B. 一级",
+      "C. 二级",
+      "D. 三级"
+    ],
+    "answer": "C. 二级",
+    "grading_rubric": "[A]×2，speed×4=2²，故为二级",
+    "explanation": "C正确。[A] 翻倍（×2），速率变为原来的4倍（×4）。因为 2^n = 4，所以 n = 2，反应对 A 是二级。"
+  },
+  {
+    "id": "chem-w5-kinetics-003",
+    "concept_ids": [
+      "unit5-reaction-rates-rate-law"
+    ],
+    "week": 5,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "对于二级反应 rate = k[A]²，速率常数 k 的单位是？",
+    "options": [
+      "A. s⁻¹",
+      "B. M⁻¹s⁻¹",
+      "C. M·s⁻¹",
+      "D. M⁻²s⁻¹"
+    ],
+    "answer": "B. M⁻¹s⁻¹",
+    "grading_rubric": "k = rate/[A]² = (M/s)/M² = M⁻¹s⁻¹",
+    "explanation": "B正确。k = rate/[A]² = (M·s⁻¹)/(M²) = M⁻¹·s⁻¹。一级反应 k 单位为 s⁻¹，零级为 M·s⁻¹，二级为 M⁻¹·s⁻¹。"
+  },
+  {
+    "id": "chem-w5-integrated-001",
+    "concept_ids": [
+      "unit5-integrated-rate-laws"
+    ],
+    "week": 5,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "一级反应中，以下哪个图形是线性的？",
+    "options": [
+      "A. [A] vs 时间 t",
+      "B. ln[A] vs 时间 t",
+      "C. 1/[A] vs 时间 t",
+      "D. [A]² vs 时间 t"
+    ],
+    "answer": "B. ln[A] vs 时间 t",
+    "grading_rubric": "一级积分速率方程：ln[A] = -kt + ln[A]₀，是 ln[A] vs t 的线性关系",
+    "explanation": "B正确。一级反应积分速率方程为 ln[A] = -kt + ln[A]₀，斜率为 -k，截距为 ln[A]₀。若 ln[A] vs t 为直线，则确认为一级反应。"
+  },
+  {
+    "id": "chem-w5-integrated-002",
+    "concept_ids": [
+      "unit5-integrated-rate-laws"
+    ],
+    "week": 5,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "某一级反应的半衰期 t₁/₂ = 20 min。60 min 后，剩余反应物的分数是？",
+    "options": [
+      "A. 1/2",
+      "B. 1/4",
+      "C. 1/8",
+      "D. 1/6"
+    ],
+    "answer": "C. 1/8",
+    "grading_rubric": "60 min = 3个半衰期，(1/2)³ = 1/8",
+    "explanation": "C正确。60 min = 3×20 min，经过3个半衰期，剩余分数为 (1/2)³ = 1/8。一级反应半衰期与初始浓度无关，每经过一个 t₁/₂ 浓度减半。"
+  },
+  {
+    "id": "chem-w5-integrated-003",
+    "concept_ids": [
+      "unit5-integrated-rate-laws"
+    ],
+    "week": 5,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "二级反应（rate = k[A]²）与一级反应半衰期的最大区别是？",
+    "options": [
+      "A. 二级反应半衰期与初始浓度无关",
+      "B. 二级反应半衰期随初始浓度增大而减小",
+      "C. 二级反应半衰期随初始浓度增大而增大",
+      "D. 两者半衰期相同"
+    ],
+    "answer": "B. 二级反应半衰期随初始浓度增大而减小",
+    "grading_rubric": "二级反应 t₁/₂ = 1/(k[A]₀)，浓度增大，半衰期减小",
+    "explanation": "B正确。二级反应半衰期 t₁/₂ = 1/(k[A]₀)，与初始浓度成反比，浓度越大半衰期越短。而一级反应 t₁/₂ = 0.693/k，与浓度无关。"
+  },
+  {
+    "id": "chem-w5-collision-001",
+    "concept_ids": [
+      "unit5-elementary-reactions-collision"
+    ],
+    "week": 5,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "根据碰撞理论，有效碰撞需要满足哪两个条件？",
+    "options": [
+      "A. 足够的碰撞能量（≥ Ea）和正确的碰撞方向（取向）",
+      "B. 足够的碰撞频率和高温",
+      "C. 催化剂的存在和低压",
+      "D. 相同分子量和低浓度"
+    ],
+    "answer": "A. 足够的碰撞能量（≥ Ea）和正确的碰撞方向（取向）",
+    "grading_rubric": "有效碰撞需：① 碰撞能量 ≥ 活化能 Ea；② 正确的空间取向",
+    "explanation": "A正确。碰撞理论规定：并非所有碰撞都能发生反应，有效碰撞需同时满足：①碰撞时分子的动能之和大于或等于活化能 Ea；②分子以正确的空间取向相互碰撞，使化学键能够断裂和形成。"
+  },
+  {
+    "id": "chem-w5-energy-profile-001",
+    "concept_ids": [
+      "unit5-energy-profile"
+    ],
+    "week": 5,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "在势能曲线中，正反应的活化能 Ea 等于？",
+    "options": [
+      "A. 产物能量 - 反应物能量",
+      "B. 过渡态（势垒顶点）能量 - 反应物能量",
+      "C. 反应物能量 - 过渡态能量",
+      "D. 产物能量 - 过渡态能量"
+    ],
+    "answer": "B. 过渡态（势垒顶点）能量 - 反应物能量",
+    "grading_rubric": "Ea(正) = E(过渡态) - E(反应物)",
+    "explanation": "B正确。正反应活化能是反应物到达过渡态所需越过的能量势垒：Ea = E(过渡态) - E(反应物)。逆反应的活化能 = E(过渡态) - E(产物) = Ea(正) - ΔH。"
+  },
+  {
+    "id": "chem-w5-energy-profile-002",
+    "concept_ids": [
+      "unit5-energy-profile"
+    ],
+    "week": 5,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "催化剂的作用是？",
+    "options": [
+      "A. 增大反应物浓度",
+      "B. 降低活化能 Ea，但不改变 ΔH",
+      "C. 改变反应的 ΔH，使反应更放热",
+      "D. 增大产物浓度，改变平衡位置"
+    ],
+    "answer": "B. 降低活化能 Ea，但不改变 ΔH",
+    "grading_rubric": "催化剂提供替代路径，降低 Ea，ΔH（反应物与产物能差）不变",
+    "explanation": "B正确。催化剂通过提供能量更低的反应路径（过渡态能量更低）来降低活化能，使更多分子能越过势垒进行反应。但催化剂不改变反应物和产物本身的能量，因此 ΔH 不变，平衡常数也不改变。"
+  },
+  {
+    "id": "chem-w5-mechanisms-001",
+    "concept_ids": [
+      "unit5-reaction-mechanisms"
+    ],
+    "week": 5,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "在多步反应机理中，速率决定步骤（速控步）是？",
+    "options": [
+      "A. 活化能最低的步骤",
+      "B. 活化能最高的步骤（最慢的步骤）",
+      "C. 第一个基元反应",
+      "D. 产生中间体的步骤"
+    ],
+    "answer": "B. 活化能最高的步骤（最慢的步骤）",
+    "grading_rubric": "速控步 = 活化能最大（最慢）的基元反应，决定总反应速率",
+    "explanation": "B正确。就像交通瓶颈决定车辆通行速率，多步反应中活化能最高（最慢）的步骤决定整体反应速率。总速率定律由速控步的化学计量数决定。"
+  },
+  {
+    "id": "chem-w5-mechanisms-002",
+    "concept_ids": [
+      "unit5-steady-state-multistep"
+    ],
+    "week": 5,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "反应机理中的「中间体」（intermediate）是指？",
+    "options": [
+      "A. 催化剂，在反应中不消耗",
+      "B. 在某基元步骤中生成，又在后续步骤中消耗，不出现在净方程中的物种",
+      "C. 反应物之一",
+      "D. 反应速率最慢时出现的物质"
+    ],
+    "answer": "B. 在某基元步骤中生成，又在后续步骤中消耗，不出现在净方程中的物种",
+    "grading_rubric": "中间体：机理中产生并消耗，净方程中不出现",
+    "explanation": "B正确。中间体在某个基元反应步骤中被生成，然后在后续步骤中被消耗，因此不出现在总的净化学方程式中。与催化剂不同：催化剂在反应前就存在，反应后被再生；中间体是全新生成的。"
+  },
+  {
+    "id": "chem-w5-catalysis-001",
+    "concept_ids": [
+      "unit5-catalysis"
+    ],
+    "week": 5,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "均相催化（homogeneous catalysis）与非均相催化（heterogeneous catalysis）的区别是？",
+    "options": [
+      "A. 均相催化剂与反应物在同一相态中，非均相催化剂与反应物在不同相态中",
+      "B. 均相催化只用于气相反应，非均相催化只用于液相反应",
+      "C. 均相催化剂消耗较快，非均相催化剂永久有效",
+      "D. 均相催化改变 ΔH，非均相催化不改变 ΔH"
+    ],
+    "answer": "A. 均相催化剂与反应物在同一相态中，非均相催化剂与反应物在不同相态中",
+    "grading_rubric": "均相=同相（如液相酸催化）；非均相=不同相（如固体Pt催化气相H₂+O₂）",
+    "explanation": "A正确。均相催化剂与反应物处于同一相态（如溶液中的酸碱催化）；非均相催化剂与反应物处于不同相态（如固体铂催化气相反应）。两者均降低 Ea，均不改变 ΔH 和平衡位置。"
+  },
+  {
+    "id": "chem-w5-fill-001",
+    "concept_ids": [
+      "unit5-reaction-rates-rate-law"
+    ],
+    "week": 5,
+    "difficulty": 2,
+    "type": "fill",
+    "question": "速率定律 rate = k[A]^m[B]^n 中，指数 m 和 n 称为______，它们必须由______确定，不能从化学计量方程式直接推导。",
+    "answer": "反应级数；实验数据",
+    "grading_rubric": "第一空：反应级数（reaction orders）；第二空：实验数据（或实验）",
+    "explanation": "m 和 n 是各反应物的反应级数，反映浓度对速率的影响程度。它们必须通过实验（如改变单一组分浓度观察速率变化）来确定，不能从方程式的化学计量系数推测。"
+  },
+  {
+    "id": "chem-w5-fill-002",
+    "concept_ids": [
+      "unit5-integrated-rate-laws"
+    ],
+    "week": 5,
+    "difficulty": 2,
+    "type": "fill",
+    "question": "一级反应的半衰期公式为 t₁/₂ = ______，这说明一级反应的半衰期与初始浓度______（有关/无关）。",
+    "answer": "0.693/k（或 ln2/k）；无关",
+    "grading_rubric": "t₁/₂ = 0.693/k = ln2/k；与初始浓度无关",
+    "explanation": "一级反应积分方程 ln[A] = -kt + ln[A]₀，令 [A] = [A]₀/2 代入得 t₁/₂ = ln2/k ≈ 0.693/k。该式中不含 [A]₀，故半衰期与初始浓度无关——这是一级反应的重要特征。"
+  },
+  {
+    "id": "chem-w5-fill-003",
+    "concept_ids": [
+      "unit5-energy-profile"
+    ],
+    "week": 5,
+    "difficulty": 2,
+    "type": "fill",
+    "question": "对于放热反应，逆反应的活化能______（大于/小于/等于）正反应的活化能。",
+    "answer": "大于",
+    "grading_rubric": "放热反应 ΔH < 0，产物能量低于反应物；逆反应 Ea(逆) = Ea(正) - ΔH，因 ΔH < 0 所以 Ea(逆) > Ea(正)",
+    "explanation": "放热反应中产物能量低于反应物，过渡态到产物的距离比到反应物的距离大，故逆反应活化能更大：Ea(逆) = Ea(正) + |ΔH| > Ea(正)。"
+  },
+  {
+    "id": "chem-w5-fill-004",
+    "concept_ids": [
+      "unit5-catalysis"
+    ],
+    "week": 5,
+    "difficulty": 2,
+    "type": "fill",
+    "question": "酶是一种______催化剂，它通过降低______来加速生物体内的化学反应，且反应后自身______。",
+    "answer": "生物（蛋白质）；活化能 Ea；不被消耗（再生/不变）",
+    "grading_rubric": "酶=生物催化剂；降低活化能；反应后不被消耗",
+    "explanation": "酶是蛋白质分子，作为均相生物催化剂，通过与底物特异性结合形成酶-底物复合物，提供低能量反应路径，降低活化能。反应后酶被释放，可继续催化下一个底物分子。"
+  },
+  {
+    "id": "chem-w5-feynman-001",
+    "concept_ids": [
+      "unit5-elementary-reactions-collision"
+    ],
+    "week": 5,
+    "difficulty": 3,
+    "type": "feynman",
+    "question": "用自己的语言解释：为什么升高温度会显著加快反应速率？从碰撞理论的角度分析。",
+    "answer": "升温加快反应速率有两个原因：①温度升高，分子平均动能增大，分子运动更快，单位时间内碰撞次数（碰撞频率）增加；②更关键的是，动能高于活化能Ea的分子比例大幅增加（Maxwell-Boltzmann分布右移），使有效碰撞比例大增。两者共同作用使反应速率显著提升——通常温度每升高10°C，速率约翻倍。",
+    "grading_rubric": "需包含：①碰撞频率增加；②超过Ea的分子比例增大（更重要）；③两者综合导致速率加快",
+    "explanation": "碰撞理论：速率 = 碰撞频率 × 有效碰撞分数。温度升高使两项均增大，特别是麦克斯韦-玻尔兹曼分布中高能分子比例指数级增加，这是温度对速率影响如此显著的根本原因。"
+  },
+  {
+    "id": "chem-w5-feynman-002",
+    "concept_ids": [
+      "unit5-reaction-mechanisms"
+    ],
+    "week": 5,
+    "difficulty": 3,
+    "type": "feynman",
+    "question": "解释：为什么反应机理中速率决定步骤（最慢步骤）决定了整个反应的速率？用一个类比帮助说明。",
+    "answer": "反应机理是一系列连续步骤，每一步都必须完成前一步的产物才能进行。就像工厂流水线：如果某道工序特别慢，无论其他工序多快，整条流水线的产出速率都受限于这道最慢工序。化学反应也一样：速控步是整个过程的「瓶颈」，其活化能最高，分子最难越过，单位时间内通过的分子数最少，从而决定了整个反应的速率。后续快速步骤只是在等待速控步完成。",
+    "grading_rubric": "需包含：①连续步骤中最慢步决定速率；②类比流水线/瓶颈；③速控步活化能最高，通过分子数最少",
+    "explanation": "速控步是整个机理的限速因子。总速率定律由速控步的基元反应直接给出（若中间体出现在速控步中，需用快速平衡的前置步骤消去中间体浓度）。"
+  },
+  {
+    "id": "chem-w5-feynman-003",
+    "concept_ids": [
+      "unit5-integrated-rate-laws"
+    ],
+    "week": 5,
+    "difficulty": 3,
+    "type": "feynman",
+    "question": "如何用实验数据区分一级反应和二级反应？描述你会如何作图来判断。",
+    "answer": "方法是用积分速率定律作图：对一级反应，ln[A] vs 时间 t 是直线（斜率=-k）；对二级反应，1/[A] vs 时间 t 是直线（斜率=k）。实验步骤：测量不同时间点的反应物浓度 [A]，分别计算 ln[A] 和 1/[A]，然后各自对 t 作图。哪个图是直线，就说明是对应的反应级数。如果两个都不是直线，就试零级（[A] vs t 为直线）。",
+    "grading_rubric": "需包含：①一级：ln[A] vs t 直线；②二级：1/[A] vs t 直线；③通过作图线性度来判断级数",
+    "explanation": "积分速率方程是判断反应级数的实验方法：一级 ln[A]=-kt+ln[A]₀，二级 1/[A]=kt+1/[A]₀，零级 [A]=-kt+[A]₀。"
+  },
+  {
+    "id": "chem-w5-feynman-004",
+    "concept_ids": [
+      "unit5-catalysis"
+    ],
+    "week": 5,
+    "difficulty": 3,
+    "type": "feynman",
+    "question": "解释催化剂为什么既能加快正反应又能加快逆反应，但不改变平衡位置（平衡常数 K）。",
+    "answer": "催化剂通过降低活化能来加速反应，但它对正反应和逆反应的活化能都降低了相同的量。势能曲线上的过渡态能量降低了，但反应物和产物本身的能量没有变化，所以它们之间的能量差（ΔH）不变，K = exp(-ΔG°/RT) 也不变。平衡位置由ΔG°决定，催化剂只是让系统更快地到达同一个平衡点，而不是改变这个平衡点的位置。",
+    "grading_rubric": "需包含：①催化剂同时降低正、逆反应 Ea；②ΔH（反应物与产物能量差）不变；③K 不变，平衡位置不变；④催化剂只加快达到平衡的速度",
+    "explanation": "催化剂降低过渡态能量，正逆反应 Ea 均降低，正逆反应速率都加快，但加快幅度相同，K = k正/k逆 不变，平衡位置不变。"
+  },
+  {
+    "id": "chem-w2-bonds-001",
+    "concept_ids": [
+      "unit2-chemical-bonds"
+    ],
+    "week": 2,
+    "difficulty": 1,
+    "type": "mcq",
+    "question": "两种元素间电负性差值大于 1.7 时，通常形成什么类型的键？",
+    "options": [
+      "A. 非极性共价键",
+      "B. 极性共价键",
+      "C. 离子键",
+      "D. 金属键"
+    ],
+    "answer": "C. 离子键",
+    "grading_rubric": "电负性差 > 1.7 通常判定为离子键",
+    "explanation": "C正确。当两个原子的电负性差值超过约 1.7 时，电子基本完全转移到电负性大的原子，形成离子键。差值 < 0.5 为非极性共价键，0.5–1.7 之间为极性共价键。选C。"
+  },
+  {
+    "id": "chem-w2-bonds-002",
+    "concept_ids": [
+      "unit2-chemical-bonds"
+    ],
+    "week": 2,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "以下哪对元素形成的化学键极性最强？",
+    "options": [
+      "A. C–H（电负性差约 0.4）",
+      "B. N–O（电负性差约 0.5）",
+      "C. H–F（电负性差约 1.9）",
+      "D. C–C（电负性差 = 0）"
+    ],
+    "answer": "C. H–F（电负性差约 1.9）",
+    "grading_rubric": "极性强弱由电负性差决定，H–F 差值最大",
+    "explanation": "C正确。键的极性由两端原子的电负性差决定，差值越大极性越强。H–F 电负性差约 1.9，是四个选项中最大的，因此键的极性最强。选C。D（C–C）电负性差为零，是非极性键。"
+  },
+  {
+    "id": "chem-w2-bonds-fill-001",
+    "concept_ids": [
+      "unit2-chemical-bonds"
+    ],
+    "week": 2,
+    "difficulty": 1,
+    "type": "fill",
+    "question": "共价键中，电子______（共享/转移），而离子键中，电子______（共享/转移）。",
+    "answer": "共享；转移",
+    "grading_rubric": "共价键=共享电子对，离子键=电子完全转移",
+    "explanation": "共价键的本质是两原子共享一对或多对电子；离子键的本质是电子从电负性小的原子（金属）完全转移到电负性大的原子（非金属），形成正负离子对。"
+  },
+  {
+    "id": "chem-w2-ionic-001",
+    "concept_ids": [
+      "unit2-ionic-metallic-solids"
+    ],
+    "week": 2,
+    "difficulty": 1,
+    "type": "mcq",
+    "question": "以下哪种因素会使离子化合物的晶格能更大（即晶体更稳定）？",
+    "options": [
+      "A. 离子电荷越小，半径越大",
+      "B. 离子电荷越大，半径越小",
+      "C. 离子电荷越大，半径越大",
+      "D. 晶格能与离子电荷和半径无关"
+    ],
+    "answer": "B. 离子电荷越大，半径越小",
+    "grading_rubric": "晶格能 ∝ (q⁺×q⁻) / r；电荷大且半径小时晶格能最大",
+    "explanation": "B正确。晶格能（将离子晶体拆散成气态离子所需能量）正比于正负离子电荷的乘积，反比于离子间距（半径之和）。电荷越高、半径越小，静电引力越强，晶格能越大，晶体越稳定。选B。"
+  },
+  {
+    "id": "chem-w2-ionic-002",
+    "concept_ids": [
+      "unit2-ionic-metallic-solids"
+    ],
+    "week": 2,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "比较 NaCl 和 MgO 的晶格能，哪个更大，为什么？",
+    "options": [
+      "A. NaCl 更大，因为 Na⁺ 半径比 Mg²⁺ 小",
+      "B. MgO 更大，因为 Mg²⁺ 和 O²⁻ 带有更高电荷（+2 和 -2）",
+      "C. 两者相同，因为都是 1:1 的离子化合物",
+      "D. NaCl 更大，因为钠的摩尔质量比镁小"
+    ],
+    "answer": "B. MgO 更大，因为 Mg²⁺ 和 O²⁻ 带有更高电荷（+2 和 -2）",
+    "grading_rubric": "MgO 电荷积 (+2)×(-2)=4 vs NaCl (+1)×(-1)=1，晶格能大得多",
+    "explanation": "B正确。NaCl 中离子电荷为 +1 和 -1，电荷积为 1；MgO 中为 +2 和 -2，电荷积为 4。虽然 Mg²⁺ 半径略小于 Na⁺，但主要差异来自电荷：MgO 晶格能约 3800 kJ/mol，远大于 NaCl 的约 786 kJ/mol。选B。"
+  },
+  {
+    "id": "chem-w2-ionic-feynman-001",
+    "concept_ids": [
+      "unit2-ionic-metallic-solids"
+    ],
+    "week": 2,
+    "difficulty": 3,
+    "type": "feynman",
+    "question": "用自己的语言解释：为什么金属能导电，而离子晶体只有在熔化或溶于水后才能导电？",
+    "answer": "导电需要能自由移动的带电粒子。\n金属中的价电子形成「电子海」——它们不属于某个特定原子，可以在整个金属晶格中自由流动，外加电压时立即定向移动，所以金属固态时就能导电。\n离子晶体（如固态 NaCl）中，Na⁺ 和 Cl⁻ 被固定在晶格格点上，无法移动，所以不导电。当 NaCl 熔化或溶于水时，离子从晶格中释放出来，可以自由移动，因此能导电。",
+    "grading_rubric": "需包含：①导电需要自由带电粒子；②金属=自由电子，固态即导电；③离子晶体固态离子被固定；④熔化/溶解后离子自由移动才导电",
+    "explanation": "金属导电依靠自由电子（电子海），离子晶体导电依靠自由离子。固态离子晶体中离子定位于晶格，熔融或溶液状态才能导电，这是鉴别金属键与离子键导电行为的核心区别。"
+  },
+  {
+    "id": "chem-w2-lewis-001",
+    "concept_ids": [
+      "unit2-lewis-diagrams"
+    ],
+    "week": 2,
+    "difficulty": 1,
+    "type": "mcq",
+    "question": "画 Lewis 结构时，第一步应该做什么？",
+    "options": [
+      "A. 确定分子中心原子，计算所有原子的总价电子数",
+      "B. 直接把所有原子用双键连接",
+      "C. 先画出八隅体，再决定中心原子",
+      "D. 根据分子量决定键的数目"
+    ],
+    "answer": "A. 确定分子中心原子，计算所有原子的总价电子数",
+    "grading_rubric": "Lewis 结构步骤：①计算总价电子数→②确定骨架→③分配电子满足八隅体",
+    "explanation": "A正确。画 Lewis 结构的标准步骤：①计算所有原子的总价电子数之和（考虑离子电荷）；②确定中心原子（通常是电负性最小或能形成最多键的原子，如碳）；③用单键连接所有原子；④剩余电子先分配给端原子满足八隅体，最后给中心原子；⑤若中心原子未满八隅体则将孤对电子转为多键。选A。"
+  },
+  {
+    "id": "chem-w2-lewis-002",
+    "concept_ids": [
+      "unit2-lewis-diagrams"
+    ],
+    "week": 2,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "BF₃ 分子中心原子 B 的 Lewis 结构违反了八隅体规则，原因是？",
+    "options": [
+      "A. B 有太多价电子（超过 8 个）",
+      "B. B 只有 3 个价电子，与 3 个 F 形成单键后只有 6 个电子，属于电子缺失",
+      "C. F 的电负性太大，强行夺走了 B 的电子",
+      "D. BF₃ 实际上不存在，所以无法画 Lewis 结构"
+    ],
+    "answer": "B. B 只有 3 个价电子，与 3 个 F 形成单键后只有 6 个电子，属于电子缺失",
+    "grading_rubric": "B 族第 13 族元素价电子数为 3，形成 3 键后中心 B 仅 6 电子，是缺电子分子",
+    "explanation": "B正确。B（第 13 族）只有 3 个价电子，与 3 个 F 各形成一个共价键后，B 周围只有 6 个电子，未满八隅体。这类分子（BF₃、AlCl₃）称为「缺电子」化合物，是路易斯酸（电子对受体）。选B。"
+  },
+  {
+    "id": "chem-w2-lewis-fill-001",
+    "concept_ids": [
+      "unit2-lewis-diagrams"
+    ],
+    "week": 2,
+    "difficulty": 2,
+    "type": "fill",
+    "question": "SF₆ 中心原子 S 周围有 6 个键合 F，共有 12 个电子，这是八隅体规则的______现象，这种情况只发生在第______周期及以后的元素。",
+    "answer": "扩展（超出八隅体）；三（第三周期）",
+    "grading_rubric": "超八隅体（expanded octet）仅发生在 n≥3 的元素，因为有可用的 d 轨道",
+    "explanation": "S 位于第三周期，拥有可用的 3d 空轨道，可以容纳超过 8 个电子（超出八隅体/扩展八隅体）。SF₆ 中 S 有 12 个电子，PCl₅ 中 P 有 10 个电子，均属此类。第二周期元素（C、N、O、F）无 d 轨道，最多 8 个电子。"
+  },
+  {
+    "id": "chem-w2-resonance-001",
+    "concept_ids": [
+      "unit2-resonance-formal-charge"
+    ],
+    "week": 2,
+    "difficulty": 1,
+    "type": "mcq",
+    "question": "形式电荷（formal charge）的计算公式是？",
+    "options": [
+      "A. 形式电荷 = 价电子数 - 非键电子数 - 成键电子数",
+      "B. 形式电荷 = 价电子数 - 非键电子数 - 成键电子数/2",
+      "C. 形式电荷 = 原子序数 - 电子总数",
+      "D. 形式电荷 = 氧化态 - 化合价"
+    ],
+    "answer": "B. 形式电荷 = 价电子数 - 非键电子数 - 成键电子数/2",
+    "grading_rubric": "FC = V - N - B/2（V=价电子，N=非键电子，B=成键电子总数）",
+    "explanation": "B正确。形式电荷计算：FC = (该原子价电子数) - (该原子非键孤对电子数) - (该原子参与成键电子数的一半)。成键电子被平均分配给两个原子，所以除以 2。选B。"
+  },
+  {
+    "id": "chem-w2-resonance-002",
+    "concept_ids": [
+      "unit2-resonance-formal-charge"
+    ],
+    "week": 2,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "关于共振结构，以下说法正确的是？",
+    "options": [
+      "A. 共振结构中，分子在不同结构间来回振动切换",
+      "B. 真实分子是所有共振结构的量子叠加（共振杂化体），键长介于单键和双键之间",
+      "C. 共振结构越多，分子越不稳定",
+      "D. 只有有机分子才有共振结构"
+    ],
+    "answer": "B. 真实分子是所有共振结构的量子叠加（共振杂化体），键长介于单键和双键之间",
+    "grading_rubric": "共振杂化体：真实键级是所有共振结构的平均，不是交替切换",
+    "explanation": "B正确。共振结构只是描述真实电子分布的多种 Lewis 极限式，分子不是在结构间「来回跳」。真实分子是共振杂化体，键级是各共振结构的平均。例如苯（C₆H₆）的 C–C 键长（140 pm）介于单键（154 pm）和双键（134 pm）之间。共振结构越多通常代表离域程度越高，分子越稳定。选B。"
+  },
+  {
+    "id": "chem-w2-resonance-feynman-001",
+    "concept_ids": [
+      "unit2-resonance-formal-charge"
+    ],
+    "week": 2,
+    "difficulty": 3,
+    "type": "feynman",
+    "question": "用自己的语言解释：为什么要用形式电荷来判断哪个 Lewis 共振结构更合理？",
+    "answer": "Lewis 结构有时有多种画法（共振结构），我们用形式电荷来选最佳那个。\n形式电荷告诉我们：如果成键电子被完全平均分配，某原子拥有的电子数和它中性时差多少。最合理的结构应该使所有原子的形式电荷尽量接近零，因为这最接近真实中性分子的电子分布。当有两个结构形式电荷绝对值之和相同时，负形式电荷应该在电负性更大的原子上（更合理，因为电负性大的原子本来就更容易吸引电子）。",
+    "grading_rubric": "需包含：①形式电荷衡量和中性原子的偏差；②最佳结构使形式电荷最小（趋近零）；③负形式电荷优先在电负性大的原子上",
+    "explanation": "形式电荷是筛选共振结构的工具：最合理结构满足①形式电荷总和等于分子电荷；②各原子形式电荷绝对值最小；③负电荷在电负性更大的原子上。这些准则源于电子在真实分子中更均匀分布的物理事实。"
+  },
+  {
+    "id": "chem-w2-vsepr-001",
+    "concept_ids": [
+      "unit2-vsepr-geometry"
+    ],
+    "week": 2,
+    "difficulty": 1,
+    "type": "mcq",
+    "question": "VSEPR 理论预测水分子（H₂O）的分子形状是？",
+    "options": [
+      "A. 线形（180°）",
+      "B. 三角形平面（120°）",
+      "C. V 形（折角形，约 104.5°）",
+      "D. 四面体形（109.5°）"
+    ],
+    "answer": "C. V 形（折角形，约 104.5°）",
+    "grading_rubric": "O 有 4 个电子域（2 键 + 2 孤对），电子域四面体，但分子形状因有孤对为 V 形",
+    "explanation": "C正确。水分子中 O 有 4 个电子域（2 个 O–H 键 + 2 对孤对电子），电子域排列为四面体形。但分子形状只描述原子位置，孤对不计入，因此形状为 V 形（折角形）。孤对电子对键的排斥比键-键排斥大，键角被压缩至约 104.5°，小于理想四面体角 109.5°。选C。"
+  },
+  {
+    "id": "chem-w2-vsepr-002",
+    "concept_ids": [
+      "unit2-vsepr-geometry"
+    ],
+    "week": 2,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "以下分子中，哪个中心原子有 3 个键合原子和 1 对孤对电子，分子形状为三角锥形？",
+    "options": [
+      "A. BF₃",
+      "B. NH₃",
+      "C. CO₂",
+      "D. CH₄"
+    ],
+    "answer": "B. NH₃",
+    "grading_rubric": "NH₃：N 有 3 键 + 1 孤对，4 个电子域，分子形状三角锥形",
+    "explanation": "B正确。NH₃ 中 N 有 3 个 N–H 键和 1 对孤对电子，共 4 个电子域（四面体排列），分子形状为三角锥形（107°）。BF₃ 中 B 有 3 个键无孤对（三角平面）；CO₂ 为线形；CH₄ 为四面体形（4 键无孤对）。选B。"
+  },
+  {
+    "id": "chem-w2-vsepr-fill-001",
+    "concept_ids": [
+      "unit2-vsepr-geometry"
+    ],
+    "week": 2,
+    "difficulty": 1,
+    "type": "fill",
+    "question": "根据 VSEPR 理论，孤对电子对键角的影响是：孤对电子比成键电子占据更______的空间，从而______键角。",
+    "answer": "大；压缩（减小）",
+    "grading_rubric": "孤对电子占据更大空间（斥力更强），使键-键之间角度减小",
+    "explanation": "孤对电子只受一个原子核束缚（而成键电子受两个核共同束缚），在空间上更加扩散，与相邻电子域的排斥力更强，因此压缩键角。例如 NH₃ 键角（107°）< 理想四面体（109.5°），H₂O 键角（104.5°）更小（有 2 对孤对）。"
+  },
+  {
+    "id": "chem-w2-polarity-001",
+    "concept_ids": [
+      "unit2-vsepr-polarity"
+    ],
+    "week": 2,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "CO₂ 含有极性 C=O 键，但整个分子是非极性的，原因是？",
+    "options": [
+      "A. C=O 键实际上是非极性键",
+      "B. CO₂ 是线形分子，两个 C=O 偶极矩方向相反，向量相加为零",
+      "C. CO₂ 中只有共价键，没有离子键，所以非极性",
+      "D. CO₂ 的摩尔质量太大，极性被抵消"
+    ],
+    "answer": "B. CO₂ 是线形分子，两个 C=O 偶极矩方向相反，向量相加为零",
+    "grading_rubric": "分子极性取决于偶极矩向量和：对称结构使偶极相消，分子非极性",
+    "explanation": "B正确。CO₂ 的两个 C=O 键均有偶极矩（O 端为负），但由于分子是线形（O=C=O，180°），两个偶极矩方向完全相反，向量相消，净偶极矩为零，整个分子为非极性。水（H₂O）的 V 形结构使两个 O–H 偶极不能相消，所以有净偶极矩，分子为极性。选B。"
+  },
+  {
+    "id": "chem-w2-polarity-002",
+    "concept_ids": [
+      "unit2-vsepr-polarity"
+    ],
+    "week": 2,
+    "difficulty": 3,
+    "type": "mcq",
+    "question": "以下四种分子中，哪个具有净偶极矩（极性分子）？",
+    "options": [
+      "A. CCl₄（四面体形）",
+      "B. BF₃（三角平面形）",
+      "C. CHCl₃（四面体形，一个 H 替代一个 Cl）",
+      "D. XeF₄（平方平面形）"
+    ],
+    "answer": "C. CHCl₃（四面体形，一个 H 替代一个 Cl）",
+    "grading_rubric": "对称分子（CCl₄、BF₃、XeF₄）偶极相消；CHCl₃ 非对称使偶极不完全抵消",
+    "explanation": "C正确。CCl₄、BF₃、XeF₄ 虽然含极性键，但分子高度对称，键偶极矩向量和为零，均为非极性分子。CHCl₃ 中三个 Cl 和一个 H 连接到中心 C，H–C 偶极和 Cl–C 偶极大小和方向不同，无法完全相消，有净偶极矩，是极性分子。选C。"
+  },
+  {
+    "id": "chem-w2-hybrid-001",
+    "concept_ids": [
+      "unit2-hybridization"
+    ],
+    "week": 2,
+    "difficulty": 1,
+    "type": "mcq",
+    "question": "乙烯（CH₂=CH₂）中，每个碳原子的杂化方式是？",
+    "options": [
+      "A. sp",
+      "B. sp²",
+      "C. sp³",
+      "D. sp³d"
+    ],
+    "answer": "B. sp²",
+    "grading_rubric": "C 有 3 个 sigma 键域（2 C–H + 1 C=C 的 σ），sp² 杂化，剩余 p 轨道形成 π 键",
+    "explanation": "B正确。乙烯中每个 C 有 3 个电子域（2 个 C–H σ 键 + 1 个 C=C 中的 σ 键），因此是 sp² 杂化，三个 sp² 轨道形成 σ 键，三角平面形（120°）。每个 C 剩余 1 个未杂化 p 轨道，两个 C 的 p 轨道侧向重叠形成 π 键。选B。"
+  },
+  {
+    "id": "chem-w2-hybrid-002",
+    "concept_ids": [
+      "unit2-hybridization"
+    ],
+    "week": 2,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "关于 sp、sp²、sp³ 杂化方式与键角的对应，以下正确的是？",
+    "options": [
+      "A. sp→180°，sp²→120°，sp³→109.5°",
+      "B. sp→120°，sp²→109.5°，sp³→90°",
+      "C. sp→109.5°，sp²→120°，sp³→180°",
+      "D. sp→180°，sp²→109.5°，sp³→120°"
+    ],
+    "answer": "A. sp→180°，sp²→120°，sp³→109.5°",
+    "grading_rubric": "sp=线形/180°，sp²=三角平面/120°，sp³=四面体/109.5°",
+    "explanation": "A正确。杂化方式决定空间构型：sp 杂化有 2 个杂化轨道，线形排列，键角 180°（如乙炔 HC≡CH）；sp² 有 3 个杂化轨道，三角平面，键角 120°（如乙烯）；sp³ 有 4 个杂化轨道，四面体，键角 109.5°（如甲烷、水分子中的 O）。选A。"
+  },
+  {
+    "id": "chem-w2-hybrid-feynman-001",
+    "concept_ids": [
+      "unit2-hybridization"
+    ],
+    "week": 2,
+    "difficulty": 3,
+    "type": "feynman",
+    "question": "解释杂化轨道（hybridization）理论解决了什么问题，以甲烷（CH₄）为例说明。",
+    "answer": "问题：碳的电子构型是 [He]2s²2p²——有 2 个未成对电子，按理应该只能形成 2 个键。但甲烷（CH₄）中碳实际上形成了 4 个完全等价的键，键角均为 109.5°，这用简单轨道理论解释不了。\n\n杂化理论的解答：激发一个 2s 电子到空的 2p 轨道，得到 1 个 2s¹ 和 3 个 2p¹（4 个未成对电子）。然后这 1 个 s 和 3 个 p 轨道「混合」重新组合，形成 4 个能量完全相同、空间等价的 sp³ 杂化轨道，在空间上指向四面体的四个顶点（键角 109.5°）。每个 sp³ 轨道与 H 的 1s 轨道重叠形成 σ 键，解释了甲烷的 4 个等价键和四面体结构。",
+    "grading_rubric": "需包含：①C 原本 2s²2p²只有2个未成对电子的矛盾；②激发+混合形成 4 个等价 sp³ 轨道；③四面体形/109.5°与实验吻合",
+    "explanation": "杂化理论是解释多价键等价性的数学模型：混合不同类型原子轨道（s、p、d）得到能量和形状相同的杂化轨道，从而与 VSEPR 预测的分子几何形状一致。sp³=四面体(109.5°)，sp²=三角平面(120°)，sp=线形(180°)。"
+  },
+  {
+    "id": "chem-w6-thermo-001",
+    "concept_ids": [
+      "unit6-endo-exo-energy-diagrams"
+    ],
+    "week": 6,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "以下哪个过程是放热反应（exothermic）？",
+    "options": [
+      "A. 水的蒸发",
+      "B. 冰的融化",
+      "C. 木柴燃烧",
+      "D. 碳酸氢铵（NH₄HCO₃）分解"
+    ],
+    "answer": "C. 木柴燃烧",
+    "grading_rubric": "放热反应 ΔH < 0，能量释放到环境，温度升高",
+    "explanation": "C正确。木柴燃烧是氧化反应，释放大量热量（ΔH < 0），属于放热过程。A（蒸发）和B（融化）均需吸收热量（吸热过程）。D（NH₄HCO₃分解）也是吸热反应。"
+  },
+  {
+    "id": "chem-w6-thermo-002",
+    "concept_ids": [
+      "unit6-endo-exo-energy-diagrams"
+    ],
+    "week": 6,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "在势能图中，吸热反应（endothermic）的特征是？",
+    "options": [
+      "A. 产物的势能低于反应物",
+      "B. 产物的势能高于反应物，ΔH > 0",
+      "C. 过渡态能量低于反应物",
+      "D. 活化能为零"
+    ],
+    "answer": "B. 产物的势能高于反应物，ΔH > 0",
+    "grading_rubric": "吸热：产物能量 > 反应物能量，ΔH = E(产物) - E(反应物) > 0",
+    "explanation": "B正确。吸热反应中，反应物吸收能量转化为具有更高势能的产物，产物势能高于反应物，ΔH = E(产物) - E(反应物) > 0。反应时从环境吸热，导致环境温度降低。"
+  },
+  {
+    "id": "chem-w6-calorimetry-001",
+    "concept_ids": [
+      "unit6-heat-transfer-calorimetry"
+    ],
+    "week": 6,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "量热法中 q = mcΔT 的含义是？",
+    "options": [
+      "A. q=反应焓，m=摩尔质量，c=浓度，ΔT=温度变化",
+      "B. q=热量，m=溶液质量，c=比热容，ΔT=温度变化",
+      "C. q=热量，m=摩尔数，c=摩尔热容，ΔT=时间变化",
+      "D. q=反应速率，m=质量，c=摩尔浓度，ΔT=温度"
+    ],
+    "answer": "B. q=热量，m=溶液质量，c=比热容，ΔT=温度变化",
+    "grading_rubric": "q=热量(J)，m=质量(g)，c=比热容(J/g·°C)，ΔT=温度变化(°C)",
+    "explanation": "B正确。q = mcΔT 是量热方程：q（热量，单位J）= m（物质质量，g）× c（比热容，J/g·°C）× ΔT（温度变化，°C）。对于水溶液，通常用水的比热容 4.18 J/g·°C 代替溶液比热容（近似）。"
+  },
+  {
+    "id": "chem-w6-calorimetry-002",
+    "concept_ids": [
+      "unit6-heat-transfer-calorimetry"
+    ],
+    "week": 6,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "咖啡杯量热计（coffee cup calorimeter）测量的是哪种焓变？",
+    "options": [
+      "A. 恒容焓变（ΔU）",
+      "B. 恒压焓变（ΔH），因为实验在大气压下进行",
+      "C. 活化能（Ea）",
+      "D. 吉布斯自由能（ΔG）"
+    ],
+    "answer": "B. 恒压焓变（ΔH），因为实验在大气压下进行",
+    "grading_rubric": "咖啡杯量热计：开放体系，恒压（大气压），测 ΔH = q_p",
+    "explanation": "B正确。咖啡杯量热计是简单的开放体系，实验在大气压下进行（恒压）。在恒压条件下，体系吸收或释放的热量 q_p 直接等于焓变 ΔH。炸弹量热计（密闭容器）测量恒容热量 q_v = ΔU。"
+  },
+  {
+    "id": "chem-w6-hess-001",
+    "concept_ids": [
+      "unit6-hess-law"
+    ],
+    "week": 6,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "Hess 定律的核心原理是？",
+    "options": [
+      "A. 反应速率与路径无关",
+      "B. 焓是状态函数，总焓变只与初态和末态有关，与路径无关",
+      "C. 活化能随温度变化而变化",
+      "D. 反应物总能量等于产物总能量"
+    ],
+    "answer": "B. 焓是状态函数，总焓变只与初态和末态有关，与路径无关",
+    "grading_rubric": "Hess定律基础：焓为状态函数，ΔH 与路径无关",
+    "explanation": "B正确。焓（H）是状态函数，其变化量 ΔH 仅取决于反应初态（反应物）和末态（产物），与中间经历的路径无关。因此，可将已知步骤的 ΔH 代数加和得到目标反应的 ΔH。"
+  },
+  {
+    "id": "chem-w6-hess-002",
+    "concept_ids": [
+      "unit6-hess-law"
+    ],
+    "week": 6,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "应用 Hess 定律时，若将某步反应方向取反（逆向书写），该步的 ΔH 应该？",
+    "options": [
+      "A. 保持不变",
+      "B. 乘以2",
+      "C. 变为相反数（取负）",
+      "D. 除以2"
+    ],
+    "answer": "C. 变为相反数（取负）",
+    "grading_rubric": "逆向书写：ΔH 取相反数；若乘以n倍：ΔH 也乘以n",
+    "explanation": "C正确。根据 Hess 定律，若将反应方向取反，ΔH 变号（取相反数）。若将反应方程式的化学计量数乘以某倍数 n，ΔH 也乘以 n。"
+  },
+  {
+    "id": "chem-w6-bond-enthalpy-001",
+    "concept_ids": [
+      "unit6-bond-enthalpies"
+    ],
+    "week": 6,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "用键焓估算反应焓变的公式是？",
+    "options": [
+      "A. ΔH ≈ Σ(产物键能) - Σ(反应物键能)",
+      "B. ΔH ≈ Σ(反应物键能) - Σ(产物键能)",
+      "C. ΔH ≈ Σ(断键能) + Σ(成键能)",
+      "D. ΔH ≈ Σ(产物键能) + Σ(反应物键能)"
+    ],
+    "answer": "B. ΔH ≈ Σ(反应物键能) - Σ(产物键能)",
+    "grading_rubric": "ΔH ≈ Σ(断裂键能，反应物中的键) - Σ(形成键能，产物中的键)；断键吸热，成键放热",
+    "explanation": "B正确。断键需要吸收能量（正值），成键释放能量（负值）。ΔH ≈ Σ(断裂键能) - Σ(形成键能) = Σ(反应物键能) - Σ(产物键能)。注意：这是用反应物的键减去产物的键，正确方向很容易搞反。"
+  },
+  {
+    "id": "chem-w6-formation-001",
+    "concept_ids": [
+      "unit6-enthalpy-formation"
+    ],
+    "week": 6,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "标准生成焓 ΔH°f 的定义是？",
+    "options": [
+      "A. 1 mol 物质燃烧时释放的热量",
+      "B. 由最稳定单质在标准状态下生成 1 mol 该物质的焓变",
+      "C. 1 mol 物质溶解于水时的焓变",
+      "D. 1 mol 物质从固态变为气态的焓变"
+    ],
+    "answer": "B. 由最稳定单质在标准状态下生成 1 mol 该物质的焓变",
+    "grading_rubric": "ΔH°f：标准状态下，由最稳定单质生成1mol该物质的焓变；最稳定单质的ΔH°f=0",
+    "explanation": "B正确。标准生成焓定义：在标准状态（通常25°C，1 atm）下，由各元素最稳定的单质形式生成1 mol该物质的焓变。最稳定单质（如O₂(g)，C(石墨)，H₂(g)）的标准生成焓规定为0。"
+  },
+  {
+    "id": "chem-w6-entropy-001",
+    "concept_ids": [
+      "unit6-entropy"
+    ],
+    "week": 6,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "以下哪个过程熵增加（ΔS > 0）？",
+    "options": [
+      "A. 水蒸气凝结为液态水",
+      "B. NaCl 固体溶于水",
+      "C. CO₂ 气体冷凝为固体干冰",
+      "D. 两种气体在密闭容器中压缩"
+    ],
+    "answer": "B. NaCl 固体溶于水",
+    "grading_rubric": "固体→溶液，熵增大（离子分散在溶剂中，混乱度增加）",
+    "explanation": "B正确。NaCl固体溶解后，Na⁺和Cl⁻从有序晶格分散到溶液中，粒子的混乱程度大增，ΔS > 0。A（气→液）和C（气→固）均是熵减少过程。D（压缩气体）减小体积，熵减少。"
+  },
+  {
+    "id": "chem-w6-entropy-002",
+    "concept_ids": [
+      "unit6-entropy"
+    ],
+    "week": 6,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "以下哪个因素会导致反应熵增加（ΔS > 0）？",
+    "options": [
+      "A. 气体分子数减少",
+      "B. 固体生成物比反应物多",
+      "C. 气态产物分子数多于气态反应物分子数",
+      "D. 反应在低温下进行"
+    ],
+    "answer": "C. 气态产物分子数多于气态反应物分子数",
+    "grading_rubric": "气体分子数增加 → 熵增最显著；气体熵 >> 液体 > 固体",
+    "explanation": "C正确。气体分子具有最高的混乱度（S: 气体 >> 液体 > 固体）。若反应产生更多气体分子，则总熵显著增加（ΔS > 0）。如分解反应 CaCO₃(s) → CaO(s) + CO₂(g) 是熵增过程。"
+  },
+  {
+    "id": "chem-w6-gibbs-001",
+    "concept_ids": [
+      "unit6-gibbs-free-energy"
+    ],
+    "week": 6,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "ΔG = ΔH - TΔS 中，在什么条件下反应在所有温度下都自发（ΔG < 0 始终成立）？",
+    "options": [
+      "A. ΔH > 0，ΔS > 0",
+      "B. ΔH < 0，ΔS < 0",
+      "C. ΔH < 0，ΔS > 0",
+      "D. ΔH > 0，ΔS < 0"
+    ],
+    "answer": "C. ΔH < 0，ΔS > 0",
+    "grading_rubric": "ΔH<0 且 ΔS>0 → ΔG = ΔH - TΔS < 0（对所有T>0成立）",
+    "explanation": "C正确。ΔG = ΔH - TΔS。当 ΔH < 0（放热）且 ΔS > 0（熵增）时，-TΔS < 0，两项都是负值，ΔG < 0 在所有正温度下均成立，反应始终自发。D（ΔH>0，ΔS<0）则在任何温度下都不自发。"
+  },
+  {
+    "id": "chem-w6-gibbs-002",
+    "concept_ids": [
+      "unit6-gibbs-free-energy"
+    ],
+    "week": 6,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "某反应 ΔH > 0，ΔS > 0（吸热熵增），该反应在什么温度下自发？",
+    "options": [
+      "A. 任何温度下均自发",
+      "B. 任何温度下均不自发",
+      "C. 高温下自发（当 TΔS > ΔH 时）",
+      "D. 低温下自发（当 TΔS < ΔH 时）"
+    ],
+    "answer": "C. 高温下自发（当 TΔS > ΔH 时）",
+    "grading_rubric": "ΔH>0，ΔS>0：ΔG = ΔH - TΔS，高温时 TΔS > ΔH，ΔG < 0，自发",
+    "explanation": "C正确。当 ΔH > 0，ΔS > 0 时，ΔG = ΔH - TΔS。温度足够高（T > ΔH/ΔS）时，TΔS 项超过 ΔH，ΔG < 0，反应变为自发。这是熵驱动的反应，典型例子是冰的融化（高温，即>0°C时自发）。"
+  },
+  {
+    "id": "chem-w6-fill-001",
+    "concept_ids": [
+      "unit6-heat-transfer-calorimetry"
+    ],
+    "week": 6,
+    "difficulty": 2,
+    "type": "fill",
+    "question": "某反应在咖啡杯量热计中进行，100 g 溶液温度升高了 5.0°C（水的比热容 c = 4.18 J/g·°C）。溶液吸收的热量 q = ______J，反应的 ΔH 符号为______（正/负）。",
+    "answer": "2090 J；负（负值，ΔH < 0）",
+    "grading_rubric": "q = 100×4.18×5.0 = 2090 J（溶液吸热）；反应放热则 ΔH < 0",
+    "explanation": "q(溶液) = 100 g × 4.18 J/g·°C × 5.0°C = 2090 J。溶液温度升高说明反应放热，热量转移到溶液中，故反应的 ΔH < 0（负值）。"
+  },
+  {
+    "id": "chem-w6-fill-002",
+    "concept_ids": [
+      "unit6-enthalpy-formation"
+    ],
+    "week": 6,
+    "difficulty": 2,
+    "type": "fill",
+    "question": "用标准生成焓计算反应焓变的公式为：ΔH°rxn = Σ ΔH°f(______) - Σ ΔH°f(______)。",
+    "answer": "产物；反应物",
+    "grading_rubric": "ΔH°rxn = Σ ΔH°f(产物) - Σ ΔH°f(反应物)",
+    "explanation": "标准焓变计算：ΔH°rxn = Σ[n × ΔH°f(产物)] - Σ[n × ΔH°f(反应物)]，其中n为化学计量系数。元素最稳定单质形式的ΔH°f = 0（基准值）。"
+  },
+  {
+    "id": "chem-w6-fill-003",
+    "concept_ids": [
+      "unit6-entropy"
+    ],
+    "week": 6,
+    "difficulty": 2,
+    "type": "fill",
+    "question": "按熵值从大到小排序：固态冰、液态水、水蒸气。顺序为：______。",
+    "answer": "水蒸气 > 液态水 > 固态冰",
+    "grading_rubric": "气态 > 液态 > 固态（熵值顺序）",
+    "explanation": "熵衡量体系的无序程度。气态分子运动最自由，混乱度最大，熵最高；固态分子排列有序，熵最低。故：S(水蒸气) > S(液态水) > S(固态冰)。"
+  },
+  {
+    "id": "chem-w6-fill-004",
+    "concept_ids": [
+      "unit6-gibbs-free-energy"
+    ],
+    "week": 6,
+    "difficulty": 2,
+    "type": "fill",
+    "question": "ΔG______0 时，反应在标准条件下自发进行；ΔG______0 时，反应非自发；ΔG = 0 时，系统处于______状态。",
+    "answer": "< ；> ；平衡",
+    "grading_rubric": "ΔG<0自发；ΔG>0非自发；ΔG=0平衡",
+    "explanation": "吉布斯自由能判据：ΔG < 0 正向自发，ΔG > 0 正向非自发（逆向自发），ΔG = 0 系统处于平衡状态，正逆反应速率相等。"
+  },
+  {
+    "id": "chem-w6-feynman-001",
+    "concept_ids": [
+      "unit6-hess-law"
+    ],
+    "week": 6,
+    "difficulty": 3,
+    "type": "feynman",
+    "question": "用自己的语言解释 Hess 定律：为什么可以把多步反应的 ΔH 相加来得到总反应的 ΔH？",
+    "answer": "焓（H）是一个状态函数，就像海拔高度一样——从山底到山顶的高度差只取决于起点和终点，不管你走哪条路（直上、绕道还是分段攀登）。化学反应的 ΔH 也一样：它只取决于反应物和产物的状态，与反应经过的中间步骤无关。所以，只要起点（反应物）和终点（产物）相同，把任何中间路径的 ΔH 加起来，结果都一样。这让我们可以用容易测量的反应来计算难以直接测量的反应的 ΔH。",
+    "grading_rubric": "需包含：①焓是状态函数（类比高度/海拔）；②ΔH与路径无关，只取决于初末状态；③可以代数加和各步ΔH",
+    "explanation": "Hess定律是焓为状态函数的直接推论。数学上：若反应A→B可分解为A→C→B，则ΔH(A→B) = ΔH(A→C) + ΔH(C→B)，与路径无关。"
+  },
+  {
+    "id": "chem-w6-feynman-002",
+    "concept_ids": [
+      "unit6-entropy"
+    ],
+    "week": 6,
+    "difficulty": 3,
+    "type": "feynman",
+    "question": "解释熵（entropy）的本质——为什么自然界倾向于熵增的方向？",
+    "answer": "熵衡量体系的无序程度或微观状态数。想象把一滴墨水滴入水中：墨水分子会自发扩散到整个容器，而不会自发集中回一滴。这是因为无序（扩散）状态对应的微观排列方式远多于有序（集中）状态——概率决定了方向。热力学第二定律说的是：宇宙的总熵（体系+环境）总是倾向于增加。自然界「偏爱」高熵状态，不是因为有神秘力量，而是纯粹的统计概率：可能的无序排列方式远多于有序排列。",
+    "grading_rubric": "需包含：①熵=无序度/微观状态数；②墨水扩散等类比；③统计概率解释（无序状态数远多于有序）；④第二定律：宇宙熵趋于增加",
+    "explanation": "熵的统计定义 S = k_B ln W（W为微观状态数）。高熵状态对应指数级更多的微观排列，自然界在随机分布下几乎必然落在高熵状态，这就是熵增的统计本质。"
+  },
+  {
+    "id": "chem-w6-feynman-003",
+    "concept_ids": [
+      "unit6-gibbs-free-energy"
+    ],
+    "week": 6,
+    "difficulty": 3,
+    "type": "feynman",
+    "question": "ΔG = ΔH - TΔS 如何综合了焓和熵来判断反应自发性？解释 T 在其中的作用。",
+    "answer": "ΔG 综合了两种驱动力：ΔH 是焓驱动（放热反应能量降低，系统更稳定，倾向自发）；TΔS 是熵驱动（熵增使宇宙更无序，也倾向自发）。温度 T 决定了熵效应的权重：高温时 TΔS 项主导，熵驱动占主导；低温时 ΔH 项主导，焓驱动占主导。这就解释了为什么冰在 0°C 以上融化（ΔH>0，ΔS>0，高温时熵驱动胜出）但在 0°C 以下不融化（低温时焓驱动胜出）。",
+    "grading_rubric": "需包含：①ΔH贡献（焓驱动）；②TΔS贡献（熵驱动）；③T决定两者权重；④高温熵主导，低温焓主导的具体含义",
+    "explanation": "ΔG = ΔH - TΔS 是热力学核心方程。T 是焓和熵贡献之间的权衡因子，决定了在特定温度下哪种效应主导，从而决定自发性方向。"
+  },
+  {
+    "id": "chem-w6-feynman-004",
+    "concept_ids": [
+      "unit6-bond-enthalpies"
+    ],
+    "week": 6,
+    "difficulty": 3,
+    "type": "feynman",
+    "question": "解释为什么「断键吸热、成键放热」，并说明如何用这一原理估算反应焓变。",
+    "answer": "化学键是两个原子核被共用电子吸引而形成的稳定结构，处于低能量状态。断键就是把稳定结构破坏，需要从外界输入能量，所以断键吸热。成键是从高能量的分离原子变为低能量的稳定键合状态，多余的能量被释放出来，所以成键放热。估算 ΔH：先算出所有反应物中断裂的键消耗的总能量（吸热），再算出所有产物中形成的键释放的总能量（放热），两者之差就是反应的焓变：ΔH ≈ Σ(断键能) - Σ(成键能)。",
+    "grading_rubric": "需包含：①断键需能量（吸热）的物理原因；②成键释放能量（放热）的原因；③ΔH ≈ Σ(断键能) - Σ(成键能)公式及方向",
+    "explanation": "键焓法本质上是用键能近似替代精确的 ΔH°f 数据。由于键能是平均值，用键焓法得到的结果是近似值，与用 ΔH°f 计算的结果可能略有差异。"
+  },
+  {
+    "id": "chem-w3-imf-001",
+    "concept_ids": [
+      "unit3-imf"
+    ],
+    "week": 3,
+    "difficulty": 1,
+    "type": "mcq",
+    "question": "以下哪种分子间作用力（IMF）最强？",
+    "options": [
+      "A. 伦敦色散力",
+      "B. 偶极-偶极力",
+      "C. 氢键",
+      "D. 以上三种强度相同"
+    ],
+    "answer": "C. 氢键",
+    "grading_rubric": "同等条件下 IMF 强度：氢键 > 偶极-偶极 > 伦敦色散（对轻小分子）",
+    "explanation": "C正确。氢键是三种 IMF 中最强的，发生在 H 与 F、O、N 直接相连时（如 HF、H₂O、NH₃）。偶极-偶极力次之，伦敦色散力（存在于所有分子，但对轻小分子最弱）最弱。选C。"
+  },
+  {
+    "id": "chem-w3-imf-002",
+    "concept_ids": [
+      "unit3-imf"
+    ],
+    "week": 3,
+    "difficulty": 1,
+    "type": "mcq",
+    "question": "伦敦色散力（London dispersion forces）存在于哪些物质中？",
+    "options": [
+      "A. 只存在于非极性分子之间",
+      "B. 只存在于极性分子之间",
+      "C. 存在于所有原子和分子之间",
+      "D. 只存在于离子化合物中"
+    ],
+    "answer": "C. 存在于所有原子和分子之间",
+    "grading_rubric": "伦敦力来自瞬时偶极，存在于所有物质",
+    "explanation": "C正确。伦敦色散力（LDF）由瞬间电子分布不均匀产生的瞬时偶极引起，存在于所有原子和分子之间（包括非极性和极性物质）。分子越大、电子越多，LDF 越强。选C。"
+  },
+  {
+    "id": "chem-w3-imf-fill-001",
+    "concept_ids": [
+      "unit3-imf"
+    ],
+    "week": 3,
+    "difficulty": 1,
+    "type": "fill",
+    "question": "氢键形成的必要条件：H 原子必须直接与______、______或______相连。",
+    "answer": "F（氟）；O（氧）；N（氮）",
+    "grading_rubric": "氢键要求 H 连接到高电负性小原子 F、O 或 N",
+    "explanation": "氢键形成需要 H 与高电负性且半径小的原子（F、O、N）直接成键，使 H 上具有足够的正电荷密度，与另一个分子上的 F、O 或 N 的孤对电子相互吸引。氯（Cl）虽然电负性大，但半径较大，H–Cl 不形成显著氢键。"
+  },
+  {
+    "id": "chem-w3-imf-003",
+    "concept_ids": [
+      "unit3-imf"
+    ],
+    "week": 3,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "随着烷烃（如 CH₄→C₂H₆→C₃H₈）碳链增长，沸点逐渐升高，最主要原因是？",
+    "options": [
+      "A. 分子量增大，极性增强",
+      "B. 分子量增大，电子数增多，伦敦色散力增强",
+      "C. 碳链变长，氢键数目增多",
+      "D. 碳链变长，偶极矩增大"
+    ],
+    "answer": "B. 分子量增大，电子数增多，伦敦色散力增强",
+    "grading_rubric": "烷烃为非极性分子，唯一 IMF 是 LDF；电子数多→可极化性大→LDF 强→沸点高",
+    "explanation": "B正确。烷烃是非极性分子，分子间只有伦敦色散力（无偶极力，无氢键）。随碳链增长，分子中电子数增多，可极化性（polarizability）增大，瞬时偶极更大，LDF 增强，使分子更难沸腾，沸点升高。选B。"
+  },
+  {
+    "id": "chem-w3-solid-001",
+    "concept_ids": [
+      "unit3-solid-properties"
+    ],
+    "week": 3,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "以下四类固体中，熔点通常最高的是？",
+    "options": [
+      "A. 分子晶体（如干冰 CO₂）",
+      "B. 金属晶体（如铜 Cu）",
+      "C. 离子晶体（如 NaCl）",
+      "D. 共价网络固体（如金刚石）"
+    ],
+    "answer": "D. 共价网络固体（如金刚石）",
+    "grading_rubric": "熔点排序：共价网络固体 ≥ 离子晶体 > 金属 >> 分子晶体",
+    "explanation": "D正确。共价网络固体（如金刚石、SiO₂）中每个原子通过强共价键与相邻原子相连，形成三维网络，熔化需要断裂大量共价键，熔点极高（金刚石 >3500°C）。离子晶体次之，金属次次之，分子晶体（分子间仅靠 IMF）熔点最低。选D。"
+  },
+  {
+    "id": "chem-w3-solid-002",
+    "concept_ids": [
+      "unit3-solid-properties"
+    ],
+    "week": 3,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "金属晶体中的「电子海」模型解释了金属的哪些物理性质？",
+    "options": [
+      "A. 高熔点和绝缘性",
+      "B. 高延展性和导电性",
+      "C. 溶于水时离解成离子",
+      "D. 硬而脆的力学性质"
+    ],
+    "answer": "B. 高延展性和导电性",
+    "grading_rubric": "电子海：自由电子→导电；金属阳离子层可错位→延展性",
+    "explanation": "B正确。「电子海」模型：金属正离子沉浸在自由移动的价电子海中。自由电子在电场中定向流动→导电；金属层错位时，正离子仍被电子海固定，不会断裂→延展性（可拉丝/压片）。离子晶体则因层错位后同性离子相邻而排斥，导致脆裂。选B。"
+  },
+  {
+    "id": "chem-w3-solubility-001",
+    "concept_ids": [
+      "unit3-solubility"
+    ],
+    "week": 3,
+    "difficulty": 1,
+    "type": "mcq",
+    "question": "「相似相溶」原理说明？",
+    "options": [
+      "A. 极性溶剂能溶解非极性溶质",
+      "B. 极性溶剂能溶解极性或离子性溶质，非极性溶剂溶解非极性溶质",
+      "C. 溶解度只与温度有关",
+      "D. 所有固体在水中均能溶解"
+    ],
+    "answer": "B. 极性溶剂能溶解极性或离子性溶质，非极性溶剂溶解非极性溶质",
+    "grading_rubric": "like dissolves like：极性溶极性，非极性溶非极性",
+    "explanation": "B正确。「相似相溶」（like dissolves like）：溶剂与溶质若 IMF 类型相似，溶解过程能量上有利。水（极性，氢键）能溶解 NaCl（离子）和酒精（极性），但不溶解油（非极性）。己烷（非极性）溶解油脂（非极性），不溶 NaCl。选B。"
+  },
+  {
+    "id": "chem-w3-solubility-002",
+    "concept_ids": [
+      "unit3-solubility"
+    ],
+    "week": 3,
+    "difficulty": 2,
+    "type": "fill",
+    "question": "NaCl 溶于水时，Na⁺ 被水分子的______端吸引，Cl⁻ 被水分子的______端吸引，这个过程叫做______。",
+    "answer": "氧（负）；氢（正）；水合（溶剂化）",
+    "grading_rubric": "水分子氧端（δ-）靠近 Na⁺（正），氢端（δ+）靠近 Cl⁻（负），即离子的水合",
+    "explanation": "水分子是极性分子（O 端略负，H 端略正）。溶解时，水分子包围离子：O 端朝向 Na⁺（正-负吸引），H 端朝向 Cl⁻（正负吸引）。这种溶剂分子包围溶质粒子的过程叫溶剂化（水为溶剂时叫水合）。"
+  },
+  {
+    "id": "chem-w3-photoelectric-001",
+    "concept_ids": [
+      "unit3-spectroscopy-photoelectric"
+    ],
+    "week": 3,
+    "difficulty": 1,
+    "type": "mcq",
+    "question": "光电效应中，以下哪种情况能使电子从金属表面逸出？",
+    "options": [
+      "A. 使用足够强（高强度）的低频率光",
+      "B. 使用频率高于阈频率的光，无论光强多弱",
+      "C. 使用温度足够高的光源",
+      "D. 只要照射时间足够长，任何频率的光都能使电子逸出"
+    ],
+    "answer": "B. 使用频率高于阈频率的光，无论光强多弱",
+    "grading_rubric": "光电效应：电子逸出与否取决于光的频率（能量），而非光的强度",
+    "explanation": "B正确。光电效应的关键发现（爱因斯坦）：每个光子能量 E = hν，只有频率超过阈频率（ν₀）的光子才有足够能量逸出电子。低于阈频率时，无论光多强（光子数多），也无法使电子逸出，因为单个光子能量不足。这证明了光的粒子性。选B。"
+  },
+  {
+    "id": "chem-w3-photoelectric-002",
+    "concept_ids": [
+      "unit3-spectroscopy-photoelectric"
+    ],
+    "week": 3,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "光电效应公式 KE = hν - Φ 中，Φ（功函数）代表什么？",
+    "options": [
+      "A. 光子的频率",
+      "B. 使电子从金属表面逸出所需的最小能量（结合能）",
+      "C. 逸出电子的动能",
+      "D. 普朗克常数"
+    ],
+    "answer": "B. 使电子从金属表面逸出所需的最小能量（结合能）",
+    "grading_rubric": "Φ = 功函数 = 逸出功，即阈频率对应的能量 hν₀",
+    "explanation": "B正确。功函数 Φ（也叫逸出功）是将电子从金属表面移除所需的最小能量，等于 hν₀（阈频率对应的光子能量）。光子能量 hν 超出 Φ 的部分转化为电子动能：KE = hν - Φ。Φ 是金属本身的属性，不同金属不同。选B。"
+  },
+  {
+    "id": "chem-w3-photoelectric-feynman-001",
+    "concept_ids": [
+      "unit3-spectroscopy-photoelectric"
+    ],
+    "week": 3,
+    "difficulty": 3,
+    "type": "feynman",
+    "question": "解释为什么光电效应证明了「光具有粒子性」，而不能用经典波动说解释。",
+    "answer": "经典波动说预测：光是连续的波，只要光强足够大（积累足够能量），任何频率的光都能逸出电子，只是强光比弱光更快。\n\n但实验结果完全不同：①低频率的光无论多强都不能逸出电子；②一旦频率超过阈频率，即使极弱的光也立刻逸出电子（没有时间延迟）；③增加光强只增加逸出电子的数目，不增加每个电子的动能——增加频率才增加动能。\n\n这些现象只能用粒子（光子）模型解释：每个光子携带固定能量 E = hν。电子一次只能吸收一个光子，低频光子能量不足（即使很多也没用），高频光子能量足够立刻逸出。这是光的量子性的直接证据。",
+    "grading_rubric": "需包含：①经典波动说预测（强度足够即可）的错误；②实验三个关键现象（频率门槛、即时响应、动能与频率而非强度有关）；③光子模型解释",
+    "explanation": "光电效应是量子力学诞生的关键实验：爱因斯坦 1905 年提出光量子假说，光以粒子（光子）形式传播，每个光子能量 E = hν，彻底解释了经典波动说无法解释的阈频率现象，获 1921 年诺贝尔物理学奖。"
+  },
+  {
+    "id": "chem-w3-beer-001",
+    "concept_ids": [
+      "unit3-beer-lambert"
+    ],
+    "week": 3,
+    "difficulty": 1,
+    "type": "mcq",
+    "question": "Beer-Lambert 定律 A = εlc 中，若溶液浓度加倍，吸光度 A 如何变化？",
+    "options": [
+      "A. 减半",
+      "B. 不变",
+      "C. 加倍",
+      "D. 变为原来的四倍"
+    ],
+    "answer": "C. 加倍",
+    "grading_rubric": "A = εlc，A 与 c 线性正比，浓度加倍则 A 加倍",
+    "explanation": "C正确。Beer-Lambert 定律 A = εlc，其中 ε 为摩尔吸光系数（常数），l 为光程长度（常数），c 为浓度。吸光度 A 与浓度 c 成线性正比关系，浓度加倍则 A 加倍。这是分光光度法测量浓度的基础。选C。"
+  },
+  {
+    "id": "chem-w3-beer-002",
+    "concept_ids": [
+      "unit3-beer-lambert"
+    ],
+    "week": 3,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "在用分光光度法测定未知浓度时，以下操作步骤哪个顺序正确？",
+    "options": [
+      "A. 先测未知样，再用标准曲线查浓度",
+      "B. 先用已知浓度标准溶液建立标准曲线（A vs c），再测未知样的 A，从曲线读出浓度",
+      "C. 直接用摩尔吸光系数公式计算，不需要标准曲线",
+      "D. 只测一个标准溶液即可确定未知浓度"
+    ],
+    "answer": "B. 先用已知浓度标准溶液建立标准曲线（A vs c），再测未知样的 A，从曲线读出浓度",
+    "grading_rubric": "标准曲线法：多点标准→线性拟合→未知样内插",
+    "explanation": "B正确。实验室标准操作：①配制一系列已知浓度标准溶液；②测量各标准溶液的吸光度 A；③绘制 A vs c 的标准曲线（线性）；④测量未知样品的 A；⑤从曲线内插得到未知浓度。多点标准曲线比单点更准确，能检验线性范围是否成立。选B。"
+  },
+  {
+    "id": "chem-w3-beer-fill-001",
+    "concept_ids": [
+      "unit3-beer-lambert"
+    ],
+    "week": 3,
+    "difficulty": 2,
+    "type": "fill",
+    "question": "Beer-Lambert 定律成立的前提是溶液处于______范围内；浓度过高时，定律______（成立/失效）。",
+    "answer": "线性（低浓度）；失效",
+    "grading_rubric": "高浓度时分子间相互作用使吸收不再线性，Beer-Lambert 定律失效",
+    "explanation": "Beer-Lambert 定律在低浓度（稀溶液）范围内成立，此时吸光粒子相互独立。浓度过高时，吸光粒子间相互作用改变了有效摩尔吸光系数，A 与 c 的线性关系破坏，测量误差增大，定律失效。"
+  },
+  {
+    "id": "chem-w3-solutions-001",
+    "concept_ids": [
+      "unit3-solutions-mixtures"
+    ],
+    "week": 3,
+    "difficulty": 1,
+    "type": "mcq",
+    "question": "摩尔分数（mole fraction）的定义是？",
+    "options": [
+      "A. 溶质的摩尔数除以溶液的体积（升）",
+      "B. 溶质的摩尔数除以混合物中所有组分的总摩尔数",
+      "C. 溶质的质量除以溶液的总质量，乘以100%",
+      "D. 溶质的摩尔数除以溶剂的质量（千克）"
+    ],
+    "answer": "B. 溶质的摩尔数除以混合物中所有组分的总摩尔数",
+    "grading_rubric": "摩尔分数 χ = n_i / n_total，无量纲，所有组分摩尔分数之和为 1",
+    "explanation": "B正确。摩尔分数 χᵢ = nᵢ / n总，其中 n总是混合物中所有组分（溶剂+所有溶质）的摩尔数之和。摩尔分数无量纲，范围 0~1，所有组分的摩尔分数之和等于 1。选B。"
+  },
+  {
+    "id": "chem-w3-solutions-002",
+    "concept_ids": [
+      "unit3-solutions-mixtures"
+    ],
+    "week": 3,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "质量摩尔浓度（molality，m）与摩尔浓度（molarity，M）的主要区别是？",
+    "options": [
+      "A. molality 单位是 mol/L，molarity 单位是 mol/kg",
+      "B. molality 以溶剂质量（kg）为基准，不随温度变化；molarity 以溶液体积为基准，随温度变化",
+      "C. 两者完全相同，只是符号不同",
+      "D. molality 只用于气体，molarity 只用于液体"
+    ],
+    "answer": "B. molality 以溶剂质量（kg）为基准，不随温度变化；molarity 以溶液体积为基准，随温度变化",
+    "grading_rubric": "molality(m) = mol溶质/kg溶剂，温度无关；molarity(M) = mol溶质/L溶液，体积随温随变",
+    "explanation": "B正确。molality（质量摩尔浓度）= 溶质摩尔数 / 溶剂质量（kg），基于质量，不受温度影响；molarity（摩尔浓度）= 溶质摩尔数 / 溶液体积（L），溶液体积随温度膨胀/收缩而改变。因此沸点升高、凝固点下降等依数性用 molality 更准确。选B。"
+  },
+  {
+    "id": "chem-w3-imf-app-001",
+    "concept_ids": [
+      "unit3-imf-applications"
+    ],
+    "week": 3,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "H₂O 的沸点（100°C）远高于 H₂S（-60°C），尽管两者分子量相近，最主要的原因是？",
+    "options": [
+      "A. H₂O 的摩尔质量更大",
+      "B. H₂O 分子间能形成氢键，H₂S 只有偶极-偶极力",
+      "C. H₂O 是极性分子，H₂S 是非极性分子",
+      "D. H₂O 有更强的伦敦色散力"
+    ],
+    "answer": "B. H₂O 分子间能形成氢键，H₂S 只有偶极-偶极力",
+    "grading_rubric": "O 的高电负性+小半径使 O-H···O 氢键强；S 电负性低/半径大，H-S 不形成显著氢键",
+    "explanation": "B正确。H₂O 中 O 电负性高（3.44）且半径小，O–H 键高度极化，O–H···O 氢键强（约 20 kJ/mol），每个 H₂O 最多可形成 4 个氢键。H₂S 中 S 电负性较低（2.58）且半径大，H–S 键极性弱，不能形成有效氢键，分子间只有较弱的偶极-偶极力。氢键使 H₂O 沸点异常高。选B。"
+  },
+  {
+    "id": "chem-w3-imf-app-002",
+    "concept_ids": [
+      "unit3-imf-applications"
+    ],
+    "week": 3,
+    "difficulty": 3,
+    "type": "feynman",
+    "question": "解释为什么壁虎（gecko）能在垂直玻璃上行走——其脚趾的黏附力来源于哪种分子间作用力？",
+    "answer": "壁虎脚趾上有数百万根极细的刚毛（setae），每根刚毛末端再分叉成更细的纳米级小刚毛（spatulae）。这些极细的刚毛与玻璃表面接触时，接触面积巨大。\n\n关键在于伦敦色散力（van der Waals 力）：虽然每对刚毛与表面之间的 LDF 极弱，但数百万根刚毛同时接触，总力可达数个大气压，足以支撑壁虎体重。\n\n这也解释了为什么壁虎脚沾水后反而更难附着——水膜阻断了刚毛与表面的直接接触，减弱了 LDF 的作用。",
+    "grading_rubric": "需包含：①刚毛极大接触面积；②伦敦色散力（van der Waals）；③单个力极弱但叠加后很强",
+    "explanation": "壁虎黏附是伦敦色散力宏观效应的著名例子：分子间 LDF 无处不在且与接触面积成正比。刚毛的纳米级分叉大幅提升真实接触面积，使弱 LDF 累加产生足够的宏观黏附力，无需任何黏液。"
+  },
+  {
+    "id": "chem-w7-equil-001",
+    "concept_ids": [
+      "unit7-intro-equilibrium"
+    ],
+    "week": 7,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "动态平衡（dynamic equilibrium）的特征是？",
+    "options": [
+      "A. 正反应和逆反应均停止，浓度不再变化",
+      "B. 正反应速率等于逆反应速率，各组分浓度保持不变",
+      "C. 反应物浓度等于产物浓度",
+      "D. 只有正反应在进行，逆反应已停止"
+    ],
+    "answer": "B. 正反应速率等于逆反应速率，各组分浓度保持不变",
+    "grading_rubric": "动态平衡：正逆反应持续进行，但速率相等，宏观浓度不变",
+    "explanation": "B正确。动态平衡时，正反应和逆反应仍在不断进行（动态），但正逆反应速率相等，使各组分浓度在宏观上保持不变（平衡）。并非反应停止，也非反应物=产物浓度。"
+  },
+  {
+    "id": "chem-w7-keq-001",
+    "concept_ids": [
+      "unit7-reaction-quotient-keq"
+    ],
+    "week": 7,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "对于反应 aA(g) + bB(g) ⇌ cC(g) + dD(g)，平衡常数 Kc 的表达式是？",
+    "options": [
+      "A. Kc = [C]^c[D]^d / [A]^a[B]^b",
+      "B. Kc = [A]^a[B]^b / [C]^c[D]^d",
+      "C. Kc = (c+d) / (a+b)",
+      "D. Kc = [C][D] / [A][B]"
+    ],
+    "answer": "A. Kc = [C]^c[D]^d / [A]^a[B]^b",
+    "grading_rubric": "K = 产物浓度幂次积 / 反应物浓度幂次积；纯固体和纯液体不写入",
+    "explanation": "A正确。平衡常数 Kc = [产物]^化学计量系数 / [反应物]^化学计量系数。分子是产物，分母是反应物，指数为各自化学计量系数。纯固体（如CaCO₃）和纯液体（如H₂O(l)）的「浓度」视为常数1，不写入K表达式。"
+  },
+  {
+    "id": "chem-w7-keq-002",
+    "concept_ids": [
+      "unit7-reaction-quotient-keq"
+    ],
+    "week": 7,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "反应商 Q 与平衡常数 K 的关系：若 Q < K，反应将如何进行？",
+    "options": [
+      "A. 反应向逆方向（向左）进行以达到平衡",
+      "B. 反应向正方向（向右）进行以达到平衡",
+      "C. 系统已处于平衡，无净变化",
+      "D. 反应不会发生"
+    ],
+    "answer": "B. 反应向正方向（向右）进行以达到平衡",
+    "grading_rubric": "Q<K：产物浓度偏低，向正方向（生成更多产物）进行",
+    "explanation": "B正确。Q < K 表示当前产物相对于反应物浓度偏低（相对于平衡状态）。为使 Q 增大至 K，系统需要向正方向进行（消耗反应物，生成更多产物），直到 Q = K。"
+  },
+  {
+    "id": "chem-w7-magnitude-001",
+    "concept_ids": [
+      "unit7-magnitude-properties-keq"
+    ],
+    "week": 7,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "某反应 K = 1×10⁻⁸，这说明平衡时？",
+    "options": [
+      "A. 产物浓度远大于反应物浓度",
+      "B. 反应物浓度远大于产物浓度，几乎不生成产物",
+      "C. 产物和反应物浓度相等",
+      "D. 反应不能进行"
+    ],
+    "answer": "B. 反应物浓度远大于产物浓度，几乎不生成产物",
+    "grading_rubric": "K<<1：平衡偏向反应物，几乎不生成产物",
+    "explanation": "B正确。K = 1×10⁻⁸ 极小，说明平衡时产物浓度极低而反应物浓度极高，平衡强烈偏向反应物。K >> 1 则产物主导；K ≈ 1 则两者相当。"
+  },
+  {
+    "id": "chem-w7-magnitude-002",
+    "concept_ids": [
+      "unit7-magnitude-properties-keq"
+    ],
+    "week": 7,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "平衡常数 K 值只与哪个因素有关？",
+    "options": [
+      "A. 反应物的初始浓度",
+      "B. 催化剂的存在",
+      "C. 反应温度",
+      "D. 容器体积"
+    ],
+    "answer": "C. 反应温度",
+    "grading_rubric": "K 只与温度有关；改变浓度、压力、催化剂均不改变 K 值",
+    "explanation": "C正确。平衡常数 K 是温度的函数，只有温度改变才会改变 K 值。加入更多反应物、改变压力或加入催化剂都不改变 K，只影响达到平衡的速度或平衡时各组分的浓度（但比值 K 不变）。"
+  },
+  {
+    "id": "chem-w7-lechatelier-001",
+    "concept_ids": [
+      "unit7-le-chatelier"
+    ],
+    "week": 7,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "对于平衡 N₂(g) + 3H₂(g) ⇌ 2NH₃(g)（正反应放热），升高温度后，平衡如何移动？",
+    "options": [
+      "A. 向正方向移动，生成更多 NH₃",
+      "B. 向逆方向移动，NH₃ 分解增多",
+      "C. 平衡不移动，但反应速率加快",
+      "D. K 值不变，各组分浓度不变"
+    ],
+    "answer": "B. 向逆方向移动，NH₃ 分解增多",
+    "grading_rubric": "升温→平衡向吸热方向移动→逆反应（吸热）→K减小，NH₃减少",
+    "explanation": "B正确。升温时，平衡向吸热方向（逆反应）移动，以消耗多余热量。正反应是放热，逆反应是吸热，所以升温使平衡向逆方向移动，NH₃ 浓度降低，K 减小。（注：升温改变 K，是与改变浓度/压力本质不同的点）"
+  },
+  {
+    "id": "chem-w7-lechatelier-002",
+    "concept_ids": [
+      "unit7-le-chatelier"
+    ],
+    "week": 7,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "对于 N₂(g) + 3H₂(g) ⇌ 2NH₃(g)，减小容器体积（增大压力），平衡如何移动？",
+    "options": [
+      "A. 向气体分子数增加的方向（逆方向），减少气体分子数",
+      "B. 向气体分子数减少的方向（正方向），减少气体分子数",
+      "C. 平衡不移动",
+      "D. K 值增大"
+    ],
+    "answer": "B. 向气体分子数减少的方向（正方向），减少气体分子数",
+    "grading_rubric": "增压→平衡向气体分子数减少方向移动；正方向4mol→2mol气体",
+    "explanation": "B正确。增大压力时，平衡向气体分子数减少的方向移动以减小压力。反应物侧：1+3=4 mol气体；产物侧：2 mol气体。增压使平衡向正方向（减少气体分子数）移动，有利于 NH₃ 生成。"
+  },
+  {
+    "id": "chem-w7-representations-001",
+    "concept_ids": [
+      "unit7-representations-equilibrium"
+    ],
+    "week": 7,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "多步反应的总平衡常数等于各步平衡常数的？",
+    "options": [
+      "A. 代数和",
+      "B. 乘积",
+      "C. 平均值",
+      "D. 差值"
+    ],
+    "answer": "B. 乘积",
+    "grading_rubric": "K总 = K₁ × K₂ × K₃...；各步K相乘",
+    "explanation": "B正确。若总反应可分解为若干步骤：反应1（K₁）、反应2（K₂）、反应3（K₃）……则总反应的 K = K₁ × K₂ × K₃ × …。这是因为浓度乘积的分数相乘时，中间体浓度项相消，最终给出总反应的K表达式。"
+  },
+  {
+    "id": "chem-w7-solubility-001",
+    "concept_ids": [
+      "unit7-solubility-equilibria"
+    ],
+    "week": 7,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "对于溶解平衡 AgCl(s) ⇌ Ag⁺(aq) + Cl⁻(aq)，Ksp 的表达式是？",
+    "options": [
+      "A. Ksp = [AgCl]",
+      "B. Ksp = [Ag⁺][Cl⁻]",
+      "C. Ksp = [Ag⁺][Cl⁻] / [AgCl]",
+      "D. Ksp = [Ag⁺]² + [Cl⁻]²"
+    ],
+    "answer": "B. Ksp = [Ag⁺][Cl⁻]",
+    "grading_rubric": "Ksp 只包含溶解的离子浓度；纯固体 AgCl 不写入",
+    "explanation": "B正确。AgCl 是纯固体，不写入平衡常数表达式。Ksp = [Ag⁺][Cl⁻]，称为溶度积常数。Ksp 越小，表示该物质越难溶。"
+  },
+  {
+    "id": "chem-w7-solubility-002",
+    "concept_ids": [
+      "unit7-solubility-equilibria"
+    ],
+    "week": 7,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "「同离子效应」（common ion effect）对难溶盐溶解度的影响是？",
+    "options": [
+      "A. 增大溶解度",
+      "B. 降低溶解度",
+      "C. 对溶解度无影响",
+      "D. 先增大后降低"
+    ],
+    "answer": "B. 降低溶解度",
+    "grading_rubric": "同离子效应：加入含有相同离子的可溶盐→平衡向沉淀方向移动→溶解度降低",
+    "explanation": "B正确。同离子效应：向 AgCl 的饱和溶液中加入 NaCl（含 Cl⁻），增大 [Cl⁻]，Q > Ksp，平衡向沉淀（左）方向移动，AgCl 溶解度降低，更多固体析出。这是 Le Chatelier 原理在溶解平衡中的应用。"
+  },
+  {
+    "id": "chem-w7-ph-solubility-001",
+    "concept_ids": [
+      "unit7-ph-solubility"
+    ],
+    "week": 7,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "Mg(OH)₂ 在酸性溶液中的溶解度相比在纯水中？",
+    "options": [
+      "A. 减小，因为酸中有更多 OH⁻",
+      "B. 增大，因为 H⁺ 消耗 OH⁻，平衡向溶解方向移动",
+      "C. 不变，pH 不影响 Ksp",
+      "D. 减小，因为酸使 Ksp 变小"
+    ],
+    "answer": "B. 增大，因为 H⁺ 消耗 OH⁻，平衡向溶解方向移动",
+    "grading_rubric": "酸性溶液中 H⁺ 中和 OH⁻，降低 [OH⁻]，Q < Ksp，更多 Mg(OH)₂ 溶解",
+    "explanation": "B正确。Mg(OH)₂(s) ⇌ Mg²⁺ + 2OH⁻。酸性溶液中，H⁺ 与 OH⁻ 反应（H⁺ + OH⁻ → H₂O），降低 [OH⁻]，Q < Ksp，驱使更多 Mg(OH)₂ 溶解。pH 越低（酸性越强），溶解度越大。含 OH⁻ 的难溶盐均有此规律。"
+  },
+  {
+    "id": "chem-w7-ph-solubility-002",
+    "concept_ids": [
+      "unit7-ph-solubility"
+    ],
+    "week": 7,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "下列哪个难溶盐的溶解度受 pH 影响最显著？",
+    "options": [
+      "A. AgCl（氯化银）",
+      "B. BaSO₄（硫酸钡）",
+      "C. CaCO₃（碳酸钙）",
+      "D. PbI₂（碘化铅）"
+    ],
+    "answer": "C. CaCO₃（碳酸钙）",
+    "grading_rubric": "CaCO₃含碱性阴离子CO₃²⁻，与H⁺反应：CO₃²⁻+2H⁺→H₂O+CO₂，受pH影响大",
+    "explanation": "C正确。CaCO₃ 溶解产生 CO₃²⁻（碱性离子），H⁺ 与 CO₃²⁻ 反应（CO₃²⁻ + 2H⁺ → H₂O + CO₂(g)），降低 CO₃²⁻ 浓度，驱使更多 CaCO₃ 溶解。AgCl 的 Cl⁻ 不受 pH 影响；BaSO₄ 的 SO₄²⁻ 也基本不受影响。"
+  },
+  {
+    "id": "chem-w7-fill-001",
+    "concept_ids": [
+      "unit7-reaction-quotient-keq"
+    ],
+    "week": 7,
+    "difficulty": 2,
+    "type": "fill",
+    "question": "在平衡常数表达式中，纯______和纯______不写入 K 的表达式，因为它们的「浓度」视为常数。",
+    "answer": "固体；液体",
+    "grading_rubric": "纯固体和纯液体（溶剂）不写入K",
+    "explanation": "纯固体和纯液体的活度（activity）定义为1，在K表达式中省略。例如CaCO₃(s) ⇌ CaO(s) + CO₂(g)的K = [CO₂]（固体均省略）。"
+  },
+  {
+    "id": "chem-w7-fill-002",
+    "concept_ids": [
+      "unit7-magnitude-properties-keq"
+    ],
+    "week": 7,
+    "difficulty": 2,
+    "type": "fill",
+    "question": "若将某反应的化学方程式乘以系数 n，则新的平衡常数 K' = ______（用原K和n表示）。",
+    "answer": "K^n（K的n次方）",
+    "grading_rubric": "方程式系数乘n → K' = Kⁿ",
+    "explanation": "若反应方程式的所有化学计量数乘以n，则平衡常数取n次方：K' = Kⁿ。若反应逆向书写，K' = 1/K。"
+  },
+  {
+    "id": "chem-w7-fill-003",
+    "concept_ids": [
+      "unit7-le-chatelier"
+    ],
+    "week": 7,
+    "difficulty": 2,
+    "type": "fill",
+    "question": "Le Chatelier 原理指出：若对平衡体系施加干扰（如改变浓度、温度、压力），平衡会向______该干扰的方向移动。",
+    "answer": "减弱（或抵消）",
+    "grading_rubric": "平衡移动方向：减弱或部分抵消所施加的干扰",
+    "explanation": "Le Chatelier 原理：体系试图通过移动平衡来部分抵消施加的干扰。如加入反应物→消耗方向（正向）；升温→吸热方向；增压→气体分子数减少方向。注意：平衡只能部分抵消干扰，不能完全消除。"
+  },
+  {
+    "id": "chem-w7-fill-004",
+    "concept_ids": [
+      "unit7-solubility-equilibria"
+    ],
+    "week": 7,
+    "difficulty": 2,
+    "type": "fill",
+    "question": "已知 BaSO₄ 的 Ksp = 1.1×10⁻¹⁰。在纯水中，[Ba²⁺] = [SO₄²⁻] = s（溶解度），则 s = ______M（用科学计数法表示）。",
+    "answer": "约 1.05×10⁻⁵ M",
+    "grading_rubric": "Ksp = s×s = s² = 1.1×10⁻¹⁰；s = √(1.1×10⁻¹⁰) ≈ 1.05×10⁻⁵ M",
+    "explanation": "BaSO₄(s) ⇌ Ba²⁺ + SO₄²⁻，若溶解度为s，则 [Ba²⁺]=[SO₄²⁻]=s，Ksp = s² = 1.1×10⁻¹⁰，s = √(1.1×10⁻¹⁰) ≈ 1.05×10⁻⁵ M。"
+  },
+  {
+    "id": "chem-w7-feynman-001",
+    "concept_ids": [
+      "unit7-intro-equilibrium"
+    ],
+    "week": 7,
+    "difficulty": 3,
+    "type": "feynman",
+    "question": "解释化学平衡的「动态」性质——为什么说平衡时反应并没有停止？",
+    "answer": "化学平衡并不意味着反应停止了。就像繁忙的边境口岸：同时有人从A国进入B国，也有人从B国进入A国，如果两个方向的人流速率相等，总人数就保持不变，但每个人仍然在移动。化学平衡也是这样：正反应（反应物→产物）和逆反应（产物→反应物）都在持续进行，只是速率相等，所以宏观上浓度不变。这就是为什么叫「动态」平衡——动态指反应仍在发生，平衡指宏观状态不变。",
+    "grading_rubric": "需包含：①正逆反应持续进行（不是停止）；②速率相等→宏观浓度不变；③类比（人流/流水等）；④动态=微观持续，平衡=宏观不变",
+    "explanation": "动态平衡的微观证据：用放射性同位素追踪，即使平衡时标记原子仍在产物和反应物间交换，证明反应未停止。"
+  },
+  {
+    "id": "chem-w7-feynman-002",
+    "concept_ids": [
+      "unit7-le-chatelier"
+    ],
+    "week": 7,
+    "difficulty": 3,
+    "type": "feynman",
+    "question": "Le Chatelier 原理为什么能预测平衡移动方向？用一个具体例子说明其物理意义。",
+    "answer": "Le Chatelier 原理实质上是热力学平衡的表现：干扰使系统偏离平衡（Q ≠ K），系统通过调整浓度使 Q 重新趋近 K。例如：合成氨 N₂ + 3H₂ ⇌ 2NH₃，向体系加入 N₂，浓度增大使 Q < K（分母变大），系统通过消耗 N₂ 生成更多 NH₃（正向移动）来使 Q 重新等于 K。这不是「系统有意识地抵抗」，而是纯粹的热力学结果：偏离平衡的体系自发向恢复平衡的方向演变，这由 ΔG 的符号决定。",
+    "grading_rubric": "需包含：①干扰使Q≠K；②系统向使Q→K的方向移动；③具体例子（如加N₂使Q<K，正向移动）；④热力学本质",
+    "explanation": "Le Chatelier 原理是Q vs K比较法的定性表达。Q<K正向移动；Q>K逆向移动；加入非气体催化剂不改变Q也不改变K，平衡不移动。"
+  },
+  {
+    "id": "chem-w7-feynman-003",
+    "concept_ids": [
+      "unit7-solubility-equilibria"
+    ],
+    "week": 7,
+    "difficulty": 3,
+    "type": "feynman",
+    "question": "解释同离子效应（common ion effect）——为什么加入含有相同离子的盐会降低难溶盐的溶解度？",
+    "answer": "以 AgCl 为例：AgCl(s) ⇌ Ag⁺ + Cl⁻，平衡时 [Ag⁺][Cl⁻] = Ksp。若向饱和溶液中加入 NaCl（提供额外 Cl⁻），[Cl⁻] 突然增大，乘积 [Ag⁺][Cl⁻] > Ksp，即 Q > Ksp。体系为了恢复 Q = Ksp，必须降低离子浓度——通过让 Ag⁺ 和 Cl⁻ 重新结合成固体 AgCl（向沉淀方向移动）。结果：更多 AgCl 析出，溶液中 Ag⁺ 浓度降低，AgCl 的溶解度下降。这完全符合 Le Chatelier 原理：加入 Cl⁻ 使平衡向减少 Cl⁻ 的方向（沉淀）移动。",
+    "grading_rubric": "需包含：①Q > Ksp 驱动沉淀；②Le Chatelier角度解释；③结果：溶解度降低；④具体离子浓度变化逻辑",
+    "explanation": "同离子效应的应用：分析化学中通过加入同离子使沉淀完全（如加过量NaCl使AgCl完全沉淀）；生理上泪液中含有NaCl降低某些盐在眼睛中的溶解度。"
+  },
+  {
+    "id": "chem-w7-feynman-004",
+    "concept_ids": [
+      "unit7-magnitude-properties-keq"
+    ],
+    "week": 7,
+    "difficulty": 3,
+    "type": "feynman",
+    "question": "K 只与温度有关——为什么改变浓度或压力不改变 K，但改变温度会改变 K？",
+    "answer": "K 是由反应的热力学性质决定的（K = e^(-ΔG°/RT)），而 ΔG° 在固定温度下是固定值。改变浓度或压力会使 Q 偏离 K，但体系会通过移动平衡来恢复 Q = K，K 本身不变。温度改变则从根本上改变了 ΔG°（因为 ΔG° = ΔH° - TΔS°），从而改变 K。对于放热反应，升温使 ΔG° 变大（正方向热力学趋势减弱），K 减小；对于吸热反应则相反。所以：浓度和压力改变体系的组成，但不改变「平衡比例」K；温度改变了反应本身的热力学性质，改变 K。",
+    "grading_rubric": "需包含：①K由ΔG°=ΔH°-TΔS°决定；②浓度/压力改变Q但不改变K；③温度改变ΔG°从而改变K；④放/吸热反应升温对K的影响方向",
+    "explanation": "K = exp(-ΔG°/RT)，温度T直接出现在指数中，且影响ΔG° = ΔH° - TΔS°，因此K是温度的强函数。这也是为什么工业合成氨需要权衡温度（高温快但K小，低温K大但速率慢）。"
+  },
+  {
+    "id": "chem-w4-netionic-001",
+    "concept_ids": [
+      "unit4-net-ionic-equations"
+    ],
+    "week": 4,
+    "difficulty": 1,
+    "type": "mcq",
+    "question": "写净离子方程式时，哪些物质应写成离子形式？",
+    "options": [
+      "A. 所有固体和气体",
+      "B. 强电解质（强酸、强碱、可溶性离子化合物）在水溶液中完全解离",
+      "C. 所有参与反应的物质",
+      "D. 只有沉淀物需要写成离子"
+    ],
+    "answer": "B. 强电解质（强酸、强碱、可溶性离子化合物）在水溶液中完全解离",
+    "grading_rubric": "强电解质拆开写离子；弱电解质、固体、气体、水保持分子式",
+    "explanation": "B正确。净离子方程式规则：①强酸（HCl、HNO₃、H₂SO₄等）、强碱（NaOH、KOH 等）、可溶性盐（NaCl、KNO₃ 等）在水溶液中完全离子化，拆开写成离子；②弱酸（CH₃COOH）、弱碱（NH₃·H₂O）、难溶物（BaSO₄↓）、气体（CO₂↑）、水不拆开。选B。"
+  },
+  {
+    "id": "chem-w4-netionic-002",
+    "concept_ids": [
+      "unit4-net-ionic-equations"
+    ],
+    "week": 4,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "以下哪个是 AgNO₃(aq) + NaCl(aq) → AgCl(s) + NaNO₃(aq) 的正确净离子方程式？",
+    "options": [
+      "A. Ag⁺(aq) + NO₃⁻(aq) + Na⁺(aq) + Cl⁻(aq) → AgCl(s) + Na⁺(aq) + NO₃⁻(aq)",
+      "B. Ag⁺(aq) + Cl⁻(aq) → AgCl(s)",
+      "C. AgNO₃ + NaCl → AgCl + NaNO₃",
+      "D. Ag(s) + Cl⁻(aq) → AgCl(s)"
+    ],
+    "answer": "B. Ag⁺(aq) + Cl⁻(aq) → AgCl(s)",
+    "grading_rubric": "旁观离子 Na⁺ 和 NO₃⁻ 消去，净反应只有 Ag⁺ + Cl⁻ → AgCl(s)",
+    "explanation": "B正确。完整离子方程式：Ag⁺ + NO₃⁻ + Na⁺ + Cl⁻ → AgCl(s) + Na⁺ + NO₃⁻。Na⁺ 和 NO₃⁻ 在两边出现相同，是旁观离子（spectator ions），消去后得到净离子方程式：Ag⁺(aq) + Cl⁻(aq) → AgCl(s)。选B。"
+  },
+  {
+    "id": "chem-w4-netionic-fill-001",
+    "concept_ids": [
+      "unit4-net-ionic-equations"
+    ],
+    "week": 4,
+    "difficulty": 1,
+    "type": "fill",
+    "question": "净离子方程式中被消去的、在反应前后不发生变化的离子称为______离子（英文：spectator ions）。",
+    "answer": "旁观",
+    "grading_rubric": "旁观离子（spectator ions）：在反应前后形式不变，不参与实质化学变化",
+    "explanation": "旁观离子（spectator ions）在反应物和产物中以相同离子形式出现，对净反应没有贡献。写净离子方程式时从两侧消去，使方程式只反映实质的化学变化（如沉淀形成、酸碱中和等）。"
+  },
+  {
+    "id": "chem-w4-stoich-001",
+    "concept_ids": [
+      "unit4-stoichiometry"
+    ],
+    "week": 4,
+    "difficulty": 1,
+    "type": "mcq",
+    "question": "化学计量（stoichiometry）计算的核心是什么？",
+    "options": [
+      "A. 利用反应物的摩尔质量直接换算产物的质量",
+      "B. 利用平衡方程式中的摩尔比（化学计量数之比）在物质间进行换算",
+      "C. 利用反应物和产物的密度比较",
+      "D. 利用反应温度和压力计算产物量"
+    ],
+    "answer": "B. 利用平衡方程式中的摩尔比（化学计量数之比）在物质间进行换算",
+    "grading_rubric": "化学计量核心：配平方程式的系数比 = 摩尔比，用于物质间换算",
+    "explanation": "B正确。化学计量计算流程：①将已知量换算为摩尔（质量÷摩尔质量）；②用方程式中的化学计量数（摩尔比）换算目标物质的摩尔数；③若需要，再换算回质量或体积。系数比就是摩尔比，是联系不同物质的关键。选B。"
+  },
+  {
+    "id": "chem-w4-stoich-002",
+    "concept_ids": [
+      "unit4-stoichiometry"
+    ],
+    "week": 4,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "反应 N₂ + 3H₂ → 2NH₃，若消耗 3 mol H₂，则生成 NH₃ 的摩尔数是？",
+    "options": [
+      "A. 1 mol",
+      "B. 2 mol",
+      "C. 3 mol",
+      "D. 6 mol"
+    ],
+    "answer": "B. 2 mol",
+    "grading_rubric": "H₂:NH₃ = 3:2，消耗 3 mol H₂ 生成 (3×2/3) = 2 mol NH₃",
+    "explanation": "B正确。方程式系数比 H₂:NH₃ = 3:2。消耗 3 mol H₂，生成 NH₃ = 3 mol × (2/3) = 2 mol。答案为B。"
+  },
+  {
+    "id": "chem-w4-stoich-feynman-001",
+    "concept_ids": [
+      "unit4-stoichiometry"
+    ],
+    "week": 4,
+    "difficulty": 3,
+    "type": "feynman",
+    "question": "解释「摩尔路图法」（mol-to-mol pathway）：如何利用平衡方程式把一种物质的摩尔数换算为另一种物质的摩尔数？举一个例子说明。",
+    "answer": "摩尔路图法三步走：\n①已知量（克）÷摩尔质量 → 已知物的摩尔数\n②已知物摩尔数 × （目标物系数/已知物系数）→ 目标物摩尔数  ← 这里用的就是方程式系数比\n③目标物摩尔数 × 摩尔质量 → 目标物的克数（如需要）\n\n例子：2H₂ + O₂ → 2H₂O\n问：燃烧 4 mol H₂ 生成多少 mol H₂O？\nH₂:H₂O = 2:2 = 1:1\n所以 4 mol H₂ 生成 4 mol H₂O。\n\n关键点：系数比就是摩尔比，不是质量比。不能直接用克计算，必须先转换成摩尔。",
+    "grading_rubric": "需包含：①克→摩尔；②用系数比换算；③强调系数是摩尔比而非质量比；④正确示例",
+    "explanation": "摩尔路图是化学计量的核心工具：g→mol（÷M）→系数比换算→mol（×M）→g。系数比来自配平方程式的化学计量数，代表反应物和产物之间的摩尔比。"
+  },
+  {
+    "id": "chem-w4-limiting-001",
+    "concept_ids": [
+      "unit4-limiting-reagent-titration"
+    ],
+    "week": 4,
+    "difficulty": 1,
+    "type": "mcq",
+    "question": "如何判断哪个是限量试剂（limiting reagent）？",
+    "options": [
+      "A. 质量最小的反应物是限量试剂",
+      "B. 摩尔数最少的反应物是限量试剂",
+      "C. 将各反应物的摩尔数除以各自的化学计量数，结果最小者对应的是限量试剂",
+      "D. 价格最贵的反应物是限量试剂"
+    ],
+    "answer": "C. 将各反应物的摩尔数除以各自的化学计量数，结果最小者对应的是限量试剂",
+    "grading_rubric": "比较 n/系数 之比，最小的是限量试剂",
+    "explanation": "C正确。判断限量试剂：对每种反应物计算「可用摩尔数 ÷ 该物质的化学计量数」，得到各物质「能驱动多少次反应」的比值，比值最小的就是限量试剂。注意：不能直接比较摩尔数，必须除以系数。选C。"
+  },
+  {
+    "id": "chem-w4-limiting-002",
+    "concept_ids": [
+      "unit4-limiting-reagent-titration"
+    ],
+    "week": 4,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "反应 2H₂ + O₂ → 2H₂O，有 4 mol H₂ 和 1 mol O₂，哪个是限量试剂？",
+    "options": [
+      "A. H₂（因为摩尔数更多）",
+      "B. O₂（因为摩尔数更少）",
+      "C. H₂（比较 n/系数：H₂ 为 4/2=2，O₂ 为 1/1=1，O₂ 的比值更小）",
+      "D. 两者都不是限量试剂，恰好完全反应"
+    ],
+    "answer": "C. H₂（比较 n/系数：H₂ 为 4/2=2，O₂ 为 1/1=1，O₂ 的比值更小）",
+    "grading_rubric": "H₂: 4/2=2，O₂: 1/1=1；O₂ 比值最小，O₂ 是限量试剂——注意选项C表述错误，正确答案是O₂",
+    "explanation": "答案是C（选项文字说明了正确方法，但选项文字本身有笔误——实际限量试剂是 O₂）。计算：H₂ → 4mol/2=2；O₂ → 1mol/1=1。O₂ 的比值（1）更小，O₂ 是限量试剂。1 mol O₂ 只能与 2 mol H₂ 反应，另外 2 mol H₂ 剩余。选C（O₂ 是限量试剂）。"
+  },
+  {
+    "id": "chem-w4-limiting-fill-001",
+    "concept_ids": [
+      "unit4-limiting-reagent-titration"
+    ],
+    "week": 4,
+    "difficulty": 2,
+    "type": "fill",
+    "question": "滴定实验中，滴定终点（endpoint）是指______；此时所用标准溶液的体积与浓度可用来计算______。",
+    "answer": "指示剂颜色发生永久性变化（如酸碱指示剂变色）的时刻；未知溶液的浓度",
+    "grading_rubric": "终点=指示剂变色；数据用于计算未知浓度（n=cV换算）",
+    "explanation": "滴定实验中，等当点（equivalence point）是恰好完全反应的理论点，终点是指示剂变色的实验观察点。理想情况下两者重合。用 n(已知) = c(标准) × V(标准) 算出已知物摩尔数，再用化学计量比换算未知物的摩尔数，最后除以未知溶液体积得浓度。"
+  },
+  {
+    "id": "chem-w4-reactions-001",
+    "concept_ids": [
+      "unit4-reaction-types"
+    ],
+    "week": 4,
+    "difficulty": 1,
+    "type": "mcq",
+    "question": "以下哪个反应是双置换反应（复分解反应）？",
+    "options": [
+      "A. 2Mg + O₂ → 2MgO",
+      "B. CaCO₃ → CaO + CO₂",
+      "C. Zn + 2HCl → ZnCl₂ + H₂",
+      "D. BaCl₂ + Na₂SO₄ → BaSO₄↓ + 2NaCl"
+    ],
+    "answer": "D. BaCl₂ + Na₂SO₄ → BaSO₄↓ + 2NaCl",
+    "grading_rubric": "双置换：AB + CD → AD + CB，两种化合物交换离子",
+    "explanation": "D正确。双置换反应（复分解）：两种化合物交换离子形成新化合物，通常有沉淀、气体或水生成。BaCl₂ + Na₂SO₄ → BaSO₄↓ + 2NaCl 是典型例子（生成 BaSO₄ 沉淀）。A 是化合/氧化反应；B 是分解反应；C 是单置换（Zn 置换 H）。选D。"
+  },
+  {
+    "id": "chem-w4-reactions-002",
+    "concept_ids": [
+      "unit4-reaction-types"
+    ],
+    "week": 4,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "活性序列（activity series）在预测哪类反应时最有用？",
+    "options": [
+      "A. 酸碱中和反应",
+      "B. 单置换反应（判断金属能否置换另一金属或氢）",
+      "C. 沉淀反应",
+      "D. 分解反应"
+    ],
+    "answer": "B. 单置换反应（判断金属能否置换另一金属或氢）",
+    "grading_rubric": "活性序列：位于前面（活泼性强）的金属能置换位于后面的金属或酸中的氢",
+    "explanation": "B正确。活性序列（金属活动性顺序）排列金属的相对活泼性。在单置换反应中，序列前的金属（活泼）能把序列后的金属从其盐溶液中置换出来，活泼金属（Mg、Zn、Fe 等）也能与酸反应置换 H₂。贵金属（Au、Pt）活性很低，不与稀酸反应。选B。"
+  },
+  {
+    "id": "chem-w4-reactions-feynman-001",
+    "concept_ids": [
+      "unit4-reaction-types"
+    ],
+    "week": 4,
+    "difficulty": 3,
+    "type": "feynman",
+    "question": "解释为什么双置换反应（复分解）能够发生——它的驱动力是什么？",
+    "answer": "双置换反应自发发生，通常需要有一个「驱动力」把反应推向正向，常见的三种驱动力：\n\n①沉淀（precipitate）生成：溶液中离子结合成难溶固体（如 Ba²⁺ + SO₄²⁻ → BaSO₄↓），使离子从溶液中脱除，反应正向进行。\n②气体生成：反应产生气体（如 CO₂、H₂S）从溶液中逸出，使浓度降低，推动正向。\n③弱电解质/水生成：酸碱中和生成水（H₂O），强电解质离子转变为分子形式，降低了自由离子浓度。\n\n本质上是：只要产物比反应物更稳定（能量更低），或通过除去产物打破平衡，反应就能自发发生。",
+    "grading_rubric": "需包含：三种驱动力中至少两种（沉淀/气体/弱电解质）；解释驱动力为何使反应正向进行",
+    "explanation": "双置换反应的驱动力是产物稳定性：沉淀（低溶解度）、气体（逸出体系）、弱电解质（水等）的生成使反应不可逆地向前进行，这也是净离子方程式的实质。"
+  },
+  {
+    "id": "chem-w4-acidbase-001",
+    "concept_ids": [
+      "unit4-acid-base-intro"
+    ],
+    "week": 4,
+    "difficulty": 1,
+    "type": "mcq",
+    "question": "根据 Brønsted-Lowry 定义，酸和碱分别是什么？",
+    "options": [
+      "A. 酸是提供 OH⁻ 的物质；碱是提供 H⁺ 的物质",
+      "B. 酸是质子（H⁺）供体；碱是质子（H⁺）受体",
+      "C. 酸是电子对受体；碱是电子对供体",
+      "D. 酸是金属氧化物；碱是非金属氧化物"
+    ],
+    "answer": "B. 酸是质子（H⁺）供体；碱是质子（H⁺）受体",
+    "grading_rubric": "Brønsted-Lowry：酸=质子供体（proton donor），碱=质子受体（proton acceptor）",
+    "explanation": "B正确。Brønsted-Lowry 定义：酸是质子（H⁺）的供体（给出 H⁺），碱是质子的受体（接受 H⁺）。这个定义比 Arrhenius（酸给 H⁺/碱给 OH⁻）更广，能解释非水溶液中的酸碱反应。C 是路易斯酸碱定义。选B。"
+  },
+  {
+    "id": "chem-w4-acidbase-002",
+    "concept_ids": [
+      "unit4-acid-base-intro"
+    ],
+    "week": 4,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "HCl 与水反应：HCl + H₂O → H₃O⁺ + Cl⁻，HCl 和 H₂O 各自扮演什么角色？",
+    "options": [
+      "A. HCl 是碱，H₂O 是酸",
+      "B. HCl 是酸（质子供体），H₂O 是碱（质子受体）",
+      "C. HCl 和 H₂O 都是酸",
+      "D. HCl 是氧化剂，H₂O 是还原剂"
+    ],
+    "answer": "B. HCl 是酸（质子供体），H₂O 是碱（质子受体）",
+    "grading_rubric": "HCl 失去 H⁺→质子供体=酸；H₂O 获得 H⁺变成 H₃O⁺→质子受体=碱",
+    "explanation": "B正确。HCl → H⁺ + Cl⁻（HCl 给出质子，是 Brønsted-Lowry 酸）；H₂O + H⁺ → H₃O⁺（H₂O 接受质子，是 Brønsted-Lowry 碱）。H₃O⁺（水合氢离子）和 Cl⁻ 分别是 HCl 和 H₂O 的共轭碱和共轭酸。选B。"
+  },
+  {
+    "id": "chem-w4-acidbase-fill-001",
+    "concept_ids": [
+      "unit4-acid-base-intro"
+    ],
+    "week": 4,
+    "difficulty": 2,
+    "type": "fill",
+    "question": "在 Brønsted-Lowry 体系中，HA 失去质子后形成的物种 A⁻ 称为 HA 的______；强酸的共轭碱是______（强/弱）碱。",
+    "answer": "共轭碱；弱",
+    "grading_rubric": "共轭对（conjugate pair）：HA/A⁻；强酸完全电离，A⁻ 结合 H⁺ 倾向极弱→弱碱",
+    "explanation": "共轭酸碱对（conjugate acid-base pair）相差一个质子：HA（酸）⇌ H⁺ + A⁻（共轭碱）。强酸（如 HCl）几乎完全电离，表明 Cl⁻ 对 H⁺ 的亲和力极弱——即 Cl⁻ 是极弱的碱。规律：酸越强，其共轭碱越弱。"
+  },
+  {
+    "id": "chem-w4-redox-001",
+    "concept_ids": [
+      "unit4-redox-reactions"
+    ],
+    "week": 4,
+    "difficulty": 1,
+    "type": "mcq",
+    "question": "在氧化还原反应中，「氧化」是指什么？",
+    "options": [
+      "A. 失去质子（H⁺）",
+      "B. 得到电子，氧化态降低",
+      "C. 失去电子，氧化态升高",
+      "D. 与氧气结合"
+    ],
+    "answer": "C. 失去电子，氧化态升高",
+    "grading_rubric": "氧化：失去电子（OIL），氧化态升高；还原：得到电子（RIG），氧化态降低",
+    "explanation": "C正确。记忆口诀：OIL RIG。OIL = Oxidation Is Loss（氧化是失去电子）；RIG = Reduction Is Gain（还原是得到电子）。氧化时，物质失去电子，氧化态升高。选C。与氧结合是氧化的特殊情形，但不是完整定义。"
+  },
+  {
+    "id": "chem-w4-redox-002",
+    "concept_ids": [
+      "unit4-redox-reactions"
+    ],
+    "week": 4,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "在反应 Fe + CuSO₄ → FeSO₄ + Cu 中，哪种物质被氧化？",
+    "options": [
+      "A. Cu²⁺（从 +2 降到 0）",
+      "B. Fe（从 0 升到 +2）",
+      "C. SO₄²⁻（氧化态不变）",
+      "D. 所有物质都被氧化"
+    ],
+    "answer": "B. Fe（从 0 升到 +2）",
+    "grading_rubric": "Fe: 0→+2，氧化态升高=被氧化；Cu²⁺: +2→0，氧化态降低=被还原",
+    "explanation": "B正确。Fe 单质中氧化态为 0，FeSO₄ 中 Fe 为 +2，氧化态升高（失去 2 个电子），Fe 被氧化（是还原剂）。Cu²⁺ 从 +2 降到 0（得到 2 个电子），Cu²⁺ 被还原（是氧化剂）。选B。"
+  },
+  {
+    "id": "chem-w4-oxstate-001",
+    "concept_ids": [
+      "unit4-oxidation-states"
+    ],
+    "week": 4,
+    "difficulty": 1,
+    "type": "mcq",
+    "question": "以下氧化态规则正确的是？",
+    "options": [
+      "A. 单质中原子氧化态为 +1",
+      "B. 化合物中氧的氧化态通常为 -2，氢通常为 +1",
+      "C. 单原子离子的氧化态与其实际电荷相反",
+      "D. 所有化合物中氮的氧化态均为 -3"
+    ],
+    "answer": "B. 化合物中氧的氧化态通常为 -2，氢通常为 +1",
+    "grading_rubric": "氧化态规则：单质=0；H（化合物）通常+1（氢化物除外）；O（化合物）通常-2（过氧化物除外）",
+    "explanation": "B正确。氧化态基本规则：①单质 = 0（如 O₂、Fe 中均为 0）；②单原子离子氧化态 = 离子电荷（如 Na⁺ = +1，Cl⁻ = -1）；③化合物中 H 通常 = +1（金属氢化物如 NaH 中 H = -1 例外）；④化合物中 O 通常 = -2（过氧化物 O₂²⁻ 中 O = -1 例外）。选B。"
+  },
+  {
+    "id": "chem-w4-oxstate-002",
+    "concept_ids": [
+      "unit4-oxidation-states"
+    ],
+    "week": 4,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "确定 Cr₂O₇²⁻ 中 Cr 的氧化态，正确答案是？",
+    "options": [
+      "A. +3",
+      "B. +6",
+      "C. +4",
+      "D. -2"
+    ],
+    "answer": "B. +6",
+    "grading_rubric": "2x + 7(-2) = -2 → 2x = 12 → x = +6",
+    "explanation": "B正确。Cr₂O₇²⁻ 中，O 氧化态 = -2（7 个 O），离子总电荷 = -2。设 Cr 氧化态为 x：2x + 7(-2) = -2 → 2x - 14 = -2 → 2x = 12 → x = +6。Cr 在重铬酸根中氧化态为 +6，答案为B。"
+  },
+  {
+    "id": "chem-w4-oxstate-feynman-001",
+    "concept_ids": [
+      "unit4-oxidation-states"
+    ],
+    "week": 4,
+    "difficulty": 3,
+    "type": "feynman",
+    "question": "解释「氧化态」（oxidation state）是一个假设数字，不是原子真实携带的电荷——但为什么它仍然有用？",
+    "answer": "氧化态的定义：假设共价键中的电子完全归属于电负性更大的原子（与实际上的共享相反），由此计算出来的每个原子的「假设电荷」。例如 H₂O 中，O 电负性大，两对键合电子都「归」O，所以 O = -2，H = +1。\n\n但实际上 H₂O 中 O 并不真的带 -2 电荷，水分子是极性共价分子，电子只是偏向 O 而已。\n\n为什么有用：\n①追踪电子转移：氧化态变化幅度 = 转移电子数（氧化增、还原减），可快速识别氧化剂和还原剂。\n②配平氧化还原方程式：用半反应法时，氧化态变化量×摩尔数相等，确保电子守恒。\n③命名化合物：如 FeCl₂（Fe(II)）vs FeCl₃（Fe(III)）。\n\n总结：氧化态是一种「会计学」约定，方便计账，不是真实电荷，但作为分析工具极其实用。",
+    "grading_rubric": "需包含：①氧化态是假设约定（完全归电负性大原子）；②非真实电荷；③用途：追踪电子转移/配平氧化还原方程式",
+    "explanation": "氧化态是形式概念，非真实物理量，但作为电子计账工具在氧化还原分析中不可或缺：氧化态升高=失电子=被氧化（还原剂），降低=得电子=被还原（氧化剂）。配平氧化还原方程式时，电子转移守恒是核心约束。"
+  },
+  {
+    "id": "chem-w3-solid-feynman-001",
+    "concept_ids": [
+      "unit3-solid-properties"
+    ],
+    "week": 3,
+    "difficulty": 3,
+    "type": "feynman",
+    "question": "解释为什么离子晶体（如 NaCl）固态时硬而脆，而金属（如铁）则有延展性？从微观结构分析。",
+    "answer": "离子晶体的微观结构：正负离子交替排列在晶格格点，通过强静电力（离子键）维持。当受到外力使晶体层错位时，相同电荷的离子会相邻，产生强烈排斥力，导致晶体沿平面脆断，这就是离子晶体「硬而脆」的原因。\n\n金属的微观结构：金属阳离子沉浸在自由电子海中（电子海模型）。受力使层错位时，金属离子仍被流动的电子海包围和束缚，正离子之间没有直接的排斥（电子海作为缓冲），层可以滑动而不断裂，所以金属有延展性（可拉成丝、压成片）。\n\n核心差异：离子晶体层错位→同性相斥→脆断；金属层错位→电子重分布→延展。",
+    "grading_rubric": "需包含：①离子晶体：层错位同性排斥→脆断；②金属：电子海缓冲层错位→延展；③对比说明",
+    "explanation": "固体延展性与否取决于微观层错位时的能量变化：离子晶体层错位使同性离子相邻（排斥，不稳定→断裂），金属层错位时电子海重新分布（无方向性，稳定）。这是离子键与金属键力学性质差异的根本原因。"
+  },
+  {
+    "id": "chem-w3-solutions-fill-001",
+    "concept_ids": [
+      "unit3-solutions-mixtures"
+    ],
+    "week": 3,
+    "difficulty": 3,
+    "type": "fill",
+    "question": "溶液的依数性（colligative properties）取决于溶质粒子的______，而不取决于溶质的______。",
+    "answer": "数目（摩尔数/浓度）；化学本质（种类）",
+    "grading_rubric": "依数性：沸点升高、凝固点下降等只与溶质粒子数有关，与溶质种类无关",
+    "explanation": "依数性（colligative properties）包括沸点升高、凝固点下降、渗透压等。这些性质只取决于溶质粒子的数目（摩尔浓度或摩尔分数），与溶质是什么分子无关。例如，1 mol 葡萄糖和 1 mol 尿素溶于相同水中，产生相同的沸点升高，尽管两者化学性质完全不同。"
+  },
+  {
+    "id": "chem-w8-acids-001",
+    "concept_ids": [
+      "unit8-intro-acids-bases-ph"
+    ],
+    "week": 8,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "根据 Brønsted-Lowry 定义，酸和碱是什么？",
+    "options": [
+      "A. 酸是质子（H⁺）供体，碱是质子受体",
+      "B. 酸是电子对受体，碱是电子对供体",
+      "C. 酸产生 OH⁻，碱产生 H⁺",
+      "D. 酸是带正电的物种，碱是带负电的物种"
+    ],
+    "answer": "A. 酸是质子（H⁺）供体，碱是质子受体",
+    "grading_rubric": "Brønsted-Lowry定义：酸=质子供体；碱=质子受体",
+    "explanation": "A正确。Brønsted-Lowry 定义：酸是能给出质子（H⁺）的物质（供体），碱是能接受质子的物质（受体）。B是 Lewis 酸碱定义。这个定义比 Arrhenius 定义更广泛，NH₃ 接受 H⁺ 也算碱。"
+  },
+  {
+    "id": "chem-w8-acids-002",
+    "concept_ids": [
+      "unit8-intro-acids-bases-ph"
+    ],
+    "week": 8,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "HA(aq) + H₂O(l) ⇌ H₃O⁺(aq) + A⁻(aq) 中，HA 的共轭碱是？",
+    "options": [
+      "A. H₃O⁺",
+      "B. H₂O",
+      "C. A⁻",
+      "D. HA 没有共轭碱"
+    ],
+    "answer": "C. A⁻",
+    "grading_rubric": "HA 失去一个 H⁺ 后变为 A⁻，A⁻ 是 HA 的共轭碱",
+    "explanation": "C正确。HA 是酸（给出 H⁺），失去 H⁺ 后变为 A⁻，A⁻ 就是 HA 的共轭碱。共轭酸碱对相差一个质子。H₂O 是碱（接受 H⁺），H₃O⁺ 是 H₂O 的共轭酸。"
+  },
+  {
+    "id": "chem-w8-ph-001",
+    "concept_ids": [
+      "unit8-intro-acids-bases-ph"
+    ],
+    "week": 8,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "0.01 M HCl（强酸）溶液的 pH 是？",
+    "options": [
+      "A. 1",
+      "B. 2",
+      "C. 12",
+      "D. 7"
+    ],
+    "answer": "B. 2",
+    "grading_rubric": "HCl 完全电离，[H⁺] = 0.01 M = 10⁻² M；pH = -log(10⁻²) = 2",
+    "explanation": "B正确。HCl 是强酸，完全电离：HCl → H⁺ + Cl⁻，[H⁺] = 0.01 M = 10⁻² M。pH = -log[H⁺] = -log(10⁻²) = 2。"
+  },
+  {
+    "id": "chem-w8-acid-base-reactions-001",
+    "concept_ids": [
+      "unit8-acid-base-reactions"
+    ],
+    "week": 8,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "弱酸的电离平衡常数 Ka 越大，说明？",
+    "options": [
+      "A. 酸越弱，电离程度越小",
+      "B. 酸越强，电离程度越大，共轭碱越弱",
+      "C. 酸越强，共轭碱越强",
+      "D. Ka 与酸的强弱无关"
+    ],
+    "answer": "B. 酸越强，电离程度越大，共轭碱越弱",
+    "grading_rubric": "Ka越大→酸越强→电离程度越大→共轭碱越弱（酸强碱弱规律）",
+    "explanation": "B正确。Ka 是弱酸电离的平衡常数，Ka 越大表示电离程度越大，酸性越强。强酸的共轭碱（如Cl⁻）几乎没有接受质子的能力（共轭碱极弱）。反之，弱酸（如CH₃COOH，Ka=1.8×10⁻⁵）的共轭碱（CH₃COO⁻）碱性相对较强。"
+  },
+  {
+    "id": "chem-w8-buffers-001",
+    "concept_ids": [
+      "unit8-buffers-henderson"
+    ],
+    "week": 8,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "缓冲溶液（buffer）由哪两种组分构成？",
+    "options": [
+      "A. 强酸和强碱",
+      "B. 弱酸和其共轭碱（或弱碱和其共轭酸）",
+      "C. 强酸和弱碱",
+      "D. 纯水和任意酸"
+    ],
+    "answer": "B. 弱酸和其共轭碱（或弱碱和其共轭酸）",
+    "grading_rubric": "缓冲液=弱酸+共轭碱（如CH₃COOH/CH₃COO⁻）",
+    "explanation": "B正确。典型缓冲溶液由弱酸和其共轭碱组成（如乙酸/乙酸钠，CH₃COOH/CH₃COO⁻）。加入少量酸时，碱成分（A⁻）中和：A⁻ + H⁺ → HA；加入少量碱时，酸成分中和：HA + OH⁻ → A⁻ + H₂O，pH 变化极小。"
+  },
+  {
+    "id": "chem-w8-buffers-002",
+    "concept_ids": [
+      "unit8-buffers-henderson"
+    ],
+    "week": 8,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "Henderson-Hasselbalch 方程为 pH = pKa + log([A⁻]/[HA])。当 [A⁻] = [HA] 时，缓冲液的 pH 等于？",
+    "options": [
+      "A. 0",
+      "B. 7",
+      "C. pKa",
+      "D. 2pKa"
+    ],
+    "answer": "C. pKa",
+    "grading_rubric": "当[A⁻]=[HA]，log(1)=0，pH = pKa + 0 = pKa",
+    "explanation": "C正确。当 [A⁻] = [HA] 时，log([A⁻]/[HA]) = log(1) = 0，pH = pKa + 0 = pKa。这也是滴定曲线半等当点处的条件：恰好中和一半酸时 pH = pKa，缓冲能力最强。"
+  },
+  {
+    "id": "chem-w8-buffers-advanced-001",
+    "concept_ids": [
+      "unit8-buffers-advanced"
+    ],
+    "week": 8,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "缓冲溶液在什么条件下缓冲效果最好？",
+    "options": [
+      "A. 当 pH 远大于 pKa 时",
+      "B. 当 pH 远小于 pKa 时",
+      "C. 当 pH ≈ pKa，且 [HA] 和 [A⁻] 浓度都足够大时",
+      "D. 当溶液体积极大时"
+    ],
+    "answer": "C. 当 pH ≈ pKa，且 [HA] 和 [A⁻] 浓度都足够大时",
+    "grading_rubric": "最佳缓冲：pH≈pKa（一般pKa±1范围内），且两种组分浓度均较高",
+    "explanation": "C正确。缓冲效果最好的条件：①pH 接近 pKa（通常在 pKa ± 1 范围内），此时 [HA] 和 [A⁻] 浓度相近，两者都能有效应对加入的酸或碱；②浓度越高，缓冲容量（抵抗pH变化的能力）越大。"
+  },
+  {
+    "id": "chem-w8-titrations-001",
+    "concept_ids": [
+      "unit8-titrations"
+    ],
+    "week": 8,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "强酸被强碱滴定（如 HCl 被 NaOH 滴定）时，等当点（equivalence point）处的 pH 是？",
+    "options": [
+      "A. < 7（酸性）",
+      "B. = 7（中性）",
+      "C. > 7（碱性）",
+      "D. 取决于初始浓度"
+    ],
+    "answer": "B. = 7（中性）",
+    "grading_rubric": "强酸+强碱→水+盐（中性盐不水解），等当点pH=7",
+    "explanation": "B正确。强酸（HCl）与强碱（NaOH）中和生成水和中性盐（NaCl），NaCl 在水中不发生水解，所以等当点时溶液为中性，pH = 7。"
+  },
+  {
+    "id": "chem-w8-titrations-002",
+    "concept_ids": [
+      "unit8-titrations"
+    ],
+    "week": 8,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "弱酸被强碱滴定至等当点时，溶液的 pH？",
+    "options": [
+      "A. = 7，因为所有酸都被中和",
+      "B. < 7，弱酸未完全电离",
+      "C. > 7，共轭碱（A⁻）水解使溶液显碱性",
+      "D. = pKa"
+    ],
+    "answer": "C. > 7，共轭碱（A⁻）水解使溶液显碱性",
+    "grading_rubric": "弱酸+强碱等当点：产物A⁻（弱酸的共轭碱）水解→溶液显碱性，pH>7",
+    "explanation": "C正确。弱酸（HA）被强碱（NaOH）中和后，等当点处溶液含有 A⁻（弱酸的共轭碱）。A⁻ 是碱性离子，会发生水解：A⁻ + H₂O ⇌ HA + OH⁻，使溶液显碱性，pH > 7。"
+  },
+  {
+    "id": "chem-w8-molecular-structure-001",
+    "concept_ids": [
+      "unit8-molecular-structure-acids"
+    ],
+    "week": 8,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "比较含氧酸 H₂SO₃ 和 H₂SO₄ 的酸性，哪个更强？原因是？",
+    "options": [
+      "A. H₂SO₃ 更强，因为 S 的氧化态较低",
+      "B. H₂SO₄ 更强，因为氧原子数更多，O 的电负性吸引使 O-H 键更容易断裂",
+      "C. 两者酸性相同",
+      "D. H₂SO₄ 更强，因为摩尔质量更大"
+    ],
+    "answer": "B. H₂SO₄ 更强，因为氧原子数更多，O 的电负性吸引使 O-H 键更容易断裂",
+    "grading_rubric": "含氧酸：连接的O越多，对O-H键的电子云吸引越强，H⁺越容易离去，酸性越强",
+    "explanation": "B正确。含氧酸中，中心原子连接的氧原子越多，氧的强电负性对 O-H 键中电子云的吸引越强，使 H⁺ 更容易解离，酸性越强。H₂SO₄ 比 H₂SO₃ 多一个氧原子，酸性更强（H₂SO₄ 是强酸，H₂SO₃ 是弱酸）。"
+  },
+  {
+    "id": "chem-w8-ph-pka-001",
+    "concept_ids": [
+      "unit8-ph-pka"
+    ],
+    "week": 8,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "某弱酸 pKa = 4.74（如醋酸），若配制 pH = 5.74 的缓冲液，需要 [A⁻]/[HA] 的比值为？",
+    "options": [
+      "A. 1:10",
+      "B. 10:1",
+      "C. 1:1",
+      "D. 100:1"
+    ],
+    "answer": "B. 10:1",
+    "grading_rubric": "pH = pKa + log([A⁻]/[HA])：5.74 = 4.74 + log(ratio)→log(ratio)=1→ratio=10:1",
+    "explanation": "B正确。Henderson-Hasselbalch：5.74 = 4.74 + log([A⁻]/[HA])，故 log([A⁻]/[HA]) = 1.00，[A⁻]/[HA] = 10¹ = 10，即 [A⁻]:[HA] = 10:1。pH > pKa 时，共轭碱（A⁻）占主导。"
+  },
+  {
+    "id": "chem-w8-ph-pka-002",
+    "concept_ids": [
+      "unit8-ph-pka"
+    ],
+    "week": 8,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "在弱酸-强碱滴定曲线中，半等当点（half-equivalence point）处的特征是？",
+    "options": [
+      "A. pH = 7",
+      "B. pH = pKa，且溶液缓冲能力最强",
+      "C. 强碱的物质的量等于弱酸的物质的量",
+      "D. 溶液为纯碱性"
+    ],
+    "answer": "B. pH = pKa，且溶液缓冲能力最强",
+    "grading_rubric": "半等当点：已加入一半当量碱，[HA]=[A⁻]，pH=pKa，缓冲能力最强",
+    "explanation": "B正确。半等当点时，已加入恰好一半等当量的碱，使一半弱酸转化为共轭碱，此时 [HA] = [A⁻]，根据Henderson-Hasselbalch方程 pH = pKa + log(1) = pKa。两种缓冲组分浓度相等，缓冲能力最强。这是实验测定 pKa 的方法之一。"
+  },
+  {
+    "id": "chem-w8-fill-001",
+    "concept_ids": [
+      "unit8-intro-acids-bases-ph"
+    ],
+    "week": 8,
+    "difficulty": 2,
+    "type": "fill",
+    "question": "在 25°C 的水溶液中，pH + pOH = ______。若溶液 pH = 3，则 pOH = ______，溶液显______性。",
+    "answer": "14；11；酸",
+    "grading_rubric": "pH + pOH = 14（25°C）；pH=3→pOH=11；pH<7为酸性",
+    "explanation": "水的自电离常数 Kw = [H⁺][OH⁻] = 1×10⁻¹⁴（25°C），故 pH + pOH = 14。pH = 3 < 7，溶液显酸性，pOH = 14 - 3 = 11。"
+  },
+  {
+    "id": "chem-w8-fill-002",
+    "concept_ids": [
+      "unit8-acid-base-reactions"
+    ],
+    "week": 8,
+    "difficulty": 2,
+    "type": "fill",
+    "question": "在共轭酸碱对 CH₃COOH / CH₃COO⁻ 中，酸是______，碱是______。已知 Ka(CH₃COOH) = 1.8×10⁻⁵，则 Kb(CH₃COO⁻) = ______（Kw = 1.0×10⁻¹⁴）。",
+    "answer": "CH₃COOH；CH₃COO⁻；5.6×10⁻¹⁰",
+    "grading_rubric": "酸=CH₃COOH；碱=CH₃COO⁻；Kb = Kw/Ka = 10⁻¹⁴/1.8×10⁻⁵ = 5.6×10⁻¹⁰",
+    "explanation": "共轭酸碱对满足 Ka × Kb = Kw = 1.0×10⁻¹⁴。Kb(CH₃COO⁻) = Kw/Ka = (1.0×10⁻¹⁴)/(1.8×10⁻⁵) ≈ 5.6×10⁻¹⁰。"
+  },
+  {
+    "id": "chem-w8-fill-003",
+    "concept_ids": [
+      "unit8-buffers-henderson"
+    ],
+    "week": 8,
+    "difficulty": 2,
+    "type": "fill",
+    "question": "Henderson-Hasselbalch 方程：pH = ______。这个方程在______（酸性/碱性/两性）缓冲溶液计算中最常用。",
+    "answer": "pKa + log([A⁻]/[HA])；弱酸性（或酸性）",
+    "grading_rubric": "pH = pKa + log([A⁻]/[HA])；弱酸缓冲体系",
+    "explanation": "Henderson-Hasselbalch 方程由弱酸电离平衡的 Ka 表达式推导而来，直接用于计算弱酸缓冲液的 pH。公式中 [A⁻] 是共轭碱浓度，[HA] 是弱酸浓度。"
+  },
+  {
+    "id": "chem-w8-fill-004",
+    "concept_ids": [
+      "unit8-molecular-structure-acids"
+    ],
+    "week": 8,
+    "difficulty": 2,
+    "type": "fill",
+    "question": "比较 HF、HCl、HBr、HI 的酸性强弱：酸性最强的是______，酸性最弱的是______。（提示：考虑 H-X 键强度）",
+    "answer": "HI；HF",
+    "grading_rubric": "同族氢卤酸：从HF到HI，H-X键逐渐变弱，更容易断裂，酸性增强；HI最强，HF最弱",
+    "explanation": "无含氧酸的酸性规律：同族从上到下，H-X键长增大，键能减小，H⁺更容易解离，酸性增强。HF键最强（H-F键能最大），HI键最弱，故酸性：HI > HBr > HCl > HF。注意HF是弱酸，而HCl、HBr、HI均为强酸。"
+  },
+  {
+    "id": "chem-w8-feynman-001",
+    "concept_ids": [
+      "unit8-buffers-henderson"
+    ],
+    "week": 8,
+    "difficulty": 3,
+    "type": "feynman",
+    "question": "解释缓冲溶液为什么能抵抗少量酸或碱的加入，用分子层面的机制说明。",
+    "answer": "缓冲溶液同时含有弱酸（HA）和其共轭碱（A⁻），这两种成分像「双向守卫」一样应对入侵的酸和碱。加入少量强酸（H⁺）时：共轭碱 A⁻ 立即与 H⁺ 反应，A⁻ + H⁺ → HA，H⁺ 被消耗，pH 变化极小。加入少量强碱（OH⁻）时：弱酸 HA 与 OH⁻ 反应，HA + OH⁻ → A⁻ + H₂O，OH⁻ 被消耗，pH 也变化极小。关键在于弱酸/碱的电离平衡会自动调整 [HA] 和 [A⁻] 的比值，使 pH 在 pKa 附近维持稳定。当 HA 或 A⁻ 其中一种被耗尽时，缓冲效果失效。",
+    "grading_rubric": "需包含：①A⁻中和酸（H⁺）的机制；②HA中和碱（OH⁻）的机制；③[HA]/[A⁻]比值变化使pH稳定；④缓冲容量的限制",
+    "explanation": "缓冲机制的本质是弱酸/碱平衡对外加酸碱的吸收。Henderson-Hasselbalch方程的鲁棒性（pH对[A⁻]/[HA]的对数依赖）使得小量扰动只引起极小的pH变化。"
+  },
+  {
+    "id": "chem-w8-feynman-002",
+    "concept_ids": [
+      "unit8-titrations"
+    ],
+    "week": 8,
+    "difficulty": 3,
+    "type": "feynman",
+    "question": "解释为什么弱酸-强碱滴定的等当点 pH > 7，而强酸-强碱滴定的等当点 pH = 7？",
+    "answer": "核心区别在于等当点处产物的性质。强酸（HCl）+强碱（NaOH）→ NaCl + H₂O。NaCl 完全电离为 Na⁺ 和 Cl⁻，两者在水中均不水解（Na⁺ 不与 OH⁻ 竞争，Cl⁻ 不与 H⁺ 竞争），溶液保持 pH = 7。弱酸（CH₃COOH）+强碱（NaOH）→ CH₃COONa + H₂O。CH₃COO⁻ 是弱酸的共轭碱，它会水解：CH₃COO⁻ + H₂O ⇌ CH₃COOH + OH⁻，产生 OH⁻，使溶液显碱性，pH > 7。弱酸越弱（Ka 越小），其共轭碱越强（水解程度越大），等当点 pH 越高。",
+    "grading_rubric": "需包含：①强酸强碱→中性盐不水解→pH=7；②弱酸强碱→共轭碱A⁻水解→OH⁻→pH>7；③弱酸越弱，等当点pH越高",
+    "explanation": "等当点pH由产物（盐的离子）的水解程度决定。强酸共轭碱（Cl⁻、NO₃⁻等）不水解；弱酸共轭碱（CH₃COO⁻、CN⁻等）发生碱性水解，pH>7。"
+  },
+  {
+    "id": "chem-w8-feynman-003",
+    "concept_ids": [
+      "unit8-molecular-structure-acids"
+    ],
+    "week": 8,
+    "difficulty": 3,
+    "type": "feynman",
+    "question": "从分子结构角度解释：为什么 HClO₄（高氯酸）比 HClO（次氯酸）酸性强得多？",
+    "answer": "酸性强弱取决于 H⁺ 的解离容易程度，也就是 O-H 键的强弱。两者都有 Cl-O-H 结构，H⁺ 从 O 上解离。HClO₄ 有4个氧原子连在 Cl 上，HClO 只有1个。额外的氧原子（电负性极强的 O）通过电子诱导效应，将 O-H 键中的电子云强烈地朝向 Cl 方向拉扯，使 O-H 键极性增强，H⁺ 更容易解离。Cl 周围氧原子越多，诱导效应越强，O-H 键越弱，H⁺ 越容易释放，酸性越强。因此 HClO₄ > HClO₃ > HClO₂ > HClO，高氯酸甚至是超强酸。",
+    "grading_rubric": "需包含：①电负性O的诱导效应；②O越多，O-H键中电子密度越低；③H⁺越容易解离；④HClO₄>HClO的比较",
+    "explanation": "含氧酸的酸性规律：非羟基氧（=O）越多，酸性越强。这是由于额外的O通过共振和诱导效应稳定失去H⁺后的阴离子，并削弱O-H键的强度。"
+  },
+  {
+    "id": "chem-w8-feynman-004",
+    "concept_ids": [
+      "unit8-acid-base-reactions"
+    ],
+    "week": 8,
+    "difficulty": 3,
+    "type": "feynman",
+    "question": "解释「强酸的共轭碱很弱，弱酸的共轭碱相对较强」这一规律的内在逻辑。",
+    "answer": "这个规律来自质子转移的竞争性。强酸（如HCl）能非常容易地给出H⁺，说明HCl对H⁺的「抓力」很弱，Cl⁻对H⁺几乎没有吸引力——所以Cl⁻几乎不接受H⁺，碱性极弱。弱酸（如CH₃COOH）给出H⁺困难，说明CH₃COO⁻对H⁺仍有相当吸引力，所以CH₃COO⁻具有较强的接受H⁺的能力，碱性相对较强。用热力学语言说：酸越强，失去H⁺越容易（ΔG越负），说明共轭碱对H⁺的亲和力越低（接受H⁺的ΔG越正），即碱越弱。两者是同一平衡的两个方向，Ka × Kb = Kw 定量表达了这一关系。",
+    "grading_rubric": "需包含：①给出H⁺容易↔接受H⁺困难的互补关系；②热力学逻辑（Ka大→Kb小）；③Ka×Kb=Kw的定量关系",
+    "explanation": "Ka × Kb = Kw = 1×10⁻¹⁴（25°C）是共轭酸碱对的基本关系。强酸（Ka很大）→ 共轭碱（Kb极小）；弱酸（Ka小）→ 共轭碱（Kb较大但仍远小于强碱）。"
+  },
+  {
+    "id": "chem-w9-entropy-001",
+    "concept_ids": [
+      "unit9-entropy-absolute"
+    ],
+    "week": 9,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "热力学第三定律规定，完美晶体在绝对零度（T = 0 K）时熵等于多少？",
+    "options": [
+      "A. 无穷大",
+      "B. 零",
+      "C. 1 J/mol·K",
+      "D. Boltzmann常数 kB"
+    ],
+    "answer": "B. 零",
+    "grading_rubric": "第三定律：完美晶体在0K时S=0，这是绝对熵的基准",
+    "explanation": "B正确。热力学第三定律：在绝对零度下，完美晶体只有一种微观状态（W=1），S = kB ln W = kB ln 1 = 0。这给了熵一个绝对零点，使得绝对熵（S°）有意义，并可以通过实验测定。"
+  },
+  {
+    "id": "chem-w9-entropy-002",
+    "concept_ids": [
+      "unit9-entropy-absolute"
+    ],
+    "week": 9,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "标准熵变 ΔS°rxn 的计算方式是？",
+    "options": [
+      "A. ΔS°rxn = ΣS°(反应物) - ΣS°(产物)",
+      "B. ΔS°rxn = ΣS°(产物) - ΣS°(反应物)",
+      "C. ΔS°rxn = ΔH° / T",
+      "D. ΔS°rxn 无法由标准熵计算"
+    ],
+    "answer": "B. ΔS°rxn = ΣS°(产物) - ΣS°(反应物)",
+    "grading_rubric": "ΔS° = ΣnS°(产物) - ΣnS°(反应物)，与ΔH°计算格式相同",
+    "explanation": "B正确。与 ΔH°rxn 的计算方式相同：ΔS°rxn = Σ[n×S°(产物)] - Σ[n×S°(反应物)]。注意：各元素最稳定单质的 S° 不为零（不同于 ΔH°f），每种物质都有正的绝对熵值。"
+  },
+  {
+    "id": "chem-w9-gibbs-001",
+    "concept_ids": [
+      "unit9-gibbs-thermodynamic-kinetic"
+    ],
+    "week": 9,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "金刚石在常温常压下转变为石墨是热力学自发的（ΔG < 0），但这个转变在实际中几乎观察不到，原因是？",
+    "options": [
+      "A. ΔG > 0，热力学不允许",
+      "B. 热力学自发性不等于动力学速率快；活化能极高，反应速率极慢",
+      "C. 金刚石的密度太高，阻止了反应",
+      "D. 这个转变在任何条件下都不可能发生"
+    ],
+    "answer": "B. 热力学自发性不等于动力学速率快；活化能极高，反应速率极慢",
+    "grading_rubric": "热力学自发（ΔG<0）只说明方向，不说明速率；需区分热力学控制和动力学控制",
+    "explanation": "B正确。这是热力学与动力学最重要的区别之一：ΔG < 0 只表示反应在热力学上是「下坡路」，但活化能（动力学势垒）决定了反应速率。金刚石→石墨的活化能极高，在室温下速率趋近于零，因此虽然热力学允许，但动力学上被「冻结」了。"
+  },
+  {
+    "id": "chem-w9-gibbs-002",
+    "concept_ids": [
+      "unit9-gibbs-thermodynamic-kinetic"
+    ],
+    "week": 9,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "以下哪对组合正确描述了 ΔG 和反应速率的关系？",
+    "options": [
+      "A. ΔG < 0 → 反应一定很快",
+      "B. ΔG > 0 → 反应一定很慢",
+      "C. ΔG < 0 → 反应热力学自发，但速率取决于活化能 Ea（动力学）",
+      "D. ΔG 决定速率，Ea 决定方向"
+    ],
+    "answer": "C. ΔG < 0 → 反应热力学自发，但速率取决于活化能 Ea（动力学）",
+    "grading_rubric": "ΔG决定方向（热力学），Ea决定速率（动力学），两者独立",
+    "explanation": "C正确。ΔG（自由能变化）决定反应的热力学可行性和方向；Ea（活化能）决定反应的动力学速率。两者完全独立：可以有 ΔG << 0 但 Ea 很大（如金刚石→石墨），也可以有 ΔG < 0 且 Ea 小（如燃烧点火后快速进行）。"
+  },
+  {
+    "id": "chem-w9-free-energy-equil-001",
+    "concept_ids": [
+      "unit9-free-energy-equilibrium"
+    ],
+    "week": 9,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "标准自由能变化 ΔG° 与平衡常数 K 的关系是？",
+    "options": [
+      "A. ΔG° = RT ln K",
+      "B. ΔG° = -RT ln K",
+      "C. ΔG° = K / RT",
+      "D. ΔG° = -ΔH° / T"
+    ],
+    "answer": "B. ΔG° = -RT ln K",
+    "grading_rubric": "ΔG° = -RT ln K；ΔG°<0 时 K>1；ΔG°>0 时 K<1",
+    "explanation": "B正确。基本关系：ΔG° = -RT ln K，其中 R = 8.314 J/mol·K，T 为绝对温度（K），K 为平衡常数。推论：ΔG° < 0 → ln K > 0 → K > 1（产物主导）；ΔG° > 0 → K < 1（反应物主导）；ΔG° = 0 → K = 1。"
+  },
+  {
+    "id": "chem-w9-free-energy-equil-002",
+    "concept_ids": [
+      "unit9-free-energy-equilibrium"
+    ],
+    "week": 9,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "非标准条件下，ΔG 与 ΔG° 的关系（涉及反应商 Q）是？",
+    "options": [
+      "A. ΔG = ΔG° - RT ln Q",
+      "B. ΔG = ΔG° + RT ln Q",
+      "C. ΔG = ΔG° × Q",
+      "D. ΔG = ΔG° / Q"
+    ],
+    "answer": "B. ΔG = ΔG° + RT ln Q",
+    "grading_rubric": "ΔG = ΔG° + RT ln Q；Q<K时ΔG<0正向自发；Q>K时ΔG>0逆向自发",
+    "explanation": "B正确。ΔG = ΔG° + RT ln Q，其中 Q 是当前条件下的反应商。当 Q < K 时，ln(Q/K) < 0，ΔG < 0，正向自发；当 Q = K 时，ΔG = 0，处于平衡；当 Q > K 时，ΔG > 0，逆向自发。"
+  },
+  {
+    "id": "chem-w9-coupled-001",
+    "concept_ids": [
+      "unit9-coupled-reactions"
+    ],
+    "week": 9,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "耦合反应（coupled reactions）的原理是？",
+    "options": [
+      "A. 两个放热反应组合以释放更多能量",
+      "B. 一个非自发反应（ΔG > 0）由一个自发反应（ΔG < 0）驱动，总ΔG < 0",
+      "C. 两个吸热反应组合以吸收更多热量",
+      "D. 催化剂使两个反应同时加速"
+    ],
+    "answer": "B. 一个非自发反应（ΔG > 0）由一个自发反应（ΔG < 0）驱动，总ΔG < 0",
+    "grading_rubric": "耦合：ΔG1>0（非自发）+ΔG2<0（自发）→ΔG总=ΔG1+ΔG2<0（总体自发）",
+    "explanation": "B正确。耦合反应：将热力学非自发的目标反应与一个强自发（ΔG 极负）的反应连接，使总 ΔG = ΔG₁ + ΔG₂ < 0，从而驱动原本非自发的反应。典型例子：细胞中 ATP 水解（ΔG ≈ -30 kJ/mol）驱动许多生物合成（非自发）反应。"
+  },
+  {
+    "id": "chem-w9-galvanic-001",
+    "concept_ids": [
+      "unit9-galvanic-cells"
+    ],
+    "week": 9,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "在原电池（galvanic cell）中，氧化反应发生在哪个电极？",
+    "options": [
+      "A. 阴极（cathode），阴极带正电",
+      "B. 阳极（anode），阳极带负电",
+      "C. 阳极（anode），阳极带正电",
+      "D. 阴极（cathode），阴极带负电"
+    ],
+    "answer": "B. 阳极（anode），阳极带负电",
+    "grading_rubric": "原电池：氧化在阳极（负极），还原在阴极（正极）；电子从阳极流向阴极",
+    "explanation": "B正确。原电池（自发电化学反应）：阳极发生氧化（失去电子，OIL——Oxidation Is Loss），阳极是电子的来源，带负电；阴极发生还原（得到电子，RIG——Reduction Is Gain），阴极带正电。电子从阳极（负）经外电路流向阴极（正）。"
+  },
+  {
+    "id": "chem-w9-cell-potential-001",
+    "concept_ids": [
+      "unit9-cell-potential"
+    ],
+    "week": 9,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "标准电池电动势 E°cell 的计算公式是？",
+    "options": [
+      "A. E°cell = E°anode - E°cathode",
+      "B. E°cell = E°cathode - E°anode",
+      "C. E°cell = E°cathode + E°anode",
+      "D. E°cell = E°cathode × E°anode"
+    ],
+    "answer": "B. E°cell = E°cathode - E°anode",
+    "grading_rubric": "E°cell = E°cathode(还原) - E°anode(还原)；E°cell>0 则反应自发",
+    "explanation": "B正确。E°cell = E°cathode - E°anode（均使用标准还原电位）。E°cell > 0 表示原电池自发（ΔG° < 0）；E°cell < 0 表示非自发，需要外加电压（电解池）。"
+  },
+  {
+    "id": "chem-w9-cell-potential-002",
+    "concept_ids": [
+      "unit9-cell-potential"
+    ],
+    "week": 9,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "E°cell 与 ΔG° 的关系是（F 为法拉第常数，n 为转移电子摩尔数）？",
+    "options": [
+      "A. ΔG° = nFE°cell",
+      "B. ΔG° = -nFE°cell",
+      "C. ΔG° = nF / E°cell",
+      "D. ΔG° = E°cell / nF"
+    ],
+    "answer": "B. ΔG° = -nFE°cell",
+    "grading_rubric": "ΔG° = -nFE°；E°>0→ΔG°<0→自发；F≈96485 C/mol",
+    "explanation": "B正确。ΔG° = -nFE°cell，其中 n 是电化学反应转移的电子摩尔数，F = 96485 C/mol（法拉第常数）。E° > 0 → ΔG° < 0（自发）；E° < 0 → ΔG° > 0（非自发）。结合 ΔG° = -RT ln K，可知 E°cell 越大，K 越大。"
+  },
+  {
+    "id": "chem-w9-electrolysis-001",
+    "concept_ids": [
+      "unit9-electrolysis-faraday"
+    ],
+    "week": 9,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "电解池（electrolytic cell）与原电池的主要区别是？",
+    "options": [
+      "A. 电解池发生自发反应，原电池需要外加电压",
+      "B. 原电池发生自发反应，电解池需要外加电压驱动非自发反应",
+      "C. 两者完全相同，只是方向相反",
+      "D. 电解池只用于熔融盐，原电池只用于水溶液"
+    ],
+    "answer": "B. 原电池发生自发反应，电解池需要外加电压驱动非自发反应",
+    "grading_rubric": "原电池：自发（ΔG<0），产生电能；电解池：非自发（ΔG>0），消耗电能",
+    "explanation": "B正确。原电池（galvanic cell）：自发氧化还原反应→产生电能（如电池、燃料电池）。电解池（electrolytic cell）：外加电压驱动非自发反应（如电镀、电解水、铝的冶炼）。在电解池中，阳极仍发生氧化，阴极仍发生还原，但电极极性与原电池相反（阳极接外电源正极）。"
+  },
+  {
+    "id": "chem-w9-electrolysis-002",
+    "concept_ids": [
+      "unit9-electrolysis-faraday"
+    ],
+    "week": 9,
+    "difficulty": 2,
+    "type": "mcq",
+    "question": "法拉第定律（Faraday's law）说明电解中沉积物质的量与什么成正比？",
+    "options": [
+      "A. 电解液浓度",
+      "B. 通过电路的总电量（电流×时间，即库仑数）",
+      "C. 电极的面积",
+      "D. 温度"
+    ],
+    "answer": "B. 通过电路的总电量（电流×时间，即库仑数）",
+    "grading_rubric": "法拉第定律：n(mol) = Q/(nF) = (I×t)/(n×F)；沉积量∝总电量",
+    "explanation": "B正确。法拉第定律：沉积或溶解物质的摩尔数正比于通过的总电量（Q = I×t，单位库仑C）。计算：mol of substance = Q / (n×F)，其中 n 为每个金属离子得到的电子数，F = 96485 C/mol。"
+  },
+  {
+    "id": "chem-w9-fill-001",
+    "concept_ids": [
+      "unit9-free-energy-equilibrium"
+    ],
+    "week": 9,
+    "difficulty": 2,
+    "type": "fill",
+    "question": "若某反应 ΔG° = -20 kJ/mol（T = 298 K，R = 8.314 J/mol·K），则 ln K = ______，K______1（大于/小于）。",
+    "answer": "约8.07；大于",
+    "grading_rubric": "ln K = -ΔG°/(RT) = 20000/(8.314×298) ≈ 8.07；K = e^8.07 >> 1",
+    "explanation": "由 ΔG° = -RT ln K，ln K = -ΔG°/(RT) = -(-20000)/(8.314×298) = 20000/2477.6 ≈ 8.07。K = e^8.07 ≈ 3200 >> 1，产物强烈主导。"
+  },
+  {
+    "id": "chem-w9-fill-002",
+    "concept_ids": [
+      "unit9-galvanic-cells"
+    ],
+    "week": 9,
+    "difficulty": 2,
+    "type": "fill",
+    "question": "原电池中，电子在外电路从______极流向______极；在内电路（溶液中），离子移动维持电中性（阳离子向______极移动）。",
+    "answer": "阳（负）；阴（正）；阴（正）",
+    "grading_rubric": "电子：阳极→阴极（外路）；阳离子：向阴极移动（内路，盐桥中阳离子向正极方向移动）",
+    "explanation": "外电路：电子从阳极（氧化，失去电子）流向阴极（还原，得到电子）。内电路：阳离子向阴极方向迁移，阴离子向阳极方向迁移，维持溶液电中性（即电荷平衡）。"
+  },
+  {
+    "id": "chem-w9-fill-003",
+    "concept_ids": [
+      "unit9-cell-potential"
+    ],
+    "week": 9,
+    "difficulty": 2,
+    "type": "fill",
+    "question": "已知 Zn²⁺/Zn 的标准还原电位 E° = -0.76 V，Cu²⁺/Cu 的标准还原电位 E° = +0.34 V。Zn-Cu 原电池的 E°cell = ______V，Zn 为______极（阳/阴）。",
+    "answer": "1.10 V；阳（负）极",
+    "grading_rubric": "E°cell = E°cathode - E°anode = 0.34-(-0.76) = 1.10 V；Zn被氧化为阳极",
+    "explanation": "Zn 还原电位更低（-0.76 V），更易被氧化，作为阳极（负极）；Cu²⁺ 在阴极（正极）被还原。E°cell = E°cathode - E°anode = 0.34 - (-0.76) = 1.10 V > 0，反应自发。"
+  },
+  {
+    "id": "chem-w9-fill-004",
+    "concept_ids": [
+      "unit9-electrolysis-faraday"
+    ],
+    "week": 9,
+    "difficulty": 2,
+    "type": "fill",
+    "question": "电解 CuSO₄ 溶液时，通入 2.0 A 电流持续 1930 s，阴极沉积 Cu 的质量 ≈ ______g（Cu 摩尔质量 64 g/mol，F = 96500 C/mol，Cu²⁺ + 2e⁻ → Cu）。",
+    "answer": "约 1.28 g",
+    "grading_rubric": "Q=2.0×1930=3860 C；mol e⁻=3860/96500≈0.040 mol；mol Cu=0.020 mol；m=0.020×64=1.28 g",
+    "explanation": "总电量 Q = I×t = 2.0 A × 1930 s = 3860 C。转移电子 mol = 3860/96500 ≈ 0.040 mol。每2 mol e⁻ 沉积1 mol Cu，故 mol Cu = 0.020 mol，质量 = 0.020×64 = 1.28 g。"
+  },
+  {
+    "id": "chem-w9-feynman-001",
+    "concept_ids": [
+      "unit9-gibbs-thermodynamic-kinetic"
+    ],
+    "week": 9,
+    "difficulty": 3,
+    "type": "feynman",
+    "question": "解释热力学自发性（ΔG < 0）和反应速率（动力学）是两个独立的概念，并给出一个例子说明两者分离的情况。",
+    "answer": "热力学说的是「这条路能走吗？」——ΔG < 0 意味着从反应物到产物是能量下坡路，热力学上允许且偏爱。动力学说的是「这条路走得多快？」——由活化能 Ea 决定，Ea 越高走得越慢，与 ΔG 无关。经典例子：金刚石在常温常压下自发转变为石墨（ΔG < 0），但活化能极高，在室温下要经历亿万年才能观察到转变，动力学上被「冻结」。相反，氢气和氧气混合（ΔG << 0）在室温下不点火也不爆炸（动力学势垒），但一旦点燃（提供活化能）就迅速爆炸。热力学告诉我们方向，动力学告诉我们速度。",
+    "grading_rubric": "需包含：①热力学=方向（ΔG）；②动力学=速率（Ea）；③两者独立；④金刚石/氢气爆炸等具体例子",
+    "explanation": "热力学与动力学的区分是化学核心概念之一。ΔG°=-RT ln K（热力学），k=Ae^(-Ea/RT)（动力学，Arrhenius方程），两个方程含不同变量，互不决定。"
+  },
+  {
+    "id": "chem-w9-feynman-002",
+    "concept_ids": [
+      "unit9-galvanic-cells"
+    ],
+    "week": 9,
+    "difficulty": 3,
+    "type": "feynman",
+    "question": "解释原电池如何将化学能转化为电能——用 Zn-Cu 电池为例，追踪电子的完整路径。",
+    "answer": "Zn-Cu 电池（丹尼尔电池）：锌棒插入 ZnSO₄ 溶液（阳极侧），铜棒插入 CuSO₄ 溶液（阴极侧），通过盐桥和外电路连接。阳极（Zn，负极）：Zn → Zn²⁺ + 2e⁻（氧化，Zn失去电子溶入溶液，固体锌减少）。电子沿外电路（导线/负载）从阳极流向阴极。阴极（Cu，正极）：Cu²⁺ + 2e⁻ → Cu（还原，Cu²⁺从溶液中得到电子沉积为固体铜，铜棒增重）。盐桥：阴离子（如SO₄²⁻、Cl⁻）向阳极侧迁移，阳离子向阴极侧迁移，维持两侧溶液的电中性，使反应得以持续。整个过程：化学反应自发进行（ΔG < 0），释放的自由能直接转化为电能（电子流动）。",
+    "grading_rubric": "需包含：①阳极氧化（Zn失电子）；②电子从阳极→阴极（外路）；③阴极还原（Cu²⁺得电子）；④盐桥维持电中性；⑤化学能转电能",
+    "explanation": "原电池的本质是自发氧化还原反应（e⁻从还原剂转移到氧化剂）被「拆开」：e⁻ 经由外电路定向流动形成电流，而不是在溶液中直接传递（短路）。"
+  },
+  {
+    "id": "chem-w9-feynman-003",
+    "concept_ids": [
+      "unit9-free-energy-equilibrium"
+    ],
+    "week": 9,
+    "difficulty": 3,
+    "type": "feynman",
+    "question": "ΔG° = -RT ln K 揭示了什么深刻的化学意义？解释 ΔG° 和 K 如何相互联系。",
+    "answer": "这个方程把热力学（ΔG°，能量视角）和平衡（K，浓度比值视角）深刻地联系起来。K 描述了平衡时产物和反应物的比例——K 很大说明产物主导，K 很小说明反应物主导。ΔG° 是标准条件下自由能的变化，反映反应的「热力学驱动力」。方程说明：驱动力越大（ΔG° 越负），K 就越大（平衡越偏向产物）。这不是巧合，而是必然的：在平衡时 ΔG = 0，代入 ΔG = ΔG° + RT ln Q，平衡时 Q = K，故 ΔG° = -RT ln K。两个看似不同角度的描述——「自由能最小」和「Q = K」——在数学上是等价的，都是说系统到达了最稳定状态。",
+    "grading_rubric": "需包含：①K描述平衡浓度比；②ΔG°描述标准驱动力；③ΔG越负K越大；④平衡时ΔG=0推导出该关系；⑤两种描述的等价性",
+    "explanation": "ΔG° = -RT ln K 是热力学最优美的方程之一，统一了能量和平衡的语言。实际应用：已知热力学数据（ΔH°、ΔS°）可计算 ΔG°，再求 K，而无需直接测量平衡浓度。"
+  },
+  {
+    "id": "chem-w9-feynman-004",
+    "concept_ids": [
+      "unit9-coupled-reactions"
+    ],
+    "week": 9,
+    "difficulty": 3,
+    "type": "feynman",
+    "question": "解释细胞中 ATP 水解如何驱动非自发的生物合成反应——这是耦合反应的经典例子。",
+    "answer": "许多生物合成反应（如蛋白质合成、主动运输）在热力学上是非自发的（ΔG > 0），意味着它们需要能量输入。细胞通过将这些反应与 ATP 水解（ATP → ADP + Pᵢ，ΔG ≈ -30 kJ/mol，高度自发）耦合来解决这个问题。耦合的含义是：化学上将 ATP 水解和目标反应连接起来（通常通过磷酸化中间体），使总反应的 ΔG = ΔG(目标) + ΔG(ATP水解)。只要 |ΔG(ATP水解)| > ΔG(目标)，总 ΔG < 0，整个过程就变得自发。ATP 就像细胞的「能量货币」，它的水解提供了驱动非自发反应的热力学力，使生命能够维持远离平衡的有序状态。",
+    "grading_rubric": "需包含：①生物合成反应ΔG>0（非自发）；②ATP水解ΔG≈-30 kJ/mol（自发）；③耦合后总ΔG<0（自发）；④ATP作为能量货币的意义",
+    "explanation": "耦合反应的热力学原理：ΔG总 = ΔG₁ + ΔG₂。只要ΔG₂（如ATP水解）足够负，即使ΔG₁很正，总体仍可自发。这是生命系统维持高度有序状态（低熵）的核心机制——以消耗ATP（降低体系的G）为代价。"
   }
 ]

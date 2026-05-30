@@ -134,116 +134,936 @@
       ]
     },
     {
-      "id": "chem-w2-placeholder",
-      "name_zh": "分子结构与键（待补充）",
-      "name_en": "Molecular Structure and Bonding (Coming Soon)",
+      "id": "unit2-chemical-bonds",
+      "name_zh": "化学键类型与分子内势能",
+      "name_en": "Types of Chemical Bonds and Intramolecular Force & Potential Energy",
       "unit": 2,
       "ced_topic": "2.1",
-      "ced_topic_name": "Types of Chemical Bonds",
+      "ced_topic_name": "Types of Chemical Bonds; Intramolecular Force and Potential Energy",
       "week": 2,
       "day": 1,
       "prerequisites": [
         "atomic-valence-electrons-ionic"
       ],
-      "openstax_sections": []
+      "openstax_sections": [
+        "7.1",
+        "7.2"
+      ]
     },
     {
-      "id": "chem-w3-placeholder",
-      "name_zh": "分子间作用力（待补充）",
-      "name_en": "Intermolecular Forces and Properties (Coming Soon)",
+      "id": "unit2-ionic-metallic-solids",
+      "name_zh": "离子固体结构与金属/合金",
+      "name_en": "Ionic Solids Structure; Metals and Alloys",
+      "unit": 2,
+      "ced_topic": "2.3",
+      "ced_topic_name": "Structure of Ionic Solids; Metallic Solids",
+      "week": 2,
+      "day": 2,
+      "prerequisites": [
+        "unit2-chemical-bonds"
+      ],
+      "openstax_sections": [
+        "7.1",
+        "10.5",
+        "10.6"
+      ]
+    },
+    {
+      "id": "unit2-lewis-diagrams",
+      "name_zh": "路易斯结构图",
+      "name_en": "Lewis Diagrams",
+      "unit": 2,
+      "ced_topic": "2.5",
+      "ced_topic_name": "Lewis Diagrams",
+      "week": 2,
+      "day": 3,
+      "prerequisites": [
+        "unit2-ionic-metallic-solids"
+      ],
+      "openstax_sections": [
+        "7.3",
+        "7.4"
+      ]
+    },
+    {
+      "id": "unit2-resonance-formal-charge",
+      "name_zh": "共振结构与形式电荷",
+      "name_en": "Resonance Structures and Formal Charge",
+      "unit": 2,
+      "ced_topic": "2.6",
+      "ced_topic_name": "Resonance and Formal Charge",
+      "week": 2,
+      "day": 4,
+      "prerequisites": [
+        "unit2-lewis-diagrams"
+      ],
+      "openstax_sections": [
+        "7.4"
+      ]
+    },
+    {
+      "id": "unit2-vsepr-geometry",
+      "name_zh": "VSEPR 理论与分子空间构型",
+      "name_en": "VSEPR Theory — Electron Domains and Molecular Geometry",
+      "unit": 2,
+      "ced_topic": "2.7",
+      "ced_topic_name": "VSEPR and Bond Angles",
+      "week": 2,
+      "day": 5,
+      "prerequisites": [
+        "unit2-resonance-formal-charge"
+      ],
+      "openstax_sections": [
+        "7.6"
+      ]
+    },
+    {
+      "id": "unit2-vsepr-polarity",
+      "name_zh": "VSEPR 键角与分子极性",
+      "name_en": "VSEPR — Bond Angles and Molecular Polarity",
+      "unit": 2,
+      "ced_topic": "2.7",
+      "ced_topic_name": "VSEPR — Bond Angles and Polarity",
+      "week": 2,
+      "day": 6,
+      "prerequisites": [
+        "unit2-vsepr-geometry"
+      ],
+      "openstax_sections": [
+        "7.6",
+        "7.7"
+      ]
+    },
+    {
+      "id": "unit2-hybridization",
+      "name_zh": "杂化轨道（sp、sp2、sp3）",
+      "name_en": "Hybridization (sp, sp2, sp3)",
+      "unit": 2,
+      "ced_topic": "2.7",
+      "ced_topic_name": "Hybridization",
+      "week": 2,
+      "day": 7,
+      "prerequisites": [
+        "unit2-vsepr-polarity"
+      ],
+      "openstax_sections": [
+        "8.2",
+        "8.3"
+      ]
+    },
+    {
+      "id": "unit3-imf",
+      "name_zh": "分子间作用力（伦敦分散力、偶极-偶极力、氢键）",
+      "name_en": "Intermolecular Forces: London Dispersion, Dipole-Dipole, and Hydrogen Bonding",
       "unit": 3,
       "ced_topic": "3.1",
       "ced_topic_name": "Intermolecular Forces",
       "week": 3,
       "day": 1,
       "prerequisites": [
-        "chem-w2-placeholder"
+        "unit2-hybridization"
       ],
-      "openstax_sections": []
+      "openstax_sections": [
+        "10.1",
+        "10.2"
+      ]
     },
     {
-      "id": "chem-w4-placeholder",
-      "name_zh": "化学反应（待补充）",
-      "name_en": "Chemical Reactions (Coming Soon)",
+      "id": "unit3-solid-properties",
+      "name_zh": "固体性质（离子、分子、金属、共价网络）",
+      "name_en": "Properties of Solids (Ionic, Molecular, Metallic, Covalent Network)",
+      "unit": 3,
+      "ced_topic": "3.2",
+      "ced_topic_name": "Properties of Solids",
+      "week": 3,
+      "day": 2,
+      "prerequisites": [
+        "unit3-imf"
+      ],
+      "openstax_sections": [
+        "10.5",
+        "10.6"
+      ]
+    },
+    {
+      "id": "unit3-solubility",
+      "name_zh": "溶解性与相似相溶原理",
+      "name_en": "Solubility and Like Dissolves Like",
+      "unit": 3,
+      "ced_topic": "3.3",
+      "ced_topic_name": "Solubility",
+      "week": 3,
+      "day": 3,
+      "prerequisites": [
+        "unit3-solid-properties"
+      ],
+      "openstax_sections": [
+        "11.1",
+        "11.2"
+      ]
+    },
+    {
+      "id": "unit3-spectroscopy-photoelectric",
+      "name_zh": "光谱学与光电效应",
+      "name_en": "Spectroscopy and the Photoelectric Effect",
+      "unit": 3,
+      "ced_topic": "3.4",
+      "ced_topic_name": "Spectroscopy and the Electromagnetic Spectrum; Photoelectric Effect",
+      "week": 3,
+      "day": 4,
+      "prerequisites": [
+        "unit3-solubility"
+      ],
+      "openstax_sections": [
+        "6.1",
+        "6.2"
+      ]
+    },
+    {
+      "id": "unit3-beer-lambert",
+      "name_zh": "比尔-朗伯定律",
+      "name_en": "Beer-Lambert Law",
+      "unit": 3,
+      "ced_topic": "3.6",
+      "ced_topic_name": "Beer-Lambert Law",
+      "week": 3,
+      "day": 5,
+      "prerequisites": [
+        "unit3-spectroscopy-photoelectric"
+      ],
+      "openstax_sections": [
+        "11.3"
+      ]
+    },
+    {
+      "id": "unit3-solutions-mixtures",
+      "name_zh": "溶液与混合物（浓度表示方法）",
+      "name_en": "Solutions and Mixtures — Concentration Expressions",
+      "unit": 3,
+      "ced_topic": "3.7",
+      "ced_topic_name": "Solutions and Mixtures",
+      "week": 3,
+      "day": 6,
+      "prerequisites": [
+        "unit3-beer-lambert"
+      ],
+      "openstax_sections": [
+        "11.1",
+        "11.2",
+        "11.3"
+      ]
+    },
+    {
+      "id": "unit3-imf-applications",
+      "name_zh": "分子间作用力综合应用（Week 3 复习）",
+      "name_en": "IMF Applications and Unit 3 Integration Review",
+      "unit": 3,
+      "ced_topic": "3.1",
+      "ced_topic_name": "IMF Applications Review",
+      "week": 3,
+      "day": 7,
+      "prerequisites": [
+        "unit3-solutions-mixtures"
+      ],
+      "openstax_sections": [
+        "10.1",
+        "10.2",
+        "11.1"
+      ]
+    },
+    {
+      "id": "unit4-net-ionic-equations",
+      "name_zh": "反应简介、净离子方程与反应表示",
+      "name_en": "Intro to Reactions, Net Ionic Equations, and Representations",
       "unit": 4,
-      "ced_topic": "4.1",
-      "ced_topic_name": "Introduction to Reactions",
+      "ced_topic": "4.2",
+      "ced_topic_name": "Net Ionic Equations",
       "week": 4,
       "day": 1,
       "prerequisites": [
         "chem-w3-placeholder"
       ],
-      "openstax_sections": []
+      "openstax_sections": [
+        "4.1",
+        "4.2"
+      ]
     },
     {
-      "id": "chem-w5-placeholder",
-      "name_zh": "动力学（待补充）",
-      "name_en": "Kinetics (Coming Soon)",
+      "id": "unit4-stoichiometry",
+      "name_zh": "物理/化学变化与化学计量",
+      "name_en": "Physical/Chemical Changes and Stoichiometry",
+      "unit": 4,
+      "ced_topic": "4.5",
+      "ced_topic_name": "Stoichiometry",
+      "week": 4,
+      "day": 2,
+      "prerequisites": [
+        "unit4-net-ionic-equations"
+      ],
+      "openstax_sections": [
+        "4.1",
+        "4.2",
+        "4.3"
+      ]
+    },
+    {
+      "id": "unit4-limiting-reagent-titration",
+      "name_zh": "限量试剂与滴定简介",
+      "name_en": "Limiting Reagent and Introduction to Titration",
+      "unit": 4,
+      "ced_topic": "4.5",
+      "ced_topic_name": "Stoichiometry — Limiting Reagent; Titration",
+      "week": 4,
+      "day": 3,
+      "prerequisites": [
+        "unit4-stoichiometry"
+      ],
+      "openstax_sections": [
+        "4.2",
+        "4.4"
+      ]
+    },
+    {
+      "id": "unit4-reaction-types",
+      "name_zh": "化学反应类型",
+      "name_en": "Types of Chemical Reactions",
+      "unit": 4,
+      "ced_topic": "4.7",
+      "ced_topic_name": "Types of Chemical Reactions",
+      "week": 4,
+      "day": 4,
+      "prerequisites": [
+        "unit4-limiting-reagent-titration"
+      ],
+      "openstax_sections": [
+        "4.2",
+        "4.3"
+      ]
+    },
+    {
+      "id": "unit4-acid-base-intro",
+      "name_zh": "酸碱反应简介（Arrhenius 与 Brønsted-Lowry）",
+      "name_en": "Introduction to Acid-Base Reactions (Arrhenius and Brønsted-Lowry)",
+      "unit": 4,
+      "ced_topic": "4.8",
+      "ced_topic_name": "Introduction to Acid-Base Reactions",
+      "week": 4,
+      "day": 5,
+      "prerequisites": [
+        "unit4-reaction-types"
+      ],
+      "openstax_sections": [
+        "14.1",
+        "14.2"
+      ]
+    },
+    {
+      "id": "unit4-redox-reactions",
+      "name_zh": "氧化还原反应",
+      "name_en": "Oxidation-Reduction Reactions",
+      "unit": 4,
+      "ced_topic": "4.9",
+      "ced_topic_name": "Oxidation-Reduction Reactions",
+      "week": 4,
+      "day": 6,
+      "prerequisites": [
+        "unit4-acid-base-intro"
+      ],
+      "openstax_sections": [
+        "4.4"
+      ]
+    },
+    {
+      "id": "unit4-oxidation-states",
+      "name_zh": "氧化态",
+      "name_en": "Oxidation States",
+      "unit": 4,
+      "ced_topic": "4.10",
+      "ced_topic_name": "Oxidation States",
+      "week": 4,
+      "day": 7,
+      "prerequisites": [
+        "unit4-redox-reactions"
+      ],
+      "openstax_sections": [
+        "4.4"
+      ]
+    },
+    {
+      "id": "unit5-reaction-rates-rate-law",
+      "name_zh": "反应速率与速率定律简介",
+      "name_en": "Reaction Rates and Introduction to Rate Law",
       "unit": 5,
       "ced_topic": "5.1",
-      "ced_topic_name": "Rates of Reactions",
+      "ced_topic_name": "Rates of Reactions; Introduction to Rate Law",
       "week": 5,
       "day": 1,
       "prerequisites": [
-        "chem-w4-placeholder"
+        "unit4-oxidation-states"
       ],
-      "openstax_sections": []
+      "openstax_sections": [
+        "12.1",
+        "12.2"
+      ]
     },
     {
-      "id": "chem-w6-placeholder",
-      "name_zh": "热力学（待补充）",
-      "name_en": "Thermodynamics (Coming Soon)",
+      "id": "unit5-integrated-rate-laws",
+      "name_zh": "浓度随时间变化（积分速率定律）",
+      "name_en": "Concentration Changes Over Time (Integrated Rate Laws)",
+      "unit": 5,
+      "ced_topic": "5.3",
+      "ced_topic_name": "Concentration Changes Over Time",
+      "week": 5,
+      "day": 2,
+      "prerequisites": [
+        "unit5-reaction-rates-rate-law"
+      ],
+      "openstax_sections": [
+        "12.3"
+      ]
+    },
+    {
+      "id": "unit5-elementary-reactions-collision",
+      "name_zh": "基元反应与碰撞模型",
+      "name_en": "Elementary Reactions and Collision Model",
+      "unit": 5,
+      "ced_topic": "5.4",
+      "ced_topic_name": "Elementary Reactions; Collision Model",
+      "week": 5,
+      "day": 3,
+      "prerequisites": [
+        "unit5-integrated-rate-laws"
+      ],
+      "openstax_sections": [
+        "12.4",
+        "12.5"
+      ]
+    },
+    {
+      "id": "unit5-energy-profile",
+      "name_zh": "反应能量曲线（活化能与过渡态）",
+      "name_en": "Reaction Energy Profile (Activation Energy and Transition State)",
+      "unit": 5,
+      "ced_topic": "5.6",
+      "ced_topic_name": "Reaction Energy Profile",
+      "week": 5,
+      "day": 4,
+      "prerequisites": [
+        "unit5-elementary-reactions-collision"
+      ],
+      "openstax_sections": [
+        "12.5"
+      ]
+    },
+    {
+      "id": "unit5-reaction-mechanisms",
+      "name_zh": "反应机制与速率定律推导",
+      "name_en": "Reaction Mechanisms and Rate Law from Mechanism",
+      "unit": 5,
+      "ced_topic": "5.7",
+      "ced_topic_name": "Reaction Mechanisms; Rate Law from Mechanism",
+      "week": 5,
+      "day": 5,
+      "prerequisites": [
+        "unit5-energy-profile"
+      ],
+      "openstax_sections": [
+        "12.6"
+      ]
+    },
+    {
+      "id": "unit5-steady-state-multistep",
+      "name_zh": "稳态近似与多步能量曲线",
+      "name_en": "Steady-State Approximation and Multistep Energy Profile",
+      "unit": 5,
+      "ced_topic": "5.9",
+      "ced_topic_name": "Steady-State Approximation; Multistep Energy Profile",
+      "week": 5,
+      "day": 6,
+      "prerequisites": [
+        "unit5-reaction-mechanisms"
+      ],
+      "openstax_sections": [
+        "12.6"
+      ]
+    },
+    {
+      "id": "unit5-catalysis",
+      "name_zh": "催化",
+      "name_en": "Catalysis",
+      "unit": 5,
+      "ced_topic": "5.11",
+      "ced_topic_name": "Catalysis",
+      "week": 5,
+      "day": 7,
+      "prerequisites": [
+        "unit5-steady-state-multistep"
+      ],
+      "openstax_sections": [
+        "12.7"
+      ]
+    },
+    {
+      "id": "unit6-endo-exo-energy-diagrams",
+      "name_zh": "吸热与放热过程 / 能量图",
+      "name_en": "Endothermic & Exothermic Processes and Energy Diagrams",
       "unit": 6,
       "ced_topic": "6.1",
-      "ced_topic_name": "Endothermic and Exothermic Reactions",
+      "ced_topic_name": "Endothermic and Exothermic Processes; Energy Diagrams",
       "week": 6,
       "day": 1,
       "prerequisites": [
-        "chem-w5-placeholder"
+        "unit5-catalysis"
       ],
-      "openstax_sections": []
+      "openstax_sections": [
+        "5.1",
+        "5.2"
+      ]
     },
     {
-      "id": "chem-w7-placeholder",
-      "name_zh": "平衡（待补充）",
-      "name_en": "Equilibrium (Coming Soon)",
+      "id": "unit6-heat-transfer-calorimetry",
+      "name_zh": "热传递、热平衡与量热法",
+      "name_en": "Heat Transfer, Thermal Equilibrium, and Calorimetry",
+      "unit": 6,
+      "ced_topic": "6.3",
+      "ced_topic_name": "Heat Transfer, Thermal Equilibrium, and Calorimetry",
+      "week": 6,
+      "day": 2,
+      "prerequisites": [
+        "unit6-endo-exo-energy-diagrams"
+      ],
+      "openstax_sections": [
+        "5.2",
+        "5.3"
+      ]
+    },
+    {
+      "id": "unit6-hess-law",
+      "name_zh": "赫斯定律",
+      "name_en": "Hess's Law",
+      "unit": 6,
+      "ced_topic": "6.5",
+      "ced_topic_name": "Hess's Law",
+      "week": 6,
+      "day": 3,
+      "prerequisites": [
+        "unit6-heat-transfer-calorimetry"
+      ],
+      "openstax_sections": [
+        "5.3"
+      ]
+    },
+    {
+      "id": "unit6-bond-enthalpies",
+      "name_zh": "键焓",
+      "name_en": "Bond Enthalpies",
+      "unit": 6,
+      "ced_topic": "6.6",
+      "ced_topic_name": "Bond Enthalpies",
+      "week": 6,
+      "day": 4,
+      "prerequisites": [
+        "unit6-hess-law"
+      ],
+      "openstax_sections": [
+        "5.3"
+      ]
+    },
+    {
+      "id": "unit6-enthalpy-formation",
+      "name_zh": "生成焓",
+      "name_en": "Enthalpy of Formation",
+      "unit": 6,
+      "ced_topic": "6.7",
+      "ced_topic_name": "Enthalpy of Formation",
+      "week": 6,
+      "day": 5,
+      "prerequisites": [
+        "unit6-hess-law"
+      ],
+      "openstax_sections": [
+        "5.3"
+      ]
+    },
+    {
+      "id": "unit6-entropy",
+      "name_zh": "熵",
+      "name_en": "Entropy",
+      "unit": 6,
+      "ced_topic": "6.8",
+      "ced_topic_name": "Entropy",
+      "week": 6,
+      "day": 6,
+      "prerequisites": [
+        "unit6-enthalpy-formation"
+      ],
+      "openstax_sections": [
+        "16.2"
+      ]
+    },
+    {
+      "id": "unit6-gibbs-free-energy",
+      "name_zh": "吉布斯自由能与热力学控制",
+      "name_en": "Gibbs Free Energy and Thermodynamic vs. Kinetic Control",
+      "unit": 6,
+      "ced_topic": "6.9",
+      "ced_topic_name": "Gibbs Free Energy; Thermodynamic and Kinetic Control",
+      "week": 6,
+      "day": 7,
+      "prerequisites": [
+        "unit6-entropy"
+      ],
+      "openstax_sections": [
+        "16.3",
+        "16.4"
+      ]
+    },
+    {
+      "id": "unit7-intro-equilibrium",
+      "name_zh": "平衡简介与可逆反应方向",
+      "name_en": "Introduction to Equilibrium and Direction of Reversible Reactions",
       "unit": 7,
       "ced_topic": "7.1",
-      "ced_topic_name": "Introduction to Equilibrium",
+      "ced_topic_name": "Introduction to Equilibrium; Direction of Reversible Reactions",
       "week": 7,
       "day": 1,
       "prerequisites": [
-        "chem-w6-placeholder"
+        "unit6-gibbs-free-energy"
       ],
-      "openstax_sections": []
+      "openstax_sections": [
+        "13.1",
+        "13.2"
+      ]
     },
     {
-      "id": "chem-w8-placeholder",
-      "name_zh": "酸碱化学（待补充）",
-      "name_en": "Acids and Bases (Coming Soon)",
+      "id": "unit7-reaction-quotient-keq",
+      "name_zh": "反应商与平衡常数",
+      "name_en": "Reaction Quotient and Equilibrium Constant",
+      "unit": 7,
+      "ced_topic": "7.3",
+      "ced_topic_name": "Reaction Quotient and Equilibrium Constant",
+      "week": 7,
+      "day": 2,
+      "prerequisites": [
+        "unit7-intro-equilibrium"
+      ],
+      "openstax_sections": [
+        "13.2",
+        "13.3"
+      ]
+    },
+    {
+      "id": "unit7-magnitude-properties-keq",
+      "name_zh": "平衡常数的大小与性质及计算平衡浓度",
+      "name_en": "Magnitude and Properties of Keq; Calculating Equilibrium Concentrations",
+      "unit": 7,
+      "ced_topic": "7.5",
+      "ced_topic_name": "Magnitude, Properties, and Calculation of Keq",
+      "week": 7,
+      "day": 3,
+      "prerequisites": [
+        "unit7-reaction-quotient-keq"
+      ],
+      "openstax_sections": [
+        "13.3",
+        "13.4"
+      ]
+    },
+    {
+      "id": "unit7-representations-equilibrium",
+      "name_zh": "平衡的多重表示方式",
+      "name_en": "Representations of Equilibrium",
+      "unit": 7,
+      "ced_topic": "7.8",
+      "ced_topic_name": "Representations of Equilibrium",
+      "week": 7,
+      "day": 4,
+      "prerequisites": [
+        "unit7-magnitude-properties-keq"
+      ],
+      "openstax_sections": [
+        "13.2"
+      ]
+    },
+    {
+      "id": "unit7-le-chatelier",
+      "name_zh": "勒夏特列原理",
+      "name_en": "Le Chatelier's Principle and Reaction Quotient",
+      "unit": 7,
+      "ced_topic": "7.9",
+      "ced_topic_name": "Le Chatelier's Principle",
+      "week": 7,
+      "day": 5,
+      "prerequisites": [
+        "unit7-representations-equilibrium"
+      ],
+      "openstax_sections": [
+        "13.5"
+      ]
+    },
+    {
+      "id": "unit7-solubility-equilibria",
+      "name_zh": "溶解平衡与共同离子效应",
+      "name_en": "Solubility Equilibria and Common-Ion Effect",
+      "unit": 7,
+      "ced_topic": "7.11",
+      "ced_topic_name": "Solubility Equilibria; Common-Ion Effect",
+      "week": 7,
+      "day": 6,
+      "prerequisites": [
+        "unit7-le-chatelier"
+      ],
+      "openstax_sections": [
+        "15.1",
+        "15.2"
+      ]
+    },
+    {
+      "id": "unit7-ph-solubility",
+      "name_zh": "pH 与溶解度",
+      "name_en": "pH and Solubility",
+      "unit": 7,
+      "ced_topic": "7.13",
+      "ced_topic_name": "pH and Solubility",
+      "week": 7,
+      "day": 7,
+      "prerequisites": [
+        "unit7-solubility-equilibria"
+      ],
+      "openstax_sections": [
+        "15.3"
+      ]
+    },
+    {
+      "id": "unit8-intro-acids-bases-ph",
+      "name_zh": "酸碱简介与 pH/pOH",
+      "name_en": "Introduction to Acids and Bases; pH and pOH",
       "unit": 8,
       "ced_topic": "8.1",
-      "ced_topic_name": "Introduction to Acids and Bases",
+      "ced_topic_name": "Introduction to Acids and Bases; pH and pOH",
       "week": 8,
       "day": 1,
       "prerequisites": [
-        "chem-w7-placeholder"
+        "unit7-ph-solubility"
       ],
-      "openstax_sections": []
+      "openstax_sections": [
+        "14.1",
+        "14.2"
+      ]
     },
     {
-      "id": "chem-w9-placeholder",
-      "name_zh": "电化学（待补充）",
-      "name_en": "Electrochemistry (Coming Soon)",
+      "id": "unit8-acid-base-reactions",
+      "name_zh": "酸碱反应",
+      "name_en": "Acid-Base Reactions",
+      "unit": 8,
+      "ced_topic": "8.3",
+      "ced_topic_name": "Acid-Base Reactions",
+      "week": 8,
+      "day": 2,
+      "prerequisites": [
+        "unit8-intro-acids-bases-ph"
+      ],
+      "openstax_sections": [
+        "14.3"
+      ]
+    },
+    {
+      "id": "unit8-buffers-henderson",
+      "name_zh": "缓冲溶液与 Henderson-Hasselbalch 方程",
+      "name_en": "Buffers, Henderson-Hasselbalch Equation, and Buffer Capacity",
+      "unit": 8,
+      "ced_topic": "8.4",
+      "ced_topic_name": "Buffers and Henderson-Hasselbalch",
+      "week": 8,
+      "day": 3,
+      "prerequisites": [
+        "unit8-acid-base-reactions"
+      ],
+      "openstax_sections": [
+        "14.6"
+      ]
+    },
+    {
+      "id": "unit8-buffers-advanced",
+      "name_zh": "缓冲溶液的性质与容量",
+      "name_en": "Buffer Properties and Buffer Capacity",
+      "unit": 8,
+      "ced_topic": "8.8",
+      "ced_topic_name": "Properties of Buffers; Buffer Capacity",
+      "week": 8,
+      "day": 4,
+      "prerequisites": [
+        "unit8-buffers-henderson"
+      ],
+      "openstax_sections": [
+        "14.6"
+      ]
+    },
+    {
+      "id": "unit8-titrations",
+      "name_zh": "酸碱滴定",
+      "name_en": "Acid-Base Titrations",
+      "unit": 8,
+      "ced_topic": "8.5",
+      "ced_topic_name": "Acid-Base Titrations",
+      "week": 8,
+      "day": 5,
+      "prerequisites": [
+        "unit8-buffers-advanced"
+      ],
+      "openstax_sections": [
+        "14.7"
+      ]
+    },
+    {
+      "id": "unit8-molecular-structure-acids",
+      "name_zh": "酸碱的分子结构",
+      "name_en": "Molecular Structure of Acids and Bases",
+      "unit": 8,
+      "ced_topic": "8.6",
+      "ced_topic_name": "Molecular Structure of Acids and Bases",
+      "week": 8,
+      "day": 6,
+      "prerequisites": [
+        "unit8-titrations"
+      ],
+      "openstax_sections": [
+        "14.4",
+        "14.5"
+      ]
+    },
+    {
+      "id": "unit8-ph-pka",
+      "name_zh": "pH 与 pKa 的关系",
+      "name_en": "pH and pKa",
+      "unit": 8,
+      "ced_topic": "8.7",
+      "ced_topic_name": "pH and pKa",
+      "week": 8,
+      "day": 7,
+      "prerequisites": [
+        "unit8-molecular-structure-acids"
+      ],
+      "openstax_sections": [
+        "14.2",
+        "14.3"
+      ]
+    },
+    {
+      "id": "unit9-entropy-absolute",
+      "name_zh": "熵的简介与绝对熵",
+      "name_en": "Introduction to Entropy and Absolute Entropy",
       "unit": 9,
       "ced_topic": "9.1",
-      "ced_topic_name": "Introduction to Electrochemistry",
+      "ced_topic_name": "Introduction to Entropy; Absolute Entropy and Entropy Change",
       "week": 9,
       "day": 1,
       "prerequisites": [
-        "chem-w8-placeholder"
+        "unit8-ph-pka"
       ],
-      "openstax_sections": []
+      "openstax_sections": [
+        "16.1",
+        "16.2"
+      ]
+    },
+    {
+      "id": "unit9-gibbs-thermodynamic-kinetic",
+      "name_zh": "吉布斯自由能与热力学/动力学控制",
+      "name_en": "Gibbs Free Energy and Thermodynamic vs. Kinetic Control",
+      "unit": 9,
+      "ced_topic": "9.3",
+      "ced_topic_name": "Gibbs Free Energy; Thermodynamic and Kinetic Control",
+      "week": 9,
+      "day": 2,
+      "prerequisites": [
+        "unit9-entropy-absolute"
+      ],
+      "openstax_sections": [
+        "16.3",
+        "16.4"
+      ]
+    },
+    {
+      "id": "unit9-free-energy-equilibrium",
+      "name_zh": "自由能与平衡的关系",
+      "name_en": "Free Energy and Equilibrium",
+      "unit": 9,
+      "ced_topic": "9.5",
+      "ced_topic_name": "Free Energy and Equilibrium",
+      "week": 9,
+      "day": 3,
+      "prerequisites": [
+        "unit9-gibbs-thermodynamic-kinetic"
+      ],
+      "openstax_sections": [
+        "16.4"
+      ]
+    },
+    {
+      "id": "unit9-coupled-reactions",
+      "name_zh": "耦合反应",
+      "name_en": "Coupled Reactions",
+      "unit": 9,
+      "ced_topic": "9.6",
+      "ced_topic_name": "Coupled Reactions",
+      "week": 9,
+      "day": 4,
+      "prerequisites": [
+        "unit9-free-energy-equilibrium"
+      ],
+      "openstax_sections": [
+        "16.4"
+      ]
+    },
+    {
+      "id": "unit9-galvanic-cells",
+      "name_zh": "伽伐尼电池（原电池）",
+      "name_en": "Galvanic (Voltaic) Cells",
+      "unit": 9,
+      "ced_topic": "9.7",
+      "ced_topic_name": "Galvanic (Voltaic) Cells",
+      "week": 9,
+      "day": 5,
+      "prerequisites": [
+        "unit9-coupled-reactions"
+      ],
+      "openstax_sections": [
+        "17.2",
+        "17.3"
+      ]
+    },
+    {
+      "id": "unit9-cell-potential",
+      "name_zh": "电池电位与标准电极电位",
+      "name_en": "Cell Potential and Standard Reduction Potentials",
+      "unit": 9,
+      "ced_topic": "9.7",
+      "ced_topic_name": "Galvanic (Voltaic) Cells — Cell Potential",
+      "week": 9,
+      "day": 6,
+      "prerequisites": [
+        "unit9-galvanic-cells"
+      ],
+      "openstax_sections": [
+        "17.3",
+        "17.4"
+      ]
+    },
+    {
+      "id": "unit9-electrolysis-faraday",
+      "name_zh": "电解与法拉第定律",
+      "name_en": "Electrolysis and Faraday's Law",
+      "unit": 9,
+      "ced_topic": "9.8",
+      "ced_topic_name": "Electrolysis and Faraday's Law",
+      "week": 9,
+      "day": 7,
+      "prerequisites": [
+        "unit9-cell-potential"
+      ],
+      "openstax_sections": [
+        "17.5"
+      ]
     }
   ],
   "resources": [
@@ -824,124 +1644,4154 @@
       "day": 7
     },
     {
-      "id": "chem-w2-placeholder-resource",
-      "title": "Week 2 内容准备中",
-      "url": null,
-      "type": "reading",
-      "platform": "openstax",
+      "id": "chem-w2-khan-bonding-intro-1",
+      "title": "Introduction to chemical bonding",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:molecular-and-ionic-compound-structure-and-properties/x2eef969c74e0d802:introduction-to-bonding/v/ionic-covalent-and-metallic-bonds",
+      "type": "video",
+      "platform": "khan",
       "tier": "A",
-      "estimated_minutes": 5,
-      "description": "本周内容正在准备中，请关注后续更新。Unit 2: Molecular Structure and Bonding",
+      "phase": "LEARN",
+      "estimated_minutes": 12,
+      "slot_order": 1,
       "concepts": [
-        "chem-w2-placeholder"
+        "unit2-chemical-bonds"
       ],
       "week": 2,
       "day": 1
     },
     {
-      "id": "chem-w3-placeholder-resource",
-      "title": "Week 3 内容准备中",
-      "url": null,
+      "id": "chem-w2-khan-bonding-potential-energy",
+      "title": "Intramolecular force and potential energy",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:molecular-and-ionic-compound-structure-and-properties/x2eef969c74e0d802:introduction-to-bonding/v/intramolecular-force-and-potential-energy",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "phase": "LEARN",
+      "estimated_minutes": 11,
+      "slot_order": 2,
+      "concepts": [
+        "unit2-chemical-bonds"
+      ],
+      "week": 2,
+      "day": 1
+    },
+    {
+      "id": "chem-w2-khan-bonding-exercise",
+      "title": "Types of chemical bonds (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:molecular-and-ionic-compound-structure-and-properties/x2eef969c74e0d802:introduction-to-bonding/e/types-of-chemical-bonds",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "phase": "PRACTICE",
+      "estimated_minutes": 15,
+      "slot_order": 3,
+      "concepts": [
+        "unit2-chemical-bonds"
+      ],
+      "week": 2,
+      "day": 1
+    },
+    {
+      "id": "chem-w2-openstax-bonding-b",
+      "title": "OpenStax Chemistry 2e: 7.1 Ionic Bonding",
+      "url": "https://openstax.org/books/chemistry-2e/pages/7-1-ionic-bonding",
       "type": "reading",
       "platform": "openstax",
-      "tier": "A",
-      "estimated_minutes": 5,
-      "description": "本周内容正在准备中，请关注后续更新。Unit 3: Intermolecular Forces and Properties",
+      "tier": "B",
+      "phase": "LEARN",
+      "estimated_minutes": 20,
+      "slot_order": 1,
       "concepts": [
-        "chem-w3-placeholder"
+        "unit2-chemical-bonds"
+      ],
+      "week": 2,
+      "day": 1
+    },
+    {
+      "id": "chem-w2-openstax-bonding-c",
+      "title": "OpenStax Chemistry 2e: Chapter 7 Exercises (Bonding Types)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/7-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "phase": "PRACTICE",
+      "estimated_minutes": 25,
+      "slot_order": 1,
+      "concepts": [
+        "unit2-chemical-bonds"
+      ],
+      "week": 2,
+      "day": 1
+    },
+    {
+      "id": "chem-w2-khan-ionic-solids-1",
+      "title": "Structure of ionic solids",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:molecular-and-ionic-compound-structure-and-properties/x2eef969c74e0d802:ionic-and-metallic-solids/v/structure-of-ionic-solids",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "phase": "LEARN",
+      "estimated_minutes": 12,
+      "slot_order": 1,
+      "concepts": [
+        "unit2-ionic-metallic-solids"
+      ],
+      "week": 2,
+      "day": 2
+    },
+    {
+      "id": "chem-w2-khan-metals-alloys",
+      "title": "Metallic bonding and alloys",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:molecular-and-ionic-compound-structure-and-properties/x2eef969c74e0d802:ionic-and-metallic-solids/v/metallic-bonds",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "phase": "LEARN",
+      "estimated_minutes": 10,
+      "slot_order": 2,
+      "concepts": [
+        "unit2-ionic-metallic-solids"
+      ],
+      "week": 2,
+      "day": 2
+    },
+    {
+      "id": "chem-w2-khan-ionic-solids-exercise",
+      "title": "Ionic and metallic solids (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:molecular-and-ionic-compound-structure-and-properties/x2eef969c74e0d802:ionic-and-metallic-solids/e/ionic-and-metallic-solids",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "phase": "PRACTICE",
+      "estimated_minutes": 15,
+      "slot_order": 3,
+      "concepts": [
+        "unit2-ionic-metallic-solids"
+      ],
+      "week": 2,
+      "day": 2
+    },
+    {
+      "id": "chem-w2-openstax-ionic-solids-b",
+      "title": "OpenStax Chemistry 2e: 7.1 Ionic Bonding and Lattice Energy",
+      "url": "https://openstax.org/books/chemistry-2e/pages/7-1-ionic-bonding",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "phase": "LEARN",
+      "estimated_minutes": 20,
+      "slot_order": 1,
+      "concepts": [
+        "unit2-ionic-metallic-solids"
+      ],
+      "week": 2,
+      "day": 2
+    },
+    {
+      "id": "chem-w2-openstax-ionic-solids-c",
+      "title": "OpenStax Chemistry 2e: Chapter 7 Exercises (Ionic Solids and Metals)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/7-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "phase": "PRACTICE",
+      "estimated_minutes": 25,
+      "slot_order": 1,
+      "concepts": [
+        "unit2-ionic-metallic-solids"
+      ],
+      "week": 2,
+      "day": 2
+    },
+    {
+      "id": "chem-w2-khan-lewis-intro",
+      "title": "Introduction to Lewis structures",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:molecular-and-ionic-compound-structure-and-properties/x2eef969c74e0d802:lewis-diagrams/v/lewis-diagrams",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "phase": "LEARN",
+      "estimated_minutes": 13,
+      "slot_order": 1,
+      "concepts": [
+        "unit2-lewis-diagrams"
+      ],
+      "week": 2,
+      "day": 3
+    },
+    {
+      "id": "chem-w2-khan-lewis-exceptions",
+      "title": "Exceptions to the octet rule in Lewis diagrams",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:molecular-and-ionic-compound-structure-and-properties/x2eef969c74e0d802:lewis-diagrams/v/exceptions-to-the-octet-rule",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "phase": "LEARN",
+      "estimated_minutes": 11,
+      "slot_order": 2,
+      "concepts": [
+        "unit2-lewis-diagrams"
+      ],
+      "week": 2,
+      "day": 3
+    },
+    {
+      "id": "chem-w2-khan-lewis-exercise",
+      "title": "Lewis diagrams (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:molecular-and-ionic-compound-structure-and-properties/x2eef969c74e0d802:lewis-diagrams/e/lewis-diagrams",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "phase": "PRACTICE",
+      "estimated_minutes": 15,
+      "slot_order": 3,
+      "concepts": [
+        "unit2-lewis-diagrams"
+      ],
+      "week": 2,
+      "day": 3
+    },
+    {
+      "id": "chem-w2-openstax-lewis-b",
+      "title": "OpenStax Chemistry 2e: 7.3 Lewis Symbols and Structures",
+      "url": "https://openstax.org/books/chemistry-2e/pages/7-3-lewis-symbols-and-structures",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "phase": "LEARN",
+      "estimated_minutes": 20,
+      "slot_order": 1,
+      "concepts": [
+        "unit2-lewis-diagrams"
+      ],
+      "week": 2,
+      "day": 3
+    },
+    {
+      "id": "chem-w2-openstax-lewis-c",
+      "title": "OpenStax Chemistry 2e: Chapter 7 Exercises (Lewis Structures)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/7-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "phase": "PRACTICE",
+      "estimated_minutes": 25,
+      "slot_order": 1,
+      "concepts": [
+        "unit2-lewis-diagrams"
+      ],
+      "week": 2,
+      "day": 3
+    },
+    {
+      "id": "chem-w2-khan-resonance-intro",
+      "title": "Resonance structures",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:molecular-and-ionic-compound-structure-and-properties/x2eef969c74e0d802:resonance-and-formal-charge/v/resonance-structures",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "phase": "LEARN",
+      "estimated_minutes": 12,
+      "slot_order": 1,
+      "concepts": [
+        "unit2-resonance-formal-charge"
+      ],
+      "week": 2,
+      "day": 4
+    },
+    {
+      "id": "chem-w2-khan-formal-charge",
+      "title": "Formal charge",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:molecular-and-ionic-compound-structure-and-properties/x2eef969c74e0d802:resonance-and-formal-charge/v/formal-charge",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "phase": "LEARN",
+      "estimated_minutes": 10,
+      "slot_order": 2,
+      "concepts": [
+        "unit2-resonance-formal-charge"
+      ],
+      "week": 2,
+      "day": 4
+    },
+    {
+      "id": "chem-w2-khan-resonance-exercise",
+      "title": "Resonance and formal charge (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:molecular-and-ionic-compound-structure-and-properties/x2eef969c74e0d802:resonance-and-formal-charge/e/resonance-and-formal-charge",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "phase": "PRACTICE",
+      "estimated_minutes": 15,
+      "slot_order": 3,
+      "concepts": [
+        "unit2-resonance-formal-charge"
+      ],
+      "week": 2,
+      "day": 4
+    },
+    {
+      "id": "chem-w2-openstax-resonance-b",
+      "title": "OpenStax Chemistry 2e: 7.4 Formal Charges and Resonance",
+      "url": "https://openstax.org/books/chemistry-2e/pages/7-4-formal-charges-and-resonance",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "phase": "LEARN",
+      "estimated_minutes": 20,
+      "slot_order": 1,
+      "concepts": [
+        "unit2-resonance-formal-charge"
+      ],
+      "week": 2,
+      "day": 4
+    },
+    {
+      "id": "chem-w2-openstax-resonance-c",
+      "title": "OpenStax Chemistry 2e: Chapter 7 Exercises (Resonance and Formal Charge)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/7-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "phase": "PRACTICE",
+      "estimated_minutes": 25,
+      "slot_order": 1,
+      "concepts": [
+        "unit2-resonance-formal-charge"
+      ],
+      "week": 2,
+      "day": 4
+    },
+    {
+      "id": "chem-w2-khan-vsepr-intro",
+      "title": "VSEPR theory and molecular shapes",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:molecular-and-ionic-compound-structure-and-properties/x2eef969c74e0d802:vsepr/v/vsepr-for-2-electron-clouds",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "phase": "LEARN",
+      "estimated_minutes": 13,
+      "slot_order": 1,
+      "concepts": [
+        "unit2-vsepr-geometry"
+      ],
+      "week": 2,
+      "day": 5
+    },
+    {
+      "id": "chem-w2-khan-vsepr-geometries",
+      "title": "VSEPR — more electron domains",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:molecular-and-ionic-compound-structure-and-properties/x2eef969c74e0d802:vsepr/v/vsepr-for-3-electron-clouds",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "phase": "LEARN",
+      "estimated_minutes": 12,
+      "slot_order": 2,
+      "concepts": [
+        "unit2-vsepr-geometry"
+      ],
+      "week": 2,
+      "day": 5
+    },
+    {
+      "id": "chem-w2-phet-molecule-shapes",
+      "title": "PhET: Molecule Shapes",
+      "url": "https://phet.colorado.edu/en/simulations/molecule-shapes",
+      "type": "interactive",
+      "platform": "phet",
+      "tier": "A",
+      "phase": "PRACTICE",
+      "estimated_minutes": 20,
+      "slot_order": 3,
+      "concepts": [
+        "unit2-vsepr-geometry"
+      ],
+      "week": 2,
+      "day": 5
+    },
+    {
+      "id": "chem-w2-openstax-vsepr-b",
+      "title": "OpenStax Chemistry 2e: 7.6 Molecular Structure and Polarity",
+      "url": "https://openstax.org/books/chemistry-2e/pages/7-6-molecular-structure-and-polarity",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "phase": "LEARN",
+      "estimated_minutes": 20,
+      "slot_order": 1,
+      "concepts": [
+        "unit2-vsepr-geometry"
+      ],
+      "week": 2,
+      "day": 5
+    },
+    {
+      "id": "chem-w2-openstax-vsepr-c",
+      "title": "OpenStax Chemistry 2e: Chapter 7 Exercises (VSEPR Geometries)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/7-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "phase": "PRACTICE",
+      "estimated_minutes": 25,
+      "slot_order": 1,
+      "concepts": [
+        "unit2-vsepr-geometry"
+      ],
+      "week": 2,
+      "day": 5
+    },
+    {
+      "id": "chem-w2-khan-bond-angles",
+      "title": "VSEPR — bond angles",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:molecular-and-ionic-compound-structure-and-properties/x2eef969c74e0d802:vsepr/v/bond-angles",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "phase": "LEARN",
+      "estimated_minutes": 11,
+      "slot_order": 1,
+      "concepts": [
+        "unit2-vsepr-polarity"
+      ],
+      "week": 2,
+      "day": 6
+    },
+    {
+      "id": "chem-w2-khan-molecular-polarity",
+      "title": "Molecular polarity",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:molecular-and-ionic-compound-structure-and-properties/x2eef969c74e0d802:vsepr/v/molecular-polarity",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "phase": "LEARN",
+      "estimated_minutes": 12,
+      "slot_order": 2,
+      "concepts": [
+        "unit2-vsepr-polarity"
+      ],
+      "week": 2,
+      "day": 6
+    },
+    {
+      "id": "chem-w2-khan-vsepr-polarity-exercise",
+      "title": "VSEPR and molecular polarity (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:molecular-and-ionic-compound-structure-and-properties/x2eef969c74e0d802:vsepr/e/vsepr",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "phase": "PRACTICE",
+      "estimated_minutes": 15,
+      "slot_order": 3,
+      "concepts": [
+        "unit2-vsepr-polarity"
+      ],
+      "week": 2,
+      "day": 6
+    },
+    {
+      "id": "chem-w2-openstax-polarity-b",
+      "title": "OpenStax Chemistry 2e: 7.6 Molecular Polarity and Dipole Moments",
+      "url": "https://openstax.org/books/chemistry-2e/pages/7-6-molecular-structure-and-polarity",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "phase": "LEARN",
+      "estimated_minutes": 20,
+      "slot_order": 1,
+      "concepts": [
+        "unit2-vsepr-polarity"
+      ],
+      "week": 2,
+      "day": 6
+    },
+    {
+      "id": "chem-w2-openstax-polarity-c",
+      "title": "OpenStax Chemistry 2e: Chapter 7 Exercises (Bond Angles and Polarity)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/7-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "phase": "PRACTICE",
+      "estimated_minutes": 25,
+      "slot_order": 1,
+      "concepts": [
+        "unit2-vsepr-polarity"
+      ],
+      "week": 2,
+      "day": 6
+    },
+    {
+      "id": "chem-w2-khan-hybridization-sp3",
+      "title": "Hybridization — sp3",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:molecular-and-ionic-compound-structure-and-properties/x2eef969c74e0d802:hybridization/v/sp3-hybridized-orbitals-and-sigma-bonds",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "phase": "LEARN",
+      "estimated_minutes": 13,
+      "slot_order": 1,
+      "concepts": [
+        "unit2-hybridization"
+      ],
+      "week": 2,
+      "day": 7
+    },
+    {
+      "id": "chem-w2-khan-hybridization-sp2-sp",
+      "title": "Hybridization — sp2 and sp",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:molecular-and-ionic-compound-structure-and-properties/x2eef969c74e0d802:hybridization/v/sp2-hybridized-orbitals-and-pi-bonds",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "phase": "LEARN",
+      "estimated_minutes": 12,
+      "slot_order": 2,
+      "concepts": [
+        "unit2-hybridization"
+      ],
+      "week": 2,
+      "day": 7
+    },
+    {
+      "id": "chem-w2-khan-hybridization-exercise",
+      "title": "Hybridization (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:molecular-and-ionic-compound-structure-and-properties/x2eef969c74e0d802:hybridization/e/hybridization",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "phase": "PRACTICE",
+      "estimated_minutes": 15,
+      "slot_order": 3,
+      "concepts": [
+        "unit2-hybridization"
+      ],
+      "week": 2,
+      "day": 7
+    },
+    {
+      "id": "chem-w2-openstax-hybridization-b",
+      "title": "OpenStax Chemistry 2e: 8.2 Hybrid Atomic Orbitals",
+      "url": "https://openstax.org/books/chemistry-2e/pages/8-2-hybrid-atomic-orbitals",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "phase": "LEARN",
+      "estimated_minutes": 20,
+      "slot_order": 1,
+      "concepts": [
+        "unit2-hybridization"
+      ],
+      "week": 2,
+      "day": 7
+    },
+    {
+      "id": "chem-w2-openstax-hybridization-c",
+      "title": "OpenStax Chemistry 2e: Chapter 8 Exercises (Hybridization)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/8-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "phase": "PRACTICE",
+      "estimated_minutes": 25,
+      "slot_order": 1,
+      "concepts": [
+        "unit2-hybridization"
+      ],
+      "week": 2,
+      "day": 7
+    },
+    {
+      "id": "chem-w3-khan-london-dispersion",
+      "title": "London dispersion forces",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:intermolecular-forces-and-properties/x2eef969c74e0d802:intermolecular-forces/v/london-dispersion-forces",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "phase": "LEARN",
+      "estimated_minutes": 12,
+      "slot_order": 1,
+      "concepts": [
+        "unit3-imf"
       ],
       "week": 3,
       "day": 1
     },
     {
-      "id": "chem-w4-placeholder-resource",
-      "title": "Week 4 内容准备中",
-      "url": null,
+      "id": "chem-w3-khan-dipole-hbond",
+      "title": "Dipole-dipole forces and hydrogen bonding",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:intermolecular-forces-and-properties/x2eef969c74e0d802:intermolecular-forces/v/dipole-forces-and-hydrogen-bonding",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "phase": "LEARN",
+      "estimated_minutes": 13,
+      "slot_order": 2,
+      "concepts": [
+        "unit3-imf"
+      ],
+      "week": 3,
+      "day": 1
+    },
+    {
+      "id": "chem-w3-khan-imf-exercise",
+      "title": "Intermolecular forces (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:intermolecular-forces-and-properties/x2eef969c74e0d802:intermolecular-forces/e/intermolecular-forces",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "phase": "PRACTICE",
+      "estimated_minutes": 15,
+      "slot_order": 3,
+      "concepts": [
+        "unit3-imf"
+      ],
+      "week": 3,
+      "day": 1
+    },
+    {
+      "id": "chem-w3-openstax-imf-b",
+      "title": "OpenStax Chemistry 2e: 10.1 Intermolecular Forces",
+      "url": "https://openstax.org/books/chemistry-2e/pages/10-1-intermolecular-forces",
       "type": "reading",
       "platform": "openstax",
-      "tier": "A",
-      "estimated_minutes": 5,
-      "description": "本周内容正在准备中，请关注后续更新。Unit 4: Chemical Reactions",
+      "tier": "B",
+      "phase": "LEARN",
+      "estimated_minutes": 20,
+      "slot_order": 1,
       "concepts": [
-        "chem-w4-placeholder"
+        "unit3-imf"
+      ],
+      "week": 3,
+      "day": 1
+    },
+    {
+      "id": "chem-w3-openstax-imf-c",
+      "title": "OpenStax Chemistry 2e: Chapter 10 Exercises (Intermolecular Forces)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/10-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "phase": "PRACTICE",
+      "estimated_minutes": 25,
+      "slot_order": 1,
+      "concepts": [
+        "unit3-imf"
+      ],
+      "week": 3,
+      "day": 1
+    },
+    {
+      "id": "chem-w3-khan-solid-types-1",
+      "title": "Types of solids — ionic and molecular",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:intermolecular-forces-and-properties/x2eef969c74e0d802:properties-of-solids/v/types-of-solids",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "phase": "LEARN",
+      "estimated_minutes": 12,
+      "slot_order": 1,
+      "concepts": [
+        "unit3-solid-properties"
+      ],
+      "week": 3,
+      "day": 2
+    },
+    {
+      "id": "chem-w3-khan-solid-types-2",
+      "title": "Metallic and covalent network solids",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:intermolecular-forces-and-properties/x2eef969c74e0d802:properties-of-solids/v/metallic-and-covalent-network-solids",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "phase": "LEARN",
+      "estimated_minutes": 11,
+      "slot_order": 2,
+      "concepts": [
+        "unit3-solid-properties"
+      ],
+      "week": 3,
+      "day": 2
+    },
+    {
+      "id": "chem-w3-phet-states-of-matter",
+      "title": "PhET: States of Matter",
+      "url": "https://phet.colorado.edu/en/simulations/states-of-matter",
+      "type": "interactive",
+      "platform": "phet",
+      "tier": "A",
+      "phase": "PRACTICE",
+      "estimated_minutes": 20,
+      "slot_order": 3,
+      "concepts": [
+        "unit3-solid-properties"
+      ],
+      "week": 3,
+      "day": 2
+    },
+    {
+      "id": "chem-w3-openstax-solids-b",
+      "title": "OpenStax Chemistry 2e: 10.5 The Solid State of Matter",
+      "url": "https://openstax.org/books/chemistry-2e/pages/10-5-the-solid-state-of-matter",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "phase": "LEARN",
+      "estimated_minutes": 20,
+      "slot_order": 1,
+      "concepts": [
+        "unit3-solid-properties"
+      ],
+      "week": 3,
+      "day": 2
+    },
+    {
+      "id": "chem-w3-openstax-solids-c",
+      "title": "OpenStax Chemistry 2e: Chapter 10 Exercises (Solid Properties)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/10-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "phase": "PRACTICE",
+      "estimated_minutes": 25,
+      "slot_order": 1,
+      "concepts": [
+        "unit3-solid-properties"
+      ],
+      "week": 3,
+      "day": 2
+    },
+    {
+      "id": "chem-w3-khan-like-dissolves-like",
+      "title": "Like dissolves like and solubility",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:intermolecular-forces-and-properties/x2eef969c74e0d802:solubility/v/solubility-and-intermolecular-forces",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "phase": "LEARN",
+      "estimated_minutes": 12,
+      "slot_order": 1,
+      "concepts": [
+        "unit3-solubility"
+      ],
+      "week": 3,
+      "day": 3
+    },
+    {
+      "id": "chem-w3-khan-solubility-factors",
+      "title": "Factors affecting solubility",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:intermolecular-forces-and-properties/x2eef969c74e0d802:solubility/v/factors-affecting-solubility",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "phase": "LEARN",
+      "estimated_minutes": 11,
+      "slot_order": 2,
+      "concepts": [
+        "unit3-solubility"
+      ],
+      "week": 3,
+      "day": 3
+    },
+    {
+      "id": "chem-w3-khan-solubility-exercise",
+      "title": "Solubility and intermolecular forces (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:intermolecular-forces-and-properties/x2eef969c74e0d802:solubility/e/solubility",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "phase": "PRACTICE",
+      "estimated_minutes": 15,
+      "slot_order": 3,
+      "concepts": [
+        "unit3-solubility"
+      ],
+      "week": 3,
+      "day": 3
+    },
+    {
+      "id": "chem-w3-openstax-solubility-b",
+      "title": "OpenStax Chemistry 2e: 11.1 The Dissolution Process",
+      "url": "https://openstax.org/books/chemistry-2e/pages/11-1-the-dissolution-process",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "phase": "LEARN",
+      "estimated_minutes": 20,
+      "slot_order": 1,
+      "concepts": [
+        "unit3-solubility"
+      ],
+      "week": 3,
+      "day": 3
+    },
+    {
+      "id": "chem-w3-openstax-solubility-c",
+      "title": "OpenStax Chemistry 2e: Chapter 11 Exercises (Solubility)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/11-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "phase": "PRACTICE",
+      "estimated_minutes": 25,
+      "slot_order": 1,
+      "concepts": [
+        "unit3-solubility"
+      ],
+      "week": 3,
+      "day": 3
+    },
+    {
+      "id": "chem-w3-khan-em-spectrum",
+      "title": "The electromagnetic spectrum",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:intermolecular-forces-and-properties/x2eef969c74e0d802:spectroscopy/v/the-electromagnetic-spectrum",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "phase": "LEARN",
+      "estimated_minutes": 11,
+      "slot_order": 1,
+      "concepts": [
+        "unit3-spectroscopy-photoelectric"
+      ],
+      "week": 3,
+      "day": 4
+    },
+    {
+      "id": "chem-w3-khan-photoelectric-effect",
+      "title": "Photoelectric effect",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:intermolecular-forces-and-properties/x2eef969c74e0d802:spectroscopy/v/photoelectric-effect",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "phase": "LEARN",
+      "estimated_minutes": 12,
+      "slot_order": 2,
+      "concepts": [
+        "unit3-spectroscopy-photoelectric"
+      ],
+      "week": 3,
+      "day": 4
+    },
+    {
+      "id": "chem-w3-khan-spectroscopy-exercise",
+      "title": "Spectroscopy and photoelectric effect (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:intermolecular-forces-and-properties/x2eef969c74e0d802:spectroscopy/e/spectroscopy",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "phase": "PRACTICE",
+      "estimated_minutes": 15,
+      "slot_order": 3,
+      "concepts": [
+        "unit3-spectroscopy-photoelectric"
+      ],
+      "week": 3,
+      "day": 4
+    },
+    {
+      "id": "chem-w3-openstax-spectroscopy-b",
+      "title": "OpenStax Chemistry 2e: 6.1 Electromagnetic Energy",
+      "url": "https://openstax.org/books/chemistry-2e/pages/6-1-electromagnetic-energy",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "phase": "LEARN",
+      "estimated_minutes": 20,
+      "slot_order": 1,
+      "concepts": [
+        "unit3-spectroscopy-photoelectric"
+      ],
+      "week": 3,
+      "day": 4
+    },
+    {
+      "id": "chem-w3-openstax-spectroscopy-c",
+      "title": "OpenStax Chemistry 2e: Chapter 6 Exercises (Spectroscopy)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/6-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "phase": "PRACTICE",
+      "estimated_minutes": 25,
+      "slot_order": 1,
+      "concepts": [
+        "unit3-spectroscopy-photoelectric"
+      ],
+      "week": 3,
+      "day": 4
+    },
+    {
+      "id": "chem-w3-khan-beers-law-1",
+      "title": "Introduction to Beer-Lambert Law",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:intermolecular-forces-and-properties/x2eef969c74e0d802:spectroscopy/v/beer-lambert-law",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "phase": "LEARN",
+      "estimated_minutes": 12,
+      "slot_order": 1,
+      "concepts": [
+        "unit3-beer-lambert"
+      ],
+      "week": 3,
+      "day": 5
+    },
+    {
+      "id": "chem-w3-khan-beers-law-2",
+      "title": "Beer-Lambert Law calculations",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:intermolecular-forces-and-properties/x2eef969c74e0d802:spectroscopy/v/beer-lambert-law-calculations",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "phase": "LEARN",
+      "estimated_minutes": 11,
+      "slot_order": 2,
+      "concepts": [
+        "unit3-beer-lambert"
+      ],
+      "week": 3,
+      "day": 5
+    },
+    {
+      "id": "chem-w3-phet-beers-law-lab",
+      "title": "PhET: Beer's Law Lab",
+      "url": "https://phet.colorado.edu/en/simulations/beers-law-lab",
+      "type": "interactive",
+      "platform": "phet",
+      "tier": "A",
+      "phase": "PRACTICE",
+      "estimated_minutes": 20,
+      "slot_order": 3,
+      "concepts": [
+        "unit3-beer-lambert"
+      ],
+      "week": 3,
+      "day": 5
+    },
+    {
+      "id": "chem-w3-openstax-beers-law-b",
+      "title": "OpenStax Chemistry 2e: 11.3 Solubility (Concentration and Absorbance)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/11-3-solubility",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "phase": "LEARN",
+      "estimated_minutes": 20,
+      "slot_order": 1,
+      "concepts": [
+        "unit3-beer-lambert"
+      ],
+      "week": 3,
+      "day": 5
+    },
+    {
+      "id": "chem-w3-openstax-beers-law-c",
+      "title": "OpenStax Chemistry 2e: Chapter 11 Exercises (Beer-Lambert)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/11-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "phase": "PRACTICE",
+      "estimated_minutes": 25,
+      "slot_order": 1,
+      "concepts": [
+        "unit3-beer-lambert"
+      ],
+      "week": 3,
+      "day": 5
+    },
+    {
+      "id": "chem-w3-khan-solutions-intro",
+      "title": "Solutions and mixtures — concentration",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:intermolecular-forces-and-properties/x2eef969c74e0d802:solutions-and-mixtures/v/solutions-and-mixtures",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "phase": "LEARN",
+      "estimated_minutes": 12,
+      "slot_order": 1,
+      "concepts": [
+        "unit3-solutions-mixtures"
+      ],
+      "week": 3,
+      "day": 6
+    },
+    {
+      "id": "chem-w3-khan-molarity",
+      "title": "Molarity and concentration calculations",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:intermolecular-forces-and-properties/x2eef969c74e0d802:solutions-and-mixtures/v/molarity",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "phase": "LEARN",
+      "estimated_minutes": 11,
+      "slot_order": 2,
+      "concepts": [
+        "unit3-solutions-mixtures"
+      ],
+      "week": 3,
+      "day": 6
+    },
+    {
+      "id": "chem-w3-khan-solutions-exercise",
+      "title": "Solutions and concentration (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:intermolecular-forces-and-properties/x2eef969c74e0d802:solutions-and-mixtures/e/solutions-and-mixtures",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "phase": "PRACTICE",
+      "estimated_minutes": 15,
+      "slot_order": 3,
+      "concepts": [
+        "unit3-solutions-mixtures"
+      ],
+      "week": 3,
+      "day": 6
+    },
+    {
+      "id": "chem-w3-openstax-solutions-b",
+      "title": "OpenStax Chemistry 2e: 11.2 Electrolytes and 11.3 Solubility",
+      "url": "https://openstax.org/books/chemistry-2e/pages/11-2-electrolytes",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "phase": "LEARN",
+      "estimated_minutes": 20,
+      "slot_order": 1,
+      "concepts": [
+        "unit3-solutions-mixtures"
+      ],
+      "week": 3,
+      "day": 6
+    },
+    {
+      "id": "chem-w3-openstax-solutions-c",
+      "title": "OpenStax Chemistry 2e: Chapter 11 Exercises (Concentration)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/11-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "phase": "PRACTICE",
+      "estimated_minutes": 25,
+      "slot_order": 1,
+      "concepts": [
+        "unit3-solutions-mixtures"
+      ],
+      "week": 3,
+      "day": 6
+    },
+    {
+      "id": "chem-w3-khan-imf-properties",
+      "title": "IMF and macroscopic properties review",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:intermolecular-forces-and-properties/x2eef969c74e0d802:intermolecular-forces/v/imf-and-boiling-points",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "phase": "LEARN",
+      "estimated_minutes": 12,
+      "slot_order": 1,
+      "concepts": [
+        "unit3-imf-applications"
+      ],
+      "week": 3,
+      "day": 7
+    },
+    {
+      "id": "chem-w3-khan-imf-review",
+      "title": "Comparing IMF — boiling points and vapor pressure",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:intermolecular-forces-and-properties/x2eef969c74e0d802:intermolecular-forces/v/vapor-pressure-and-molecular-forces",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "phase": "LEARN",
+      "estimated_minutes": 11,
+      "slot_order": 2,
+      "concepts": [
+        "unit3-imf-applications"
+      ],
+      "week": 3,
+      "day": 7
+    },
+    {
+      "id": "chem-w3-khan-imf-review-exercise",
+      "title": "IMF applications — Unit 3 review (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:intermolecular-forces-and-properties/x2eef969c74e0d802:intermolecular-forces/e/intermolecular-forces",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "phase": "PRACTICE",
+      "estimated_minutes": 15,
+      "slot_order": 3,
+      "concepts": [
+        "unit3-imf-applications"
+      ],
+      "week": 3,
+      "day": 7
+    },
+    {
+      "id": "chem-w3-openstax-imf-apps-b",
+      "title": "OpenStax Chemistry 2e: 10.1-10.2 IMF and Physical Properties",
+      "url": "https://openstax.org/books/chemistry-2e/pages/10-1-intermolecular-forces",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "phase": "LEARN",
+      "estimated_minutes": 20,
+      "slot_order": 1,
+      "concepts": [
+        "unit3-imf-applications"
+      ],
+      "week": 3,
+      "day": 7
+    },
+    {
+      "id": "chem-w3-openstax-imf-apps-c",
+      "title": "OpenStax Chemistry 2e: Chapter 10 Exercises (IMF Applications)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/10-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "phase": "PRACTICE",
+      "estimated_minutes": 25,
+      "slot_order": 1,
+      "concepts": [
+        "unit3-imf-applications"
+      ],
+      "week": 3,
+      "day": 7
+    },
+    {
+      "id": "chem-w4-khan-reactions-intro-1",
+      "title": "Introduction to chemical reactions",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:chemical-reactions/x2eef969c74e0d802:net-ionic-equations/v/introduction-to-chemical-reactions",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 12,
+      "concepts": [
+        "unit4-net-ionic-equations"
       ],
       "week": 4,
       "day": 1
     },
     {
-      "id": "chem-w5-placeholder-resource",
-      "title": "Week 5 内容准备中",
-      "url": null,
+      "id": "chem-w4-khan-reactions-intro-2",
+      "title": "Writing and balancing chemical equations",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:chemical-reactions/x2eef969c74e0d802:net-ionic-equations/v/balancing-chemical-equations",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 14,
+      "concepts": [
+        "unit4-net-ionic-equations"
+      ],
+      "week": 4,
+      "day": 1
+    },
+    {
+      "id": "chem-w4-khan-net-ionic-equations",
+      "title": "Net ionic equations",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:chemical-reactions/x2eef969c74e0d802:net-ionic-equations/v/net-ionic-equations",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 11,
+      "concepts": [
+        "unit4-net-ionic-equations"
+      ],
+      "week": 4,
+      "day": 1
+    },
+    {
+      "id": "chem-w4-phet-balancing-equations",
+      "title": "PhET: Balancing Chemical Equations",
+      "url": "https://phet.colorado.edu/en/simulations/balancing-chemical-equations",
+      "type": "interactive",
+      "platform": "phet",
+      "tier": "A",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit4-net-ionic-equations"
+      ],
+      "week": 4,
+      "day": 1
+    },
+    {
+      "id": "chem-w4-openstax-reactions-intro",
+      "title": "OpenStax Chemistry 2e: 4.1 Writing and Balancing Chemical Equations",
+      "url": "https://openstax.org/books/chemistry-2e/pages/4-1-writing-and-balancing-chemical-equations",
       "type": "reading",
       "platform": "openstax",
-      "tier": "A",
-      "estimated_minutes": 5,
-      "description": "本周内容正在准备中，请关注后续更新。Unit 5: Kinetics",
+      "tier": "B",
+      "estimated_minutes": 20,
       "concepts": [
-        "chem-w5-placeholder"
+        "unit4-net-ionic-equations"
+      ],
+      "week": 4,
+      "day": 1
+    },
+    {
+      "id": "chem-w4-openstax-reactions-exercises-1",
+      "title": "OpenStax Chemistry 2e: Chapter 4 Exercises (Equations & Net Ionic)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/4-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "estimated_minutes": 25,
+      "concepts": [
+        "unit4-net-ionic-equations"
+      ],
+      "week": 4,
+      "day": 1
+    },
+    {
+      "id": "chem-w4-khan-stoichiometry-1",
+      "title": "Stoichiometry introduction",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:chemical-reactions/x2eef969c74e0d802:stoichiometry/v/stoichiometry",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 13,
+      "concepts": [
+        "unit4-stoichiometry"
+      ],
+      "week": 4,
+      "day": 2
+    },
+    {
+      "id": "chem-w4-khan-stoichiometry-2",
+      "title": "Stoichiometry: mole-to-mole conversions",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:chemical-reactions/x2eef969c74e0d802:stoichiometry/v/stoichiometry-mole-to-mole",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 11,
+      "concepts": [
+        "unit4-stoichiometry"
+      ],
+      "week": 4,
+      "day": 2
+    },
+    {
+      "id": "chem-w4-khan-stoichiometry-practice",
+      "title": "Stoichiometry (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:chemical-reactions/x2eef969c74e0d802:stoichiometry/e/stoichiometry-1",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 15,
+      "concepts": [
+        "unit4-stoichiometry"
+      ],
+      "week": 4,
+      "day": 2
+    },
+    {
+      "id": "chem-w4-openstax-stoichiometry",
+      "title": "OpenStax Chemistry 2e: 4.3 Reaction Stoichiometry",
+      "url": "https://openstax.org/books/chemistry-2e/pages/4-3-reaction-stoichiometry",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit4-stoichiometry"
+      ],
+      "week": 4,
+      "day": 2
+    },
+    {
+      "id": "chem-w4-openstax-stoichiometry-exercises",
+      "title": "OpenStax Chemistry 2e: Chapter 4 Exercises (Stoichiometry)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/4-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "estimated_minutes": 25,
+      "concepts": [
+        "unit4-stoichiometry"
+      ],
+      "week": 4,
+      "day": 2
+    },
+    {
+      "id": "chem-w4-khan-limiting-reagent-1",
+      "title": "Limiting reagent stoichiometry",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:chemical-reactions/x2eef969c74e0d802:stoichiometry/v/limiting-reagent-stoichiometry",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 14,
+      "concepts": [
+        "unit4-limiting-reagent-titration"
+      ],
+      "week": 4,
+      "day": 3
+    },
+    {
+      "id": "chem-w4-khan-limiting-reagent-2",
+      "title": "Percent yield",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:chemical-reactions/x2eef969c74e0d802:stoichiometry/v/theoretical-and-percent-yield",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 11,
+      "concepts": [
+        "unit4-limiting-reagent-titration"
+      ],
+      "week": 4,
+      "day": 3
+    },
+    {
+      "id": "chem-w4-khan-limiting-reagent-practice",
+      "title": "Limiting reagent (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:chemical-reactions/x2eef969c74e0d802:stoichiometry/e/limiting-reagent-stoichiometry",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 15,
+      "concepts": [
+        "unit4-limiting-reagent-titration"
+      ],
+      "week": 4,
+      "day": 3
+    },
+    {
+      "id": "chem-w4-openstax-limiting-reagent",
+      "title": "OpenStax Chemistry 2e: 4.4 Reaction Yields (Limiting Reagent & Titration)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/4-4-reaction-yields",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit4-limiting-reagent-titration"
+      ],
+      "week": 4,
+      "day": 3
+    },
+    {
+      "id": "chem-w4-openstax-limiting-reagent-exercises",
+      "title": "OpenStax Chemistry 2e: Chapter 4 Exercises (Limiting Reagent & Yield)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/4-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "estimated_minutes": 25,
+      "concepts": [
+        "unit4-limiting-reagent-titration"
+      ],
+      "week": 4,
+      "day": 3
+    },
+    {
+      "id": "chem-w4-khan-reaction-types-1",
+      "title": "Types of chemical reactions",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:chemical-reactions/x2eef969c74e0d802:types-of-chemical-reactions/v/types-of-chemical-reactions",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 13,
+      "concepts": [
+        "unit4-reaction-types"
+      ],
+      "week": 4,
+      "day": 4
+    },
+    {
+      "id": "chem-w4-khan-reaction-types-2",
+      "title": "Precipitation reactions and solubility rules",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:chemical-reactions/x2eef969c74e0d802:types-of-chemical-reactions/v/precipitation-reactions",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 12,
+      "concepts": [
+        "unit4-reaction-types"
+      ],
+      "week": 4,
+      "day": 4
+    },
+    {
+      "id": "chem-w4-khan-reaction-types-practice",
+      "title": "Types of chemical reactions (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:chemical-reactions/x2eef969c74e0d802:types-of-chemical-reactions/e/types-of-chemical-reactions",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 15,
+      "concepts": [
+        "unit4-reaction-types"
+      ],
+      "week": 4,
+      "day": 4
+    },
+    {
+      "id": "chem-w4-openstax-reaction-types",
+      "title": "OpenStax Chemistry 2e: 4.2 Classifying Chemical Reactions",
+      "url": "https://openstax.org/books/chemistry-2e/pages/4-2-classifying-chemical-reactions",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit4-reaction-types"
+      ],
+      "week": 4,
+      "day": 4
+    },
+    {
+      "id": "chem-w4-openstax-reaction-types-exercises",
+      "title": "OpenStax Chemistry 2e: Chapter 4 Exercises (Reaction Types)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/4-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "estimated_minutes": 25,
+      "concepts": [
+        "unit4-reaction-types"
+      ],
+      "week": 4,
+      "day": 4
+    },
+    {
+      "id": "chem-w4-khan-acid-base-1",
+      "title": "Arrhenius acids and bases",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:chemical-reactions/x2eef969c74e0d802:acid-base-reactions/v/arrhenius-acids-and-bases",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 10,
+      "concepts": [
+        "unit4-acid-base-intro"
+      ],
+      "week": 4,
+      "day": 5
+    },
+    {
+      "id": "chem-w4-khan-acid-base-2",
+      "title": "Brønsted-Lowry acids and bases",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:chemical-reactions/x2eef969c74e0d802:acid-base-reactions/v/bronsted-lowry-definition-of-acids-and-bases",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 11,
+      "concepts": [
+        "unit4-acid-base-intro"
+      ],
+      "week": 4,
+      "day": 5
+    },
+    {
+      "id": "chem-w4-phet-acid-base",
+      "title": "PhET: Acid-Base Solutions",
+      "url": "https://phet.colorado.edu/en/simulations/acid-base-solutions",
+      "type": "interactive",
+      "platform": "phet",
+      "tier": "A",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit4-acid-base-intro"
+      ],
+      "week": 4,
+      "day": 5
+    },
+    {
+      "id": "chem-w4-openstax-acid-base-intro",
+      "title": "OpenStax Chemistry 2e: 14.1 Brønsted-Lowry Acids and Bases",
+      "url": "https://openstax.org/books/chemistry-2e/pages/14-1-bronsted-lowry-acids-and-bases",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit4-acid-base-intro"
+      ],
+      "week": 4,
+      "day": 5
+    },
+    {
+      "id": "chem-w4-openstax-acid-base-exercises",
+      "title": "OpenStax Chemistry 2e: Chapter 14 Exercises (Acids and Bases Intro)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/14-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "estimated_minutes": 25,
+      "concepts": [
+        "unit4-acid-base-intro"
+      ],
+      "week": 4,
+      "day": 5
+    },
+    {
+      "id": "chem-w4-khan-redox-1",
+      "title": "Oxidation-reduction reactions (redox)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:chemical-reactions/x2eef969c74e0d802:oxidation-reduction-reactions/v/oxidation-and-reduction-review",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 13,
+      "concepts": [
+        "unit4-redox-reactions"
+      ],
+      "week": 4,
+      "day": 6
+    },
+    {
+      "id": "chem-w4-khan-redox-2",
+      "title": "Balancing redox reactions",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:chemical-reactions/x2eef969c74e0d802:oxidation-reduction-reactions/v/balancing-redox-reactions",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 14,
+      "concepts": [
+        "unit4-redox-reactions"
+      ],
+      "week": 4,
+      "day": 6
+    },
+    {
+      "id": "chem-w4-khan-redox-practice",
+      "title": "Oxidation-reduction reactions (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:chemical-reactions/x2eef969c74e0d802:oxidation-reduction-reactions/e/oxidation-and-reduction",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 15,
+      "concepts": [
+        "unit4-redox-reactions"
+      ],
+      "week": 4,
+      "day": 6
+    },
+    {
+      "id": "chem-w4-openstax-redox",
+      "title": "OpenStax Chemistry 2e: 4.4 Oxidation-Reduction Reactions",
+      "url": "https://openstax.org/books/chemistry-2e/pages/4-4-oxidation-reduction-reactions",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit4-redox-reactions"
+      ],
+      "week": 4,
+      "day": 6
+    },
+    {
+      "id": "chem-w4-openstax-redox-exercises",
+      "title": "OpenStax Chemistry 2e: Chapter 4 Exercises (Redox)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/4-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "estimated_minutes": 25,
+      "concepts": [
+        "unit4-redox-reactions"
+      ],
+      "week": 4,
+      "day": 6
+    },
+    {
+      "id": "chem-w4-khan-oxidation-states-1",
+      "title": "Oxidation states (oxidation numbers)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:chemical-reactions/x2eef969c74e0d802:oxidation-reduction-reactions/v/oxidation-states",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 12,
+      "concepts": [
+        "unit4-oxidation-states"
+      ],
+      "week": 4,
+      "day": 7
+    },
+    {
+      "id": "chem-w4-khan-oxidation-states-2",
+      "title": "Assigning oxidation states",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:chemical-reactions/x2eef969c74e0d802:oxidation-reduction-reactions/v/assigning-oxidation-states",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 11,
+      "concepts": [
+        "unit4-oxidation-states"
+      ],
+      "week": 4,
+      "day": 7
+    },
+    {
+      "id": "chem-w4-khan-oxidation-states-practice",
+      "title": "Oxidation states (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:chemical-reactions/x2eef969c74e0d802:oxidation-reduction-reactions/e/oxidation-states",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 15,
+      "concepts": [
+        "unit4-oxidation-states"
+      ],
+      "week": 4,
+      "day": 7
+    },
+    {
+      "id": "chem-w4-openstax-oxidation-states",
+      "title": "OpenStax Chemistry 2e: 4.4 Oxidation States",
+      "url": "https://openstax.org/books/chemistry-2e/pages/4-4-oxidation-reduction-reactions",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit4-oxidation-states"
+      ],
+      "week": 4,
+      "day": 7
+    },
+    {
+      "id": "chem-w4-openstax-oxidation-states-exercises",
+      "title": "OpenStax Chemistry 2e: Chapter 4 Exercises (Oxidation States)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/4-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "estimated_minutes": 25,
+      "concepts": [
+        "unit4-oxidation-states"
+      ],
+      "week": 4,
+      "day": 7
+    },
+    {
+      "id": "chem-w5-khan-reaction-rates-1",
+      "title": "Reaction rates",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:kinetics/x2eef969c74e0d802:reaction-rates/v/reaction-rates",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 12,
+      "concepts": [
+        "unit5-reaction-rates-rate-law"
       ],
       "week": 5,
       "day": 1
     },
     {
-      "id": "chem-w6-placeholder-resource",
-      "title": "Week 6 内容准备中",
-      "url": null,
+      "id": "chem-w5-khan-reaction-rates-2",
+      "title": "Introduction to rate law",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:kinetics/x2eef969c74e0d802:rate-law/v/introduction-to-rate-law",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 13,
+      "concepts": [
+        "unit5-reaction-rates-rate-law"
+      ],
+      "week": 5,
+      "day": 1
+    },
+    {
+      "id": "chem-w5-khan-reaction-rates-practice",
+      "title": "Reaction rates and rate law (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:kinetics/x2eef969c74e0d802:rate-law/e/rate-law",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 15,
+      "concepts": [
+        "unit5-reaction-rates-rate-law"
+      ],
+      "week": 5,
+      "day": 1
+    },
+    {
+      "id": "chem-w5-openstax-reaction-rates",
+      "title": "OpenStax Chemistry 2e: 12.1 Chemical Reaction Rates",
+      "url": "https://openstax.org/books/chemistry-2e/pages/12-1-chemical-reaction-rates",
       "type": "reading",
       "platform": "openstax",
-      "tier": "A",
-      "estimated_minutes": 5,
-      "description": "本周内容正在准备中，请关注后续更新。Unit 6: Thermodynamics",
+      "tier": "B",
+      "estimated_minutes": 20,
       "concepts": [
-        "chem-w6-placeholder"
+        "unit5-reaction-rates-rate-law"
+      ],
+      "week": 5,
+      "day": 1
+    },
+    {
+      "id": "chem-w5-openstax-reaction-rates-exercises",
+      "title": "OpenStax Chemistry 2e: Chapter 12 Exercises (Reaction Rates & Rate Law)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/12-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "estimated_minutes": 25,
+      "concepts": [
+        "unit5-reaction-rates-rate-law"
+      ],
+      "week": 5,
+      "day": 1
+    },
+    {
+      "id": "chem-w5-khan-integrated-rate-1",
+      "title": "First-order reactions and half-life",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:kinetics/x2eef969c74e0d802:reaction-rates/v/first-order-reaction-and-half-life",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 14,
+      "concepts": [
+        "unit5-integrated-rate-laws"
+      ],
+      "week": 5,
+      "day": 2
+    },
+    {
+      "id": "chem-w5-khan-integrated-rate-2",
+      "title": "Second-order reactions",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:kinetics/x2eef969c74e0d802:reaction-rates/v/second-order-reactions",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 12,
+      "concepts": [
+        "unit5-integrated-rate-laws"
+      ],
+      "week": 5,
+      "day": 2
+    },
+    {
+      "id": "chem-w5-khan-integrated-rate-practice",
+      "title": "Integrated rate laws (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:kinetics/x2eef969c74e0d802:rate-law/e/integrated-rate-laws",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 15,
+      "concepts": [
+        "unit5-integrated-rate-laws"
+      ],
+      "week": 5,
+      "day": 2
+    },
+    {
+      "id": "chem-w5-openstax-integrated-rate",
+      "title": "OpenStax Chemistry 2e: 12.4 Integrated Rate Laws",
+      "url": "https://openstax.org/books/chemistry-2e/pages/12-4-integrated-rate-laws",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit5-integrated-rate-laws"
+      ],
+      "week": 5,
+      "day": 2
+    },
+    {
+      "id": "chem-w5-openstax-integrated-rate-exercises",
+      "title": "OpenStax Chemistry 2e: Chapter 12 Exercises (Integrated Rate Laws)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/12-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "estimated_minutes": 25,
+      "concepts": [
+        "unit5-integrated-rate-laws"
+      ],
+      "week": 5,
+      "day": 2
+    },
+    {
+      "id": "chem-w5-khan-elementary-1",
+      "title": "Elementary reactions and molecularity",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:kinetics/x2eef969c74e0d802:reaction-mechanisms/v/elementary-reactions",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 11,
+      "concepts": [
+        "unit5-elementary-reactions-collision"
+      ],
+      "week": 5,
+      "day": 3
+    },
+    {
+      "id": "chem-w5-khan-collision-model",
+      "title": "Collision theory and activation energy",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:kinetics/x2eef969c74e0d802:reaction-rates/v/collision-theory",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 12,
+      "concepts": [
+        "unit5-elementary-reactions-collision"
+      ],
+      "week": 5,
+      "day": 3
+    },
+    {
+      "id": "chem-w5-phet-reactions-rates",
+      "title": "PhET: Reactions & Rates",
+      "url": "https://phet.colorado.edu/en/simulations/reactions-and-rates",
+      "type": "interactive",
+      "platform": "phet",
+      "tier": "A",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit5-elementary-reactions-collision"
+      ],
+      "week": 5,
+      "day": 3
+    },
+    {
+      "id": "chem-w5-openstax-elementary",
+      "title": "OpenStax Chemistry 2e: 12.6 Reaction Mechanisms",
+      "url": "https://openstax.org/books/chemistry-2e/pages/12-6-reaction-mechanisms",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit5-elementary-reactions-collision"
+      ],
+      "week": 5,
+      "day": 3
+    },
+    {
+      "id": "chem-w5-openstax-elementary-exercises",
+      "title": "OpenStax Chemistry 2e: Chapter 12 Exercises (Elementary Reactions)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/12-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "estimated_minutes": 25,
+      "concepts": [
+        "unit5-elementary-reactions-collision"
+      ],
+      "week": 5,
+      "day": 3
+    },
+    {
+      "id": "chem-w5-khan-energy-profile-1",
+      "title": "Activation energy and the Arrhenius equation",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:kinetics/x2eef969c74e0d802:reaction-rates/v/activation-energy",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 13,
+      "concepts": [
+        "unit5-energy-profile"
+      ],
+      "week": 5,
+      "day": 4
+    },
+    {
+      "id": "chem-w5-khan-energy-profile-2",
+      "title": "Transition state and energy diagrams",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:kinetics/x2eef969c74e0d802:reaction-rates/v/transition-state-and-activation-energy",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 12,
+      "concepts": [
+        "unit5-energy-profile"
+      ],
+      "week": 5,
+      "day": 4
+    },
+    {
+      "id": "chem-w5-khan-energy-profile-practice",
+      "title": "Activation energy and energy diagrams (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:kinetics/x2eef969c74e0d802:reaction-rates/e/activation-energy",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 15,
+      "concepts": [
+        "unit5-energy-profile"
+      ],
+      "week": 5,
+      "day": 4
+    },
+    {
+      "id": "chem-w5-openstax-energy-profile",
+      "title": "OpenStax Chemistry 2e: 12.5 Collision Theory and Activation Energy",
+      "url": "https://openstax.org/books/chemistry-2e/pages/12-5-collision-theory",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit5-energy-profile"
+      ],
+      "week": 5,
+      "day": 4
+    },
+    {
+      "id": "chem-w5-openstax-energy-profile-exercises",
+      "title": "OpenStax Chemistry 2e: Chapter 12 Exercises (Energy Profile & Ea)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/12-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "estimated_minutes": 25,
+      "concepts": [
+        "unit5-energy-profile"
+      ],
+      "week": 5,
+      "day": 4
+    },
+    {
+      "id": "chem-w5-khan-mechanisms-1",
+      "title": "Reaction mechanisms",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:kinetics/x2eef969c74e0d802:reaction-mechanisms/v/reaction-mechanisms",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 13,
+      "concepts": [
+        "unit5-reaction-mechanisms"
+      ],
+      "week": 5,
+      "day": 5
+    },
+    {
+      "id": "chem-w5-khan-mechanisms-2",
+      "title": "Rate-determining step and rate law from mechanism",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:kinetics/x2eef969c74e0d802:reaction-mechanisms/v/rate-determining-step",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 14,
+      "concepts": [
+        "unit5-reaction-mechanisms"
+      ],
+      "week": 5,
+      "day": 5
+    },
+    {
+      "id": "chem-w5-khan-mechanisms-practice",
+      "title": "Reaction mechanisms (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:kinetics/x2eef969c74e0d802:reaction-mechanisms/e/reaction-mechanisms",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 15,
+      "concepts": [
+        "unit5-reaction-mechanisms"
+      ],
+      "week": 5,
+      "day": 5
+    },
+    {
+      "id": "chem-w5-openstax-mechanisms",
+      "title": "OpenStax Chemistry 2e: 12.6 Reaction Mechanisms (Detailed)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/12-6-reaction-mechanisms",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit5-reaction-mechanisms"
+      ],
+      "week": 5,
+      "day": 5
+    },
+    {
+      "id": "chem-w5-openstax-mechanisms-exercises",
+      "title": "OpenStax Chemistry 2e: Chapter 12 Exercises (Mechanisms)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/12-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "estimated_minutes": 25,
+      "concepts": [
+        "unit5-reaction-mechanisms"
+      ],
+      "week": 5,
+      "day": 5
+    },
+    {
+      "id": "chem-w5-khan-steady-state-1",
+      "title": "Pre-equilibrium and steady-state approximation",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:kinetics/x2eef969c74e0d802:reaction-mechanisms/v/pre-equilibrium-approximation",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 13,
+      "concepts": [
+        "unit5-steady-state-multistep"
+      ],
+      "week": 5,
+      "day": 6
+    },
+    {
+      "id": "chem-w5-khan-steady-state-2",
+      "title": "Multistep reaction energy profiles",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:kinetics/x2eef969c74e0d802:reaction-mechanisms/v/multistep-reaction-energy-profile",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 11,
+      "concepts": [
+        "unit5-steady-state-multistep"
+      ],
+      "week": 5,
+      "day": 6
+    },
+    {
+      "id": "chem-w5-khan-steady-state-practice",
+      "title": "Reaction mechanisms and rate laws (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:kinetics/x2eef969c74e0d802:reaction-mechanisms/e/reaction-mechanisms-and-rate-laws",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 15,
+      "concepts": [
+        "unit5-steady-state-multistep"
+      ],
+      "week": 5,
+      "day": 6
+    },
+    {
+      "id": "chem-w5-openstax-steady-state",
+      "title": "OpenStax Chemistry 2e: 12.6 Steady-State Approximation and Multistep Profiles",
+      "url": "https://openstax.org/books/chemistry-2e/pages/12-6-reaction-mechanisms",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit5-steady-state-multistep"
+      ],
+      "week": 5,
+      "day": 6
+    },
+    {
+      "id": "chem-w5-openstax-steady-state-exercises",
+      "title": "OpenStax Chemistry 2e: Chapter 12 Exercises (Steady-State & Multistep)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/12-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "estimated_minutes": 25,
+      "concepts": [
+        "unit5-steady-state-multistep"
+      ],
+      "week": 5,
+      "day": 6
+    },
+    {
+      "id": "chem-w5-khan-catalysis-1",
+      "title": "Catalysts",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:kinetics/x2eef969c74e0d802:catalysis/v/catalysts",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 12,
+      "concepts": [
+        "unit5-catalysis"
+      ],
+      "week": 5,
+      "day": 7
+    },
+    {
+      "id": "chem-w5-khan-catalysis-2",
+      "title": "Enzymes as biological catalysts",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:kinetics/x2eef969c74e0d802:catalysis/v/enzyme-catalysis",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 11,
+      "concepts": [
+        "unit5-catalysis"
+      ],
+      "week": 5,
+      "day": 7
+    },
+    {
+      "id": "chem-w5-khan-catalysis-practice",
+      "title": "Catalysis (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:kinetics/x2eef969c74e0d802:catalysis/e/catalysis",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 15,
+      "concepts": [
+        "unit5-catalysis"
+      ],
+      "week": 5,
+      "day": 7
+    },
+    {
+      "id": "chem-w5-openstax-catalysis",
+      "title": "OpenStax Chemistry 2e: 12.7 Catalysis",
+      "url": "https://openstax.org/books/chemistry-2e/pages/12-7-catalysis",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit5-catalysis"
+      ],
+      "week": 5,
+      "day": 7
+    },
+    {
+      "id": "chem-w5-openstax-catalysis-exercises",
+      "title": "OpenStax Chemistry 2e: Chapter 12 Exercises (Catalysis)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/12-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "estimated_minutes": 25,
+      "concepts": [
+        "unit5-catalysis"
+      ],
+      "week": 5,
+      "day": 7
+    },
+    {
+      "id": "chem-w6-khan-endo-exo-1",
+      "title": "Endothermic vs. exothermic reactions",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:thermodynamics/x2eef969c74e0d802:endothermic-and-exothermic-processes/v/endothermic-vs-exothermic-reactions",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 10,
+      "concepts": [
+        "unit6-endo-exo-energy-diagrams"
       ],
       "week": 6,
       "day": 1
     },
     {
-      "id": "chem-w7-placeholder-resource",
-      "title": "Week 7 内容准备中",
-      "url": null,
+      "id": "chem-w6-khan-endo-exo-2",
+      "title": "Energy diagrams",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:thermodynamics/x2eef969c74e0d802:endothermic-and-exothermic-processes/v/energy-diagrams",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 10,
+      "concepts": [
+        "unit6-endo-exo-energy-diagrams"
+      ],
+      "week": 6,
+      "day": 1
+    },
+    {
+      "id": "chem-w6-phet-energy-forms",
+      "title": "PhET: Energy Forms and Changes",
+      "url": "https://phet.colorado.edu/en/simulations/energy-forms-and-changes",
+      "type": "interactive",
+      "platform": "phet",
+      "tier": "A",
+      "estimated_minutes": 20,
+      "description": "观察热能在不同系统间的传递方式。调整热源和物质，记录温度变化，区分吸热与放热过程。",
+      "concepts": [
+        "unit6-endo-exo-energy-diagrams"
+      ],
+      "week": 6,
+      "day": 1
+    },
+    {
+      "id": "chem-w6-khan-endo-exo-ex",
+      "title": "Endothermic and exothermic processes (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:thermodynamics/x2eef969c74e0d802:endothermic-and-exothermic-processes/e/endothermic-and-exothermic-processes",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 15,
+      "concepts": [
+        "unit6-endo-exo-energy-diagrams"
+      ],
+      "week": 6,
+      "day": 1
+    },
+    {
+      "id": "chem-w6-openstax-thermo-intro",
+      "title": "OpenStax Chemistry 2e: 5.1 Energy Basics",
+      "url": "https://openstax.org/books/chemistry-2e/pages/5-1-energy-basics",
       "type": "reading",
       "platform": "openstax",
-      "tier": "A",
-      "estimated_minutes": 5,
-      "description": "本周内容正在准备中，请关注后续更新。Unit 7: Equilibrium",
+      "tier": "B",
+      "estimated_minutes": 20,
       "concepts": [
-        "chem-w7-placeholder"
+        "unit6-endo-exo-energy-diagrams"
+      ],
+      "week": 6,
+      "day": 1
+    },
+    {
+      "id": "chem-w6-openstax-thermo-ex1",
+      "title": "OpenStax Chemistry 2e: Chapter 5 Exercises (Energy Basics)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/5-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "estimated_minutes": 25,
+      "concepts": [
+        "unit6-endo-exo-energy-diagrams"
+      ],
+      "week": 6,
+      "day": 1
+    },
+    {
+      "id": "chem-w6-khan-heat-transfer-1",
+      "title": "Calorimetry and heat transfer",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:thermodynamics/x2eef969c74e0d802:heat-transfer-and-thermal-equilibrium/v/calorimetry-and-heat-transfer",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 12,
+      "concepts": [
+        "unit6-heat-transfer-calorimetry"
+      ],
+      "week": 6,
+      "day": 2
+    },
+    {
+      "id": "chem-w6-khan-heat-capacity",
+      "title": "Heat capacity and specific heat",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:thermodynamics/x2eef969c74e0d802:heat-capacity-and-calorimetry/v/heat-capacity-and-specific-heat",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 11,
+      "concepts": [
+        "unit6-heat-transfer-calorimetry"
+      ],
+      "week": 6,
+      "day": 2
+    },
+    {
+      "id": "chem-w6-khan-calorimetry-ex",
+      "title": "Heat transfer and thermal equilibrium (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:thermodynamics/x2eef969c74e0d802:heat-capacity-and-calorimetry/e/heat-capacity-and-calorimetry",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 15,
+      "concepts": [
+        "unit6-heat-transfer-calorimetry"
+      ],
+      "week": 6,
+      "day": 2
+    },
+    {
+      "id": "chem-w6-openstax-calorimetry",
+      "title": "OpenStax Chemistry 2e: 5.2 Calorimetry",
+      "url": "https://openstax.org/books/chemistry-2e/pages/5-2-calorimetry",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit6-heat-transfer-calorimetry"
+      ],
+      "week": 6,
+      "day": 2
+    },
+    {
+      "id": "chem-w6-openstax-calorimetry-ex",
+      "title": "OpenStax Chemistry 2e: Chapter 5 Exercises (Calorimetry)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/5-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "estimated_minutes": 25,
+      "concepts": [
+        "unit6-heat-transfer-calorimetry"
+      ],
+      "week": 6,
+      "day": 2
+    },
+    {
+      "id": "chem-w6-khan-hess-law-1",
+      "title": "Hess's law and enthalpy",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:thermodynamics/x2eef969c74e0d802:hess-s-law/v/hess-s-law-and-reaction-enthalpy-change",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 12,
+      "concepts": [
+        "unit6-hess-law"
+      ],
+      "week": 6,
+      "day": 3
+    },
+    {
+      "id": "chem-w6-khan-hess-law-2",
+      "title": "Hess's law example",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:thermodynamics/x2eef969c74e0d802:hess-s-law/v/hess-s-law-example",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 10,
+      "concepts": [
+        "unit6-hess-law"
+      ],
+      "week": 6,
+      "day": 3
+    },
+    {
+      "id": "chem-w6-khan-hess-law-ex",
+      "title": "Hess's law (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:thermodynamics/x2eef969c74e0d802:hess-s-law/e/hess-s-law",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 15,
+      "concepts": [
+        "unit6-hess-law"
+      ],
+      "week": 6,
+      "day": 3
+    },
+    {
+      "id": "chem-w6-openstax-hess",
+      "title": "OpenStax Chemistry 2e: 5.3 Enthalpy (Hess's Law)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/5-3-enthalpy",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit6-hess-law"
+      ],
+      "week": 6,
+      "day": 3
+    },
+    {
+      "id": "chem-w6-openstax-hess-ex",
+      "title": "OpenStax Chemistry 2e: Chapter 5 Exercises (Enthalpy and Hess's Law)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/5-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "estimated_minutes": 25,
+      "concepts": [
+        "unit6-hess-law"
+      ],
+      "week": 6,
+      "day": 3
+    },
+    {
+      "id": "chem-w6-khan-bond-enthalpy-1",
+      "title": "Bond enthalpies",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:thermodynamics/x2eef969c74e0d802:bond-enthalpies/v/bond-enthalpies",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 11,
+      "concepts": [
+        "unit6-bond-enthalpies"
+      ],
+      "week": 6,
+      "day": 4
+    },
+    {
+      "id": "chem-w6-khan-bond-enthalpy-2",
+      "title": "Using bond enthalpies to approximate ΔH",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:thermodynamics/x2eef969c74e0d802:bond-enthalpies/v/using-bond-enthalpies-to-estimate-delta-h-of-reaction",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 12,
+      "concepts": [
+        "unit6-bond-enthalpies"
+      ],
+      "week": 6,
+      "day": 4
+    },
+    {
+      "id": "chem-w6-khan-bond-enthalpy-ex",
+      "title": "Bond enthalpies (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:thermodynamics/x2eef969c74e0d802:bond-enthalpies/e/bond-enthalpies",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 15,
+      "concepts": [
+        "unit6-bond-enthalpies"
+      ],
+      "week": 6,
+      "day": 4
+    },
+    {
+      "id": "chem-w6-openstax-bond-enthalpy",
+      "title": "OpenStax Chemistry 2e: 5.3 Enthalpy (Bond Enthalpies section)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/5-3-enthalpy",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "estimated_minutes": 15,
+      "concepts": [
+        "unit6-bond-enthalpies"
+      ],
+      "week": 6,
+      "day": 4
+    },
+    {
+      "id": "chem-w6-openstax-bond-enthalpy-ex",
+      "title": "OpenStax Chemistry 2e: Chapter 5 Exercises (Bond Enthalpies)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/5-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "estimated_minutes": 25,
+      "concepts": [
+        "unit6-bond-enthalpies"
+      ],
+      "week": 6,
+      "day": 4
+    },
+    {
+      "id": "chem-w6-khan-enthalpy-formation-1",
+      "title": "Standard enthalpy of formation",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:thermodynamics/x2eef969c74e0d802:enthalpy-of-formation/v/standard-enthalpy-of-formation",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 12,
+      "concepts": [
+        "unit6-enthalpy-formation"
+      ],
+      "week": 6,
+      "day": 5
+    },
+    {
+      "id": "chem-w6-khan-enthalpy-formation-2",
+      "title": "Calculating ΔH from standard enthalpies of formation",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:thermodynamics/x2eef969c74e0d802:enthalpy-of-formation/v/calculating-delta-h-from-enthalpies-of-formation",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 11,
+      "concepts": [
+        "unit6-enthalpy-formation"
+      ],
+      "week": 6,
+      "day": 5
+    },
+    {
+      "id": "chem-w6-khan-enthalpy-formation-ex",
+      "title": "Enthalpy of formation (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:thermodynamics/x2eef969c74e0d802:enthalpy-of-formation/e/enthalpy-of-formation",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 15,
+      "concepts": [
+        "unit6-enthalpy-formation"
+      ],
+      "week": 6,
+      "day": 5
+    },
+    {
+      "id": "chem-w6-openstax-formation",
+      "title": "OpenStax Chemistry 2e: 5.3 Enthalpy (Standard Enthalpies of Formation)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/5-3-enthalpy",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit6-enthalpy-formation"
+      ],
+      "week": 6,
+      "day": 5
+    },
+    {
+      "id": "chem-w6-openstax-formation-ex",
+      "title": "OpenStax Chemistry 2e: Chapter 5 Exercises (Enthalpy of Formation)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/5-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "estimated_minutes": 25,
+      "concepts": [
+        "unit6-enthalpy-formation"
+      ],
+      "week": 6,
+      "day": 5
+    },
+    {
+      "id": "chem-w6-khan-entropy-1",
+      "title": "Introduction to entropy",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:thermodynamics/x2eef969c74e0d802:entropy/v/introduction-to-entropy",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 12,
+      "concepts": [
+        "unit6-entropy"
+      ],
+      "week": 6,
+      "day": 6
+    },
+    {
+      "id": "chem-w6-khan-entropy-2",
+      "title": "Entropy and the second law of thermodynamics",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:thermodynamics/x2eef969c74e0d802:entropy/v/entropy-and-second-law-of-thermodynamics",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 11,
+      "concepts": [
+        "unit6-entropy"
+      ],
+      "week": 6,
+      "day": 6
+    },
+    {
+      "id": "chem-w6-khan-entropy-ex",
+      "title": "Entropy (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:thermodynamics/x2eef969c74e0d802:entropy/e/entropy",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 15,
+      "concepts": [
+        "unit6-entropy"
+      ],
+      "week": 6,
+      "day": 6
+    },
+    {
+      "id": "chem-w6-openstax-entropy",
+      "title": "OpenStax Chemistry 2e: 16.2 The Second and Third Laws of Thermodynamics",
+      "url": "https://openstax.org/books/chemistry-2e/pages/16-2-the-second-and-third-laws-of-thermodynamics",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit6-entropy"
+      ],
+      "week": 6,
+      "day": 6
+    },
+    {
+      "id": "chem-w6-openstax-entropy-ex",
+      "title": "OpenStax Chemistry 2e: Chapter 16 Exercises (Entropy)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/16-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "estimated_minutes": 25,
+      "concepts": [
+        "unit6-entropy"
+      ],
+      "week": 6,
+      "day": 6
+    },
+    {
+      "id": "chem-w6-khan-gibbs-1",
+      "title": "Gibbs free energy and spontaneity",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:thermodynamics/x2eef969c74e0d802:gibbs-free-energy-and-thermodynamic-favorability/v/gibbs-free-energy-and-spontaneity",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 13,
+      "concepts": [
+        "unit6-gibbs-free-energy"
+      ],
+      "week": 6,
+      "day": 7
+    },
+    {
+      "id": "chem-w6-khan-gibbs-2",
+      "title": "Thermodynamic vs. kinetic control",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:thermodynamics/x2eef969c74e0d802:thermodynamic-and-kinetic-control/v/thermodynamic-and-kinetic-control",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 11,
+      "concepts": [
+        "unit6-gibbs-free-energy"
+      ],
+      "week": 6,
+      "day": 7
+    },
+    {
+      "id": "chem-w6-khan-gibbs-ex",
+      "title": "Gibbs free energy (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:thermodynamics/x2eef969c74e0d802:gibbs-free-energy-and-thermodynamic-favorability/e/gibbs-free-energy",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 15,
+      "concepts": [
+        "unit6-gibbs-free-energy"
+      ],
+      "week": 6,
+      "day": 7
+    },
+    {
+      "id": "chem-w6-openstax-gibbs",
+      "title": "OpenStax Chemistry 2e: 16.3 Gibbs Energy",
+      "url": "https://openstax.org/books/chemistry-2e/pages/16-3-gibbs-energy",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit6-gibbs-free-energy"
+      ],
+      "week": 6,
+      "day": 7
+    },
+    {
+      "id": "chem-w6-openstax-gibbs-ex",
+      "title": "OpenStax Chemistry 2e: Chapter 16 Exercises (Gibbs Free Energy)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/16-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "estimated_minutes": 25,
+      "concepts": [
+        "unit6-gibbs-free-energy"
+      ],
+      "week": 6,
+      "day": 7
+    },
+    {
+      "id": "chem-w7-khan-equilibrium-intro-1",
+      "title": "Introduction to chemical equilibrium",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:equilibrium/x2eef969c74e0d802:introduction-to-equilibrium/v/introduction-to-chemical-equilibrium",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 11,
+      "concepts": [
+        "unit7-intro-equilibrium"
       ],
       "week": 7,
       "day": 1
     },
     {
-      "id": "chem-w8-placeholder-resource",
-      "title": "Week 8 内容准备中",
-      "url": null,
+      "id": "chem-w7-khan-equilibrium-intro-2",
+      "title": "Direction of reversible reactions",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:equilibrium/x2eef969c74e0d802:direction-of-reversible-reactions/v/direction-of-reversible-reactions",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 10,
+      "concepts": [
+        "unit7-intro-equilibrium"
+      ],
+      "week": 7,
+      "day": 1
+    },
+    {
+      "id": "chem-w7-phet-reactions-rates",
+      "title": "PhET: Reactions & Rates",
+      "url": "https://phet.colorado.edu/en/simulations/reactions-and-rates",
+      "type": "interactive",
+      "platform": "phet",
+      "tier": "A",
+      "estimated_minutes": 20,
+      "description": "通过调节温度和浓度，观察正逆反应速率如何趋于相等，理解动态平衡的建立过程。",
+      "concepts": [
+        "unit7-intro-equilibrium"
+      ],
+      "week": 7,
+      "day": 1
+    },
+    {
+      "id": "chem-w7-khan-equilibrium-intro-ex",
+      "title": "Introduction to equilibrium (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:equilibrium/x2eef969c74e0d802:introduction-to-equilibrium/e/introduction-to-equilibrium",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 15,
+      "concepts": [
+        "unit7-intro-equilibrium"
+      ],
+      "week": 7,
+      "day": 1
+    },
+    {
+      "id": "chem-w7-openstax-equilibrium-intro",
+      "title": "OpenStax Chemistry 2e: 13.1 Chemical Equilibria",
+      "url": "https://openstax.org/books/chemistry-2e/pages/13-1-chemical-equilibria",
       "type": "reading",
       "platform": "openstax",
-      "tier": "A",
-      "estimated_minutes": 5,
-      "description": "本周内容正在准备中，请关注后续更新。Unit 8: Acids and Bases",
+      "tier": "B",
+      "estimated_minutes": 20,
       "concepts": [
-        "chem-w8-placeholder"
+        "unit7-intro-equilibrium"
+      ],
+      "week": 7,
+      "day": 1
+    },
+    {
+      "id": "chem-w7-openstax-equilibrium-intro-ex",
+      "title": "OpenStax Chemistry 2e: Chapter 13 Exercises (Equilibrium Concepts)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/13-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "estimated_minutes": 25,
+      "concepts": [
+        "unit7-intro-equilibrium"
+      ],
+      "week": 7,
+      "day": 1
+    },
+    {
+      "id": "chem-w7-khan-keq-1",
+      "title": "Reaction quotient Q",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:equilibrium/x2eef969c74e0d802:reaction-quotient-and-equilibrium-constant/v/reaction-quotient-q",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 12,
+      "concepts": [
+        "unit7-reaction-quotient-keq"
+      ],
+      "week": 7,
+      "day": 2
+    },
+    {
+      "id": "chem-w7-khan-keq-2",
+      "title": "Writing the equilibrium constant expression",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:equilibrium/x2eef969c74e0d802:reaction-quotient-and-equilibrium-constant/v/writing-the-equilibrium-constant-expression",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 11,
+      "concepts": [
+        "unit7-reaction-quotient-keq"
+      ],
+      "week": 7,
+      "day": 2
+    },
+    {
+      "id": "chem-w7-khan-keq-3",
+      "title": "Calculating and interpreting the equilibrium constant",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:equilibrium/x2eef969c74e0d802:calculating-and-interpreting-the-equilibrium-constant/v/calculating-the-equilibrium-constant",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 12,
+      "concepts": [
+        "unit7-reaction-quotient-keq"
+      ],
+      "week": 7,
+      "day": 2
+    },
+    {
+      "id": "chem-w7-khan-keq-ex",
+      "title": "Equilibrium constant (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:equilibrium/x2eef969c74e0d802:reaction-quotient-and-equilibrium-constant/e/equilibrium-constant",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 15,
+      "concepts": [
+        "unit7-reaction-quotient-keq"
+      ],
+      "week": 7,
+      "day": 2
+    },
+    {
+      "id": "chem-w7-openstax-keq",
+      "title": "OpenStax Chemistry 2e: 13.2 Equilibrium Constants",
+      "url": "https://openstax.org/books/chemistry-2e/pages/13-2-equilibrium-constants",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit7-reaction-quotient-keq"
+      ],
+      "week": 7,
+      "day": 2
+    },
+    {
+      "id": "chem-w7-openstax-keq-ex",
+      "title": "OpenStax Chemistry 2e: Chapter 13 Exercises (Equilibrium Constants)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/13-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "estimated_minutes": 25,
+      "concepts": [
+        "unit7-reaction-quotient-keq"
+      ],
+      "week": 7,
+      "day": 2
+    },
+    {
+      "id": "chem-w7-phet-equilibrium-conc",
+      "title": "PhET: Chemical Equilibrium — Concentration",
+      "url": "https://phet.colorado.edu/en/simulations/equilibrium-concentration",
+      "type": "interactive",
+      "platform": "phet",
+      "tier": "A",
+      "estimated_minutes": 20,
+      "description": "改变反应物或产物浓度，观察 Q 与 K 的比较如何决定反应方向，并记录达到新平衡时的浓度。",
+      "concepts": [
+        "unit7-magnitude-properties-keq"
+      ],
+      "week": 7,
+      "day": 3
+    },
+    {
+      "id": "chem-w7-khan-ice-table-1",
+      "title": "ICE table and equilibrium concentrations",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:equilibrium/x2eef969c74e0d802:calculating-equilibrium-concentrations/v/ice-tables-calculating-equilibrium-concentrations",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 13,
+      "concepts": [
+        "unit7-magnitude-properties-keq"
+      ],
+      "week": 7,
+      "day": 3
+    },
+    {
+      "id": "chem-w7-khan-keq-magnitude",
+      "title": "Magnitude of the equilibrium constant",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:equilibrium/x2eef969c74e0d802:magnitude-of-the-equilibrium-constant/v/magnitude-of-the-equilibrium-constant",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 10,
+      "concepts": [
+        "unit7-magnitude-properties-keq"
+      ],
+      "week": 7,
+      "day": 3
+    },
+    {
+      "id": "chem-w7-khan-keq-calc-ex",
+      "title": "Calculating equilibrium concentrations (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:equilibrium/x2eef969c74e0d802:calculating-equilibrium-concentrations/e/calculating-equilibrium-concentrations",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit7-magnitude-properties-keq"
+      ],
+      "week": 7,
+      "day": 3
+    },
+    {
+      "id": "chem-w7-openstax-keq-calc",
+      "title": "OpenStax Chemistry 2e: 13.4 Equilibrium Calculations",
+      "url": "https://openstax.org/books/chemistry-2e/pages/13-4-equilibrium-calculations",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "estimated_minutes": 25,
+      "concepts": [
+        "unit7-magnitude-properties-keq"
+      ],
+      "week": 7,
+      "day": 3
+    },
+    {
+      "id": "chem-w7-openstax-keq-calc-ex",
+      "title": "OpenStax Chemistry 2e: Chapter 13 Exercises (Equilibrium Calculations)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/13-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "estimated_minutes": 30,
+      "concepts": [
+        "unit7-magnitude-properties-keq"
+      ],
+      "week": 7,
+      "day": 3
+    },
+    {
+      "id": "chem-w7-khan-repr-1",
+      "title": "Representations of equilibrium (particulate diagrams)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:equilibrium/x2eef969c74e0d802:representations-of-equilibrium/v/representations-of-equilibrium",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 11,
+      "concepts": [
+        "unit7-representations-equilibrium"
+      ],
+      "week": 7,
+      "day": 4
+    },
+    {
+      "id": "chem-w7-khan-repr-ex",
+      "title": "Representations of equilibrium (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:equilibrium/x2eef969c74e0d802:representations-of-equilibrium/e/representations-of-equilibrium",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 15,
+      "concepts": [
+        "unit7-representations-equilibrium"
+      ],
+      "week": 7,
+      "day": 4
+    },
+    {
+      "id": "chem-w7-openstax-repr",
+      "title": "OpenStax Chemistry 2e: 13.2 Equilibrium Constants (writing expressions)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/13-2-equilibrium-constants",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit7-representations-equilibrium"
+      ],
+      "week": 7,
+      "day": 4
+    },
+    {
+      "id": "chem-w7-openstax-repr-ex",
+      "title": "OpenStax Chemistry 2e: Chapter 13 Exercises (Representations)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/13-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "estimated_minutes": 25,
+      "concepts": [
+        "unit7-representations-equilibrium"
+      ],
+      "week": 7,
+      "day": 4
+    },
+    {
+      "id": "chem-w7-khan-le-chatelier-1",
+      "title": "Le Chatelier's principle: effect of concentration",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:equilibrium/x2eef969c74e0d802:le-chatelier-s-principle/v/le-chatelier-s-principle",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 12,
+      "concepts": [
+        "unit7-le-chatelier"
+      ],
+      "week": 7,
+      "day": 5
+    },
+    {
+      "id": "chem-w7-khan-le-chatelier-2",
+      "title": "Le Chatelier's principle: effect of temperature and pressure",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:equilibrium/x2eef969c74e0d802:le-chatelier-s-principle/v/le-chatelier-s-principle-temperature-and-pressure",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 11,
+      "concepts": [
+        "unit7-le-chatelier"
+      ],
+      "week": 7,
+      "day": 5
+    },
+    {
+      "id": "chem-w7-khan-le-chatelier-ex",
+      "title": "Le Chatelier's principle (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:equilibrium/x2eef969c74e0d802:le-chatelier-s-principle/e/le-chatelier-s-principle",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 15,
+      "concepts": [
+        "unit7-le-chatelier"
+      ],
+      "week": 7,
+      "day": 5
+    },
+    {
+      "id": "chem-w7-openstax-le-chatelier",
+      "title": "OpenStax Chemistry 2e: 13.5 Shifting Equilibria — Le Chatelier's Principle",
+      "url": "https://openstax.org/books/chemistry-2e/pages/13-5-shifting-equilibria-le-chateliers-principle",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit7-le-chatelier"
+      ],
+      "week": 7,
+      "day": 5
+    },
+    {
+      "id": "chem-w7-openstax-le-chatelier-ex",
+      "title": "OpenStax Chemistry 2e: Chapter 13 Exercises (Le Chatelier's Principle)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/13-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "estimated_minutes": 25,
+      "concepts": [
+        "unit7-le-chatelier"
+      ],
+      "week": 7,
+      "day": 5
+    },
+    {
+      "id": "chem-w7-khan-solubility-1",
+      "title": "Solubility equilibria: Ksp",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:equilibrium/x2eef969c74e0d802:introduction-to-solubility-equilibria/v/solubility-product-ksp",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 12,
+      "concepts": [
+        "unit7-solubility-equilibria"
+      ],
+      "week": 7,
+      "day": 6
+    },
+    {
+      "id": "chem-w7-khan-common-ion",
+      "title": "Common-ion effect",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:equilibrium/x2eef969c74e0d802:common-ion-effect/v/common-ion-effect",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 11,
+      "concepts": [
+        "unit7-solubility-equilibria"
+      ],
+      "week": 7,
+      "day": 6
+    },
+    {
+      "id": "chem-w7-khan-solubility-ex",
+      "title": "Solubility equilibria (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:equilibrium/x2eef969c74e0d802:introduction-to-solubility-equilibria/e/solubility-equilibria",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 15,
+      "concepts": [
+        "unit7-solubility-equilibria"
+      ],
+      "week": 7,
+      "day": 6
+    },
+    {
+      "id": "chem-w7-openstax-solubility",
+      "title": "OpenStax Chemistry 2e: 15.1 Precipitation and Dissolution",
+      "url": "https://openstax.org/books/chemistry-2e/pages/15-1-precipitation-and-dissolution",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit7-solubility-equilibria"
+      ],
+      "week": 7,
+      "day": 6
+    },
+    {
+      "id": "chem-w7-openstax-solubility-ex",
+      "title": "OpenStax Chemistry 2e: Chapter 15 Exercises (Solubility Equilibria)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/15-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "estimated_minutes": 25,
+      "concepts": [
+        "unit7-solubility-equilibria"
+      ],
+      "week": 7,
+      "day": 6
+    },
+    {
+      "id": "chem-w7-khan-ph-solubility-1",
+      "title": "pH and solubility",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:equilibrium/x2eef969c74e0d802:ph-and-solubility/v/ph-and-solubility",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 11,
+      "concepts": [
+        "unit7-ph-solubility"
+      ],
+      "week": 7,
+      "day": 7
+    },
+    {
+      "id": "chem-w7-khan-ph-solubility-ex",
+      "title": "pH and solubility (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:equilibrium/x2eef969c74e0d802:ph-and-solubility/e/ph-and-solubility",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 15,
+      "concepts": [
+        "unit7-ph-solubility"
+      ],
+      "week": 7,
+      "day": 7
+    },
+    {
+      "id": "chem-w7-openstax-ph-solubility",
+      "title": "OpenStax Chemistry 2e: 15.3 Coupled Equilibria",
+      "url": "https://openstax.org/books/chemistry-2e/pages/15-3-coupled-equilibria",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit7-ph-solubility"
+      ],
+      "week": 7,
+      "day": 7
+    },
+    {
+      "id": "chem-w7-openstax-ph-solubility-ex",
+      "title": "OpenStax Chemistry 2e: Chapter 15 Exercises (pH and Solubility)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/15-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "estimated_minutes": 25,
+      "concepts": [
+        "unit7-ph-solubility"
+      ],
+      "week": 7,
+      "day": 7
+    },
+    {
+      "id": "chem-w8-phet-acid-base",
+      "title": "PhET: Acid-Base Solutions",
+      "url": "https://phet.colorado.edu/en/simulations/acid-base-solutions",
+      "type": "interactive",
+      "platform": "phet",
+      "tier": "A",
+      "estimated_minutes": 20,
+      "description": "探索强酸、弱酸、强碱、弱碱溶液中的离子组成，观察粒子图变化并记录 pH 与浓度的关系。",
+      "concepts": [
+        "unit8-intro-acids-bases-ph"
       ],
       "week": 8,
       "day": 1
     },
     {
-      "id": "chem-w9-placeholder-resource",
-      "title": "Week 9 内容准备中",
-      "url": null,
+      "id": "chem-w8-khan-acids-bases-intro-1",
+      "title": "Introduction to acids and bases",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:acids-and-bases/x2eef969c74e0d802:introduction-to-acids-and-bases/v/introduction-to-acids-and-bases",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 12,
+      "concepts": [
+        "unit8-intro-acids-bases-ph"
+      ],
+      "week": 8,
+      "day": 1
+    },
+    {
+      "id": "chem-w8-phet-ph-scale",
+      "title": "PhET: pH Scale",
+      "url": "https://phet.colorado.edu/en/simulations/ph-scale",
+      "type": "interactive",
+      "platform": "phet",
+      "tier": "A",
+      "estimated_minutes": 15,
+      "description": "调整不同物质的浓度，实时观察 pH 的变化，理解 pH 的对数性质以及 H⁺ 和 OH⁻ 浓度的关系。",
+      "concepts": [
+        "unit8-intro-acids-bases-ph"
+      ],
+      "week": 8,
+      "day": 1
+    },
+    {
+      "id": "chem-w8-khan-ph-poh",
+      "title": "pH and pOH",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:acids-and-bases/x2eef969c74e0d802:ph-and-poh/v/ph-and-poh",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 11,
+      "concepts": [
+        "unit8-intro-acids-bases-ph"
+      ],
+      "week": 8,
+      "day": 1
+    },
+    {
+      "id": "chem-w8-khan-acids-bases-intro-ex",
+      "title": "Introduction to acids and bases (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:acids-and-bases/x2eef969c74e0d802:introduction-to-acids-and-bases/e/introduction-to-acids-and-bases",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 15,
+      "concepts": [
+        "unit8-intro-acids-bases-ph"
+      ],
+      "week": 8,
+      "day": 1
+    },
+    {
+      "id": "chem-w8-openstax-acids-bases-intro",
+      "title": "OpenStax Chemistry 2e: 14.1 Brønsted-Lowry Acids and Bases",
+      "url": "https://openstax.org/books/chemistry-2e/pages/14-1-bronsted-lowry-acids-and-bases",
       "type": "reading",
       "platform": "openstax",
-      "tier": "A",
-      "estimated_minutes": 5,
-      "description": "本周内容正在准备中，请关注后续更新。Unit 9: Electrochemistry",
+      "tier": "B",
+      "estimated_minutes": 20,
       "concepts": [
-        "chem-w9-placeholder"
+        "unit8-intro-acids-bases-ph"
+      ],
+      "week": 8,
+      "day": 1
+    },
+    {
+      "id": "chem-w8-openstax-acids-bases-intro-ex",
+      "title": "OpenStax Chemistry 2e: Chapter 14 Exercises (Intro to Acids/Bases)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/14-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "estimated_minutes": 25,
+      "concepts": [
+        "unit8-intro-acids-bases-ph"
+      ],
+      "week": 8,
+      "day": 1
+    },
+    {
+      "id": "chem-w8-khan-ab-reactions-1",
+      "title": "Acid-base reactions and neutralization",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:acids-and-bases/x2eef969c74e0d802:acid-base-reactions-and-buffers/v/acid-base-reactions",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 12,
+      "concepts": [
+        "unit8-acid-base-reactions"
+      ],
+      "week": 8,
+      "day": 2
+    },
+    {
+      "id": "chem-w8-khan-ka-kb",
+      "title": "Ka, Kb, and pKa, pKb",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:acids-and-bases/x2eef969c74e0d802:acid-base-reactions-and-buffers/v/ka-and-kb-relationship",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 11,
+      "concepts": [
+        "unit8-acid-base-reactions"
+      ],
+      "week": 8,
+      "day": 2
+    },
+    {
+      "id": "chem-w8-khan-ab-reactions-ex",
+      "title": "Acid-base reactions (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:acids-and-bases/x2eef969c74e0d802:acid-base-reactions-and-buffers/e/acid-base-reactions",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 15,
+      "concepts": [
+        "unit8-acid-base-reactions"
+      ],
+      "week": 8,
+      "day": 2
+    },
+    {
+      "id": "chem-w8-openstax-ab-reactions",
+      "title": "OpenStax Chemistry 2e: 14.3 Relative Strengths of Acids and Bases",
+      "url": "https://openstax.org/books/chemistry-2e/pages/14-3-relative-strengths-of-acids-and-bases",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit8-acid-base-reactions"
+      ],
+      "week": 8,
+      "day": 2
+    },
+    {
+      "id": "chem-w8-openstax-ab-reactions-ex",
+      "title": "OpenStax Chemistry 2e: Chapter 14 Exercises (Acid-Base Reactions)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/14-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "estimated_minutes": 25,
+      "concepts": [
+        "unit8-acid-base-reactions"
+      ],
+      "week": 8,
+      "day": 2
+    },
+    {
+      "id": "chem-w8-khan-buffer-1",
+      "title": "Buffers and the Henderson-Hasselbalch equation",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:acids-and-bases/x2eef969c74e0d802:acid-base-buffers/v/buffer-solutions",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 13,
+      "concepts": [
+        "unit8-buffers-henderson"
+      ],
+      "week": 8,
+      "day": 3
+    },
+    {
+      "id": "chem-w8-khan-hh-equation",
+      "title": "Henderson-Hasselbalch equation",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:acids-and-bases/x2eef969c74e0d802:henderson-hasselbalch-equation/v/henderson-hasselbalch-equation",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 12,
+      "concepts": [
+        "unit8-buffers-henderson"
+      ],
+      "week": 8,
+      "day": 3
+    },
+    {
+      "id": "chem-w8-phet-buffer",
+      "title": "PhET: Acid-Base Solutions (Buffer mode)",
+      "url": "https://phet.colorado.edu/en/simulations/acid-base-solutions",
+      "type": "interactive",
+      "platform": "phet",
+      "tier": "A",
+      "estimated_minutes": 15,
+      "description": "切换到弱酸/共轭碱模式，添加少量强酸或强碱，观察 pH 变化幅度，理解缓冲作用机制。",
+      "concepts": [
+        "unit8-buffers-henderson"
+      ],
+      "week": 8,
+      "day": 3
+    },
+    {
+      "id": "chem-w8-khan-buffer-ex",
+      "title": "Buffer solutions (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:acids-and-bases/x2eef969c74e0d802:acid-base-buffers/e/buffer-solutions",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 15,
+      "concepts": [
+        "unit8-buffers-henderson"
+      ],
+      "week": 8,
+      "day": 3
+    },
+    {
+      "id": "chem-w8-openstax-buffer",
+      "title": "OpenStax Chemistry 2e: 14.6 Buffers",
+      "url": "https://openstax.org/books/chemistry-2e/pages/14-6-buffers",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit8-buffers-henderson"
+      ],
+      "week": 8,
+      "day": 3
+    },
+    {
+      "id": "chem-w8-openstax-buffer-ex",
+      "title": "OpenStax Chemistry 2e: Chapter 14 Exercises (Buffers)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/14-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "estimated_minutes": 25,
+      "concepts": [
+        "unit8-buffers-henderson"
+      ],
+      "week": 8,
+      "day": 3
+    },
+    {
+      "id": "chem-w8-khan-buffer-props-1",
+      "title": "Properties of buffers",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:acids-and-bases/x2eef969c74e0d802:properties-of-buffers/v/properties-of-buffers",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 11,
+      "concepts": [
+        "unit8-buffers-advanced"
+      ],
+      "week": 8,
+      "day": 4
+    },
+    {
+      "id": "chem-w8-khan-buffer-capacity",
+      "title": "Buffer capacity",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:acids-and-bases/x2eef969c74e0d802:buffer-capacity/v/buffer-capacity",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 11,
+      "concepts": [
+        "unit8-buffers-advanced"
+      ],
+      "week": 8,
+      "day": 4
+    },
+    {
+      "id": "chem-w8-khan-buffer-props-ex",
+      "title": "Buffer capacity (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:acids-and-bases/x2eef969c74e0d802:buffer-capacity/e/buffer-capacity",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 15,
+      "concepts": [
+        "unit8-buffers-advanced"
+      ],
+      "week": 8,
+      "day": 4
+    },
+    {
+      "id": "chem-w8-openstax-buffer-props",
+      "title": "OpenStax Chemistry 2e: 14.6 Buffers (capacity and properties)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/14-6-buffers",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit8-buffers-advanced"
+      ],
+      "week": 8,
+      "day": 4
+    },
+    {
+      "id": "chem-w8-openstax-buffer-props-ex",
+      "title": "OpenStax Chemistry 2e: Chapter 14 Exercises (Buffer Properties and Capacity)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/14-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "estimated_minutes": 25,
+      "concepts": [
+        "unit8-buffers-advanced"
+      ],
+      "week": 8,
+      "day": 4
+    },
+    {
+      "id": "chem-w8-khan-titration-1",
+      "title": "Acid-base titrations",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:acids-and-bases/x2eef969c74e0d802:acid-base-titrations/v/acid-base-titration",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 13,
+      "concepts": [
+        "unit8-titrations"
+      ],
+      "week": 8,
+      "day": 5
+    },
+    {
+      "id": "chem-w8-khan-titration-2",
+      "title": "Titration curves",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:acids-and-bases/x2eef969c74e0d802:acid-base-titrations/v/titration-curves-and-acid-base-indicators",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 12,
+      "concepts": [
+        "unit8-titrations"
+      ],
+      "week": 8,
+      "day": 5
+    },
+    {
+      "id": "chem-w8-khan-titration-ex",
+      "title": "Acid-base titrations (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:acids-and-bases/x2eef969c74e0d802:acid-base-titrations/e/acid-base-titrations",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit8-titrations"
+      ],
+      "week": 8,
+      "day": 5
+    },
+    {
+      "id": "chem-w8-openstax-titration",
+      "title": "OpenStax Chemistry 2e: 14.7 Acid-Base Titrations",
+      "url": "https://openstax.org/books/chemistry-2e/pages/14-7-acid-base-titrations",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "estimated_minutes": 25,
+      "concepts": [
+        "unit8-titrations"
+      ],
+      "week": 8,
+      "day": 5
+    },
+    {
+      "id": "chem-w8-openstax-titration-ex",
+      "title": "OpenStax Chemistry 2e: Chapter 14 Exercises (Titrations)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/14-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "estimated_minutes": 25,
+      "concepts": [
+        "unit8-titrations"
+      ],
+      "week": 8,
+      "day": 5
+    },
+    {
+      "id": "chem-w8-khan-molecular-structure-1",
+      "title": "Molecular structure of acids and bases",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:acids-and-bases/x2eef969c74e0d802:molecular-structure-of-acids-and-bases/v/molecular-structure-of-acids-and-bases",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 12,
+      "concepts": [
+        "unit8-molecular-structure-acids"
+      ],
+      "week": 8,
+      "day": 6
+    },
+    {
+      "id": "chem-w8-khan-oxyacids",
+      "title": "Oxyacids and organic acids",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:acids-and-bases/x2eef969c74e0d802:molecular-structure-of-acids-and-bases/v/oxyacids-and-organic-acids",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 11,
+      "concepts": [
+        "unit8-molecular-structure-acids"
+      ],
+      "week": 8,
+      "day": 6
+    },
+    {
+      "id": "chem-w8-khan-molecular-structure-ex",
+      "title": "Molecular structure of acids and bases (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:acids-and-bases/x2eef969c74e0d802:molecular-structure-of-acids-and-bases/e/molecular-structure-of-acids-and-bases",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 15,
+      "concepts": [
+        "unit8-molecular-structure-acids"
+      ],
+      "week": 8,
+      "day": 6
+    },
+    {
+      "id": "chem-w8-openstax-molecular-structure",
+      "title": "OpenStax Chemistry 2e: 14.4 Hydrolysis of Salts and 14.5 Polyprotic Acids",
+      "url": "https://openstax.org/books/chemistry-2e/pages/14-4-hydrolysis-of-salts",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit8-molecular-structure-acids"
+      ],
+      "week": 8,
+      "day": 6
+    },
+    {
+      "id": "chem-w8-openstax-molecular-structure-ex",
+      "title": "OpenStax Chemistry 2e: Chapter 14 Exercises (Molecular Structure)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/14-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "estimated_minutes": 25,
+      "concepts": [
+        "unit8-molecular-structure-acids"
+      ],
+      "week": 8,
+      "day": 6
+    },
+    {
+      "id": "chem-w8-khan-ph-pka-1",
+      "title": "pH and pKa",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:acids-and-bases/x2eef969c74e0d802:ph-and-pka/v/ph-and-pka",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 11,
+      "concepts": [
+        "unit8-ph-pka"
+      ],
+      "week": 8,
+      "day": 7
+    },
+    {
+      "id": "chem-w8-khan-weak-acid-ph",
+      "title": "Calculating pH of weak acid solutions",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:acids-and-bases/x2eef969c74e0d802:ph-and-pka/v/calculating-ph-of-weak-acid",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 12,
+      "concepts": [
+        "unit8-ph-pka"
+      ],
+      "week": 8,
+      "day": 7
+    },
+    {
+      "id": "chem-w8-khan-ph-pka-ex",
+      "title": "pH and pKa (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:acids-and-bases/x2eef969c74e0d802:ph-and-pka/e/ph-and-pka",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 15,
+      "concepts": [
+        "unit8-ph-pka"
+      ],
+      "week": 8,
+      "day": 7
+    },
+    {
+      "id": "chem-w8-openstax-ph-pka",
+      "title": "OpenStax Chemistry 2e: 14.2 pH and pOH",
+      "url": "https://openstax.org/books/chemistry-2e/pages/14-2-ph-and-poh",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit8-ph-pka"
+      ],
+      "week": 8,
+      "day": 7
+    },
+    {
+      "id": "chem-w8-openstax-ph-pka-ex",
+      "title": "OpenStax Chemistry 2e: Chapter 14 Exercises (pH and pKa)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/14-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "estimated_minutes": 25,
+      "concepts": [
+        "unit8-ph-pka"
+      ],
+      "week": 8,
+      "day": 7
+    },
+    {
+      "id": "chem-w9-khan-entropy-abs-1",
+      "title": "Introduction to entropy",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:applications-of-thermodynamics/x2eef969c74e0d802:introduction-to-entropy/v/introduction-to-entropy",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 11,
+      "concepts": [
+        "unit9-entropy-absolute"
       ],
       "week": 9,
       "day": 1
+    },
+    {
+      "id": "chem-w9-khan-entropy-abs-2",
+      "title": "Absolute entropy and standard entropy changes",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:applications-of-thermodynamics/x2eef969c74e0d802:absolute-entropy-and-entropy-change/v/absolute-entropy-and-entropy-change",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 12,
+      "concepts": [
+        "unit9-entropy-absolute"
+      ],
+      "week": 9,
+      "day": 1
+    },
+    {
+      "id": "chem-w9-khan-entropy-abs-ex",
+      "title": "Entropy (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:applications-of-thermodynamics/x2eef969c74e0d802:introduction-to-entropy/e/entropy",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 15,
+      "concepts": [
+        "unit9-entropy-absolute"
+      ],
+      "week": 9,
+      "day": 1
+    },
+    {
+      "id": "chem-w9-openstax-entropy",
+      "title": "OpenStax Chemistry 2e: 16.1 Spontaneity and 16.2 Entropy",
+      "url": "https://openstax.org/books/chemistry-2e/pages/16-1-spontaneity",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit9-entropy-absolute"
+      ],
+      "week": 9,
+      "day": 1
+    },
+    {
+      "id": "chem-w9-openstax-entropy-ex",
+      "title": "OpenStax Chemistry 2e: Chapter 16 Exercises (Entropy)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/16-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "estimated_minutes": 25,
+      "concepts": [
+        "unit9-entropy-absolute"
+      ],
+      "week": 9,
+      "day": 1
+    },
+    {
+      "id": "chem-w9-khan-gibbs-1",
+      "title": "Gibbs free energy and thermodynamic favorability",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:applications-of-thermodynamics/x2eef969c74e0d802:gibbs-free-energy-and-thermodynamic-favorability/v/gibbs-free-energy-and-thermodynamic-favorability",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 13,
+      "concepts": [
+        "unit9-gibbs-thermodynamic-kinetic"
+      ],
+      "week": 9,
+      "day": 2
+    },
+    {
+      "id": "chem-w9-khan-thermo-kinetic-control",
+      "title": "Thermodynamic and kinetic control",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:applications-of-thermodynamics/x2eef969c74e0d802:thermodynamic-and-kinetic-control/v/thermodynamic-and-kinetic-control",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 11,
+      "concepts": [
+        "unit9-gibbs-thermodynamic-kinetic"
+      ],
+      "week": 9,
+      "day": 2
+    },
+    {
+      "id": "chem-w9-khan-gibbs-ex",
+      "title": "Gibbs free energy (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:applications-of-thermodynamics/x2eef969c74e0d802:gibbs-free-energy-and-thermodynamic-favorability/e/gibbs-free-energy",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 15,
+      "concepts": [
+        "unit9-gibbs-thermodynamic-kinetic"
+      ],
+      "week": 9,
+      "day": 2
+    },
+    {
+      "id": "chem-w9-openstax-gibbs",
+      "title": "OpenStax Chemistry 2e: 16.3 The Second and Third Laws and 16.4 Free Energy",
+      "url": "https://openstax.org/books/chemistry-2e/pages/16-3-the-second-and-third-laws-of-thermodynamics",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit9-gibbs-thermodynamic-kinetic"
+      ],
+      "week": 9,
+      "day": 2
+    },
+    {
+      "id": "chem-w9-openstax-gibbs-ex",
+      "title": "OpenStax Chemistry 2e: Chapter 16 Exercises (Gibbs Free Energy)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/16-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "estimated_minutes": 25,
+      "concepts": [
+        "unit9-gibbs-thermodynamic-kinetic"
+      ],
+      "week": 9,
+      "day": 2
+    },
+    {
+      "id": "chem-w9-khan-free-energy-eq-1",
+      "title": "Free energy and equilibrium",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:applications-of-thermodynamics/x2eef969c74e0d802:free-energy-and-equilibrium/v/free-energy-and-equilibrium",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 12,
+      "concepts": [
+        "unit9-free-energy-equilibrium"
+      ],
+      "week": 9,
+      "day": 3
+    },
+    {
+      "id": "chem-w9-khan-delta-g-keq",
+      "title": "Relationship between ΔG° and Keq",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:applications-of-thermodynamics/x2eef969c74e0d802:free-energy-and-equilibrium/v/delta-g-and-k",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 11,
+      "concepts": [
+        "unit9-free-energy-equilibrium"
+      ],
+      "week": 9,
+      "day": 3
+    },
+    {
+      "id": "chem-w9-khan-free-energy-eq-ex",
+      "title": "Free energy and equilibrium (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:applications-of-thermodynamics/x2eef969c74e0d802:free-energy-and-equilibrium/e/free-energy-and-equilibrium",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 15,
+      "concepts": [
+        "unit9-free-energy-equilibrium"
+      ],
+      "week": 9,
+      "day": 3
+    },
+    {
+      "id": "chem-w9-openstax-free-energy-eq",
+      "title": "OpenStax Chemistry 2e: 16.4 Free Energy",
+      "url": "https://openstax.org/books/chemistry-2e/pages/16-4-free-energy",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit9-free-energy-equilibrium"
+      ],
+      "week": 9,
+      "day": 3
+    },
+    {
+      "id": "chem-w9-openstax-free-energy-eq-ex",
+      "title": "OpenStax Chemistry 2e: Chapter 16 Exercises (Free Energy and Equilibrium)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/16-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "estimated_minutes": 25,
+      "concepts": [
+        "unit9-free-energy-equilibrium"
+      ],
+      "week": 9,
+      "day": 3
+    },
+    {
+      "id": "chem-w9-khan-coupled-1",
+      "title": "Coupled reactions",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:applications-of-thermodynamics/x2eef969c74e0d802:coupled-reactions/v/coupled-reactions",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 11,
+      "concepts": [
+        "unit9-coupled-reactions"
+      ],
+      "week": 9,
+      "day": 4
+    },
+    {
+      "id": "chem-w9-khan-coupled-2",
+      "title": "ATP and coupled reactions in biology",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:applications-of-thermodynamics/x2eef969c74e0d802:coupled-reactions/v/atp-and-coupled-reactions",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 10,
+      "concepts": [
+        "unit9-coupled-reactions"
+      ],
+      "week": 9,
+      "day": 4
+    },
+    {
+      "id": "chem-w9-khan-coupled-ex",
+      "title": "Coupled reactions (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:applications-of-thermodynamics/x2eef969c74e0d802:coupled-reactions/e/coupled-reactions",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 15,
+      "concepts": [
+        "unit9-coupled-reactions"
+      ],
+      "week": 9,
+      "day": 4
+    },
+    {
+      "id": "chem-w9-openstax-coupled",
+      "title": "OpenStax Chemistry 2e: 16.4 Free Energy (coupled reactions section)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/16-4-free-energy",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "estimated_minutes": 15,
+      "concepts": [
+        "unit9-coupled-reactions"
+      ],
+      "week": 9,
+      "day": 4
+    },
+    {
+      "id": "chem-w9-openstax-coupled-ex",
+      "title": "OpenStax Chemistry 2e: Chapter 16 Exercises (Coupled Reactions)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/16-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit9-coupled-reactions"
+      ],
+      "week": 9,
+      "day": 4
+    },
+    {
+      "id": "chem-w9-khan-galvanic-1",
+      "title": "Galvanic cells",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:applications-of-thermodynamics/x2eef969c74e0d802:galvanic-voltaic-cells/v/galvanic-cell-introduction",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 13,
+      "concepts": [
+        "unit9-galvanic-cells"
+      ],
+      "week": 9,
+      "day": 5
+    },
+    {
+      "id": "chem-w9-khan-galvanic-2",
+      "title": "Standard reduction potentials",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:applications-of-thermodynamics/x2eef969c74e0d802:galvanic-voltaic-cells/v/standard-reduction-potentials",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 12,
+      "concepts": [
+        "unit9-galvanic-cells"
+      ],
+      "week": 9,
+      "day": 5
+    },
+    {
+      "id": "chem-w9-khan-galvanic-ex",
+      "title": "Galvanic cells (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:applications-of-thermodynamics/x2eef969c74e0d802:galvanic-voltaic-cells/e/galvanic-cells",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 15,
+      "concepts": [
+        "unit9-galvanic-cells"
+      ],
+      "week": 9,
+      "day": 5
+    },
+    {
+      "id": "chem-w9-openstax-galvanic",
+      "title": "OpenStax Chemistry 2e: 17.2 Galvanic Cells",
+      "url": "https://openstax.org/books/chemistry-2e/pages/17-2-galvanic-cells",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit9-galvanic-cells"
+      ],
+      "week": 9,
+      "day": 5
+    },
+    {
+      "id": "chem-w9-openstax-galvanic-ex",
+      "title": "OpenStax Chemistry 2e: Chapter 17 Exercises (Galvanic Cells)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/17-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "estimated_minutes": 25,
+      "concepts": [
+        "unit9-galvanic-cells"
+      ],
+      "week": 9,
+      "day": 5
+    },
+    {
+      "id": "chem-w9-khan-cell-potential-1",
+      "title": "Cell potential and standard cell potential",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:applications-of-thermodynamics/x2eef969c74e0d802:galvanic-voltaic-cells/v/cell-potential-and-standard-cell-potential",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 12,
+      "concepts": [
+        "unit9-cell-potential"
+      ],
+      "week": 9,
+      "day": 6
+    },
+    {
+      "id": "chem-w9-khan-nernst",
+      "title": "Nernst equation",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:applications-of-thermodynamics/x2eef969c74e0d802:galvanic-voltaic-cells/v/nernst-equation",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 12,
+      "concepts": [
+        "unit9-cell-potential"
+      ],
+      "week": 9,
+      "day": 6
+    },
+    {
+      "id": "chem-w9-khan-cell-potential-ex",
+      "title": "Cell potential (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:applications-of-thermodynamics/x2eef969c74e0d802:galvanic-voltaic-cells/e/cell-potential",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 15,
+      "concepts": [
+        "unit9-cell-potential"
+      ],
+      "week": 9,
+      "day": 6
+    },
+    {
+      "id": "chem-w9-openstax-cell-potential",
+      "title": "OpenStax Chemistry 2e: 17.3 Standard Reduction Potentials and 17.4 The Nernst Equation",
+      "url": "https://openstax.org/books/chemistry-2e/pages/17-3-electrode-and-cell-potentials",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "estimated_minutes": 25,
+      "concepts": [
+        "unit9-cell-potential"
+      ],
+      "week": 9,
+      "day": 6
+    },
+    {
+      "id": "chem-w9-openstax-cell-potential-ex",
+      "title": "OpenStax Chemistry 2e: Chapter 17 Exercises (Cell Potential and Nernst Equation)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/17-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "estimated_minutes": 25,
+      "concepts": [
+        "unit9-cell-potential"
+      ],
+      "week": 9,
+      "day": 6
+    },
+    {
+      "id": "chem-w9-khan-electrolysis-1",
+      "title": "Electrolysis",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:applications-of-thermodynamics/x2eef969c74e0d802:electrolysis-and-faraday-s-law/v/electrolysis",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 12,
+      "concepts": [
+        "unit9-electrolysis-faraday"
+      ],
+      "week": 9,
+      "day": 7
+    },
+    {
+      "id": "chem-w9-khan-faraday",
+      "title": "Faraday's law of electrolysis",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:applications-of-thermodynamics/x2eef969c74e0d802:electrolysis-and-faraday-s-law/v/faraday-s-law-of-electrolysis",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 12,
+      "concepts": [
+        "unit9-electrolysis-faraday"
+      ],
+      "week": 9,
+      "day": 7
+    },
+    {
+      "id": "chem-w9-khan-electrolysis-ex",
+      "title": "Electrolysis and Faraday's law (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:applications-of-thermodynamics/x2eef969c74e0d802:electrolysis-and-faraday-s-law/e/electrolysis-and-faraday-s-law",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 15,
+      "concepts": [
+        "unit9-electrolysis-faraday"
+      ],
+      "week": 9,
+      "day": 7
+    },
+    {
+      "id": "chem-w9-openstax-electrolysis",
+      "title": "OpenStax Chemistry 2e: 17.5 Batteries and Fuel Cells and 17.7 Electrolysis",
+      "url": "https://openstax.org/books/chemistry-2e/pages/17-7-electrolysis",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit9-electrolysis-faraday"
+      ],
+      "week": 9,
+      "day": 7
+    },
+    {
+      "id": "chem-w9-openstax-electrolysis-ex",
+      "title": "OpenStax Chemistry 2e: Chapter 17 Exercises (Electrolysis)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/17-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "estimated_minutes": 25,
+      "concepts": [
+        "unit9-electrolysis-faraday"
+      ],
+      "week": 9,
+      "day": 7
     }
   ]
 }
