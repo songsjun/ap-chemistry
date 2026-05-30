@@ -272,6 +272,7 @@ export function DashboardClient() {
         </div>
         <div className="flex items-center gap-4 text-sm">
           <Link href="/" className="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 transition-colors">← 返回</Link>
+          <Link href="/knowledge-tree" className="text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 transition-colors">知识点</Link>
           <Link href="/settings" className="text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 transition-colors">⚙ 设置</Link>
         </div>
       </div>
