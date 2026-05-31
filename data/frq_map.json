@@ -1,3 +1,454 @@
 {
-  "questions": []
+  "questions": [
+    {
+      "id": "ap21-chem-q1",
+      "year": 2021,
+      "question_number": 1,
+      "frq_type": "long_answer",
+      "frq_pdf": "/frq/ap21-frq-chemistry.pdf",
+      "frq_page": 5,
+      "sg_pdf": "/frq/ap21-sg-chemistry.pdf",
+      "sg_page": 2,
+      "concepts": [
+        "unit8-intro-acids-bases-ph",
+        "unit8-buffers-henderson",
+        "unit2-lewis-diagrams",
+        "unit8-acid-base-reactions"
+      ],
+      "text_preview": "1. Methanoic acid, HCOOH , ionizes according to the equation above. (a) Write the expression for the equilibrium constant, Ka , for the reaction. (b) Calculate the pH of a 0.25 M solution of HCOOH . (c) In the box below, complete the Lewis electron-dot diagram for HCOOH ."
+    },
+    {
+      "id": "ap21-chem-q2",
+      "year": 2021,
+      "question_number": 2,
+      "frq_type": "long_answer",
+      "frq_pdf": "/frq/ap21-frq-chemistry.pdf",
+      "frq_page": 8,
+      "sg_pdf": "/frq/ap21-sg-chemistry.pdf",
+      "sg_page": 4,
+      "concepts": [
+        "atomic-mass-spectroscopy",
+        "atomic-structure-electron-config",
+        "unit3-imf",
+        "unit6-entropy"
+      ],
+      "text_preview": "2. Answer the following questions about the element Si and some of its compounds. (a) The mass spectrum of a pure sample of Si is shown below. (i) How many protons and how many neutrons are in the nucleus of an atom of the most abundant isotope of Si ?"
+    },
+    {
+      "id": "ap21-chem-q3",
+      "year": 2021,
+      "question_number": 3,
+      "frq_type": "long_answer",
+      "frq_pdf": "/frq/ap21-frq-chemistry.pdf",
+      "frq_page": 11,
+      "sg_pdf": "/frq/ap21-sg-chemistry.pdf",
+      "sg_page": 6,
+      "concepts": [
+        "unit4-stoichiometry",
+        "unit4-net-ionic-equations",
+        "unit3-beer-lambert",
+        "unit3-solutions-mixtures"
+      ],
+      "text_preview": "3. A student is given the task of determining the molar concentration of a CuSO4 solution using two different procedures, precipitation and spectrophotometry. For the precipitation experiment, the student adds 20.0 mL of 0.200 M Ba(NO 3)2 to 50.0 mL of the CuSO4(aq)."
+    },
+    {
+      "id": "ap21-chem-q4",
+      "year": 2021,
+      "question_number": 4,
+      "frq_type": "short_answer",
+      "frq_pdf": "/frq/ap21-frq-chemistry.pdf",
+      "frq_page": 14,
+      "sg_pdf": "/frq/ap21-sg-chemistry.pdf",
+      "sg_page": 8,
+      "concepts": [
+        "unit6-heat-transfer-calorimetry",
+        "unit6-endo-exo-energy-diagrams"
+      ],
+      "text_preview": "4 Fe(s) + 3 O 2( g) → 2 Fe 2 O 3(s) ∆H ° = − 1650 kJ / molrxn 4. A student investigates a reaction used in hand warmers, represented above. The student mixes Fe(s) with a catalyst and sand in a small open container. The student measures the temperature of the mixture as the reaction proceeds."
+    },
+    {
+      "id": "ap21-chem-q5",
+      "year": 2021,
+      "question_number": 5,
+      "frq_type": "short_answer",
+      "frq_pdf": "/frq/ap21-frq-chemistry.pdf",
+      "frq_page": 16,
+      "sg_pdf": "/frq/ap21-sg-chemistry.pdf",
+      "sg_page": 9,
+      "concepts": [
+        "unit9-electrolysis-faraday",
+        "unit9-cell-potential"
+      ],
+      "text_preview": "5. Molten MgCl 2 can be decomposed into its elements if a sufficient voltage is applied using inert electrodes. The products of the reaction are liquid Mg (at the cathode) and Cl2 gas (at the anode). A simplified representation of the cell is shown above."
+    },
+    {
+      "id": "ap21-chem-q6",
+      "year": 2021,
+      "question_number": 6,
+      "frq_type": "short_answer",
+      "frq_pdf": "/frq/ap21-frq-chemistry.pdf",
+      "frq_page": 17,
+      "sg_pdf": "/frq/ap21-sg-chemistry.pdf",
+      "sg_page": 10,
+      "concepts": [
+        "unit7-solubility-equilibria",
+        "unit3-solubility",
+        "unit7-le-chatelier"
+      ],
+      "text_preview": "A student is studying the properties of CaSO4 and PbSO4 . The student has samples of both compounds, which are white powders. (a) The student tests the electrical conductivity of each solid and observes that neither solid conducts electricity."
+    },
+    {
+      "id": "ap21-chem-q7",
+      "year": 2021,
+      "question_number": 7,
+      "frq_type": "short_answer",
+      "frq_pdf": "/frq/ap21-frq-chemistry.pdf",
+      "frq_page": 19,
+      "sg_pdf": "/frq/ap21-sg-chemistry.pdf",
+      "sg_page": 11,
+      "concepts": [
+        "gas-ideal-gas-law",
+        "gas-partial-pressure-kmt"
+      ],
+      "text_preview": "A student investigates gas behavior using a rigid cylinder with a movable piston of negligible mass, as shown in the diagram above. The cylinder contains 0.325\u0001mol\u0001 of O2\u0001(g). (a) The cylinder has a volume of 7.95\u0001L\u0001 at 25°C\u0001 and 1.00\u0001atm ."
+    },
+    {
+      "id": "ap23-chem-q1",
+      "year": 2023,
+      "question_number": 1,
+      "frq_type": "long_answer",
+      "frq_pdf": "/frq/ap23-frq-chemistry.pdf",
+      "frq_page": 5,
+      "sg_pdf": "/frq/ap23-sg-chemistry.pdf",
+      "sg_page": 2,
+      "concepts": [
+        "atomic-structure-electron-config",
+        "unit4-redox-reactions",
+        "unit4-stoichiometry",
+        "atomic-elemental-composition"
+      ],
+      "text_preview": "1. Answer the following questions related to manganese compounds. (a) Manganese has several common oxidation states. (i) Write the complete electron configuration for an Mn atom in the ground state. (ii) When manganese forms cations, electrons are lost from which subshell first?"
+    },
+    {
+      "id": "ap23-chem-q2",
+      "year": 2023,
+      "question_number": 2,
+      "frq_type": "long_answer",
+      "frq_pdf": "/frq/ap23-frq-chemistry.pdf",
+      "frq_page": 8,
+      "sg_pdf": "/frq/ap23-sg-chemistry.pdf",
+      "sg_page": 4,
+      "concepts": [
+        "unit6-hess-law",
+        "unit4-stoichiometry",
+        "unit6-bond-enthalpies"
+      ],
+      "text_preview": "2. In the gas phase, AlCl3 is a molecular substance. A reaction of gaseous AlCl3 at high temperature is represented by the following balanced equation. Reaction 1: AlCl3(g) → Al(g) + 3 Cl(g) ΔH1\u0002 = ? (a) How many grams of Cl(g) can be formed from 1.25 mol of AlCl3(g) ?"
+    },
+    {
+      "id": "ap23-chem-q3",
+      "year": 2023,
+      "question_number": 3,
+      "frq_type": "long_answer",
+      "frq_pdf": "/frq/ap23-frq-chemistry.pdf",
+      "frq_page": 11,
+      "sg_pdf": "/frq/ap23-sg-chemistry.pdf",
+      "sg_page": 6,
+      "concepts": [
+        "unit4-net-ionic-equations",
+        "unit5-reaction-rates-rate-law",
+        "unit5-elementary-reactions-collision"
+      ],
+      "text_preview": "3. Answer the following questions about an experiment in which CaCO 3(s) is combined with HCl(aq), represented by the following balanced equation. CaCO 3(s) + 2 HCl(aq) → CaCl2(aq) + CO 2(g) + H2 O(l) (a) Write the balanced net ionic equation for the reaction."
+    },
+    {
+      "id": "ap23-chem-q4",
+      "year": 2023,
+      "question_number": 4,
+      "frq_type": "short_answer",
+      "frq_pdf": "/frq/ap23-frq-chemistry.pdf",
+      "frq_page": 15,
+      "sg_pdf": "/frq/ap23-sg-chemistry.pdf",
+      "sg_page": 8,
+      "concepts": [
+        "unit8-buffers-henderson",
+        "unit4-limiting-reagent-titration"
+      ],
+      "text_preview": "4. A student is asked to prepare a buffer solution made with equimolar amounts of CH3 NH2(aq) and CH3 NH3 Cl(s). The student uses 25.00 mL of 0.100 M CH3 NH2(aq), which contains 0.00250 mol of CH3 NH2 , to make the buffer. (a) Calculate the mass of CH3 NH3 Cl(s) that contains 0."
+    },
+    {
+      "id": "ap23-chem-q5",
+      "year": 2023,
+      "question_number": 5,
+      "frq_type": "short_answer",
+      "frq_pdf": "/frq/ap23-frq-chemistry.pdf",
+      "frq_page": 17,
+      "sg_pdf": "/frq/ap23-sg-chemistry.pdf",
+      "sg_page": 9,
+      "concepts": [
+        "gas-ideal-gas-law",
+        "unit8-intro-acids-bases-ph"
+      ],
+      "text_preview": "5. HCl is a molecular gas as a pure substance but acts as an acid in aqueous solution. (a) A sample of HCl(g) is stored in a rigid 6.00 L container at 7.45 atm and 296 K . (i) Calculate the number of moles of HCl(g) in the container. (ii) The rigid 6."
+    },
+    {
+      "id": "ap23-chem-q6",
+      "year": 2023,
+      "question_number": 6,
+      "frq_type": "short_answer",
+      "frq_pdf": "/frq/ap23-frq-chemistry.pdf",
+      "frq_page": 19,
+      "sg_pdf": "/frq/ap23-sg-chemistry.pdf",
+      "sg_page": 10,
+      "concepts": [
+        "unit3-imf",
+        "unit6-endo-exo-energy-diagrams"
+      ],
+      "text_preview": "6. Answer the following questions related to HBr(l) and HF(l). (a) In the following table, list all of the types of intermolecular forces present in pure samples of HBr(l) and HF(l). HBr(l) Liquid HF(l) Intermolecular forces present \u0002 (b) The enthalpy of vaporization, ΔHvap , for each liquid is prov..."
+    },
+    {
+      "id": "ap23-chem-q7",
+      "year": 2023,
+      "question_number": 7,
+      "frq_type": "short_answer",
+      "frq_pdf": "/frq/ap23-frq-chemistry.pdf",
+      "frq_page": 21,
+      "sg_pdf": "/frq/ap23-sg-chemistry.pdf",
+      "sg_page": 11,
+      "concepts": [
+        "unit7-solubility-equilibria",
+        "unit7-le-chatelier",
+        "unit7-ph-solubility"
+      ],
+      "text_preview": "7. Strontium hydroxide dissolves in water according to the following equation. The Ksp expression for strontium hydroxide is provided. Sr(OH)2(s) \u0003 Sr 2+(aq) + 2 OH−(aq) Ksp = [Sr 2+][OH−]2 (a) A student draws the particulate diagram shown to represent the ions present in an aqueous solution of Sr(O..."
+    },
+    {
+      "id": "ap24-chem-q1",
+      "year": 2024,
+      "question_number": 1,
+      "frq_type": "long_answer",
+      "frq_pdf": "/frq/ap24-frq-chemistry.pdf",
+      "frq_page": 5,
+      "sg_pdf": "/frq/ap24-sg-chemistry.pdf",
+      "sg_page": 2,
+      "concepts": [
+        "unit4-acid-base-intro",
+        "unit4-stoichiometry",
+        "unit4-limiting-reagent-titration",
+        "unit8-titrations"
+      ],
+      "text_preview": "1. A student is studying the reaction between lactic acid, C 3H 6 O 3, and sodium hydroxide, NaOH, as represented in the balanced equation above. (a) The structural formula of lactic acid is shown in the following diagram."
+    },
+    {
+      "id": "ap24-chem-q2",
+      "year": 2024,
+      "question_number": 2,
+      "frq_type": "long_answer",
+      "frq_pdf": "/frq/ap24-frq-chemistry.pdf",
+      "frq_page": 9,
+      "sg_pdf": "/frq/ap24-sg-chemistry.pdf",
+      "sg_page": 4,
+      "concepts": [
+        "unit5-reaction-rates-rate-law",
+        "unit5-elementary-reactions-collision",
+        "gas-ideal-gas-law",
+        "unit4-stoichiometry"
+      ],
+      "text_preview": "2. A chemical reaction between maleic acid (H2 C4 H2 O4) and sodium bicarbonate (NaHCO 3) occurs in the presence of water to produce carbon dioxide and sodium maleate (Na2 C4 H2 O4), as represented by the following equation."
+    },
+    {
+      "id": "ap24-chem-q3",
+      "year": 2024,
+      "question_number": 3,
+      "frq_type": "long_answer",
+      "frq_pdf": "/frq/ap24-frq-chemistry.pdf",
+      "frq_page": 12,
+      "sg_pdf": "/frq/ap24-sg-chemistry.pdf",
+      "sg_page": 6,
+      "concepts": [
+        "unit4-redox-reactions",
+        "unit4-oxidation-states",
+        "unit2-ionic-metallic-solids",
+        "atomic-periodic-trends"
+      ],
+      "text_preview": "3. Sterling silver is an alloy that is commonly used to make jewelry and consists of 92.5% silver and 7.5% other metals, such as copper, by mass. Over time, the alloy can form a tarnish of Ag2 S(s) when it reacts with hydrogen sulfide, as represented by the following equation."
+    },
+    {
+      "id": "ap24-chem-q4",
+      "year": 2024,
+      "question_number": 4,
+      "frq_type": "short_answer",
+      "frq_pdf": "/frq/ap24-frq-chemistry.pdf",
+      "frq_page": 15,
+      "sg_pdf": "/frq/ap24-sg-chemistry.pdf",
+      "sg_page": 7,
+      "concepts": [
+        "unit6-heat-transfer-calorimetry"
+      ],
+      "text_preview": "4. A student performs an experiment to determine the specific heat capacity of a metal. The student places a cube of the metal in boiling water so its temperature will be 100.0°C . The student then places the metal cube into a calorimeter that contains water and records the highest temperature of th..."
+    },
+    {
+      "id": "ap24-chem-q5",
+      "year": 2024,
+      "question_number": 5,
+      "frq_type": "short_answer",
+      "frq_pdf": "/frq/ap24-frq-chemistry.pdf",
+      "frq_page": 17,
+      "sg_pdf": "/frq/ap24-sg-chemistry.pdf",
+      "sg_page": 8,
+      "concepts": [
+        "unit7-reaction-quotient-keq",
+        "unit7-le-chatelier",
+        "unit7-representations-equilibrium"
+      ],
+      "text_preview": "5. Hydrogen gas and iodine gas react to form hydrogen iodide at an elevated temperature, as represented by the following equation. ΔHrxn = −12.19 kJ / molrxn H2( g) + I2( g)  2 HI( g) (a) Write the expression for the equilibrium constant, Kc , for this reaction."
+    },
+    {
+      "id": "ap24-chem-q6",
+      "year": 2024,
+      "question_number": 6,
+      "frq_type": "short_answer",
+      "frq_pdf": "/frq/ap24-frq-chemistry.pdf",
+      "frq_page": 19,
+      "sg_pdf": "/frq/ap24-sg-chemistry.pdf",
+      "sg_page": 9,
+      "concepts": [
+        "unit5-integrated-rate-laws",
+        "unit5-reaction-rates-rate-law",
+        "unit2-lewis-diagrams",
+        "unit2-vsepr-geometry"
+      ],
+      "text_preview": "6. At elevated temperatures, NO 2 undergoes decomposition in the gas phase, forming NO and O 2 as represented by the following equation. 2 NO 2 → 2 NO + O 2 A scientist measures the change in [NO 2] over the first 100. s of the reaction at 546°C."
+    },
+    {
+      "id": "ap24-chem-q7",
+      "year": 2024,
+      "question_number": 7,
+      "frq_type": "short_answer",
+      "frq_pdf": "/frq/ap24-frq-chemistry.pdf",
+      "frq_page": 21,
+      "sg_pdf": "/frq/ap24-sg-chemistry.pdf",
+      "sg_page": 10,
+      "concepts": [
+        "unit3-solutions-mixtures",
+        "unit4-stoichiometry"
+      ],
+      "text_preview": "7. A student conducts a chromatography experiment and needs to prepare 100.0 mL of 0.340 M NaCl(aq) to use as the solvent. (a) Calculate the mass of solid NaCl (molar mass 58.44 g/ mol ) needed to prepare the 100.0 mL of 0.340 M NaCl(aq)."
+    },
+    {
+      "id": "ap25-chem-q1",
+      "year": 2025,
+      "question_number": 1,
+      "frq_type": "long_answer",
+      "frq_pdf": "/frq/ap25-frq-chemistry.pdf",
+      "frq_page": 3,
+      "sg_pdf": "/frq/ap25-sg-chemistry.pdf",
+      "sg_page": 2,
+      "concepts": [
+        "atomic-mass-spectroscopy",
+        "unit3-solubility",
+        "unit7-solubility-equilibria",
+        "unit8-intro-acids-bases-ph"
+      ],
+      "text_preview": "1. Answer the following questions about magnesium. A. An incomplete mass spectrum for magnesium is shown in the diagram. The percent abundance of magnesium-24 is 79%. The percent abundances of the other two natural isotopes of magnesium, magnesium-25 and magnesium-26, are approximately equal. i."
+    },
+    {
+      "id": "ap25-chem-q2",
+      "year": 2025,
+      "question_number": 2,
+      "frq_type": "long_answer",
+      "frq_pdf": "/frq/ap25-frq-chemistry.pdf",
+      "frq_page": 6,
+      "sg_pdf": "/frq/ap25-sg-chemistry.pdf",
+      "sg_page": 4,
+      "concepts": [
+        "atomic-elemental-composition",
+        "unit8-titrations",
+        "unit8-ph-pka",
+        "unit4-redox-reactions"
+      ],
+      "text_preview": "2. Answer the following questions about ascorbic acid (vitamin C). A. A student combusts a sample of ascorbic acid, C x H y O x , to determine its chemical composition. The only products of the reaction are 0.2400 mol of CO2 and 2.883 g of H2 O . i. Calculate the number of moles of H2 O produced."
+    },
+    {
+      "id": "ap25-chem-q3",
+      "year": 2025,
+      "question_number": 3,
+      "frq_type": "long_answer",
+      "frq_pdf": "/frq/ap25-frq-chemistry.pdf",
+      "frq_page": 8,
+      "sg_pdf": "/frq/ap25-sg-chemistry.pdf",
+      "sg_page": 6,
+      "concepts": [
+        "unit2-lewis-diagrams",
+        "unit6-gibbs-free-energy",
+        "unit6-entropy",
+        "unit6-heat-transfer-calorimetry"
+      ],
+      "text_preview": "3. White phosphorus is composed of P4 molecules with a tetrahedral structure, as shown in the diagram on the left. Each P atom is bonded to the other three P atoms by single bonds, as shown in the incomplete Lewis diagram on the right. A."
+    },
+    {
+      "id": "ap25-chem-q4",
+      "year": 2025,
+      "question_number": 4,
+      "frq_type": "short_answer",
+      "frq_pdf": "/frq/ap25-frq-chemistry.pdf",
+      "frq_page": 11,
+      "sg_pdf": "/frq/ap25-sg-chemistry.pdf",
+      "sg_page": 8,
+      "concepts": [
+        "unit2-hybridization",
+        "unit3-imf",
+        "gas-ideal-gas-law"
+      ],
+      "text_preview": "4. A scientist is investigating the properties of a mixture of CH3 OH and H2 CO . The scientist generates the following diagram to represent the mixture. A. Identify the hybridization of the valence orbitals of the C atom in the H2 CO molecule. B."
+    },
+    {
+      "id": "ap25-chem-q5",
+      "year": 2025,
+      "question_number": 5,
+      "frq_type": "short_answer",
+      "frq_pdf": "/frq/ap25-frq-chemistry.pdf",
+      "frq_page": 12,
+      "sg_pdf": "/frq/ap25-sg-chemistry.pdf",
+      "sg_page": 9,
+      "concepts": [
+        "unit2-vsepr-geometry",
+        "unit3-imf",
+        "unit3-solid-properties"
+      ],
+      "text_preview": "5. Complete Lewis diagrams and some physical properties for compounds X and Y are given. Compound X Y Molar mass 74.1 g/mol 90.2 g/mol Boiling point 82°C 98°C Lewis diagram A. Based on VSEPR theory, predict the geometry around the Si atom in compound Y. B."
+    },
+    {
+      "id": "ap25-chem-q6",
+      "year": 2025,
+      "question_number": 6,
+      "frq_type": "short_answer",
+      "frq_pdf": "/frq/ap25-frq-chemistry.pdf",
+      "frq_page": 13,
+      "sg_pdf": "/frq/ap25-sg-chemistry.pdf",
+      "sg_page": 10,
+      "concepts": [
+        "unit9-galvanic-cells",
+        "unit9-cell-potential",
+        "unit9-electrolysis-faraday"
+      ],
+      "text_preview": "6. A scientist constructs a galvanic cell as shown in the diagram. As the cell operates, the Zn (s) electrode increases in mass and the Al (s) electrode decreases in mass. A data table with the standard reduction potentials for the substances follows the diagram."
+    },
+    {
+      "id": "ap25-chem-q7",
+      "year": 2025,
+      "question_number": 7,
+      "frq_type": "short_answer",
+      "frq_pdf": "/frq/ap25-frq-chemistry.pdf",
+      "frq_page": 15,
+      "sg_pdf": "/frq/ap25-sg-chemistry.pdf",
+      "sg_page": 11,
+      "concepts": [
+        "unit8-intro-acids-bases-ph",
+        "unit8-ph-pka",
+        "unit5-reaction-mechanisms"
+      ],
+      "text_preview": "7. Answer the following questions about the glycolate ion, C2 H3 O3- , which acts as a base in aqueous solution. A Lewis diagram for the ion is provided. A. On the Lewis diagram in part A, circle the atom that accepts the proton when the glycolate ion reacts with water."
+    }
+  ]
 }

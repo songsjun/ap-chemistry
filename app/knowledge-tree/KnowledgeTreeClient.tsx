@@ -8,6 +8,9 @@ import { repo } from '@/lib/repository'
 import { getDb } from '@/lib/infra/db'
 import type { Resource, KnowledgePoint, Completion } from '@/lib/types'
 import { WEEKS } from '@/lib/constants'
+import frqMapData from '@/data/frq_map.json'
+import { frqTypeLabel } from '@/lib/domain/frq'
+import type { FRQEntry } from '@/lib/domain/frq'
 
 type KPStatus = 'mastered' | 'in-progress' | 'not-started'
 type ResourceStatus = 'passed' | 'failed' | 'skipped' | 'not-started'
@@ -21,6 +24,7 @@ interface KPData {
   kp: KnowledgePoint
   status: KPStatus
   resources: ResourceData[]
+  frqs: FRQEntry[]
 }
 
 const TYPE_ICONS: Record<string, string> = {
@@ -72,6 +76,16 @@ export function KnowledgeTreeClient() {
         }
       }
 
+      const allFRQs = frqMapData.questions as FRQEntry[]
+      const conceptToFRQs = new Map<string, FRQEntry[]>()
+      for (const frq of allFRQs) {
+        for (const cid of frq.concepts) {
+          const arr = conceptToFRQs.get(cid) ?? []
+          arr.push(frq)
+          conceptToFRQs.set(cid, arr)
+        }
+      }
+
       const result: KPData[] = allKPs.map(kp => {
         const resources = [...(conceptToResources.get(kp.id) ?? [])]
         resources.sort((a, b) => {
@@ -94,6 +108,7 @@ export function KnowledgeTreeClient() {
             resource: r,
             status: (completionMap.get(r.id)?.status ?? 'not-started') as ResourceStatus,
           })),
+          frqs: (conceptToFRQs.get(kp.id) ?? []).sort((a, b) => b.year - a.year),
         }
       })
 
@@ -251,7 +266,7 @@ export function KnowledgeTreeClient() {
               {/* KP list */}
               {!isCollapsed && (
                 <div className="divide-y divide-stone-50 dark:divide-stone-700/50">
-                  {weekKPs.map(({ kp, status, resources }) => {
+                  {weekKPs.map(({ kp, status, resources, frqs }) => {
                     const isExpanded = expandedKPs.has(kp.id)
 
                     const statusBadgeCls =
@@ -278,7 +293,7 @@ export function KnowledgeTreeClient() {
                             <p className="text-xs text-stone-400 dark:text-stone-500 truncate">{kp.name_en}</p>
                           </div>
                           <div className="flex items-center gap-2 shrink-0">
-                            <span className="text-xs text-stone-400 dark:text-stone-500 whitespace-nowrap">D{kp.day} · {resources.length} 资源</span>
+                            <span className="text-xs text-stone-400 dark:text-stone-500 whitespace-nowrap">D{kp.day} · {resources.length} 资源{frqs.length > 0 ? ` · ${frqs.length} FRQ` : ''}</span>
                             <svg
                               className={`w-3.5 h-3.5 text-stone-400 transition-transform ${isExpanded ? 'rotate-180' : ''}`}
                               fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}
@@ -297,6 +312,27 @@ export function KnowledgeTreeClient() {
                               resources.map(({ resource, status: rStatus }) => (
                                 <ResourceRow key={resource.id} resource={resource} status={rStatus} />
                               ))
+                            )}
+                            {frqs.length > 0 && (
+                              <div className="pt-1 space-y-1.5">
+                                <p className="text-[10px] font-semibold text-violet-500 dark:text-violet-400 px-1 uppercase tracking-wide">历年真题</p>
+                                {frqs.map(frq => (
+                                  <button
+                                    key={frq.id}
+                                    onClick={() => window.open(`${frq.frq_pdf}#page=${frq.frq_page}`, '_blank', 'noopener,noreferrer')}
+                                    className="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg bg-violet-50 dark:bg-violet-900/20 border border-violet-100 dark:border-violet-900/40 hover:bg-violet-100 dark:hover:bg-violet-900/30 transition-colors text-left"
+                                  >
+                                    <span className="text-sm shrink-0 w-5 text-center leading-none">📝</span>
+                                    <div className="flex-1 min-w-0">
+                                      <p className="text-xs font-medium text-violet-800 dark:text-violet-300">{frq.year} Q{frq.question_number}</p>
+                                      <p className="text-[10px] text-violet-500 dark:text-violet-400">{frqTypeLabel(frq.frq_type)}</p>
+                                    </div>
+                                    <svg className="w-3 h-3 text-violet-300 dark:text-violet-600 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                                    </svg>
+                                  </button>
+                                ))}
+                              </div>
                             )}
                           </div>
                         )}

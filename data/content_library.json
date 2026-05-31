@@ -584,7 +584,9 @@
         "12.1",
         "12.2"
       ],
-      "alberta_tags": []
+      "alberta_tags": [
+        "chem30"
+      ]
     },
     {
       "id": "unit5-integrated-rate-laws",
@@ -601,7 +603,9 @@
       "openstax_sections": [
         "12.4"
       ],
-      "alberta_tags": []
+      "alberta_tags": [
+        "chem30"
+      ]
     },
     {
       "id": "unit5-elementary-reactions-collision",
@@ -619,7 +623,9 @@
         "12.4",
         "12.5"
       ],
-      "alberta_tags": []
+      "alberta_tags": [
+        "chem30"
+      ]
     },
     {
       "id": "unit5-energy-profile",
@@ -636,7 +642,9 @@
       "openstax_sections": [
         "12.5"
       ],
-      "alberta_tags": []
+      "alberta_tags": [
+        "chem30"
+      ]
     },
     {
       "id": "unit5-reaction-mechanisms",
@@ -653,7 +661,9 @@
       "openstax_sections": [
         "12.6"
       ],
-      "alberta_tags": []
+      "alberta_tags": [
+        "chem30"
+      ]
     },
     {
       "id": "unit5-steady-state-multistep",
@@ -670,7 +680,9 @@
       "openstax_sections": [
         "12.6"
       ],
-      "alberta_tags": []
+      "alberta_tags": [
+        "chem30"
+      ]
     },
     {
       "id": "unit5-catalysis",
@@ -687,7 +699,9 @@
       "openstax_sections": [
         "12.7"
       ],
-      "alberta_tags": []
+      "alberta_tags": [
+        "chem30"
+      ]
     },
     {
       "id": "unit6-endo-exo-energy-diagrams",
@@ -6158,6 +6172,244 @@
       ],
       "week": 3,
       "day": 5
+    },
+    {
+      "id": "chem-w1-khan-mass-percent",
+      "title": "Mass percent and mole fraction of mixtures",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:atomic-structure-and-properties/x2eef969c74e0d802:composition-of-mixtures/v/mass-percent-composition",
+      "type": "video",
+      "platform": "khan",
+      "tier": "B",
+      "estimated_minutes": 12,
+      "concepts": [
+        "atomic-mixture-composition"
+      ],
+      "week": 1,
+      "day": 3
+    },
+    {
+      "id": "chem-w1-khan-mixtures-exercise",
+      "title": "Composition of mixtures (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:atomic-structure-and-properties/x2eef969c74e0d802:composition-of-mixtures/e/mixture-problems",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "C",
+      "estimated_minutes": 20,
+      "concepts": [
+        "atomic-mixture-composition"
+      ],
+      "week": 1,
+      "day": 3
+    },
+    {
+      "id": "chem-w7-khan-ice-tables",
+      "title": "ICE tables and the equilibrium constant",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:equilibrium/x2eef969c74e0d802:ice-tables/v/ice-tables-and-the-equilibrium-constant",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 14,
+      "concepts": [
+        "unit7-representations-equilibrium"
+      ],
+      "week": 7,
+      "day": 4
+    },
+    {
+      "id": "chem-w7-phet-reactions-rates",
+      "title": "PhET: Reactions & Rates — Equilibrium Dynamics",
+      "url": "https://phet.colorado.edu/en/simulations/reactions-and-rates",
+      "type": "interactive",
+      "platform": "phet",
+      "tier": "B",
+      "estimated_minutes": 25,
+      "concepts": [
+        "unit7-representations-equilibrium"
+      ],
+      "week": 7,
+      "day": 4
+    },
+    {
+      "id": "chem-w7-khan-ph-solubility-ex2",
+      "title": "Solubility product constant Ksp and pH (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:equilibrium/x2eef969c74e0d802:solubility-equilibria/e/solubility-product-constant-ksp",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "C",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit7-ph-solubility"
+      ],
+      "week": 7,
+      "day": 7
+    },
+    {
+      "id": "chem-w3-openstax-ideal-gas-law",
+      "title": "OpenStax Chemistry 2e: 9.2–9.3 Ideal Gas Law and Gas Stoichiometry",
+      "url": "https://openstax.org/books/chemistry-2e/pages/9-2-relating-pressure-volume-amount-and-temperature-the-ideal-gas-law",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "A",
+      "estimated_minutes": 30,
+      "concepts": [
+        "gas-ideal-gas-law"
+      ],
+      "week": 3,
+      "day": 4
+    },
+    {
+      "id": "chem-w3-khan-ideal-gas-law-ex",
+      "title": "Ideal gas law (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:gases/x2eef969c74e0d802:ideal-gas-law/e/ideal-gas-law",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "C",
+      "estimated_minutes": 20,
+      "concepts": [
+        "gas-ideal-gas-law"
+      ],
+      "week": 3,
+      "day": 4
+    },
+    {
+      "id": "chem-w3-openstax-partial-pressure-kmt",
+      "title": "OpenStax Chemistry 2e: 9.4–9.5 Effusion, Diffusion, and Kinetic Molecular Theory",
+      "url": "https://openstax.org/books/chemistry-2e/pages/9-4-effusion-and-diffusion-of-gases",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "A",
+      "estimated_minutes": 30,
+      "concepts": [
+        "gas-partial-pressure-kmt"
+      ],
+      "week": 3,
+      "day": 5
+    },
+    {
+      "id": "chem-w3-khan-partial-pressure-ex",
+      "title": "Dalton's law of partial pressures (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:gases/x2eef969c74e0d802:partial-pressures/e/dalton-s-law-of-partial-pressures",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "C",
+      "estimated_minutes": 20,
+      "concepts": [
+        "gas-partial-pressure-kmt"
+      ],
+      "week": 3,
+      "day": 5
+    },
+    {
+      "id": "chem-w7-phet-reactions-rates-keq",
+      "title": "PhET: Reactions & Rates — Reaction Quotient and Equilibrium",
+      "url": "https://phet.colorado.edu/en/simulations/reactions-and-rates",
+      "type": "interactive",
+      "platform": "phet",
+      "tier": "B",
+      "estimated_minutes": 25,
+      "concepts": [
+        "unit7-reaction-quotient-keq"
+      ],
+      "week": 7,
+      "day": 2
+    },
+    {
+      "id": "chem-w7-phet-reactions-rates-lechat",
+      "title": "PhET: Reactions & Rates — Le Chatelier's Principle",
+      "url": "https://phet.colorado.edu/en/simulations/reactions-and-rates",
+      "type": "interactive",
+      "platform": "phet",
+      "tier": "B",
+      "estimated_minutes": 25,
+      "concepts": [
+        "unit7-le-chatelier"
+      ],
+      "week": 7,
+      "day": 5
+    },
+    {
+      "id": "chem-w7-phet-sugar-salt-solubility",
+      "title": "PhET: Sugar and Salt Solutions — Solubility Equilibria",
+      "url": "https://phet.colorado.edu/en/simulations/sugar-and-salt-solutions",
+      "type": "interactive",
+      "platform": "phet",
+      "tier": "B",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit7-solubility-equilibria"
+      ],
+      "week": 7,
+      "day": 6
+    },
+    {
+      "id": "chem-w6-phet-gas-properties-entropy",
+      "title": "PhET: Gas Properties — Entropy and Particle Motion",
+      "url": "https://phet.colorado.edu/en/simulations/gas-properties",
+      "type": "interactive",
+      "platform": "phet",
+      "tier": "B",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit6-entropy"
+      ],
+      "week": 6,
+      "day": 6
+    },
+    {
+      "id": "chem-w6-phet-states-matter-calorimetry",
+      "title": "PhET: States of Matter — Heat Transfer and Calorimetry",
+      "url": "https://phet.colorado.edu/en/simulations/states-of-matter",
+      "type": "interactive",
+      "platform": "phet",
+      "tier": "B",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit6-heat-transfer-calorimetry"
+      ],
+      "week": 6,
+      "day": 2
+    },
+    {
+      "id": "chem-w7-phet-acid-base-ph-solubility",
+      "title": "PhET: Acid-Base Solutions — pH and Solubility",
+      "url": "https://phet.colorado.edu/en/simulations/acid-base-solutions",
+      "type": "interactive",
+      "platform": "phet",
+      "tier": "B",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit7-ph-solubility"
+      ],
+      "week": 7,
+      "day": 7
+    },
+    {
+      "id": "chem-w5-phet-reactions-rates-energy",
+      "title": "PhET: Reactions & Rates — Energy Profile and Activation Energy",
+      "url": "https://phet.colorado.edu/en/simulations/reactions-and-rates",
+      "type": "interactive",
+      "platform": "phet",
+      "tier": "B",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit5-energy-profile"
+      ],
+      "week": 5,
+      "day": 4
+    },
+    {
+      "id": "chem-w5-phet-reactions-rates-catalysis",
+      "title": "PhET: Reactions & Rates — Catalysis and Energy Barrier",
+      "url": "https://phet.colorado.edu/en/simulations/reactions-and-rates",
+      "type": "interactive",
+      "platform": "phet",
+      "tier": "B",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit5-catalysis"
+      ],
+      "week": 5,
+      "day": 7
     }
   ]
 }
