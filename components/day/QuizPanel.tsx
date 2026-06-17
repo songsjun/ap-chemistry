@@ -137,8 +137,7 @@ export function QuizPanel({ userId, week, day, conceptIds, onComplete, onExit }:
 
       // Subjective (short / feynman): show spinner and call AI.
       // Use an AbortController so the in-flight fetch is cancelled when the
-      // 15 s timeout fires or the component unmounts — without this the ghost
-      // fetch would continue in the background and consume a full API credit.
+      // 15 s timeout fires or the component unmounts.
       let gradingSucceeded = true
       setPhase('grading')
       const gradingAC = new AbortController()
@@ -150,11 +149,11 @@ export function QuizPanel({ userId, week, day, conceptIds, onComplete, onExit }:
         ),
       ]).catch((err: unknown) => {
         gradingSucceeded = false
-        const noApiKey = err instanceof Error && err.message === 'no-api-key'
+        const aiUnavailable = err instanceof Error && err.message.startsWith('ai-gateway')
         return {
           correct: false,
-          feedback: noApiKey
-            ? '此题需要 AI 批改。请前往「设置」页配置 Claude API Key 后重试。'
+          feedback: aiUnavailable
+            ? '此题需要 AI 批改。请确认本地 AI gateway 和 AP AI proxy 已启动后重试。'
             : q.explanation || '批改超时，请参考题目说明。',
         }
       })
