@@ -69,6 +69,7 @@ export class DaySessionManager {
     const execGen = this.loadGen
 
     const wasInRemediation = computeFlowState(this.currentSnapshot).phase === 'REMEDIATION'
+    let shouldRecheckUnlockAfterCommit = false
 
     if (command.type === 'COMPLETE_RESOURCE' || command.type === 'SKIP_RESOURCE') {
       const result =
@@ -118,6 +119,7 @@ export class DaySessionManager {
           }
         }
       })
+      shouldRecheckUnlockAfterCommit = true
     }
 
     if (command.type === 'RESET_FAILED_RESOURCES') {
@@ -142,6 +144,36 @@ export class DaySessionManager {
 
     // Re-assemble snapshot and recompute flow state
     const newSnapshot = await assembleDaySnapshot(userId, week, day)
+
+    if (shouldRecheckUnlockAfterCommit) {
+      let passed = 0, failed = 0
+      for (const resource of newSnapshot.aResources) {
+        const completion = newSnapshot.completions.get(resource.id)
+        if (completion?.status === 'passed') passed++
+        else if (completion?.status === 'failed') failed++
+      }
+      const completedIds = new Set(
+        newSnapshot.aResources
+          .filter(resource => newSnapshot.completions.get(resource.id)?.status !== 'skipped' && newSnapshot.completions.has(resource.id))
+          .map(resource => resource.id),
+      )
+      const allADone = newSnapshot.aResources.every(resource => completedIds.has(resource.id))
+      const stats: DayStats = {
+        passRate: calcAttemptedPassRate(passed, newSnapshot.aResources.length),
+        passedCount: passed,
+        failedCount: failed,
+        gradedCount: passed + failed,
+        totalACount: newSnapshot.aResources.length,
+        weakConcepts: [],
+        seenResourceIds: new Set(newSnapshot.completions.keys()),
+      }
+      if (allADone && shouldUnlock(stats, newSnapshot.mode)) {
+        const [nw, nd] = nextDay(week, day)
+        if ((nw !== week || nd !== day) && !(await repo.isDayUnlocked(userId, nw, nd))) {
+          await tracker.unlockDay(userId, nw, nd)
+        }
+      }
+    }
 
     // If a newer load() resolved while we were awaiting assembleDaySnapshot, that
     // load already committed the correct day's snapshot. Overwriting it here would

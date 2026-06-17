@@ -1,6 +1,6 @@
 'use client'
 
-import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { useDayContext } from '@/lib/app/session-context'
 import { useDayResources } from '@/lib/app/useDayResources'
 import type { Resource, KnowledgePoint, DailyFeedback } from '@/lib/types'
@@ -121,6 +121,7 @@ export function DayListView({ week, day }: { week: number; day: number }) {
   // id of resource currently in score-input mode
   const [scoringId, setScoringId] = useState<string | null>(null)
   const feedbackRequestedRef = useRef(false)
+  const retryPhaseKeyRef = useRef<string | null>(null)
   const [retryCount, setRetryCount] = useState(0)
 
   // Reset per-day state when navigating to a different day (same component instance via client routing)
@@ -147,30 +148,16 @@ export function DayListView({ week, day }: { week: number; day: number }) {
     }
   }, [flowState.phase, dispatch])
 
-  // Track current phase in a ref so the cleanup below can distinguish StrictMode
-  // double-invoke (phase unchanged) from a real phase transition away from NEEDS_RETRY.
-  const phaseRef = useRef(flowState.phase)
-  useLayoutEffect(() => {
-    phaseRef.current = flowState.phase
-  })
-
-  // Increment per-day retry counter in localStorage when landing in NEEDS_RETRY.
-  // On StrictMode double-invoke: cleanup sees phase still NEEDS_RETRY → restores counter.
-  // On real transition out of NEEDS_RETRY: cleanup sees new phase → clears counter so
-  // next visit to this day starts fresh (prevents "skip" button appearing immediately).
   useEffect(() => {
-    if (flowState.phase !== 'NEEDS_RETRY') return
-    const key = `needs_retry_${week}_${day}`
-    const prev = parseInt(localStorage.getItem(key) ?? '0', 10)
-    const next = prev + 1
-    localStorage.setItem(key, String(next))
-    setRetryCount(next)
-    return () => {
-      if (phaseRef.current === 'NEEDS_RETRY') {
-        localStorage.setItem(key, String(prev))
-      } else {
-        localStorage.removeItem(key)
+    const key = `${week}:${day}`
+    if (flowState.phase === 'NEEDS_RETRY') {
+      if (retryPhaseKeyRef.current !== key) {
+        retryPhaseKeyRef.current = key
+        setRetryCount(count => count + 1)
       }
+    } else {
+      retryPhaseKeyRef.current = null
+      setRetryCount(0)
     }
   }, [week, day, flowState.phase])
 

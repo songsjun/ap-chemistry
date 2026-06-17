@@ -106,7 +106,7 @@ export function SettingsClient() {
       <section className="bg-white dark:bg-stone-800 rounded-xl border border-stone-100 dark:border-stone-700 shadow-sm p-6 space-y-4">
         <div>
           <h2 className="font-semibold text-stone-900 dark:text-stone-100">学习进度备份</h2>
-          <p className="text-sm text-stone-500 dark:text-stone-400 mt-0.5">导出进度到 JSON 文件，或从备份文件恢复（会覆盖当前进度）。</p>
+          <p className="text-sm text-stone-500 dark:text-stone-400 mt-0.5">导出进度到 JSON 文件，或从备份文件合并恢复（较新的当前记录会保留）。</p>
         </div>
         <div className="flex gap-2 flex-wrap">
           <button

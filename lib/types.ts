@@ -135,7 +135,7 @@ export interface QuizQuestion {
 }
 
 export interface QuizResult {
-  id: string                   // `${user_id}-${question_id}-${answered_at}`
+  id: string                   // client-generated result id; server keys it with user_id
   user_id: string
   question_id: string
   concept_ids: string[]        // copied from question for fast querying

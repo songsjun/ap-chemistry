@@ -60,6 +60,7 @@ export function QuizPanel({ userId, week, day, conceptIds, onComplete, onExit }:
   const [chatMessages, setChatMessages] = useState<ChatMessage[]>([])
   const [chatInput, setChatInput] = useState('')
   const [chatLoading, setChatLoading] = useState(false)
+  const [submitError, setSubmitError] = useState<string | null>(null)
 
   const mountedRef = useRef(true)
   const submittingRef = useRef(false)
@@ -99,6 +100,7 @@ export function QuizPanel({ userId, week, day, conceptIds, onComplete, onExit }:
     if (submittingRef.current) return
     submittingRef.current = true
     try {
+      setSubmitError(null)
       const q = questions[currentIdx]
       const userAnswer = q.type === 'mcq' ? (selectedOption ?? '') : answer.trim()
       if (!userAnswer) return
@@ -106,11 +108,8 @@ export function QuizPanel({ userId, week, day, conceptIds, onComplete, onExit }:
       let g: QuizGrade
 
       if (q.type === 'mcq' || q.type === 'fill') {
-        // Objective: grade instantly, show result immediately, save in background
         g = gradeLocal(q, userAnswer)
         if (!mountedRef.current) return
-        setGrade(g)
-        setPhase('result')
         if (userId) {
           // Capture a single timestamp so `id` and `answered_at` are always
           // consistent — two separate `new Date()` calls can diverge if a
@@ -129,9 +128,17 @@ export function QuizPanel({ userId, week, day, conceptIds, onComplete, onExit }:
             question_type: q.type,
             difficulty: q.difficulty,
           }
-          repo.saveQuizResult(result).catch(console.error)
+          try {
+            await repo.saveQuizResult(result)
+          } catch (error) {
+            console.error(error)
+            if (mountedRef.current) setSubmitError('保存答题记录失败，请检查登录或网络后重试。')
+            return
+          }
           setSessionResults(prev => [...prev, result])
         }
+        setGrade(g)
+        setPhase('result')
         return
       }
 
@@ -178,7 +185,16 @@ export function QuizPanel({ userId, week, day, conceptIds, onComplete, onExit }:
             question_type: q.type,
             difficulty: q.difficulty,
           }
-          await repo.saveQuizResult(result).catch(console.error)
+          try {
+            await repo.saveQuizResult(result)
+          } catch (error) {
+            console.error(error)
+            if (mountedRef.current) {
+              setSubmitError('保存答题记录失败，请检查登录或网络后重试。')
+              setPhase('question')
+            }
+            return
+          }
           setSessionResults(prev => [...prev, result])
         }
       }
@@ -321,6 +337,12 @@ export function QuizPanel({ userId, week, day, conceptIds, onComplete, onExit }:
             rows={q.type === 'feynman' ? 5 : 3}
             className="border border-stone-200 rounded-lg p-2 w-full text-sm focus:outline-none focus:border-blue-400 resize-none"
           />
+        )}
+
+        {submitError && (
+          <p className="text-xs text-red-600 bg-red-50 border border-red-100 rounded-lg px-3 py-2">
+            {submitError}
+          </p>
         )}
 
         <div className="flex items-center justify-between">

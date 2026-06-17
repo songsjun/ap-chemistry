@@ -1,5 +1,5 @@
 import type { IRepository } from './interface'
-import { DexieRepository } from './dexie.repo'
+import { RemoteProgressRepository } from './remote.repo'
 
-export const repo: IRepository = new DexieRepository()
+export const repo: IRepository = new RemoteProgressRepository()
 export type { IRepository }
