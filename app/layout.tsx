@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
 import { AppInitializer } from '@/components/AppInitializer'
 import { AuthGate } from '@/components/AuthGate'
+import { VersionBadge } from '@/components/VersionBadge'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -43,6 +44,7 @@ export default function RootLayout({
       <body className="min-h-full bg-stone-50 dark:bg-stone-900 text-stone-900 dark:text-stone-100">
         <AppInitializer />
         <AuthGate>{children}</AuthGate>
+        <VersionBadge />
       </body>
     </html>
   )
