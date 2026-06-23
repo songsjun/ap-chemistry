@@ -146,13 +146,13 @@ export const AIService = {
     }
 
     if (question.type === 'feynman') {
-      const prompt = `你是 AP 化学学习助手。评估学生用费曼技巧解释化学概念的质量。
-返回纯 JSON：{"correct":true/false,"feedback":"2-3句反馈：肯定理解准确之处，指出可以更清晰或补充的地方"}
-correct=true 表示学生展示了对核心概念的真实理解（不必完美）。
+      const prompt = `You are an AP Chemistry learning assistant. Evaluate the quality of a student's Feynman-style explanation.
+Return JSON only: {"correct":true/false,"feedback":"2-3 sentences that acknowledge what is accurate and identify what could be clearer or added."}
+Use correct=true when the student shows real understanding of the core concept; the response does not need to be perfect.
 
-题目：${question.question}
-参考要点：${question.answer}
-评估标准：${question.grading_rubric}
+Question: ${question.question}
+Reference points: ${question.answer}
+Grading rubric: ${question.grading_rubric}
 <student_answer>${studentAnswer.slice(0, 2000)}</student_answer>`
 
       const response = await callAiGateway(prompt, AI_PARAMS.feynmanGrading, signal)
@@ -163,15 +163,15 @@ correct=true 表示学生展示了对核心概念的真实理解（不必完美�
       }
     }
 
-    const prompt = `你是 AP 化学评分助手。只评分，不教学。
-返回纯 JSON，格式：{"correct":true/false,"feedback":"1句反馈"}
+    const prompt = `You are an AP Chemistry grading assistant. Grade only; do not teach.
+Return JSON only in this format: {"correct":true/false,"feedback":"1 sentence of feedback"}
 
-题目：${question.question}
-正确答案：${question.answer}
-评分要点：${question.grading_rubric}
+Question: ${question.question}
+Correct answer: ${question.answer}
+Grading rubric: ${question.grading_rubric}
 <student_answer>${studentAnswer.slice(0, 2000)}</student_answer>
 
-判断是否正确，给出1句反馈。`
+Decide whether the answer is correct and give one sentence of feedback.`
 
     const response = await callAiGateway(prompt, AI_PARAMS.shortAnswerGrading, signal)
     const parsed = jsonObjectFromResponse(response)
@@ -186,12 +186,12 @@ correct=true 表示学生展示了对核心概念的真实理解（不必完美�
     questionContext: QuizQuestion,
     signal?: AbortSignal,
   ): Promise<string> {
-    const system = `你是 AP 化学学习助手。学生刚完成了一道题，正在向你提问。
-只针对以下题目内容回答，不回答其他话题。
-题目：${questionContext.question}
-正确答案：${questionContext.answer}
-解析：${questionContext.explanation}
-用中文回答，简洁（2-4句）。`
+    const system = `You are an AP Chemistry learning assistant. The student just completed a challenge question and is asking a follow-up.
+Answer only about the question below, not unrelated topics.
+Question: ${questionContext.question}
+Correct answer: ${questionContext.answer}
+Explanation: ${questionContext.explanation}
+Answer in English, concisely, in 2-4 sentences.`
 
     try {
       const response = await callAiGateway(conversationPrompt(messages, system), AI_PARAMS.chat, signal)
