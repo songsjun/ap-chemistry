@@ -9,6 +9,8 @@
     "start": "next start",
     "lint": "eslint",
     "test": "vitest run",
+    "ai:check": "node scripts/check-ai-stack.mjs",
+    "ai:check:generate": "node scripts/check-ai-stack.mjs --generate",
     "db:schema": "node scripts/apply-schema.mjs",
     "student:create": "node scripts/create-student.mjs"
   },
