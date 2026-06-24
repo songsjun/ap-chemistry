@@ -9,8 +9,8 @@ AP Chemistry 的本地优先学习编排器，把 Khan Academy、OpenStax、PhET
 
 ## 技术栈
 
-- **框架**: Next.js (App Router, `output: 'export'` 纯静态)
-- **数据库**: Dexie.js 4.4.2 (IndexedDB, ChemistryLearningDB)
+- **框架**: Next.js (App Router, 本地服务模式)
+- **数据库**: PostgreSQL（学生身份与学习记录）+ Dexie.js（本地课程内容缓存）
 - **AI**: Anthropic Claude API (浏览器直调，Key 存 localStorage)
 - **样式**: Tailwind CSS
 - **部署**: Cloudflare Pages / GitHub Pages
@@ -19,8 +19,13 @@ AP Chemistry 的本地优先学习编排器，把 Khan Academy、OpenStax、PhET
 
 ```bash
 npm install
+cp .env.example .env
+# 编辑 .env，至少设置 SESSION_SECRET；生产环境缺失会启动失败
+createdb ap_chemistry
+npm run db:schema
+npm run student:create -- --name "Student Name"
 npm run dev      # http://localhost:3000
-npm run build    # 生成 out/ 静态产物
+npm run build
 npx vitest run   # 运行单元测试
 ```
 
@@ -109,6 +114,11 @@ ap-chem-app/
 
 ## 数据说明
 
-- 用户进度存 IndexedDB（Dexie ChemistryLearningDB v4），设备绑定
+- 学生必须使用后台生成的 access code 登录
+- 运行时、`npm run db:schema`、`npm run student:create` 都会从项目根目录自动加载 `.env`
+- `SESSION_SECRET` 在非开发环境必须设置为私有随机值，不能使用内置开发 fallback
+- 学生身份、资源完成记录、每日挑战题答题内容、FRQ 分数和解锁状态存入本地 PostgreSQL
+- 完成记录和每日挑战题同时写入 latest projection 表与 append-only event/attempt 表，便于后续管理追踪
+- 课程资源与题库仍缓存到 IndexedDB（Dexie ChemistryLearningDB v4），用于离线读取静态内容
 - API Key 存 localStorage，不上传任何服务器
 - `LIBRARY_VERSION` / `QUIZ_BANK_VERSION` 变更时客户端自动重新 seed

@@ -15,9 +15,14 @@ export const StorageService = {
     init(): string {
       const existing = localStorage.getItem(USER_ID_KEY)
       if (existing && UUID_RE.test(existing)) return existing
-      const id = crypto.randomUUID()
+      throw new Error('User is not authenticated')
+    },
+    save(id: string): void {
+      if (!UUID_RE.test(id)) throw new Error('Invalid authenticated user id')
       localStorage.setItem(USER_ID_KEY, id)
-      return id
+    },
+    clear(): void {
+      localStorage.removeItem(USER_ID_KEY)
     },
   },
   apiKey: {

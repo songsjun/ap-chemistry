@@ -1,6 +1,6 @@
 'use client'
 
-import { useCallback, useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { findRelatedFRQ, frqTypeLabel } from '@/lib/domain/frq'
 import type { FRQEntry } from '@/lib/domain/frq'
 import type { FRQCompletion } from '@/lib/types'
@@ -158,7 +158,7 @@ interface RelatedFRQCardProps {
 }
 
 export function RelatedFRQCard({ userId, conceptIds, week, day }: RelatedFRQCardProps) {
-  const related = findRelatedFRQ(conceptIds)
+  const related = useMemo(() => findRelatedFRQ(conceptIds), [conceptIds])
   const [open, setOpen] = useState(false)
   const [judgmentEntry, setJudgmentEntry] = useState<FRQEntry | null>(null)
   const [scoringEntry, setScoringEntry] = useState<FRQEntry | null>(null)
@@ -168,14 +168,13 @@ export function RelatedFRQCard({ userId, conceptIds, week, day }: RelatedFRQCard
 
   // Load existing completions for the related FRQs.
   // userId is in deps: if the active user changes the completions must reload.
-  const conceptKey = conceptIds.join(',')
   useEffect(() => {
     if (!related.length) return
     if (!userId) return
     repo.getFRQCompletions(userId, related.map(e => e.id)).then(completions => {
       setFrqCompletions(new Map(completions.map(c => [c.frq_id, c])))
     }).catch(console.error)
-  }, [conceptKey, userId])
+  }, [related, userId])
 
   const handleSaveScore = useCallback(async (entry: FRQEntry, score: number, scoreMax: number) => {
     if (!userId || isSavingRef.current) return

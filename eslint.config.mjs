@@ -12,6 +12,7 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    "public/pdf.worker*.mjs",
   ]),
   {
     rules: {
@@ -22,6 +23,7 @@ const eslintConfig = defineConfig([
       // patterns (initialising state from localStorage, resetting on navigation).
       // Disable globally; rules-of-hooks + exhaustive-deps cover real correctness.
       "react-hooks/set-state-in-effect": "off",
+      "@typescript-eslint/no-unused-vars": ["warn", { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_" }],
     },
   },
 ]);

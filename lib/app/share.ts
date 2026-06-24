@@ -1,4 +1,5 @@
-import { getDb, type DayUnlock } from '@/lib/infra/db'
+import { repo } from '@/lib/repository'
+import { DAYS_PER_WEEK, WEEKS } from '@/lib/constants'
 import type { Completion, QuizResult } from '@/lib/types'
 
 // ── Type guards ──────────────────────────────────────────────────────────────
@@ -32,8 +33,8 @@ function isValidDayUnlock(u: unknown): u is DayUnlock {
     typeof obj.unlocked_at !== 'string' || isNaN(Date.parse(obj.unlocked_at))
   ) return false
   // Range guard: prevent malicious large-integer injection
-  if (obj.week < 1 || obj.week > 8) return false
-  if (obj.day < 1 || obj.day > 7) return false
+  if (obj.week < 1 || obj.week > WEEKS) return false
+  if (obj.day < 1 || obj.day > DAYS_PER_WEEK) return false
   return true
 }
 
@@ -51,13 +52,22 @@ function isValidQuizResult(r: unknown): r is QuizResult {
     typeof obj.id === 'string' && obj.id.length > 0 &&
     typeof obj.question_id === 'string' && obj.question_id.length > 0 &&
     Array.isArray(obj.concept_ids) && obj.concept_ids.every((x: unknown) => typeof x === 'string') &&
-    typeof obj.week === 'number' && Number.isInteger(obj.week) && obj.week >= 1 && obj.week <= 8 &&
-    typeof obj.day === 'number' && Number.isInteger(obj.day) && obj.day >= 1 && obj.day <= 7 &&
+    typeof obj.week === 'number' && Number.isInteger(obj.week) && obj.week >= 1 && obj.week <= WEEKS &&
+    typeof obj.day === 'number' && Number.isInteger(obj.day) && obj.day >= 1 && obj.day <= DAYS_PER_WEEK &&
     typeof obj.correct === 'boolean' &&
     typeof obj.student_answer === 'string' &&
     typeof obj.answered_at === 'string' && !isNaN(Date.parse(obj.answered_at)) &&
-    (obj.question_type === undefined || isQuizQuestionType(obj.question_type))
+    (obj.question_type === undefined || isQuizQuestionType(obj.question_type)) &&
+    (obj.difficulty === undefined || obj.difficulty === 1 || obj.difficulty === 2 || obj.difficulty === 3)
   )
+}
+
+function importedQuizResultId(userId: string, result: QuizResult): string {
+  return `${userId}-${result.question_id}-${result.answered_at}`
+}
+
+function isSameOrNewer(importedAt: string, currentAt: string): boolean {
+  return Date.parse(importedAt) >= Date.parse(currentAt)
 }
 
 // ── ExportData ───────────────────────────────────────────────────────────────
@@ -71,21 +81,32 @@ export interface ExportData {
   quiz_results?: QuizResult[]   // added in version 2; optional for forward compatibility
 }
 
+interface DayUnlock {
+  user_id: string
+  week: number
+  day: number
+  unlocked_at: string
+}
+
 // ── exportProgress ───────────────────────────────────────────────────────────
 
 export async function exportProgress(userId: string): Promise<ExportData> {
-  const db = getDb()
-  const [completions, dayUnlocks, quiz_results] = await Promise.all([
-    db.completions.where('user_id').equals(userId).toArray(),
-    db.day_unlocks.where('user_id').equals(userId).toArray(),
-    db.quiz_results.where('user_id').equals(userId).toArray(),
+  const [completions, unlockedDays, quiz_results] = await Promise.all([
+    repo.getAllUserCompletions(userId),
+    repo.getUnlockedDays(userId),
+    repo.getAllQuizResultsForUser(userId),
   ])
   return {
     version: 2,
     exportedAt: new Date().toISOString(),
     userId,
     completions,
-    dayUnlocks,
+    dayUnlocks: unlockedDays.map(day => ({
+      user_id: userId,
+      week: day.week,
+      day: day.day,
+      unlocked_at: new Date().toISOString(),
+    })),
     quiz_results,
   }
 }
@@ -105,48 +126,52 @@ export async function importProgress(userId: string, data: ExportData): Promise<
   // quiz_results is optional (absent in version-1 exports)
   const rawQuizResults: unknown[] = Array.isArray(data.quiz_results) ? data.quiz_results : []
   const validQuizResults = rawQuizResults.filter(isValidQuizResult)
+  const [currentCompletions, currentQuizResults] = await Promise.all([
+    repo.getAllUserCompletions(userId),
+    repo.getAllQuizResultsForUser(userId),
+  ])
+  const currentCompletionsByResource = new Map(currentCompletions.map(c => [c.resource_id, c]))
+  const currentQuizResultsById = new Map(currentQuizResults.map(r => [r.id, r]))
 
-  const db = getDb()
-  await db.transaction('rw', db.completions, db.day_unlocks, db.quiz_results, async () => {
-    // Clear existing records for this user
-    await db.completions.where('user_id').equals(userId).delete()
-    await db.day_unlocks.where('user_id').equals(userId).delete()
-    await db.quiz_results.where('user_id').equals(userId).delete()
+  await repo.transact(async () => {
+    for (const c of validCompletions) {
+      const current = currentCompletionsByResource.get(c.resource_id)
+      if (current && !isSameOrNewer(c.completed_at, current.completed_at)) continue
 
-    // Re-stamp user_id from the authenticated session — never trust the payload's user_id
-    const completions: Completion[] = validCompletions.map(c => ({
-      user_id: userId,
-      resource_id: c.resource_id,
-      status: c.status,
-      score: c.score,
-      score_max: c.score_max,
-      ai_feedback: c.ai_feedback,
-      completed_at: c.completed_at,
-    }))
+      await repo.saveCompletion({
+        user_id: userId,
+        resource_id: c.resource_id,
+        status: c.status,
+        score: c.score,
+        score_max: c.score_max,
+        ai_feedback: c.ai_feedback,
+        completed_at: c.completed_at,
+      })
+    }
 
-    const unlocks: DayUnlock[] = validUnlocks.map(u => ({
-      user_id: userId,
-      week: u.week,
-      day: u.day,
-      unlocked_at: u.unlocked_at,
-    }))
+    for (const u of validUnlocks) {
+      await repo.unlockDay(userId, u.week, u.day)
+    }
 
-    const quizResults: QuizResult[] = validQuizResults.map(r => ({
-      id: `${userId}-${r.question_id}-${r.answered_at}`,
-      user_id: userId,
-      question_id: r.question_id,
-      concept_ids: r.concept_ids,
-      week: r.week,
-      day: r.day,
-      correct: r.correct,
-      student_answer: r.student_answer,
-      answered_at: r.answered_at,
-      question_type: r.question_type,
-    }))
+    for (const r of validQuizResults) {
+      const id = importedQuizResultId(userId, r)
+      const current = currentQuizResultsById.get(id)
+      if (current && !isSameOrNewer(r.answered_at, current.answered_at)) continue
 
-    await db.completions.bulkPut(completions)
-    await db.day_unlocks.bulkPut(unlocks)
-    await db.quiz_results.bulkPut(quizResults)
+      await repo.saveQuizResult({
+        id,
+        user_id: userId,
+        question_id: r.question_id,
+        concept_ids: r.concept_ids,
+        week: r.week,
+        day: r.day,
+        correct: r.correct,
+        student_answer: r.student_answer,
+        answered_at: r.answered_at,
+        question_type: r.question_type,
+        difficulty: r.difficulty,
+      })
+    }
   })
 }
 

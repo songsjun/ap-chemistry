@@ -7,16 +7,12 @@ import { applyStoredTheme } from '@/components/AppInitializer'
 import { exportProgress, importProgress, downloadJson, type ExportData } from '@/lib/app/share'
 
 export function SettingsClient() {
-  const [apiKey, setApiKey] = useState('')
-  const [saved, setSaved] = useState(false)
   const [importStatus, setImportStatus] = useState<'idle' | 'success' | 'error'>('idle')
   const [importError, setImportError] = useState('')
   const [theme, setTheme] = useState<ThemePreference>('system')
   const fileInputRef = useRef<HTMLInputElement>(null)
 
   useEffect(() => {
-    const key = StorageService.apiKey.get()
-    if (key) setApiKey(key)
     setTheme(StorageService.theme.get())
   }, [])
 
@@ -24,17 +20,6 @@ export function SettingsClient() {
     setTheme(t)
     StorageService.theme.save(t)
     applyStoredTheme()
-  }
-
-  function handleSave() {
-    const trimmed = apiKey.trim()
-    if (trimmed) {
-      StorageService.apiKey.save(trimmed)
-    } else {
-      StorageService.apiKey.clear()
-    }
-    setSaved(true)
-    setTimeout(() => setSaved(false), 2000)
   }
 
   async function handleExport() {
@@ -104,47 +89,16 @@ export function SettingsClient() {
         </div>
       </section>
 
-      {/* API Key */}
+      {/* AI gateway */}
       <section className="bg-white dark:bg-stone-800 rounded-xl border border-stone-100 dark:border-stone-700 shadow-sm p-6 space-y-4">
         <div>
-          <h2 className="font-semibold text-stone-900 dark:text-stone-100">Claude API Key</h2>
-          <p className="text-sm text-stone-500 dark:text-stone-400 mt-0.5">用于获取个性化学习反馈。Key 仅保存在本地浏览器，不会上传。</p>
+          <h2 className="font-semibold text-stone-900 dark:text-stone-100">AI Gateway</h2>
+          <p className="text-sm text-stone-500 dark:text-stone-400 mt-0.5">
+            AI 批改和学习反馈由本机 AOPS AI Gateway 提供。浏览器不会保存或上传模型密钥。
+          </p>
         </div>
-        <div className="flex gap-2">
-          <input
-            type="password"
-            value={apiKey}
-            onChange={e => setApiKey(e.target.value)}
-            onKeyDown={e => e.key === 'Enter' && handleSave()}
-            placeholder="sk-ant-..."
-            className="flex-1 border border-stone-200 dark:border-stone-600 dark:bg-stone-700 dark:text-stone-100 rounded-lg px-3 py-2 text-sm font-mono focus:outline-none focus:ring-2 focus:ring-blue-300"
-          />
-          <button
-            onClick={handleSave}
-            className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded-lg transition-colors"
-          >
-            {saved ? '已保存 ✓' : '保存'}
-          </button>
-        </div>
-        {apiKey && (
-          <button
-            onClick={() => { StorageService.apiKey.clear(); setApiKey('') }}
-            className="text-xs text-red-400 hover:text-red-600 transition-colors"
-          >
-            清除 Key
-          </button>
-        )}
         <p className="text-xs text-stone-400 dark:text-stone-500">
-          前往{' '}
-          <a
-            href="https://console.anthropic.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-400 hover:underline"
-          >
-            console.anthropic.com
-          </a>{' '}
-          获取 API Key（需要账号）。
+          本地部署需要同时运行 <code className="font-mono">aops_calculus</code> 的 AI gateway 和 AP AI proxy。
         </p>
       </section>
 
@@ -152,7 +106,7 @@ export function SettingsClient() {
       <section className="bg-white dark:bg-stone-800 rounded-xl border border-stone-100 dark:border-stone-700 shadow-sm p-6 space-y-4">
         <div>
           <h2 className="font-semibold text-stone-900 dark:text-stone-100">学习进度备份</h2>
-          <p className="text-sm text-stone-500 dark:text-stone-400 mt-0.5">导出进度到 JSON 文件，或从备份文件恢复（会覆盖当前进度）。</p>
+          <p className="text-sm text-stone-500 dark:text-stone-400 mt-0.5">导出进度到 JSON 文件，或从备份文件合并恢复（较新的当前记录会保留）。</p>
         </div>
         <div className="flex gap-2 flex-wrap">
           <button

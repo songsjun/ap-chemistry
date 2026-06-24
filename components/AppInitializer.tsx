@@ -1,7 +1,6 @@
 'use client'
 
 import { useEffect } from 'react'
-import { ensureAppReady } from '@/lib/app/ready'
 import { StorageService } from '@/lib/infra/storage'
 
 const DARK_VARS = { '--background': '#0a0a0a', '--foreground': '#ededed' }
@@ -33,10 +32,6 @@ function applyStoredTheme() {
  *   - cross-tab localStorage changes (so all tabs stay in sync)
  */
 export function AppInitializer() {
-  useEffect(() => {
-    ensureAppReady().catch(console.error)
-  }, [])
-
   useEffect(() => {
     // Re-apply theme on hydration (FOUC script may have missed edge cases).
     applyStoredTheme()

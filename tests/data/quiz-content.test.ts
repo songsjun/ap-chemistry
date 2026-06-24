@@ -19,6 +19,8 @@ const DISTRACTOR_PATTERNS = [
   /([A-D])[、，]?\s*只考虑/g,
   /([A-D])[、，]?\s*忽略/g,
   /([A-D])[、，]?\s*认为.*错/g,
+  /([A-D])\s+is\s+(?:incorrect|wrong)/gi,
+  /option\s+([A-D])\s+is\s+(?:incorrect|wrong)/gi,
 ]
 
 function extractDistractorLetters(explanation: string): Set<string> {
@@ -122,7 +124,7 @@ describe('quiz bank — semantic integrity (answer vs explanation)', () => {
     expect(failures, failures.join('\n')).toHaveLength(0)
   })
 
-  it('every MCQ explanation mentions the correct answer as correct (contains answer letter + "正确")', () => {
+  it('every MCQ explanation mentions the correct answer as correct', () => {
     const missing: string[] = []
     for (const q of questions) {
       if (q.type !== 'mcq') continue
@@ -131,7 +133,10 @@ describe('quiz bank — semantic integrity (answer vs explanation)', () => {
         q.explanation.includes(`${correctLetter}正确`) ||
         q.explanation.includes(`选${correctLetter}`) ||
         q.explanation.includes(`答案是${correctLetter}`) ||
-        q.explanation.includes(`答案为${correctLetter}`)
+        q.explanation.includes(`答案为${correctLetter}`) ||
+        q.explanation.toLowerCase().includes(`${correctLetter.toLowerCase()} is correct`) ||
+        q.explanation.toLowerCase().includes(`answer is ${correctLetter.toLowerCase()}`) ||
+        q.explanation.toLowerCase().includes(`correct answer is ${correctLetter.toLowerCase()}`)
       if (!confirmsCorrect) {
         missing.push(`${q.id} (answer=${correctLetter})`)
       }

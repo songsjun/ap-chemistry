@@ -8,17 +8,24 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "test": "vitest run"
+    "test": "vitest run",
+    "ai:check": "node scripts/check-ai-stack.mjs",
+    "ai:check:generate": "node scripts/check-ai-stack.mjs --generate",
+    "db:schema": "node scripts/apply-schema.mjs",
+    "student:create": "node scripts/create-student.mjs"
   },
   "dependencies": {
+    "@next/env": "16.2.6",
     "dexie": "^4.4.2",
     "next": "16.2.6",
+    "pg": "^8.21.0",
     "react": "19.2.4",
     "react-dom": "19.2.4"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
+    "@types/pg": "^8.20.0",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@vitejs/plugin-react": "^4.7.0",

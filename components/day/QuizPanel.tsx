@@ -60,6 +60,7 @@ export function QuizPanel({ userId, week, day, conceptIds, onComplete, onExit }:
   const [chatMessages, setChatMessages] = useState<ChatMessage[]>([])
   const [chatInput, setChatInput] = useState('')
   const [chatLoading, setChatLoading] = useState(false)
+  const [submitError, setSubmitError] = useState<string | null>(null)
 
   const mountedRef = useRef(true)
   const submittingRef = useRef(false)
@@ -99,6 +100,7 @@ export function QuizPanel({ userId, week, day, conceptIds, onComplete, onExit }:
     if (submittingRef.current) return
     submittingRef.current = true
     try {
+      setSubmitError(null)
       const q = questions[currentIdx]
       const userAnswer = q.type === 'mcq' ? (selectedOption ?? '') : answer.trim()
       if (!userAnswer) return
@@ -106,11 +108,8 @@ export function QuizPanel({ userId, week, day, conceptIds, onComplete, onExit }:
       let g: QuizGrade
 
       if (q.type === 'mcq' || q.type === 'fill') {
-        // Objective: grade instantly, show result immediately, save in background
         g = gradeLocal(q, userAnswer)
         if (!mountedRef.current) return
-        setGrade(g)
-        setPhase('result')
         if (userId) {
           // Capture a single timestamp so `id` and `answered_at` are always
           // consistent — two separate `new Date()` calls can diverge if a
@@ -129,16 +128,23 @@ export function QuizPanel({ userId, week, day, conceptIds, onComplete, onExit }:
             question_type: q.type,
             difficulty: q.difficulty,
           }
-          repo.saveQuizResult(result).catch(console.error)
+          try {
+            await repo.saveQuizResult(result)
+          } catch (error) {
+            console.error(error)
+            if (mountedRef.current) setSubmitError('Failed to save your answer. Check your login or network connection and try again.')
+            return
+          }
           setSessionResults(prev => [...prev, result])
         }
+        setGrade(g)
+        setPhase('result')
         return
       }
 
       // Subjective (short / feynman): show spinner and call AI.
       // Use an AbortController so the in-flight fetch is cancelled when the
-      // 15 s timeout fires or the component unmounts — without this the ghost
-      // fetch would continue in the background and consume a full API credit.
+      // 15 s timeout fires or the component unmounts.
       let gradingSucceeded = true
       setPhase('grading')
       const gradingAC = new AbortController()
@@ -150,12 +156,12 @@ export function QuizPanel({ userId, week, day, conceptIds, onComplete, onExit }:
         ),
       ]).catch((err: unknown) => {
         gradingSucceeded = false
-        const noApiKey = err instanceof Error && err.message === 'no-api-key'
+        const aiUnavailable = err instanceof Error && err.message.startsWith('ai-gateway')
         return {
           correct: false,
-          feedback: noApiKey
-            ? '此题需要 AI 批改。请前往「设置」页配置 Claude API Key 后重试。'
-            : q.explanation || '批改超时，请参考题目说明。',
+          feedback: aiUnavailable
+            ? 'This question requires AI grading. Make sure the local AI gateway and AP AI proxy are running, then try again.'
+            : q.explanation || 'Grading timed out. Refer to the question explanation.',
         }
       })
 
@@ -179,7 +185,16 @@ export function QuizPanel({ userId, week, day, conceptIds, onComplete, onExit }:
             question_type: q.type,
             difficulty: q.difficulty,
           }
-          await repo.saveQuizResult(result).catch(console.error)
+          try {
+            await repo.saveQuizResult(result)
+          } catch (error) {
+            console.error(error)
+            if (mountedRef.current) {
+              setSubmitError('Failed to save your answer. Check your login or network connection and try again.')
+              setPhase('question')
+            }
+            return
+          }
           setSessionResults(prev => [...prev, result])
         }
       }
@@ -241,10 +256,10 @@ export function QuizPanel({ userId, week, day, conceptIds, onComplete, onExit }:
       <div className="bg-white border border-stone-200 rounded-xl p-4 space-y-4">
         <div className="text-center space-y-1">
           <p className="text-lg">✦</p>
-          <p className="text-sm font-semibold text-stone-800">挑战完成！</p>
+          <p className="text-sm font-semibold text-stone-800">Challenge Complete</p>
           <p className="text-xs text-stone-500">
-            {correct} / {total} 正确
-            {feynmanResult && ' · 费曼反思已完成'}
+            {correct} / {total} correct
+            {feynmanResult && ' · Feynman reflection complete'}
           </p>
         </div>
         {/* Progress bar */}
@@ -260,7 +275,7 @@ export function QuizPanel({ userId, week, day, conceptIds, onComplete, onExit }:
           onClick={() => onComplete(sessionResults)}
           className="w-full py-2 text-sm text-stone-500 hover:text-stone-700 border border-stone-200 rounded-lg transition-colors"
         >
-          关闭
+          Close
         </button>
       </div>
     )
@@ -282,7 +297,7 @@ export function QuizPanel({ userId, week, day, conceptIds, onComplete, onExit }:
 
         {/* MCQ options */}
         {q.type === 'mcq' && q.options && (
-          <div role="radiogroup" aria-label="选择答案" className="space-y-2">
+          <div role="radiogroup" aria-label="Select an answer" className="space-y-2">
             {q.options.map((opt, i) => (
               <button
                 key={i}
@@ -308,7 +323,7 @@ export function QuizPanel({ userId, week, day, conceptIds, onComplete, onExit }:
             value={answer}
             onChange={e => setAnswer(e.target.value)}
             onKeyDown={e => { if (e.key === 'Enter' && hasAnswer) handleSubmit() }}
-            placeholder="输入答案…"
+            placeholder="Enter your answer..."
             className="border border-stone-200 rounded-lg p-2 w-full text-sm focus:outline-none focus:border-blue-400"
           />
         )}
@@ -318,10 +333,16 @@ export function QuizPanel({ userId, week, day, conceptIds, onComplete, onExit }:
           <textarea
             value={answer}
             onChange={e => setAnswer(e.target.value)}
-            placeholder={q.type === 'feynman' ? '用自己的话解释这个概念，就像在教一个完全不懂的人…' : '输入答案…'}
+            placeholder={q.type === 'feynman' ? 'Explain this concept in your own words, as if teaching someone new to it...' : 'Enter your answer...'}
             rows={q.type === 'feynman' ? 5 : 3}
             className="border border-stone-200 rounded-lg p-2 w-full text-sm focus:outline-none focus:border-blue-400 resize-none"
           />
+        )}
+
+        {submitError && (
+          <p className="text-xs text-red-600 bg-red-50 border border-red-100 rounded-lg px-3 py-2">
+            {submitError}
+          </p>
         )}
 
         <div className="flex items-center justify-between">
@@ -329,7 +350,7 @@ export function QuizPanel({ userId, week, day, conceptIds, onComplete, onExit }:
             onClick={onExit}
             className="text-xs text-stone-400 hover:text-stone-600 transition-colors"
           >
-            退出
+            Exit
           </button>
           <button
             onClick={handleSubmit}
@@ -340,7 +361,7 @@ export function QuizPanel({ userId, week, day, conceptIds, onComplete, onExit }:
                 : 'bg-stone-100 text-stone-300 cursor-not-allowed'
             }`}
           >
-            提交
+            Submit
           </button>
         </div>
       </div>
@@ -352,7 +373,7 @@ export function QuizPanel({ userId, week, day, conceptIds, onComplete, onExit }:
     return (
       <div className="bg-white border border-stone-200 rounded-xl p-4">
         <Spinner />
-        <p className="text-xs text-center text-stone-400">AI 正在批改…</p>
+        <p className="text-xs text-center text-stone-400">AI is grading...</p>
       </div>
     )
   }
@@ -368,26 +389,26 @@ export function QuizPanel({ userId, week, day, conceptIds, onComplete, onExit }:
         {/* Result badge */}
         {q.type === 'feynman' ? (
           <div className="inline-flex items-center gap-1.5 text-xs font-medium px-2.5 py-1 rounded-full bg-violet-50 text-violet-700">
-            费曼反思
+            Feynman Reflection
           </div>
         ) : (
           <div className={`inline-flex items-center gap-1.5 text-xs font-medium px-2.5 py-1 rounded-full ${
             grade.correct ? 'bg-emerald-100 text-emerald-700' : 'bg-red-50 text-red-600'
           }`}>
-            {grade.correct ? '✓ 正确' : '✕ 错误'}
+            {grade.correct ? '✓ Correct' : '✕ Incorrect'}
           </div>
         )}
 
         {/* Student answer */}
         <div>
-          <p className="text-xs text-stone-400">你的回答</p>
+          <p className="text-xs text-stone-400">Your Answer</p>
           <p className="text-sm text-stone-700 mt-0.5">{userAnswer}</p>
         </div>
 
         {/* Correct answer (if wrong) */}
         {!grade.correct && (
           <div>
-            <p className="text-xs text-stone-400">正确答案</p>
+            <p className="text-xs text-stone-400">Correct Answer</p>
             <p className="text-sm text-emerald-700 mt-0.5">{q.answer}</p>
           </div>
         )}
@@ -400,13 +421,13 @@ export function QuizPanel({ userId, week, day, conceptIds, onComplete, onExit }:
             onClick={() => setPhase('chat')}
             className="text-xs text-blue-500 hover:text-blue-700 transition-colors"
           >
-            继续追问 AI →
+            Ask AI a follow-up →
           </button>
           <button
             onClick={handleNext}
             className="text-sm bg-stone-800 text-white rounded-lg py-2 px-4 hover:bg-stone-700 transition-colors"
           >
-            {isLast ? '查看总结 →' : '下一题 →'}
+            {isLast ? 'View Summary →' : 'Next Question →'}
           </button>
         </div>
       </div>
@@ -422,13 +443,13 @@ export function QuizPanel({ userId, week, day, conceptIds, onComplete, onExit }:
           onClick={() => setPhase('result')}
           className="text-xs text-stone-400 hover:text-stone-600 transition-colors"
         >
-          ← 回到题目
+          ← Back to Question
         </button>
 
         {/* Message list */}
         <div className="max-h-64 overflow-y-auto space-y-2 py-1">
           {chatMessages.length === 0 && (
-            <p className="text-xs text-stone-400 text-center py-4">向 AI 提问关于这道题的任何问题</p>
+            <p className="text-xs text-stone-400 text-center py-4">Ask AI anything about this question.</p>
           )}
           {chatMessages.map((msg, i) => (
             <div
@@ -444,7 +465,7 @@ export function QuizPanel({ userId, week, day, conceptIds, onComplete, onExit }:
           ))}
           {chatLoading && (
             <div className="mr-auto bg-stone-50 text-stone-400 text-xs rounded-lg px-3 py-2 max-w-[85%] animate-pulse">
-              AI 正在思考…
+              AI is thinking...
             </div>
           )}
         </div>
@@ -456,7 +477,7 @@ export function QuizPanel({ userId, week, day, conceptIds, onComplete, onExit }:
             value={chatInput}
             onChange={e => setChatInput(e.target.value)}
             onKeyDown={e => { if (e.key === 'Enter' && !chatLoading) handleChat() }}
-            placeholder="提问…"
+            placeholder="Ask a question..."
             className="flex-1 border border-stone-200 rounded-lg px-3 py-2 text-xs focus:outline-none focus:border-blue-400"
           />
           <button
@@ -468,7 +489,7 @@ export function QuizPanel({ userId, week, day, conceptIds, onComplete, onExit }:
                 : 'bg-blue-600 text-white hover:bg-blue-700'
             }`}
           >
-            发送
+            Send
           </button>
         </div>
 
@@ -478,7 +499,7 @@ export function QuizPanel({ userId, week, day, conceptIds, onComplete, onExit }:
             onClick={handleNext}
             className="text-sm bg-stone-800 text-white rounded-lg py-2 px-4 hover:bg-stone-700 transition-colors"
           >
-            {isLast ? '查看总结 →' : '下一题 →'}
+            {isLast ? 'View Summary →' : 'Next Question →'}
           </button>
         </div>
       </div>

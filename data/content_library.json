@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "version": "1.0.0",
+    "version": "1.5.0",
     "subject": "AP Chemistry",
-    "description": "AP Chemistry content library — All 9 units complete"
+    "description": "AP Chemistry content library — Fall 2024 CED coverage with teaching, practice, and quiz links"
   },
   "concepts": [
     {
@@ -155,11 +155,11 @@
     },
     {
       "id": "unit2-chemical-bonds",
-      "name_zh": "化学键类型与分子内势能",
-      "name_en": "Types of Chemical Bonds and Intramolecular Force & Potential Energy",
+      "name_zh": "化学键类型",
+      "name_en": "Types of Chemical Bonds",
       "unit": 2,
       "ced_topic": "2.1",
-      "ced_topic_name": "Types of Chemical Bonds; Intramolecular Force and Potential Energy",
+      "ced_topic_name": "Types of Chemical Bonds",
       "week": 2,
       "day": 1,
       "prerequisites": [
@@ -174,12 +174,32 @@
       ]
     },
     {
+      "id": "unit2-intramolecular-force-potential-energy",
+      "name_zh": "分子内作用力与势能",
+      "name_en": "Intramolecular Force and Potential Energy",
+      "unit": 2,
+      "ced_topic": "2.2",
+      "ced_topic_name": "Intramolecular Force and Potential Energy",
+      "week": 2,
+      "day": 1,
+      "prerequisites": [
+        "unit2-chemical-bonds"
+      ],
+      "openstax_sections": [
+        "7.1",
+        "7.2"
+      ],
+      "alberta_tags": [
+        "chem20"
+      ]
+    },
+    {
       "id": "unit2-ionic-metallic-solids",
-      "name_zh": "离子固体结构与金属/合金",
-      "name_en": "Ionic Solids Structure; Metals and Alloys",
+      "name_zh": "离子固体结构",
+      "name_en": "Structure of Ionic Solids",
       "unit": 2,
       "ced_topic": "2.3",
-      "ced_topic_name": "Structure of Ionic Solids; Metallic Solids",
+      "ced_topic_name": "Structure of Ionic Solids",
       "week": 2,
       "day": 2,
       "prerequisites": [
@@ -188,6 +208,25 @@
       "openstax_sections": [
         "7.1",
         "10.5",
+        "10.6"
+      ],
+      "alberta_tags": [
+        "chem20"
+      ]
+    },
+    {
+      "id": "unit2-metals-alloys",
+      "name_zh": "金属与合金结构",
+      "name_en": "Structure of Metals and Alloys",
+      "unit": 2,
+      "ced_topic": "2.4",
+      "ced_topic_name": "Structure of Metals and Alloys",
+      "week": 2,
+      "day": 2,
+      "prerequisites": [
+        "unit2-ionic-metallic-solids"
+      ],
+      "openstax_sections": [
         "10.6"
       ],
       "alberta_tags": [
@@ -295,10 +334,10 @@
     {
       "id": "unit3-imf",
       "name_zh": "分子间作用力（伦敦分散力、偶极-偶极力、氢键）",
-      "name_en": "Intermolecular Forces: London Dispersion, Dipole-Dipole, and Hydrogen Bonding",
+      "name_en": "Intermolecular and Interparticle Forces",
       "unit": 3,
       "ced_topic": "3.1",
-      "ced_topic_name": "Intermolecular Forces",
+      "ced_topic_name": "Intermolecular and Interparticle Forces",
       "week": 3,
       "day": 1,
       "prerequisites": [
@@ -333,11 +372,32 @@
       ]
     },
     {
+      "id": "unit3-solids-liquids-gases",
+      "name_zh": "固体、液体与气体",
+      "name_en": "Solids, Liquids, and Gases",
+      "unit": 3,
+      "ced_topic": "3.3",
+      "ced_topic_name": "Solids, Liquids, and Gases",
+      "week": 3,
+      "day": 2,
+      "prerequisites": [
+        "unit3-solid-properties"
+      ],
+      "openstax_sections": [
+        "10.2",
+        "10.3",
+        "10.5"
+      ],
+      "alberta_tags": [
+        "chem20"
+      ]
+    },
+    {
       "id": "unit3-solubility",
       "name_zh": "溶解性与相似相溶原理",
       "name_en": "Solubility and Like Dissolves Like",
       "unit": 3,
-      "ced_topic": "3.3",
+      "ced_topic": "3.10",
       "ced_topic_name": "Solubility",
       "week": 3,
       "day": 3,
@@ -353,12 +413,32 @@
       ]
     },
     {
-      "id": "unit3-spectroscopy-photoelectric",
-      "name_zh": "光谱学与光电效应",
-      "name_en": "Spectroscopy and the Photoelectric Effect",
+      "id": "gas-ideal-gas-law",
+      "name_zh": "理想气体定律",
+      "name_en": "Ideal Gas Law",
       "unit": 3,
       "ced_topic": "3.4",
-      "ced_topic_name": "Spectroscopy and the Electromagnetic Spectrum; Photoelectric Effect",
+      "ced_topic_name": "Ideal Gas Law",
+      "week": 3,
+      "day": 4,
+      "prerequisites": [
+        "atomic-moles-molar-mass"
+      ],
+      "openstax_sections": [
+        "9.2",
+        "9.3"
+      ],
+      "alberta_tags": [
+        "chem20"
+      ]
+    },
+    {
+      "id": "unit3-spectroscopy-photoelectric",
+      "name_zh": "光谱学与电磁波谱",
+      "name_en": "Spectroscopy and the Electromagnetic Spectrum",
+      "unit": 3,
+      "ced_topic": "3.11",
+      "ced_topic_name": "Spectroscopy and the Electromagnetic Spectrum",
       "week": 3,
       "day": 4,
       "prerequisites": [
@@ -371,11 +451,67 @@
       "alberta_tags": []
     },
     {
+      "id": "unit3-properties-photons",
+      "name_zh": "光子的性质",
+      "name_en": "Properties of Photons",
+      "unit": 3,
+      "ced_topic": "3.12",
+      "ced_topic_name": "Properties of Photons",
+      "week": 3,
+      "day": 4,
+      "prerequisites": [
+        "unit3-spectroscopy-photoelectric"
+      ],
+      "openstax_sections": [
+        "6.1"
+      ],
+      "alberta_tags": []
+    },
+    {
+      "id": "gas-partial-pressure-kmt",
+      "name_zh": "气体动理论",
+      "name_en": "Kinetic Molecular Theory",
+      "unit": 3,
+      "ced_topic": "3.5",
+      "ced_topic_name": "Kinetic Molecular Theory",
+      "week": 3,
+      "day": 5,
+      "prerequisites": [
+        "gas-ideal-gas-law"
+      ],
+      "openstax_sections": [
+        "9.4",
+        "9.5"
+      ],
+      "alberta_tags": [
+        "chem20"
+      ]
+    },
+    {
+      "id": "gas-deviation-ideal-gas-law",
+      "name_zh": "理想气体定律偏差",
+      "name_en": "Deviation from Ideal Gas Law",
+      "unit": 3,
+      "ced_topic": "3.6",
+      "ced_topic_name": "Deviation from Ideal Gas Law",
+      "week": 3,
+      "day": 5,
+      "prerequisites": [
+        "gas-partial-pressure-kmt"
+      ],
+      "openstax_sections": [
+        "9.6"
+      ],
+      "alberta_tags": [
+        "chem20"
+      ]
+    },
+    {
       "id": "unit3-beer-lambert",
       "name_zh": "比尔-朗伯定律",
       "name_en": "Beer-Lambert Law",
       "unit": 3,
-      "ced_topic": "3.6",
+      "ced_topic": "3.13",
       "ced_topic_name": "Beer-Lambert Law",
       "week": 3,
       "day": 5,
@@ -409,6 +545,43 @@
       ]
     },
     {
+      "id": "unit3-representations-solutions",
+      "name_zh": "溶液的表示方法",
+      "name_en": "Representations of Solutions",
+      "unit": 3,
+      "ced_topic": "3.8",
+      "ced_topic_name": "Representations of Solutions",
+      "week": 3,
+      "day": 6,
+      "prerequisites": [
+        "unit3-solutions-mixtures"
+      ],
+      "openstax_sections": [
+        "11.1",
+        "11.2"
+      ],
+      "alberta_tags": [
+        "chem20"
+      ]
+    },
+    {
+      "id": "unit3-separation-solutions-mixtures",
+      "name_zh": "溶液与混合物分离",
+      "name_en": "Separation of Solutions and Mixtures",
+      "unit": 3,
+      "ced_topic": "3.9",
+      "ced_topic_name": "Separation of Solutions and Mixtures",
+      "week": 3,
+      "day": 6,
+      "prerequisites": [
+        "unit3-representations-solutions"
+      ],
+      "openstax_sections": [],
+      "alberta_tags": [
+        "chem20"
+      ]
+    },
+    {
       "id": "unit3-imf-applications",
       "name_zh": "分子间作用力综合应用（Week 3 复习）",
       "name_en": "IMF Applications and Unit 3 Integration Review",
@@ -430,12 +603,29 @@
       ]
     },
     {
-      "id": "unit4-net-ionic-equations",
-      "name_zh": "反应简介、净离子方程与反应表示",
-      "name_en": "Intro to Reactions, Net Ionic Equations, and Representations",
+      "id": "unit4-intro-reactions",
+      "name_zh": "反应简介",
+      "name_en": "Introduction for Reactions",
       "unit": 4,
       "ced_topic": "4.1",
-      "ced_topic_name": "Introduction to Reactions, Net Ionic Equations, and Representations (4.1–4.3)",
+      "ced_topic_name": "Introduction for Reactions",
+      "week": 4,
+      "day": 1,
+      "prerequisites": [],
+      "openstax_sections": [
+        "4.1"
+      ],
+      "alberta_tags": [
+        "chem20"
+      ]
+    },
+    {
+      "id": "unit4-net-ionic-equations",
+      "name_zh": "净离子方程",
+      "name_en": "Net Ionic Equations",
+      "unit": 4,
+      "ced_topic": "4.2",
+      "ced_topic_name": "Net Ionic Equations",
       "week": 4,
       "day": 1,
       "prerequisites": [],
@@ -449,9 +639,48 @@
       ]
     },
     {
+      "id": "unit4-representations-reactions",
+      "name_zh": "反应表示方法",
+      "name_en": "Representations of Reactions",
+      "unit": 4,
+      "ced_topic": "4.3",
+      "ced_topic_name": "Representations of Reactions",
+      "week": 4,
+      "day": 1,
+      "prerequisites": [
+        "unit4-intro-reactions"
+      ],
+      "openstax_sections": [
+        "4.1"
+      ],
+      "alberta_tags": [
+        "chem20"
+      ]
+    },
+    {
+      "id": "unit4-physical-chemical-changes",
+      "name_zh": "物理变化与化学变化",
+      "name_en": "Physical and Chemical Changes",
+      "unit": 4,
+      "ced_topic": "4.4",
+      "ced_topic_name": "Physical and Chemical Changes",
+      "week": 4,
+      "day": 2,
+      "prerequisites": [
+        "unit4-representations-reactions"
+      ],
+      "openstax_sections": [
+        "1.3",
+        "4.1"
+      ],
+      "alberta_tags": [
+        "chem20"
+      ]
+    },
+    {
       "id": "unit4-stoichiometry",
-      "name_zh": "物理/化学变化与化学计量",
-      "name_en": "Physical/Chemical Changes and Stoichiometry",
+      "name_zh": "化学计量",
+      "name_en": "Stoichiometry",
       "unit": 4,
       "ced_topic": "4.5",
       "ced_topic_name": "Stoichiometry",
@@ -471,11 +700,11 @@
     },
     {
       "id": "unit4-limiting-reagent-titration",
-      "name_zh": "限量试剂与滴定简介",
-      "name_en": "Limiting Reagent and Introduction to Titration",
+      "name_zh": "限量试剂与产率",
+      "name_en": "Limiting Reagent and Percent Yield",
       "unit": 4,
       "ced_topic": "4.5",
-      "ced_topic_name": "Stoichiometry — Limiting Reagent; Titration",
+      "ced_topic_name": "Stoichiometry",
       "week": 4,
       "day": 3,
       "prerequisites": [
@@ -484,6 +713,25 @@
       "openstax_sections": [
         "4.2",
         "4.4"
+      ],
+      "alberta_tags": [
+        "chem20"
+      ]
+    },
+    {
+      "id": "unit4-intro-titration",
+      "name_zh": "滴定简介",
+      "name_en": "Introduction to Titration",
+      "unit": 4,
+      "ced_topic": "4.6",
+      "ced_topic_name": "Introduction to Titration",
+      "week": 4,
+      "day": 3,
+      "prerequisites": [
+        "unit4-stoichiometry"
+      ],
+      "openstax_sections": [
+        "4.5"
       ],
       "alberta_tags": [
         "chem20"
@@ -543,7 +791,7 @@
         "unit4-acid-base-intro"
       ],
       "openstax_sections": [
-        "4.4"
+        "4.2"
       ],
       "alberta_tags": [
         "chem30"
@@ -551,18 +799,18 @@
     },
     {
       "id": "unit4-oxidation-states",
-      "name_zh": "氧化态",
-      "name_en": "Oxidation States",
+      "name_zh": "氧化态与氧化还原反应",
+      "name_en": "Oxidation States in Redox Reactions",
       "unit": 4,
-      "ced_topic": "4.10",
-      "ced_topic_name": "Oxidation States",
+      "ced_topic": "4.9",
+      "ced_topic_name": "Oxidation-Reduction (Redox) Reactions",
       "week": 4,
       "day": 7,
       "prerequisites": [
         "unit4-redox-reactions"
       ],
       "openstax_sections": [
-        "4.4"
+        "4.2"
       ],
       "alberta_tags": [
         "chem30"
@@ -570,11 +818,11 @@
     },
     {
       "id": "unit5-reaction-rates-rate-law",
-      "name_zh": "反应速率与速率定律简介",
-      "name_en": "Reaction Rates and Introduction to Rate Law",
+      "name_zh": "反应速率",
+      "name_en": "Reaction Rates",
       "unit": 5,
       "ced_topic": "5.1",
-      "ced_topic_name": "Rates of Reactions; Introduction to Rate Law",
+      "ced_topic_name": "Reaction Rates",
       "week": 5,
       "day": 1,
       "prerequisites": [
@@ -583,6 +831,25 @@
       "openstax_sections": [
         "12.1",
         "12.2"
+      ],
+      "alberta_tags": [
+        "chem30"
+      ]
+    },
+    {
+      "id": "unit5-intro-rate-law",
+      "name_zh": "速率定律简介",
+      "name_en": "Introduction to Rate Law",
+      "unit": 5,
+      "ced_topic": "5.2",
+      "ced_topic_name": "Introduction to Rate Law",
+      "week": 5,
+      "day": 1,
+      "prerequisites": [
+        "unit5-reaction-rates-rate-law"
+      ],
+      "openstax_sections": [
+        "12.3"
       ],
       "alberta_tags": [
         "chem30"
@@ -609,11 +876,11 @@
     },
     {
       "id": "unit5-elementary-reactions-collision",
-      "name_zh": "基元反应与碰撞模型",
-      "name_en": "Elementary Reactions and Collision Model",
+      "name_zh": "基元反应",
+      "name_en": "Elementary Reactions",
       "unit": 5,
       "ced_topic": "5.4",
-      "ced_topic_name": "Elementary Reactions; Collision Model",
+      "ced_topic_name": "Elementary Reactions",
       "week": 5,
       "day": 3,
       "prerequisites": [
@@ -621,6 +888,25 @@
       ],
       "openstax_sections": [
         "12.4",
+        "12.5"
+      ],
+      "alberta_tags": [
+        "chem30"
+      ]
+    },
+    {
+      "id": "unit5-collision-model",
+      "name_zh": "碰撞模型",
+      "name_en": "Collision Model",
+      "unit": 5,
+      "ced_topic": "5.5",
+      "ced_topic_name": "Collision Model",
+      "week": 5,
+      "day": 3,
+      "prerequisites": [
+        "unit5-elementary-reactions-collision"
+      ],
+      "openstax_sections": [
         "12.5"
       ],
       "alberta_tags": [
@@ -648,11 +934,11 @@
     },
     {
       "id": "unit5-reaction-mechanisms",
-      "name_zh": "反应机制与速率定律推导",
-      "name_en": "Reaction Mechanisms and Rate Law from Mechanism",
+      "name_zh": "反应机制",
+      "name_en": "Introduction to Reaction Mechanisms",
       "unit": 5,
       "ced_topic": "5.7",
-      "ced_topic_name": "Reaction Mechanisms; Rate Law from Mechanism",
+      "ced_topic_name": "Introduction to Reaction Mechanisms",
       "week": 5,
       "day": 5,
       "prerequisites": [
@@ -666,16 +952,54 @@
       ]
     },
     {
+      "id": "unit5-mechanism-rate-law",
+      "name_zh": "反应机制与速率定律",
+      "name_en": "Reaction Mechanism and Rate Law",
+      "unit": 5,
+      "ced_topic": "5.8",
+      "ced_topic_name": "Reaction Mechanism and Rate Law",
+      "week": 5,
+      "day": 5,
+      "prerequisites": [
+        "unit5-reaction-mechanisms"
+      ],
+      "openstax_sections": [
+        "12.6"
+      ],
+      "alberta_tags": [
+        "chem30"
+      ]
+    },
+    {
       "id": "unit5-steady-state-multistep",
-      "name_zh": "稳态近似与多步能量曲线",
-      "name_en": "Steady-State Approximation and Multistep Energy Profile",
+      "name_zh": "预平衡近似",
+      "name_en": "Pre-Equilibrium Approximation",
       "unit": 5,
       "ced_topic": "5.9",
-      "ced_topic_name": "Steady-State Approximation; Multistep Energy Profile",
+      "ced_topic_name": "Pre-Equilibrium Approximation",
       "week": 5,
       "day": 6,
       "prerequisites": [
         "unit5-reaction-mechanisms"
+      ],
+      "openstax_sections": [
+        "12.6"
+      ],
+      "alberta_tags": [
+        "chem30"
+      ]
+    },
+    {
+      "id": "unit5-multistep-energy-profile",
+      "name_zh": "多步反应能量曲线",
+      "name_en": "Multistep Reaction Energy Profile",
+      "unit": 5,
+      "ced_topic": "5.10",
+      "ced_topic_name": "Multistep Reaction Energy Profile",
+      "week": 5,
+      "day": 6,
+      "prerequisites": [
+        "unit5-steady-state-multistep"
       ],
       "openstax_sections": [
         "12.6"
@@ -705,11 +1029,11 @@
     },
     {
       "id": "unit6-endo-exo-energy-diagrams",
-      "name_zh": "吸热与放热过程 / 能量图",
-      "name_en": "Endothermic & Exothermic Processes and Energy Diagrams",
+      "name_zh": "吸热与放热过程",
+      "name_en": "Endothermic and Exothermic Processes",
       "unit": 6,
       "ced_topic": "6.1",
-      "ced_topic_name": "Endothermic and Exothermic Processes; Energy Diagrams",
+      "ced_topic_name": "Endothermic and Exothermic Processes",
       "week": 6,
       "day": 1,
       "prerequisites": [
@@ -724,12 +1048,31 @@
       ]
     },
     {
+      "id": "unit6-energy-diagrams",
+      "name_zh": "能量图",
+      "name_en": "Energy Diagrams",
+      "unit": 6,
+      "ced_topic": "6.2",
+      "ced_topic_name": "Energy Diagrams",
+      "week": 6,
+      "day": 1,
+      "prerequisites": [
+        "unit6-endo-exo-energy-diagrams"
+      ],
+      "openstax_sections": [
+        "5.1"
+      ],
+      "alberta_tags": [
+        "chem30"
+      ]
+    },
+    {
       "id": "unit6-heat-transfer-calorimetry",
-      "name_zh": "热传递、热平衡与量热法",
-      "name_en": "Heat Transfer, Thermal Equilibrium, and Calorimetry",
+      "name_zh": "热传递与热平衡",
+      "name_en": "Heat Transfer and Thermal Equilibrium",
       "unit": 6,
       "ced_topic": "6.3",
-      "ced_topic_name": "Heat Transfer, Thermal Equilibrium, and Calorimetry",
+      "ced_topic_name": "Heat Transfer and Thermal Equilibrium",
       "week": 6,
       "day": 2,
       "prerequisites": [
@@ -744,11 +1087,49 @@
       ]
     },
     {
+      "id": "unit6-heat-capacity-calorimetry",
+      "name_zh": "热容与量热法",
+      "name_en": "Heat Capacity and Calorimetry",
+      "unit": 6,
+      "ced_topic": "6.4",
+      "ced_topic_name": "Heat Capacity and Calorimetry",
+      "week": 6,
+      "day": 2,
+      "prerequisites": [
+        "unit6-heat-transfer-calorimetry"
+      ],
+      "openstax_sections": [
+        "5.2"
+      ],
+      "alberta_tags": [
+        "chem30"
+      ]
+    },
+    {
+      "id": "unit6-energy-phase-changes",
+      "name_zh": "相变能量",
+      "name_en": "Energy of Phase Changes",
+      "unit": 6,
+      "ced_topic": "6.5",
+      "ced_topic_name": "Energy of Phase Changes",
+      "week": 6,
+      "day": 3,
+      "prerequisites": [
+        "unit6-heat-capacity-calorimetry"
+      ],
+      "openstax_sections": [
+        "10.3"
+      ],
+      "alberta_tags": [
+        "chem30"
+      ]
+    },
+    {
       "id": "unit6-hess-law",
       "name_zh": "赫斯定律",
       "name_en": "Hess's Law",
       "unit": 6,
-      "ced_topic": "6.5",
+      "ced_topic": "6.9",
       "ced_topic_name": "Hess's Law",
       "week": 6,
       "day": 3,
@@ -763,11 +1144,30 @@
       ]
     },
     {
+      "id": "unit6-intro-enthalpy-reaction",
+      "name_zh": "反应焓简介",
+      "name_en": "Introduction to Enthalpy of Reaction",
+      "unit": 6,
+      "ced_topic": "6.6",
+      "ced_topic_name": "Introduction to Enthalpy of Reaction",
+      "week": 6,
+      "day": 4,
+      "prerequisites": [
+        "unit6-energy-phase-changes"
+      ],
+      "openstax_sections": [
+        "5.3"
+      ],
+      "alberta_tags": [
+        "chem30"
+      ]
+    },
+    {
       "id": "unit6-bond-enthalpies",
       "name_zh": "键焓",
       "name_en": "Bond Enthalpies",
       "unit": 6,
-      "ced_topic": "6.6",
+      "ced_topic": "6.7",
       "ced_topic_name": "Bond Enthalpies",
       "week": 6,
       "day": 4,
@@ -786,7 +1186,7 @@
       "name_zh": "生成焓",
       "name_en": "Enthalpy of Formation",
       "unit": 6,
-      "ced_topic": "6.7",
+      "ced_topic": "6.8",
       "ced_topic_name": "Enthalpy of Formation",
       "week": 6,
       "day": 5,
@@ -801,47 +1201,12 @@
       ]
     },
     {
-      "id": "unit6-entropy",
-      "name_zh": "熵",
-      "name_en": "Entropy",
-      "unit": 6,
-      "ced_topic": "6.8",
-      "ced_topic_name": "Entropy",
-      "week": 6,
-      "day": 6,
-      "prerequisites": [
-        "unit6-enthalpy-formation"
-      ],
-      "openstax_sections": [
-        "16.2"
-      ],
-      "alberta_tags": []
-    },
-    {
-      "id": "unit6-gibbs-free-energy",
-      "name_zh": "吉布斯自由能与热力学控制",
-      "name_en": "Gibbs Free Energy and Thermodynamic vs. Kinetic Control",
-      "unit": 6,
-      "ced_topic": "6.9",
-      "ced_topic_name": "Gibbs Free Energy; Thermodynamic and Kinetic Control",
-      "week": 6,
-      "day": 7,
-      "prerequisites": [
-        "unit6-entropy"
-      ],
-      "openstax_sections": [
-        "16.3",
-        "16.4"
-      ],
-      "alberta_tags": []
-    },
-    {
       "id": "unit7-intro-equilibrium",
-      "name_zh": "平衡简介与可逆反应方向",
-      "name_en": "Introduction to Equilibrium and Direction of Reversible Reactions",
+      "name_zh": "平衡简介",
+      "name_en": "Introduction to Equilibrium",
       "unit": 7,
       "ced_topic": "7.1",
-      "ced_topic_name": "Introduction to Equilibrium; Direction of Reversible Reactions",
+      "ced_topic_name": "Introduction to Equilibrium",
       "week": 7,
       "day": 1,
       "prerequisites": [
@@ -850,6 +1215,25 @@
       "openstax_sections": [
         "13.1",
         "13.2"
+      ],
+      "alberta_tags": [
+        "chem30"
+      ]
+    },
+    {
+      "id": "unit7-reversible-reactions-direction",
+      "name_zh": "可逆反应方向",
+      "name_en": "Direction of Reversible Reactions",
+      "unit": 7,
+      "ced_topic": "7.2",
+      "ced_topic_name": "Direction of Reversible Reactions",
+      "week": 7,
+      "day": 1,
+      "prerequisites": [
+        "unit7-intro-equilibrium"
+      ],
+      "openstax_sections": [
+        "13.1"
       ],
       "alberta_tags": [
         "chem30"
@@ -876,12 +1260,31 @@
       ]
     },
     {
+      "id": "unit7-calculating-keq",
+      "name_zh": "计算平衡常数",
+      "name_en": "Calculating the Equilibrium Constant",
+      "unit": 7,
+      "ced_topic": "7.4",
+      "ced_topic_name": "Calculating the Equilibrium Constant",
+      "week": 7,
+      "day": 2,
+      "prerequisites": [
+        "unit7-reaction-quotient-keq"
+      ],
+      "openstax_sections": [
+        "13.2"
+      ],
+      "alberta_tags": [
+        "chem30"
+      ]
+    },
+    {
       "id": "unit7-magnitude-properties-keq",
-      "name_zh": "平衡常数的大小与性质及计算平衡浓度",
-      "name_en": "Magnitude and Properties of Keq; Calculating Equilibrium Concentrations",
+      "name_zh": "平衡常数的大小",
+      "name_en": "Magnitude of the Equilibrium Constant",
       "unit": 7,
       "ced_topic": "7.5",
-      "ced_topic_name": "Magnitude, Properties, and Calculation of Keq",
+      "ced_topic_name": "Magnitude of the Equilibrium Constant",
       "week": 7,
       "day": 3,
       "prerequisites": [
@@ -889,6 +1292,44 @@
       ],
       "openstax_sections": [
         "13.3",
+        "13.4"
+      ],
+      "alberta_tags": [
+        "chem30"
+      ]
+    },
+    {
+      "id": "unit7-properties-keq",
+      "name_zh": "平衡常数的性质",
+      "name_en": "Properties of the Equilibrium Constant",
+      "unit": 7,
+      "ced_topic": "7.6",
+      "ced_topic_name": "Properties of the Equilibrium Constant",
+      "week": 7,
+      "day": 3,
+      "prerequisites": [
+        "unit7-magnitude-properties-keq"
+      ],
+      "openstax_sections": [
+        "13.2"
+      ],
+      "alberta_tags": [
+        "chem30"
+      ]
+    },
+    {
+      "id": "unit7-equilibrium-concentrations",
+      "name_zh": "计算平衡浓度",
+      "name_en": "Calculating Equilibrium Concentrations",
+      "unit": 7,
+      "ced_topic": "7.7",
+      "ced_topic_name": "Calculating Equilibrium Concentrations",
+      "week": 7,
+      "day": 3,
+      "prerequisites": [
+        "unit7-properties-keq"
+      ],
+      "openstax_sections": [
         "13.4"
       ],
       "alberta_tags": [
@@ -916,18 +1357,37 @@
     },
     {
       "id": "unit7-le-chatelier",
-      "name_zh": "勒夏特列原理",
-      "name_en": "Le Chatelier's Principle and Reaction Quotient",
+      "name_zh": "勒夏特列原理简介",
+      "name_en": "Introduction to Le Chatelier's Principle",
       "unit": 7,
       "ced_topic": "7.9",
-      "ced_topic_name": "Le Chatelier's Principle",
+      "ced_topic_name": "Introduction to Le Chatelier's Principle",
       "week": 7,
       "day": 5,
       "prerequisites": [
         "unit7-representations-equilibrium"
       ],
       "openstax_sections": [
-        "13.5"
+        "13.3"
+      ],
+      "alberta_tags": [
+        "chem30"
+      ]
+    },
+    {
+      "id": "unit7-reaction-quotient-le-chatelier",
+      "name_zh": "反应商与勒夏特列原理",
+      "name_en": "Reaction Quotient and Le Chatelier's Principle",
+      "unit": 7,
+      "ced_topic": "7.10",
+      "ced_topic_name": "Reaction Quotient and Le Chatelier's Principle",
+      "week": 7,
+      "day": 5,
+      "prerequisites": [
+        "unit7-le-chatelier"
+      ],
+      "openstax_sections": [
+        "13.3"
       ],
       "alberta_tags": [
         "chem30"
@@ -935,11 +1395,11 @@
     },
     {
       "id": "unit7-solubility-equilibria",
-      "name_zh": "溶解平衡与共同离子效应",
-      "name_en": "Solubility Equilibria and Common-Ion Effect",
+      "name_zh": "溶解平衡简介",
+      "name_en": "Introduction to Solubility Equilibria",
       "unit": 7,
       "ced_topic": "7.11",
-      "ced_topic_name": "Solubility Equilibria; Common-Ion Effect",
+      "ced_topic_name": "Introduction to Solubility Equilibria",
       "week": 7,
       "day": 6,
       "prerequisites": [
@@ -954,19 +1414,19 @@
       ]
     },
     {
-      "id": "unit7-ph-solubility",
-      "name_zh": "pH 与溶解度",
-      "name_en": "pH and Solubility",
+      "id": "unit7-common-ion-effect",
+      "name_zh": "共同离子效应",
+      "name_en": "Common-Ion Effect",
       "unit": 7,
-      "ced_topic": "7.13",
-      "ced_topic_name": "pH and Solubility",
+      "ced_topic": "7.12",
+      "ced_topic_name": "Common-Ion Effect",
       "week": 7,
-      "day": 7,
+      "day": 6,
       "prerequisites": [
         "unit7-solubility-equilibria"
       ],
       "openstax_sections": [
-        "15.3"
+        "15.1"
       ],
       "alberta_tags": [
         "chem30"
@@ -974,11 +1434,11 @@
     },
     {
       "id": "unit8-intro-acids-bases-ph",
-      "name_zh": "酸碱简介与 pH/pOH",
-      "name_en": "Introduction to Acids and Bases; pH and pOH",
+      "name_zh": "酸碱简介",
+      "name_en": "Introduction to Acids and Bases",
       "unit": 8,
       "ced_topic": "8.1",
-      "ced_topic_name": "Introduction to Acids and Bases; pH and pOH",
+      "ced_topic_name": "Introduction to Acids and Bases",
       "week": 8,
       "day": 1,
       "prerequisites": [
@@ -994,12 +1454,51 @@
       ]
     },
     {
-      "id": "unit8-acid-base-reactions",
-      "name_zh": "酸碱反应",
-      "name_en": "Acid-Base Reactions",
+      "id": "unit8-strong-acids-bases-ph-poh",
+      "name_zh": "强酸强碱的 pH 与 pOH",
+      "name_en": "pH and pOH of Strong Acids and Bases",
+      "unit": 8,
+      "ced_topic": "8.2",
+      "ced_topic_name": "pH and pOH of Strong Acids and Bases",
+      "week": 8,
+      "day": 1,
+      "prerequisites": [
+        "unit8-intro-acids-bases-ph"
+      ],
+      "openstax_sections": [
+        "14.2"
+      ],
+      "alberta_tags": [
+        "chem20",
+        "chem30"
+      ]
+    },
+    {
+      "id": "unit8-weak-acid-base-equilibria",
+      "name_zh": "弱酸弱碱平衡",
+      "name_en": "Weak Acid and Base Equilibria",
       "unit": 8,
       "ced_topic": "8.3",
-      "ced_topic_name": "Acid-Base Reactions",
+      "ced_topic_name": "Weak Acid and Base Equilibria",
+      "week": 8,
+      "day": 2,
+      "prerequisites": [
+        "unit8-strong-acids-bases-ph-poh"
+      ],
+      "openstax_sections": [
+        "14.3"
+      ],
+      "alberta_tags": [
+        "chem30"
+      ]
+    },
+    {
+      "id": "unit8-acid-base-reactions",
+      "name_zh": "酸碱反应与缓冲溶液",
+      "name_en": "Acid-Base Reactions and Buffers",
+      "unit": 8,
+      "ced_topic": "8.4",
+      "ced_topic_name": "Acid-Base Reactions and Buffers",
       "week": 8,
       "day": 2,
       "prerequisites": [
@@ -1015,11 +1514,11 @@
     },
     {
       "id": "unit8-buffers-henderson",
-      "name_zh": "缓冲溶液与 Henderson-Hasselbalch 方程",
-      "name_en": "Buffers, Henderson-Hasselbalch Equation, and Buffer Capacity",
+      "name_zh": "Henderson-Hasselbalch 方程",
+      "name_en": "Henderson-Hasselbalch Equation",
       "unit": 8,
-      "ced_topic": "8.4",
-      "ced_topic_name": "Buffers and Henderson-Hasselbalch",
+      "ced_topic": "8.9",
+      "ced_topic_name": "Henderson-Hasselbalch Equation",
       "week": 8,
       "day": 3,
       "prerequisites": [
@@ -1033,12 +1532,31 @@
       ]
     },
     {
-      "id": "unit8-buffers-advanced",
-      "name_zh": "缓冲溶液的性质与容量",
-      "name_en": "Buffer Properties and Buffer Capacity",
+      "id": "unit8-buffer-properties",
+      "name_zh": "缓冲溶液的性质",
+      "name_en": "Properties of Buffers",
       "unit": 8,
       "ced_topic": "8.8",
-      "ced_topic_name": "Properties of Buffers; Buffer Capacity",
+      "ced_topic_name": "Properties of Buffers",
+      "week": 8,
+      "day": 4,
+      "prerequisites": [
+        "unit8-acid-base-reactions"
+      ],
+      "openstax_sections": [
+        "14.6"
+      ],
+      "alberta_tags": [
+        "chem30"
+      ]
+    },
+    {
+      "id": "unit8-buffers-advanced",
+      "name_zh": "缓冲容量",
+      "name_en": "Buffer Capacity",
+      "unit": 8,
+      "ced_topic": "8.10",
+      "ced_topic_name": "Buffer Capacity",
       "week": 8,
       "day": 4,
       "prerequisites": [
@@ -1112,12 +1630,31 @@
       ]
     },
     {
+      "id": "unit7-ph-solubility",
+      "name_zh": "pH 与溶解度",
+      "name_en": "pH and Solubility",
+      "unit": 8,
+      "ced_topic": "8.11",
+      "ced_topic_name": "pH and Solubility",
+      "week": 8,
+      "day": 7,
+      "prerequisites": [
+        "unit8-buffer-capacity"
+      ],
+      "openstax_sections": [
+        "15.3"
+      ],
+      "alberta_tags": [
+        "chem30"
+      ]
+    },
+    {
       "id": "unit9-entropy-absolute",
-      "name_zh": "熵的简介与绝对熵",
-      "name_en": "Introduction to Entropy and Absolute Entropy",
+      "name_zh": "熵简介",
+      "name_en": "Introduction to Entropy",
       "unit": 9,
       "ced_topic": "9.1",
-      "ced_topic_name": "Introduction to Entropy; Absolute Entropy and Entropy Change",
+      "ced_topic_name": "Introduction to Entropy",
       "week": 9,
       "day": 1,
       "prerequisites": [
@@ -1130,16 +1667,51 @@
       "alberta_tags": []
     },
     {
+      "id": "unit6-entropy",
+      "name_zh": "绝对熵与熵变",
+      "name_en": "Absolute Entropy and Entropy Change",
+      "unit": 9,
+      "ced_topic": "9.2",
+      "ced_topic_name": "Absolute Entropy and Entropy Change",
+      "week": 9,
+      "day": 1,
+      "prerequisites": [
+        "unit9-entropy-absolute"
+      ],
+      "openstax_sections": [
+        "16.2"
+      ],
+      "alberta_tags": []
+    },
+    {
       "id": "unit9-gibbs-thermodynamic-kinetic",
-      "name_zh": "吉布斯自由能与热力学/动力学控制",
-      "name_en": "Gibbs Free Energy and Thermodynamic vs. Kinetic Control",
+      "name_zh": "吉布斯自由能与热力学有利性",
+      "name_en": "Gibbs Free Energy and Thermodynamic Favorability",
       "unit": 9,
       "ced_topic": "9.3",
-      "ced_topic_name": "Gibbs Free Energy; Thermodynamic and Kinetic Control",
+      "ced_topic_name": "Gibbs Free Energy and Thermodynamic Favorability",
       "week": 9,
       "day": 2,
       "prerequisites": [
         "unit9-entropy-absolute"
+      ],
+      "openstax_sections": [
+        "16.3",
+        "16.4"
+      ],
+      "alberta_tags": []
+    },
+    {
+      "id": "unit6-gibbs-free-energy",
+      "name_zh": "热力学控制与动力学控制",
+      "name_en": "Thermodynamic and Kinetic Control",
+      "unit": 9,
+      "ced_topic": "9.4",
+      "ced_topic_name": "Thermodynamic and Kinetic Control",
+      "week": 9,
+      "day": 2,
+      "prerequisites": [
+        "unit9-gibbs-thermodynamic-kinetic"
       ],
       "openstax_sections": [
         "16.3",
@@ -1165,11 +1737,29 @@
       "alberta_tags": []
     },
     {
+      "id": "unit9-free-energy-dissolution",
+      "name_zh": "溶解自由能",
+      "name_en": "Free Energy of Dissolution",
+      "unit": 9,
+      "ced_topic": "9.6",
+      "ced_topic_name": "Free Energy of Dissolution",
+      "week": 9,
+      "day": 4,
+      "prerequisites": [
+        "unit9-free-energy-equilibrium"
+      ],
+      "openstax_sections": [
+        "16.4",
+        "15.1"
+      ],
+      "alberta_tags": []
+    },
+    {
       "id": "unit9-coupled-reactions",
       "name_zh": "耦合反应",
       "name_en": "Coupled Reactions",
       "unit": 9,
-      "ced_topic": "9.6",
+      "ced_topic": "9.7",
       "ced_topic_name": "Coupled Reactions",
       "week": 9,
       "day": 4,
@@ -1183,11 +1773,11 @@
     },
     {
       "id": "unit9-galvanic-cells",
-      "name_zh": "伽伐尼电池（原电池）",
-      "name_en": "Galvanic (Voltaic) Cells",
+      "name_zh": "伽伐尼（原电池）与电解池",
+      "name_en": "Galvanic (Voltaic) and Electrolytic Cells",
       "unit": 9,
-      "ced_topic": "9.7",
-      "ced_topic_name": "Galvanic (Voltaic) Cells",
+      "ced_topic": "9.8",
+      "ced_topic_name": "Galvanic (Voltaic) and Electrolytic Cells",
       "week": 9,
       "day": 5,
       "prerequisites": [
@@ -1203,11 +1793,11 @@
     },
     {
       "id": "unit9-cell-potential",
-      "name_zh": "电池电位与标准电极电位",
-      "name_en": "Cell Potential and Standard Reduction Potentials",
+      "name_zh": "电池电位与自由能",
+      "name_en": "Cell Potential and Free Energy",
       "unit": 9,
-      "ced_topic": "9.7",
-      "ced_topic_name": "Galvanic (Voltaic) Cells — Cell Potential",
+      "ced_topic": "9.9",
+      "ced_topic_name": "Cell Potential and Free Energy",
       "week": 9,
       "day": 6,
       "prerequisites": [
@@ -1222,11 +1812,30 @@
       ]
     },
     {
+      "id": "unit9-cell-potential-nonstandard",
+      "name_zh": "非标准条件下的电池电位",
+      "name_en": "Cell Potential Under Nonstandard Conditions",
+      "unit": 9,
+      "ced_topic": "9.10",
+      "ced_topic_name": "Cell Potential Under Nonstandard Conditions",
+      "week": 9,
+      "day": 6,
+      "prerequisites": [
+        "unit9-cell-potential"
+      ],
+      "openstax_sections": [
+        "17.4"
+      ],
+      "alberta_tags": [
+        "chem30"
+      ]
+    },
+    {
       "id": "unit9-electrolysis-faraday",
       "name_zh": "电解与法拉第定律",
       "name_en": "Electrolysis and Faraday's Law",
       "unit": 9,
-      "ced_topic": "9.8",
+      "ced_topic": "9.11",
       "ced_topic_name": "Electrolysis and Faraday's Law",
       "week": 9,
       "day": 7,
@@ -1238,46 +1847,6 @@
       ],
       "alberta_tags": [
         "chem30"
-      ]
-    },
-    {
-      "id": "gas-ideal-gas-law",
-      "name_zh": "理想气体定律",
-      "name_en": "Ideal Gas Law",
-      "unit": 3,
-      "ced_topic": "3.4a",
-      "ced_topic_name": "Ideal Gas Law (PV = nRT)",
-      "week": 3,
-      "day": 4,
-      "prerequisites": [
-        "atomic-moles-molar-mass"
-      ],
-      "openstax_sections": [
-        "9.2",
-        "9.3"
-      ],
-      "alberta_tags": [
-        "chem20"
-      ]
-    },
-    {
-      "id": "gas-partial-pressure-kmt",
-      "name_zh": "分压与气体动理论",
-      "name_en": "Partial Pressure and Kinetic Molecular Theory",
-      "unit": 3,
-      "ced_topic": "3.4b",
-      "ced_topic_name": "Partial Pressure; Kinetic Molecular Theory",
-      "week": 3,
-      "day": 5,
-      "prerequisites": [
-        "gas-ideal-gas-law"
-      ],
-      "openstax_sections": [
-        "9.4",
-        "9.5"
-      ],
-      "alberta_tags": [
-        "chem20"
       ]
     }
   ],
@@ -1885,7 +2454,8 @@
       "estimated_minutes": 11,
       "slot_order": 2,
       "concepts": [
-        "unit2-chemical-bonds"
+        "unit2-chemical-bonds",
+        "unit2-intramolecular-force-potential-energy"
       ],
       "week": 2,
       "day": 1
@@ -1901,7 +2471,8 @@
       "estimated_minutes": 15,
       "slot_order": 3,
       "concepts": [
-        "unit2-chemical-bonds"
+        "unit2-chemical-bonds",
+        "unit2-intramolecular-force-potential-energy"
       ],
       "week": 2,
       "day": 1
@@ -1917,7 +2488,8 @@
       "estimated_minutes": 20,
       "slot_order": 1,
       "concepts": [
-        "unit2-chemical-bonds"
+        "unit2-chemical-bonds",
+        "unit2-intramolecular-force-potential-energy"
       ],
       "week": 2,
       "day": 1
@@ -1933,7 +2505,8 @@
       "estimated_minutes": 25,
       "slot_order": 1,
       "concepts": [
-        "unit2-chemical-bonds"
+        "unit2-chemical-bonds",
+        "unit2-intramolecular-force-potential-energy"
       ],
       "week": 2,
       "day": 1
@@ -1965,7 +2538,8 @@
       "estimated_minutes": 10,
       "slot_order": 2,
       "concepts": [
-        "unit2-ionic-metallic-solids"
+        "unit2-ionic-metallic-solids",
+        "unit2-metals-alloys"
       ],
       "week": 2,
       "day": 2
@@ -1997,7 +2571,8 @@
       "estimated_minutes": 20,
       "slot_order": 1,
       "concepts": [
-        "unit2-ionic-metallic-solids"
+        "unit2-ionic-metallic-solids",
+        "unit2-metals-alloys"
       ],
       "week": 2,
       "day": 2
@@ -2013,7 +2588,8 @@
       "estimated_minutes": 25,
       "slot_order": 1,
       "concepts": [
-        "unit2-ionic-metallic-solids"
+        "unit2-ionic-metallic-solids",
+        "unit2-metals-alloys"
       ],
       "week": 2,
       "day": 2
@@ -2541,7 +3117,8 @@
       "estimated_minutes": 20,
       "slot_order": 3,
       "concepts": [
-        "unit3-solid-properties"
+        "unit3-solid-properties",
+        "unit3-solids-liquids-gases"
       ],
       "week": 3,
       "day": 2
@@ -2557,7 +3134,8 @@
       "estimated_minutes": 20,
       "slot_order": 1,
       "concepts": [
-        "unit3-solid-properties"
+        "unit3-solid-properties",
+        "unit3-solids-liquids-gases"
       ],
       "week": 3,
       "day": 2
@@ -2573,7 +3151,8 @@
       "estimated_minutes": 25,
       "slot_order": 1,
       "concepts": [
-        "unit3-solid-properties"
+        "unit3-solid-properties",
+        "unit3-solids-liquids-gases"
       ],
       "week": 3,
       "day": 2
@@ -2669,7 +3248,8 @@
       "estimated_minutes": 11,
       "slot_order": 1,
       "concepts": [
-        "unit3-spectroscopy-photoelectric"
+        "unit3-spectroscopy-photoelectric",
+        "unit3-properties-photons"
       ],
       "week": 3,
       "day": 4
@@ -2685,7 +3265,8 @@
       "estimated_minutes": 12,
       "slot_order": 2,
       "concepts": [
-        "unit3-spectroscopy-photoelectric"
+        "unit3-spectroscopy-photoelectric",
+        "unit3-properties-photons"
       ],
       "week": 3,
       "day": 4
@@ -2701,7 +3282,8 @@
       "estimated_minutes": 15,
       "slot_order": 3,
       "concepts": [
-        "unit3-spectroscopy-photoelectric"
+        "unit3-spectroscopy-photoelectric",
+        "unit3-properties-photons"
       ],
       "week": 3,
       "day": 4
@@ -2717,7 +3299,8 @@
       "estimated_minutes": 20,
       "slot_order": 1,
       "concepts": [
-        "unit3-spectroscopy-photoelectric"
+        "unit3-spectroscopy-photoelectric",
+        "unit3-properties-photons"
       ],
       "week": 3,
       "day": 4
@@ -2733,7 +3316,8 @@
       "estimated_minutes": 25,
       "slot_order": 1,
       "concepts": [
-        "unit3-spectroscopy-photoelectric"
+        "unit3-spectroscopy-photoelectric",
+        "unit3-properties-photons"
       ],
       "week": 3,
       "day": 4
@@ -2829,7 +3413,8 @@
       "estimated_minutes": 12,
       "slot_order": 1,
       "concepts": [
-        "unit3-solutions-mixtures"
+        "unit3-solutions-mixtures",
+        "unit3-representations-solutions"
       ],
       "week": 3,
       "day": 6
@@ -2861,7 +3446,8 @@
       "estimated_minutes": 15,
       "slot_order": 3,
       "concepts": [
-        "unit3-solutions-mixtures"
+        "unit3-solutions-mixtures",
+        "unit3-representations-solutions"
       ],
       "week": 3,
       "day": 6
@@ -2877,7 +3463,8 @@
       "estimated_minutes": 20,
       "slot_order": 1,
       "concepts": [
-        "unit3-solutions-mixtures"
+        "unit3-solutions-mixtures",
+        "unit3-representations-solutions"
       ],
       "week": 3,
       "day": 6
@@ -2893,7 +3480,8 @@
       "estimated_minutes": 25,
       "slot_order": 1,
       "concepts": [
-        "unit3-solutions-mixtures"
+        "unit3-solutions-mixtures",
+        "unit3-representations-solutions"
       ],
       "week": 3,
       "day": 6
@@ -2987,7 +3575,8 @@
       "tier": "A",
       "estimated_minutes": 12,
       "concepts": [
-        "unit4-net-ionic-equations"
+        "unit4-net-ionic-equations",
+        "unit4-intro-reactions"
       ],
       "week": 4,
       "day": 1
@@ -3001,7 +3590,8 @@
       "tier": "A",
       "estimated_minutes": 14,
       "concepts": [
-        "unit4-net-ionic-equations"
+        "unit4-net-ionic-equations",
+        "unit4-representations-reactions"
       ],
       "week": 4,
       "day": 1
@@ -3029,7 +3619,8 @@
       "tier": "B",
       "estimated_minutes": 20,
       "concepts": [
-        "unit4-net-ionic-equations"
+        "unit4-net-ionic-equations",
+        "unit4-representations-reactions"
       ],
       "week": 4,
       "day": 1
@@ -3043,7 +3634,9 @@
       "tier": "A",
       "estimated_minutes": 20,
       "concepts": [
-        "unit4-net-ionic-equations"
+        "unit4-net-ionic-equations",
+        "unit4-intro-reactions",
+        "unit4-representations-reactions"
       ],
       "week": 4,
       "day": 1
@@ -3057,7 +3650,9 @@
       "tier": "C",
       "estimated_minutes": 25,
       "concepts": [
-        "unit4-net-ionic-equations"
+        "unit4-net-ionic-equations",
+        "unit4-intro-reactions",
+        "unit4-representations-reactions"
       ],
       "week": 4,
       "day": 1
@@ -3386,8 +3981,8 @@
     },
     {
       "id": "chem-w4-openstax-redox",
-      "title": "OpenStax Chemistry 2e: 4.4 Oxidation-Reduction Reactions",
-      "url": "https://openstax.org/books/chemistry-2e/pages/4-4-oxidation-reduction-reactions",
+      "title": "OpenStax Chemistry 2e: 4.2 Classifying Chemical Reactions (Redox)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/4-2-classifying-chemical-reactions",
       "type": "reading",
       "platform": "openstax",
       "tier": "A",
@@ -3456,8 +4051,8 @@
     },
     {
       "id": "chem-w4-openstax-oxidation-states",
-      "title": "OpenStax Chemistry 2e: 4.4 Oxidation States",
-      "url": "https://openstax.org/books/chemistry-2e/pages/4-4-oxidation-reduction-reactions",
+      "title": "OpenStax Chemistry 2e: 4.2 Classifying Chemical Reactions (Oxidation States)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/4-2-classifying-chemical-reactions",
       "type": "reading",
       "platform": "openstax",
       "tier": "A",
@@ -3505,7 +4100,8 @@
       "tier": "B",
       "estimated_minutes": 13,
       "concepts": [
-        "unit5-reaction-rates-rate-law"
+        "unit5-reaction-rates-rate-law",
+        "unit5-intro-rate-law"
       ],
       "week": 5,
       "day": 1
@@ -3519,7 +4115,8 @@
       "tier": "B",
       "estimated_minutes": 15,
       "concepts": [
-        "unit5-reaction-rates-rate-law"
+        "unit5-reaction-rates-rate-law",
+        "unit5-intro-rate-law"
       ],
       "week": 5,
       "day": 1
@@ -3533,7 +4130,8 @@
       "tier": "B",
       "estimated_minutes": 20,
       "concepts": [
-        "unit5-reaction-rates-rate-law"
+        "unit5-reaction-rates-rate-law",
+        "unit5-intro-rate-law"
       ],
       "week": 5,
       "day": 1
@@ -3547,7 +4145,8 @@
       "tier": "C",
       "estimated_minutes": 25,
       "concepts": [
-        "unit5-reaction-rates-rate-law"
+        "unit5-reaction-rates-rate-law",
+        "unit5-intro-rate-law"
       ],
       "week": 5,
       "day": 1
@@ -3645,7 +4244,8 @@
       "tier": "B",
       "estimated_minutes": 12,
       "concepts": [
-        "unit5-elementary-reactions-collision"
+        "unit5-elementary-reactions-collision",
+        "unit5-collision-model"
       ],
       "week": 5,
       "day": 3
@@ -3659,7 +4259,8 @@
       "tier": "B",
       "estimated_minutes": 20,
       "concepts": [
-        "unit5-elementary-reactions-collision"
+        "unit5-elementary-reactions-collision",
+        "unit5-collision-model"
       ],
       "week": 5,
       "day": 3
@@ -3673,7 +4274,8 @@
       "tier": "B",
       "estimated_minutes": 20,
       "concepts": [
-        "unit5-elementary-reactions-collision"
+        "unit5-elementary-reactions-collision",
+        "unit5-collision-model"
       ],
       "week": 5,
       "day": 3
@@ -3687,7 +4289,8 @@
       "tier": "C",
       "estimated_minutes": 25,
       "concepts": [
-        "unit5-elementary-reactions-collision"
+        "unit5-elementary-reactions-collision",
+        "unit5-collision-model"
       ],
       "week": 5,
       "day": 3
@@ -3785,7 +4388,8 @@
       "tier": "B",
       "estimated_minutes": 14,
       "concepts": [
-        "unit5-reaction-mechanisms"
+        "unit5-reaction-mechanisms",
+        "unit5-mechanism-rate-law"
       ],
       "week": 5,
       "day": 5
@@ -3799,7 +4403,8 @@
       "tier": "C",
       "estimated_minutes": 15,
       "concepts": [
-        "unit5-reaction-mechanisms"
+        "unit5-reaction-mechanisms",
+        "unit5-mechanism-rate-law"
       ],
       "week": 5,
       "day": 5
@@ -3813,7 +4418,8 @@
       "tier": "B",
       "estimated_minutes": 20,
       "concepts": [
-        "unit5-reaction-mechanisms"
+        "unit5-reaction-mechanisms",
+        "unit5-mechanism-rate-law"
       ],
       "week": 5,
       "day": 5
@@ -3827,7 +4433,8 @@
       "tier": "C",
       "estimated_minutes": 25,
       "concepts": [
-        "unit5-reaction-mechanisms"
+        "unit5-reaction-mechanisms",
+        "unit5-mechanism-rate-law"
       ],
       "week": 5,
       "day": 5
@@ -3855,7 +4462,8 @@
       "tier": "B",
       "estimated_minutes": 11,
       "concepts": [
-        "unit5-steady-state-multistep"
+        "unit5-steady-state-multistep",
+        "unit5-multistep-energy-profile"
       ],
       "week": 5,
       "day": 6
@@ -3869,7 +4477,8 @@
       "tier": "C",
       "estimated_minutes": 15,
       "concepts": [
-        "unit5-steady-state-multistep"
+        "unit5-steady-state-multistep",
+        "unit5-multistep-energy-profile"
       ],
       "week": 5,
       "day": 6
@@ -3883,7 +4492,8 @@
       "tier": "B",
       "estimated_minutes": 20,
       "concepts": [
-        "unit5-steady-state-multistep"
+        "unit5-steady-state-multistep",
+        "unit5-multistep-energy-profile"
       ],
       "week": 5,
       "day": 6
@@ -3897,7 +4507,8 @@
       "tier": "C",
       "estimated_minutes": 25,
       "concepts": [
-        "unit5-steady-state-multistep"
+        "unit5-steady-state-multistep",
+        "unit5-multistep-energy-profile"
       ],
       "week": 5,
       "day": 6
@@ -3995,7 +4606,8 @@
       "tier": "A",
       "estimated_minutes": 10,
       "concepts": [
-        "unit6-endo-exo-energy-diagrams"
+        "unit6-endo-exo-energy-diagrams",
+        "unit6-energy-diagrams"
       ],
       "week": 6,
       "day": 1
@@ -4024,7 +4636,8 @@
       "tier": "C",
       "estimated_minutes": 15,
       "concepts": [
-        "unit6-endo-exo-energy-diagrams"
+        "unit6-endo-exo-energy-diagrams",
+        "unit6-energy-diagrams"
       ],
       "week": 6,
       "day": 1
@@ -4038,7 +4651,8 @@
       "tier": "A",
       "estimated_minutes": 20,
       "concepts": [
-        "unit6-endo-exo-energy-diagrams"
+        "unit6-endo-exo-energy-diagrams",
+        "unit6-energy-diagrams"
       ],
       "week": 6,
       "day": 1
@@ -4052,7 +4666,8 @@
       "tier": "C",
       "estimated_minutes": 25,
       "concepts": [
-        "unit6-endo-exo-energy-diagrams"
+        "unit6-endo-exo-energy-diagrams",
+        "unit6-energy-diagrams"
       ],
       "week": 6,
       "day": 1
@@ -4080,7 +4695,8 @@
       "tier": "A",
       "estimated_minutes": 11,
       "concepts": [
-        "unit6-heat-transfer-calorimetry"
+        "unit6-heat-transfer-calorimetry",
+        "unit6-heat-capacity-calorimetry"
       ],
       "week": 6,
       "day": 2
@@ -4094,7 +4710,8 @@
       "tier": "C",
       "estimated_minutes": 15,
       "concepts": [
-        "unit6-heat-transfer-calorimetry"
+        "unit6-heat-transfer-calorimetry",
+        "unit6-heat-capacity-calorimetry"
       ],
       "week": 6,
       "day": 2
@@ -4108,7 +4725,8 @@
       "tier": "A",
       "estimated_minutes": 20,
       "concepts": [
-        "unit6-heat-transfer-calorimetry"
+        "unit6-heat-transfer-calorimetry",
+        "unit6-heat-capacity-calorimetry"
       ],
       "week": 6,
       "day": 2
@@ -4122,7 +4740,8 @@
       "tier": "C",
       "estimated_minutes": 25,
       "concepts": [
-        "unit6-heat-transfer-calorimetry"
+        "unit6-heat-transfer-calorimetry",
+        "unit6-heat-capacity-calorimetry"
       ],
       "week": 6,
       "day": 2
@@ -4381,8 +5000,8 @@
     },
     {
       "id": "chem-w6-openstax-entropy",
-      "title": "OpenStax Chemistry 2e: 16.2 The Second and Third Laws of Thermodynamics",
-      "url": "https://openstax.org/books/chemistry-2e/pages/16-2-the-second-and-third-laws-of-thermodynamics",
+      "title": "OpenStax Chemistry 2e: 16.2 Entropy",
+      "url": "https://openstax.org/books/chemistry-2e/pages/16-2-entropy",
       "type": "reading",
       "platform": "openstax",
       "tier": "B",
@@ -4451,8 +5070,8 @@
     },
     {
       "id": "chem-w6-openstax-gibbs",
-      "title": "OpenStax Chemistry 2e: 16.3 Gibbs Energy",
-      "url": "https://openstax.org/books/chemistry-2e/pages/16-3-gibbs-energy",
+      "title": "OpenStax Chemistry 2e: 16.4 Free Energy",
+      "url": "https://openstax.org/books/chemistry-2e/pages/16-4-free-energy",
       "type": "reading",
       "platform": "openstax",
       "tier": "B",
@@ -4500,7 +5119,8 @@
       "tier": "A",
       "estimated_minutes": 10,
       "concepts": [
-        "unit7-intro-equilibrium"
+        "unit7-intro-equilibrium",
+        "unit7-reversible-reactions-direction"
       ],
       "week": 7,
       "day": 1
@@ -4515,7 +5135,8 @@
       "estimated_minutes": 20,
       "description": "通过调节温度和浓度，观察正逆反应速率如何趋于相等，理解动态平衡的建立过程。",
       "concepts": [
-        "unit7-intro-equilibrium"
+        "unit7-intro-equilibrium",
+        "unit7-reversible-reactions-direction"
       ],
       "week": 7,
       "day": 1
@@ -4529,7 +5150,8 @@
       "tier": "A",
       "estimated_minutes": 20,
       "concepts": [
-        "unit7-intro-equilibrium"
+        "unit7-intro-equilibrium",
+        "unit7-reversible-reactions-direction"
       ],
       "week": 7,
       "day": 1
@@ -4543,7 +5165,8 @@
       "tier": "C",
       "estimated_minutes": 25,
       "concepts": [
-        "unit7-intro-equilibrium"
+        "unit7-intro-equilibrium",
+        "unit7-reversible-reactions-direction"
       ],
       "week": 7,
       "day": 1
@@ -4571,7 +5194,8 @@
       "tier": "A",
       "estimated_minutes": 12,
       "concepts": [
-        "unit7-reaction-quotient-keq"
+        "unit7-reaction-quotient-keq",
+        "unit7-calculating-keq"
       ],
       "week": 7,
       "day": 2
@@ -4585,7 +5209,8 @@
       "tier": "C",
       "estimated_minutes": 15,
       "concepts": [
-        "unit7-reaction-quotient-keq"
+        "unit7-reaction-quotient-keq",
+        "unit7-calculating-keq"
       ],
       "week": 7,
       "day": 2
@@ -4599,7 +5224,9 @@
       "tier": "A",
       "estimated_minutes": 20,
       "concepts": [
-        "unit7-reaction-quotient-keq"
+        "unit7-reaction-quotient-keq",
+        "unit7-calculating-keq",
+        "unit7-properties-keq"
       ],
       "week": 7,
       "day": 2
@@ -4613,22 +5240,25 @@
       "tier": "C",
       "estimated_minutes": 25,
       "concepts": [
-        "unit7-reaction-quotient-keq"
+        "unit7-reaction-quotient-keq",
+        "unit7-calculating-keq",
+        "unit7-properties-keq"
       ],
       "week": 7,
       "day": 2
     },
     {
       "id": "chem-w7-phet-equilibrium-conc",
-      "title": "PhET: Chemical Equilibrium — Concentration",
-      "url": "https://phet.colorado.edu/en/simulations/equilibrium-concentration",
+      "title": "PhET: Reversible Reactions",
+      "url": "https://phet.colorado.edu/en/simulations/reversible-reactions",
       "type": "interactive",
       "platform": "phet",
       "tier": "A",
       "estimated_minutes": 20,
-      "description": "改变反应物或产物浓度，观察 Q 与 K 的比较如何决定反应方向，并记录达到新平衡时的浓度。",
+      "description": "观察可逆反应如何随时间接近平衡，并比较温度、能量障碍和初始组成对反应方向与平衡组成的影响。",
       "concepts": [
-        "unit7-magnitude-properties-keq"
+        "unit7-magnitude-properties-keq",
+        "unit7-equilibrium-concentrations"
       ],
       "week": 7,
       "day": 3
@@ -4642,7 +5272,8 @@
       "tier": "A",
       "estimated_minutes": 13,
       "concepts": [
-        "unit7-magnitude-properties-keq"
+        "unit7-magnitude-properties-keq",
+        "unit7-equilibrium-concentrations"
       ],
       "week": 7,
       "day": 3,
@@ -4657,7 +5288,8 @@
       "tier": "A",
       "estimated_minutes": 10,
       "concepts": [
-        "unit7-magnitude-properties-keq"
+        "unit7-magnitude-properties-keq",
+        "unit7-properties-keq"
       ],
       "week": 7,
       "day": 3
@@ -4671,7 +5303,8 @@
       "tier": "C",
       "estimated_minutes": 20,
       "concepts": [
-        "unit7-magnitude-properties-keq"
+        "unit7-magnitude-properties-keq",
+        "unit7-equilibrium-concentrations"
       ],
       "week": 7,
       "day": 3
@@ -4685,7 +5318,8 @@
       "tier": "A",
       "estimated_minutes": 25,
       "concepts": [
-        "unit7-magnitude-properties-keq"
+        "unit7-magnitude-properties-keq",
+        "unit7-equilibrium-concentrations"
       ],
       "week": 7,
       "day": 3
@@ -4699,7 +5333,8 @@
       "tier": "C",
       "estimated_minutes": 30,
       "concepts": [
-        "unit7-magnitude-properties-keq"
+        "unit7-magnitude-properties-keq",
+        "unit7-equilibrium-concentrations"
       ],
       "week": 7,
       "day": 3
@@ -4734,8 +5369,8 @@
     },
     {
       "id": "chem-w7-openstax-repr",
-      "title": "OpenStax Chemistry 2e: 13.3 Shifting Equilibria — Le Chatelier's Principle",
-      "url": "https://openstax.org/books/chemistry-2e/pages/13-3-shifting-equilibria-le-chatelier-s-principle",
+      "title": "OpenStax Chemistry 2e: 13.2 Equilibrium Constants",
+      "url": "https://openstax.org/books/chemistry-2e/pages/13-2-equilibrium-constants",
       "type": "reading",
       "platform": "openstax",
       "tier": "A",
@@ -4745,7 +5380,7 @@
       ],
       "week": 7,
       "day": 4,
-      "description": "How concentration, pressure, and temperature changes shift equilibrium according to Le Chatelier's principle."
+      "description": "Equilibrium constant expressions and reaction quotients as symbolic representations of equilibrium composition."
     },
     {
       "id": "chem-w7-openstax-repr-ex",
@@ -4785,7 +5420,8 @@
       "tier": "A",
       "estimated_minutes": 12,
       "concepts": [
-        "unit7-le-chatelier"
+        "unit7-le-chatelier",
+        "unit7-reaction-quotient-le-chatelier"
       ],
       "week": 7,
       "day": 5
@@ -4799,7 +5435,8 @@
       "tier": "A",
       "estimated_minutes": 11,
       "concepts": [
-        "unit7-le-chatelier"
+        "unit7-le-chatelier",
+        "unit7-reaction-quotient-le-chatelier"
       ],
       "week": 7,
       "day": 5
@@ -4813,21 +5450,23 @@
       "tier": "C",
       "estimated_minutes": 15,
       "concepts": [
-        "unit7-le-chatelier"
+        "unit7-le-chatelier",
+        "unit7-reaction-quotient-le-chatelier"
       ],
       "week": 7,
       "day": 5
     },
     {
       "id": "chem-w7-openstax-le-chatelier",
-      "title": "OpenStax Chemistry 2e: 13.5 Shifting Equilibria — Le Chatelier's Principle",
-      "url": "https://openstax.org/books/chemistry-2e/pages/13-5-shifting-equilibria-le-chateliers-principle",
+      "title": "OpenStax Chemistry 2e: 13.3 Shifting Equilibria — Le Chatelier's Principle",
+      "url": "https://openstax.org/books/chemistry-2e/pages/13-3-shifting-equilibria-le-chateliers-principle",
       "type": "reading",
       "platform": "openstax",
       "tier": "A",
       "estimated_minutes": 20,
       "concepts": [
-        "unit7-le-chatelier"
+        "unit7-le-chatelier",
+        "unit7-reaction-quotient-le-chatelier"
       ],
       "week": 7,
       "day": 5
@@ -4841,7 +5480,8 @@
       "tier": "C",
       "estimated_minutes": 25,
       "concepts": [
-        "unit7-le-chatelier"
+        "unit7-le-chatelier",
+        "unit7-reaction-quotient-le-chatelier"
       ],
       "week": 7,
       "day": 5
@@ -4869,7 +5509,8 @@
       "tier": "A",
       "estimated_minutes": 11,
       "concepts": [
-        "unit7-solubility-equilibria"
+        "unit7-solubility-equilibria",
+        "unit7-common-ion-effect"
       ],
       "week": 7,
       "day": 6
@@ -4897,7 +5538,9 @@
       "tier": "A",
       "estimated_minutes": 20,
       "concepts": [
-        "unit7-solubility-equilibria"
+        "unit7-solubility-equilibria",
+        "unit7-common-ion-effect",
+        "unit9-free-energy-dissolution"
       ],
       "week": 7,
       "day": 6
@@ -4911,7 +5554,9 @@
       "tier": "C",
       "estimated_minutes": 25,
       "concepts": [
-        "unit7-solubility-equilibria"
+        "unit7-solubility-equilibria",
+        "unit7-common-ion-effect",
+        "unit9-free-energy-dissolution"
       ],
       "week": 7,
       "day": 6
@@ -5012,7 +5657,8 @@
       "estimated_minutes": 15,
       "description": "调整不同物质的浓度，实时观察 pH 的变化，理解 pH 的对数性质以及 H⁺ 和 OH⁻ 浓度的关系。",
       "concepts": [
-        "unit8-intro-acids-bases-ph"
+        "unit8-intro-acids-bases-ph",
+        "unit8-strong-acids-bases-ph-poh"
       ],
       "week": 8,
       "day": 1
@@ -5026,7 +5672,8 @@
       "tier": "A",
       "estimated_minutes": 11,
       "concepts": [
-        "unit8-intro-acids-bases-ph"
+        "unit8-intro-acids-bases-ph",
+        "unit8-strong-acids-bases-ph-poh"
       ],
       "week": 8,
       "day": 1
@@ -5068,7 +5715,8 @@
       "tier": "C",
       "estimated_minutes": 25,
       "concepts": [
-        "unit8-intro-acids-bases-ph"
+        "unit8-intro-acids-bases-ph",
+        "unit8-strong-acids-bases-ph-poh"
       ],
       "week": 8,
       "day": 1
@@ -5096,7 +5744,8 @@
       "tier": "A",
       "estimated_minutes": 11,
       "concepts": [
-        "unit8-acid-base-reactions"
+        "unit8-acid-base-reactions",
+        "unit8-weak-acid-base-equilibria"
       ],
       "week": 8,
       "day": 2
@@ -5124,7 +5773,8 @@
       "tier": "A",
       "estimated_minutes": 20,
       "concepts": [
-        "unit8-acid-base-reactions"
+        "unit8-acid-base-reactions",
+        "unit8-weak-acid-base-equilibria"
       ],
       "week": 8,
       "day": 2
@@ -5138,7 +5788,8 @@
       "tier": "C",
       "estimated_minutes": 25,
       "concepts": [
-        "unit8-acid-base-reactions"
+        "unit8-acid-base-reactions",
+        "unit8-weak-acid-base-equilibria"
       ],
       "week": 8,
       "day": 2
@@ -5152,7 +5803,8 @@
       "tier": "A",
       "estimated_minutes": 13,
       "concepts": [
-        "unit8-buffers-henderson"
+        "unit8-buffers-henderson",
+        "unit8-acid-base-reactions"
       ],
       "week": 8,
       "day": 3
@@ -5181,7 +5833,8 @@
       "estimated_minutes": 15,
       "description": "切换到弱酸/共轭碱模式，添加少量强酸或强碱，观察 pH 变化幅度，理解缓冲作用机制。",
       "concepts": [
-        "unit8-buffers-henderson"
+        "unit8-buffers-henderson",
+        "unit8-buffer-properties"
       ],
       "week": 8,
       "day": 3
@@ -5195,7 +5848,8 @@
       "tier": "C",
       "estimated_minutes": 15,
       "concepts": [
-        "unit8-buffers-henderson"
+        "unit8-buffers-henderson",
+        "unit8-acid-base-reactions"
       ],
       "week": 8,
       "day": 3
@@ -5209,7 +5863,8 @@
       "tier": "A",
       "estimated_minutes": 20,
       "concepts": [
-        "unit8-buffers-henderson"
+        "unit8-buffers-henderson",
+        "unit8-acid-base-reactions"
       ],
       "week": 8,
       "day": 3
@@ -5223,7 +5878,8 @@
       "tier": "C",
       "estimated_minutes": 25,
       "concepts": [
-        "unit8-buffers-henderson"
+        "unit8-buffers-henderson",
+        "unit8-acid-base-reactions"
       ],
       "week": 8,
       "day": 3
@@ -5237,7 +5893,8 @@
       "tier": "A",
       "estimated_minutes": 11,
       "concepts": [
-        "unit8-buffers-advanced"
+        "unit8-buffers-advanced",
+        "unit8-buffer-properties"
       ],
       "week": 8,
       "day": 4
@@ -5265,7 +5922,8 @@
       "tier": "C",
       "estimated_minutes": 15,
       "concepts": [
-        "unit8-buffers-advanced"
+        "unit8-buffers-advanced",
+        "unit8-buffer-properties"
       ],
       "week": 8,
       "day": 4
@@ -5279,7 +5937,8 @@
       "tier": "A",
       "estimated_minutes": 20,
       "concepts": [
-        "unit8-buffers-advanced"
+        "unit8-buffers-advanced",
+        "unit8-buffer-properties"
       ],
       "week": 8,
       "day": 4
@@ -5293,7 +5952,8 @@
       "tier": "C",
       "estimated_minutes": 25,
       "concepts": [
-        "unit8-buffers-advanced"
+        "unit8-buffers-advanced",
+        "unit8-buffer-properties"
       ],
       "week": 8,
       "day": 4
@@ -5632,7 +6292,8 @@
       "tier": "B",
       "estimated_minutes": 20,
       "concepts": [
-        "unit9-gibbs-thermodynamic-kinetic"
+        "unit9-gibbs-thermodynamic-kinetic",
+        "unit9-free-energy-dissolution"
       ],
       "week": 9,
       "day": 2
@@ -5646,7 +6307,8 @@
       "tier": "C",
       "estimated_minutes": 25,
       "concepts": [
-        "unit9-gibbs-thermodynamic-kinetic"
+        "unit9-gibbs-thermodynamic-kinetic",
+        "unit9-free-energy-dissolution"
       ],
       "week": 9,
       "day": 2
@@ -5884,7 +6546,8 @@
       "tier": "A",
       "estimated_minutes": 12,
       "concepts": [
-        "unit9-cell-potential"
+        "unit9-cell-potential",
+        "unit9-cell-potential-nonstandard"
       ],
       "week": 9,
       "day": 6
@@ -5898,7 +6561,8 @@
       "tier": "C",
       "estimated_minutes": 15,
       "concepts": [
-        "unit9-cell-potential"
+        "unit9-cell-potential",
+        "unit9-cell-potential-nonstandard"
       ],
       "week": 9,
       "day": 6
@@ -5912,7 +6576,8 @@
       "tier": "A",
       "estimated_minutes": 25,
       "concepts": [
-        "unit9-cell-potential"
+        "unit9-cell-potential",
+        "unit9-cell-potential-nonstandard"
       ],
       "week": 9,
       "day": 6
@@ -5926,7 +6591,8 @@
       "tier": "C",
       "estimated_minutes": 25,
       "concepts": [
-        "unit9-cell-potential"
+        "unit9-cell-potential",
+        "unit9-cell-potential-nonstandard"
       ],
       "week": 9,
       "day": 6
@@ -5940,7 +6606,8 @@
       "tier": "A",
       "estimated_minutes": 12,
       "concepts": [
-        "unit9-electrolysis-faraday"
+        "unit9-electrolysis-faraday",
+        "unit9-galvanic-cells"
       ],
       "week": 9,
       "day": 7
@@ -5975,14 +6642,15 @@
     },
     {
       "id": "chem-w9-openstax-electrolysis",
-      "title": "OpenStax Chemistry 2e: 17.5 Batteries and Fuel Cells and 17.7 Electrolysis",
+      "title": "OpenStax Chemistry 2e: 17.7 Electrolysis",
       "url": "https://openstax.org/books/chemistry-2e/pages/17-7-electrolysis",
       "type": "reading",
       "platform": "openstax",
       "tier": "A",
       "estimated_minutes": 20,
       "concepts": [
-        "unit9-electrolysis-faraday"
+        "unit9-electrolysis-faraday",
+        "unit9-galvanic-cells"
       ],
       "week": 9,
       "day": 7
@@ -6153,7 +6821,8 @@
       "tier": "B",
       "estimated_minutes": 15,
       "concepts": [
-        "gas-partial-pressure-kmt"
+        "gas-partial-pressure-kmt",
+        "gas-deviation-ideal-gas-law"
       ],
       "week": 3,
       "day": 5
@@ -6216,7 +6885,7 @@
       "day": 4
     },
     {
-      "id": "chem-w7-phet-reactions-rates",
+      "id": "chem-w7-phet-reactions-rates-repr",
       "title": "PhET: Reactions & Rates — Equilibrium Dynamics",
       "url": "https://phet.colorado.edu/en/simulations/reactions-and-rates",
       "type": "interactive",
@@ -6294,7 +6963,8 @@
       "tier": "C",
       "estimated_minutes": 20,
       "concepts": [
-        "gas-partial-pressure-kmt"
+        "gas-partial-pressure-kmt",
+        "gas-deviation-ideal-gas-law"
       ],
       "week": 3,
       "day": 5
@@ -6336,7 +7006,9 @@
       "tier": "B",
       "estimated_minutes": 20,
       "concepts": [
-        "unit7-solubility-equilibria"
+        "unit7-solubility-equilibria",
+        "unit3-representations-solutions",
+        "unit7-common-ion-effect"
       ],
       "week": 7,
       "day": 6
@@ -6364,7 +7036,8 @@
       "tier": "B",
       "estimated_minutes": 20,
       "concepts": [
-        "unit6-heat-transfer-calorimetry"
+        "unit6-heat-transfer-calorimetry",
+        "unit6-heat-capacity-calorimetry"
       ],
       "week": 6,
       "day": 2
@@ -6410,6 +7083,412 @@
       ],
       "week": 5,
       "day": 7
+    },
+    {
+      "id": "chem-w3-openstax-liquids-states",
+      "title": "OpenStax Chemistry 2e: 10.2 Properties of Liquids",
+      "url": "https://openstax.org/books/chemistry-2e/pages/10-2-properties-of-liquids",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "A",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit3-solids-liquids-gases"
+      ],
+      "week": 3,
+      "day": 2
+    },
+    {
+      "id": "chem-w3-openstax-nonideal-gases",
+      "title": "OpenStax Chemistry 2e: 9.6 Non-Ideal Gas Behavior",
+      "url": "https://openstax.org/books/chemistry-2e/pages/9-6-non-ideal-gas-behavior",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "B",
+      "estimated_minutes": 20,
+      "concepts": [
+        "gas-deviation-ideal-gas-law"
+      ],
+      "week": 3,
+      "day": 5
+    },
+    {
+      "id": "chem-w3-openstax-nonideal-gases-ex",
+      "title": "OpenStax Chemistry 2e: Chapter 9 Exercises (Non-Ideal Gases)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/9-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "estimated_minutes": 20,
+      "concepts": [
+        "gas-deviation-ideal-gas-law"
+      ],
+      "week": 3,
+      "day": 5
+    },
+    {
+      "id": "chem-w3-khan-solution-representations",
+      "title": "Representing solutions using particulate models",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:intermolecular-forces-and-properties/x2eef969c74e0d802:representations-of-solutions/v/representing-solutions-using-particulate-models",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 10,
+      "concepts": [
+        "unit3-representations-solutions"
+      ],
+      "week": 3,
+      "day": 6
+    },
+    {
+      "id": "chem-w3-khan-chromatography-column",
+      "title": "Column chromatography",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:intermolecular-forces-and-properties/x2eef969c74e0d802:separation-of-solutions-and-mixtures-chromatography/v/column-chromatography-intro",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 12,
+      "concepts": [
+        "unit3-separation-solutions-mixtures"
+      ],
+      "week": 3,
+      "day": 6
+    },
+    {
+      "id": "chem-w3-khan-chromatography-tlc",
+      "title": "Thin-layer chromatography (TLC)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:intermolecular-forces-and-properties/x2eef969c74e0d802:separation-of-solutions-and-mixtures-chromatography/v/thin-layer-chromatography-tlc",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 12,
+      "concepts": [
+        "unit3-separation-solutions-mixtures"
+      ],
+      "week": 3,
+      "day": 6
+    },
+    {
+      "id": "chem-w3-khan-chromatography-ex",
+      "title": "Separation of solutions and mixtures chromatography (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:intermolecular-forces-and-properties/x2eef969c74e0d802:separation-of-solutions-and-mixtures-chromatography/e/separation-of-solutions-and-mixtures-chromatography",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "C",
+      "estimated_minutes": 15,
+      "concepts": [
+        "unit3-separation-solutions-mixtures"
+      ],
+      "week": 3,
+      "day": 6
+    },
+    {
+      "id": "chem-w4-khan-reaction-representations-1",
+      "title": "Visualizing chemical equations using particulate models",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:chemical-reactions/x2eef969c74e0d802:representations-of-reactions/v/visualizing-chemical-equations-using-particulate-models",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 10,
+      "concepts": [
+        "unit4-representations-reactions"
+      ],
+      "week": 4,
+      "day": 1
+    },
+    {
+      "id": "chem-w4-khan-reaction-representations-2",
+      "title": "Drawing particulate models of reaction mixtures",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:chemical-reactions/x2eef969c74e0d802:representations-of-reactions/v/drawing-particulate-models-of-reaction-mixtures",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 10,
+      "concepts": [
+        "unit4-representations-reactions"
+      ],
+      "week": 4,
+      "day": 1
+    },
+    {
+      "id": "chem-w4-khan-reaction-representations-ex",
+      "title": "Representations of reactions (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:chemical-reactions/x2eef969c74e0d802:representations-of-reactions/e/representations-of-reactions",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "C",
+      "estimated_minutes": 15,
+      "concepts": [
+        "unit4-representations-reactions"
+      ],
+      "week": 4,
+      "day": 1
+    },
+    {
+      "id": "chem-w4-khan-physical-chemical-changes",
+      "title": "Physical and chemical changes",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:chemical-reactions/x2eef969c74e0d802:physical-and-chemical-changes/v/physical-and-chemical-changes-molecular-level",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 8,
+      "concepts": [
+        "unit4-physical-chemical-changes"
+      ],
+      "week": 4,
+      "day": 2
+    },
+    {
+      "id": "chem-w4-khan-physical-chemical-changes-ex",
+      "title": "Physical and chemical changes (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:chemical-reactions/x2eef969c74e0d802:physical-and-chemical-changes/e/physical-and-chemical-changes",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "C",
+      "estimated_minutes": 12,
+      "concepts": [
+        "unit4-physical-chemical-changes"
+      ],
+      "week": 4,
+      "day": 2
+    },
+    {
+      "id": "chem-w4-openstax-physical-chemical-changes",
+      "title": "OpenStax Chemistry 2e: 1.3 Physical and Chemical Properties",
+      "url": "https://openstax.org/books/chemistry-2e/pages/1-3-physical-and-chemical-properties",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "A",
+      "estimated_minutes": 16,
+      "concepts": [
+        "unit4-physical-chemical-changes"
+      ],
+      "week": 4,
+      "day": 2
+    },
+    {
+      "id": "chem-w4-khan-titration-intro",
+      "title": "Acid-base titrations",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:chemical-reactions/x2eef969c74e0d802:introduction-to-titration/v/titration-introduction",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 12,
+      "concepts": [
+        "unit4-intro-titration"
+      ],
+      "week": 4,
+      "day": 3
+    },
+    {
+      "id": "chem-w4-khan-titration-calculation",
+      "title": "Determining solute concentration by acid-base titration",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:chemical-reactions/x2eef969c74e0d802:introduction-to-titration/v/titration-calculation-example",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 12,
+      "concepts": [
+        "unit4-intro-titration"
+      ],
+      "week": 4,
+      "day": 3
+    },
+    {
+      "id": "chem-w4-khan-titration-intro-ex",
+      "title": "Introduction to titration (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:chemical-reactions/x2eef969c74e0d802:introduction-to-titration/e/introduction-to-titration",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "C",
+      "estimated_minutes": 15,
+      "concepts": [
+        "unit4-intro-titration"
+      ],
+      "week": 4,
+      "day": 3
+    },
+    {
+      "id": "chem-w4-openstax-quantitative-analysis",
+      "title": "OpenStax Chemistry 2e: 4.5 Quantitative Chemical Analysis",
+      "url": "https://openstax.org/books/chemistry-2e/pages/4-5-quantitative-chemical-analysis",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "A",
+      "estimated_minutes": 18,
+      "concepts": [
+        "unit4-intro-titration"
+      ],
+      "week": 4,
+      "day": 3
+    },
+    {
+      "id": "chem-w6-khan-phase-changes",
+      "title": "Enthalpy and phase changes",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:thermodynamics/x2eef969c74e0d802:energy-of-phase-changes/v/enthalpy-and-phase-changes",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 12,
+      "concepts": [
+        "unit6-energy-phase-changes"
+      ],
+      "week": 6,
+      "day": 3
+    },
+    {
+      "id": "chem-w6-openstax-phase-changes",
+      "title": "OpenStax Chemistry 2e: 10.3 Phase Transitions",
+      "url": "https://openstax.org/books/chemistry-2e/pages/10-3-phase-transitions",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "A",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit6-energy-phase-changes"
+      ],
+      "week": 6,
+      "day": 3
+    },
+    {
+      "id": "chem-w6-openstax-phase-changes-ex",
+      "title": "OpenStax Chemistry 2e: Chapter 10 Exercises (Phase Changes)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/10-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "estimated_minutes": 18,
+      "concepts": [
+        "unit6-energy-phase-changes"
+      ],
+      "week": 6,
+      "day": 3
+    },
+    {
+      "id": "chem-w6-khan-enthalpy-reaction",
+      "title": "Enthalpy of reaction",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:thermodynamics/x2eef969c74e0d802:introduction-to-enthalpy-of-reaction/v/enthalpy-of-reaction",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 10,
+      "concepts": [
+        "unit6-intro-enthalpy-reaction"
+      ],
+      "week": 6,
+      "day": 4
+    },
+    {
+      "id": "chem-w6-khan-enthalpy-reaction-calorimetry",
+      "title": "Measuring enthalpy of reaction using coffee-cup calorimetry",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:thermodynamics/x2eef969c74e0d802:introduction-to-enthalpy-of-reaction/v/worked-example-measuring-enthalpy-of-reaction-using-coffee-cup-calorimetry",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 12,
+      "concepts": [
+        "unit6-intro-enthalpy-reaction"
+      ],
+      "week": 6,
+      "day": 4
+    },
+    {
+      "id": "chem-w6-openstax-enthalpy-reaction",
+      "title": "OpenStax Chemistry 2e: 5.3 Enthalpy",
+      "url": "https://openstax.org/books/chemistry-2e/pages/5-3-enthalpy",
+      "type": "reading",
+      "platform": "openstax",
+      "tier": "A",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit6-intro-enthalpy-reaction"
+      ],
+      "week": 6,
+      "day": 4
+    },
+    {
+      "id": "chem-w6-openstax-enthalpy-reaction-ex",
+      "title": "OpenStax Chemistry 2e: Chapter 5 Exercises (Enthalpy of Reaction)",
+      "url": "https://openstax.org/books/chemistry-2e/pages/5-exercises",
+      "type": "exercise",
+      "platform": "openstax",
+      "tier": "C",
+      "estimated_minutes": 20,
+      "concepts": [
+        "unit6-intro-enthalpy-reaction"
+      ],
+      "week": 6,
+      "day": 4
+    },
+    {
+      "id": "chem-w8-khan-strong-base-solutions",
+      "title": "Strong base solutions",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:acids-and-bases/x2eef969c74e0d802:ph-and-poh-of-strong-acids-and-bases/v/strong-base-solutions",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 10,
+      "concepts": [
+        "unit8-strong-acids-bases-ph-poh"
+      ],
+      "week": 8,
+      "day": 1
+    },
+    {
+      "id": "chem-w8-khan-strong-ph-poh-ex",
+      "title": "pH and pOH of strong acids and bases (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:acids-and-bases/x2eef969c74e0d802:ph-and-poh-of-strong-acids-and-bases/e/ph-and-poh-of-strong-acids-and-bases",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "C",
+      "estimated_minutes": 15,
+      "concepts": [
+        "unit8-strong-acids-bases-ph-poh"
+      ],
+      "week": 8,
+      "day": 1
+    },
+    {
+      "id": "chem-w8-khan-weak-base-equilibria",
+      "title": "Weak base equilibria",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:acids-and-bases/x2eef969c74e0d802:weak-acid-and-base-equilibria/v/weak-base-equilibria",
+      "type": "video",
+      "platform": "khan",
+      "tier": "A",
+      "estimated_minutes": 12,
+      "concepts": [
+        "unit8-weak-acid-base-equilibria"
+      ],
+      "week": 8,
+      "day": 2
+    },
+    {
+      "id": "chem-w8-khan-weak-acid-base-ex",
+      "title": "Weak acid and base equilibria (practice)",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:acids-and-bases/x2eef969c74e0d802:weak-acid-and-base-equilibria/e/weak-acid-and-base-equilibria",
+      "type": "exercise",
+      "platform": "khan",
+      "tier": "C",
+      "estimated_minutes": 15,
+      "concepts": [
+        "unit8-weak-acid-base-equilibria"
+      ],
+      "week": 8,
+      "day": 2
+    },
+    {
+      "id": "chem-w9-khan-free-energy-dissolution",
+      "title": "Free energy of dissolution",
+      "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:applications-of-thermodynamics/x2eef969c74e0d802:free-energy-of-dissolution/v/free-energy-of-dissolution",
+      "type": "video",
+      "platform": "khan",
+      "tier": "B",
+      "estimated_minutes": 12,
+      "concepts": [
+        "unit9-free-energy-dissolution"
+      ],
+      "week": 9,
+      "day": 4
     }
   ]
 }
